@@ -9,6 +9,7 @@ import "../stories/scss/fonts/fonts.scss";
 const preview = {
   parameters: {
     docs: {
+      layout: 'fullscreen',
       toc: {
         disable: true, // 👈 Disables the table of contents
         unsafeTocbotOptions: {
