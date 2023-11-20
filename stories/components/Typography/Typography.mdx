@@ -1,0 +1,1233 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Typography.mdx */}
+
+<Meta title="Design System/Style/Typography" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import accessibility from '../../assets/img/typography/accessibility.png';
+import accessibility2x from '../../assets/img/typography/accessibility@2x.png';
+import readability from '../../assets/img/typography/readability.png';
+import readability2x from '../../assets/img/typography/readability@2x.png';
+
+import hierarchy from '../../assets/img/typography/hierarchy.png';
+import hierarchy2x from '../../assets/img/typography/hierarchy@2x.png';
+import device from '../../assets/img/typography/device.png';
+import device2x from '../../assets/img/typography/device@2x.png';
+import speed from '../../assets/img/typography/speed.png';
+import speed2x from '../../assets/img/typography/speed@2x.png';
+import design from '../../assets/img/typography/design.png';
+import design2x from '../../assets/img/typography/design@2x.png';
+import anatomy from '../../assets/img/typography/anatomy.png';
+import anatomy2x from '../../assets/img/typography/anatomy@2x.png';
+
+import weight400 from '../../assets/img/typography/weight400.png';
+import weight4002x from '../../assets/img/typography/weight400@2x.png';
+import weight500 from '../../assets/img/typography/weight500.png';
+import weight5002x from '../../assets/img/typography/weight500@2x.png';
+import weight600 from '../../assets/img/typography/weight600.png';
+import weight6002x from '../../assets/img/typography/weight600@2x.png';
+import weight700 from '../../assets/img/typography/weight700.png';
+import weight7002x from '../../assets/img/typography/weight700@2x.png';
+import italic400 from '../../assets/img/typography/italic400.png';
+import italic4002x from '../../assets/img/typography/italic400@2x.png';
+import italic500 from '../../assets/img/typography/italic500.png';
+import italic5002x from '../../assets/img/typography/italic500@2x.png';
+import italic600 from '../../assets/img/typography/italic600.png';
+import italic6002x from '../../assets/img/typography/italic600@2x.png';
+import italic700 from '../../assets/img/typography/italic700.png';
+import italic7002x from '../../assets/img/typography/italic700@2x.png';
+
+import position1 from '../../assets/img/typography/position1.png';
+import position12x from '../../assets/img/typography/position1@2x.png';
+import position2 from '../../assets/img/typography/position2.png';
+import position22x from '../../assets/img/typography/position2@2x.png';
+import position3 from '../../assets/img/typography/position3.png';
+import position32x from '../../assets/img/typography/position3@2x.png';
+import decoration1 from '../../assets/img/typography/decoration1.png';
+import decoration12x from '../../assets/img/typography/decoration1@2x.png';
+import decoration2 from '../../assets/img/typography/decoration2.png';
+import decoration22x from '../../assets/img/typography/decoration2@2x.png';
+import decoration3 from '../../assets/img/typography/decoration3.png';
+import decoration32x from '../../assets/img/typography/decoration3@2x.png';
+
+import dolength from '../../assets/img/typography/dolength.png';
+import dolength2x from '../../assets/img/typography/dolength@2x.png';
+import dontlength from '../../assets/img/typography/dontlength.png';
+import dontlength2x from '../../assets/img/typography/dontlength@2x.png';
+
+import doleft from '../../assets/img/typography/doleft.png';
+import doleft2x from '../../assets/img/typography/doleft@2x.png';
+import docentred from '../../assets/img/typography/docentred.png';
+import docentred2x from '../../assets/img/typography/docentred@2x.png';
+import doright from '../../assets/img/typography/doright.png';
+import doright2x from '../../assets/img/typography/doright@2x.png';
+import dontalignment from '../../assets/img/typography/dontalignment.png';
+import dontalignment2x from '../../assets/img/typography/dontalignment@2x.png';
+
+import spacing1 from '../../assets/img/typography/spacing1.png';
+import spacing12x from '../../assets/img/typography/spacing1@2x.png';
+import spacing2 from '../../assets/img/typography/spacing2.png';
+import spacing22x from '../../assets/img/typography/spacing2@2x.png';
+import spacing3 from '../../assets/img/typography/spacing3.png';
+import spacing32x from '../../assets/img/typography/spacing3@2x.png';
+import spacing4 from '../../assets/img/typography/spacing4.png';
+import spacing42x from '../../assets/img/typography/spacing4@2x.png';
+import spacing5 from '../../assets/img/typography/spacing5.png';
+import spacing52x from '../../assets/img/typography/spacing5@2x.png';
+import spacing6 from '../../assets/img/typography/spacing6.png';
+import spacing62x from '../../assets/img/typography/spacing6@2x.png';
+
+import paragraph1 from '../../assets/img/typography/paragraph1.png';
+import paragraph12x from '../../assets/img/typography/paragraph1@2x.png';
+import paragraph2 from '../../assets/img/typography/paragraph2.png';
+import paragraph22x from '../../assets/img/typography/paragraph2@2x.png';
+import paragraph3 from '../../assets/img/typography/paragraph3.png';
+import paragraph32x from '../../assets/img/typography/paragraph3@2x.png';
+
+import dotextlink from '../../assets/img/typography/dotextlink.png';
+import dotextlink2x from '../../assets/img/typography/dotextlink@2x.png';
+import donttextlink from '../../assets/img/typography/donttextlink.png';
+import donttextlink2x from '../../assets/img/typography/donttextlink@2x.png';
+
+import do1 from '../../assets/img/typography/do1.png';
+import do12x from '../../assets/img/typography/do1@2x.png';
+import do2 from '../../assets/img/typography/do2.png';
+import do22x from '../../assets/img/typography/do2@2x.png';
+import do3 from '../../assets/img/typography/do3.png';
+import do32x from '../../assets/img/typography/do3@2x.png';
+import do4 from '../../assets/img/typography/do4.png';
+import do42x from '../../assets/img/typography/do4@2x.png';
+import do5 from '../../assets/img/typography/do5.png';
+import do52x from '../../assets/img/typography/do5@2x.png';
+import do6 from '../../assets/img/typography/do6.png';
+import do62x from '../../assets/img/typography/do6@2x.png';
+import do7 from '../../assets/img/typography/do7.png';
+import do72x from '../../assets/img/typography/do7@2x.png';
+import dont1 from '../../assets/img/typography/dont1.png';
+import dont12x from '../../assets/img/typography/dont1@2x.png';
+import dont2 from '../../assets/img/typography/dont2.png';
+import dont22x from '../../assets/img/typography/dont2@2x.png';
+import dont3 from '../../assets/img/typography/dont3.png';
+import dont32x from '../../assets/img/typography/dont3@2x.png';
+import dont4 from '../../assets/img/typography/dont4.png';
+import dont42x from '../../assets/img/typography/dont4@2x.png';
+import dont5 from '../../assets/img/typography/dont5.png';
+import dont52x from '../../assets/img/typography/dont5@2x.png';
+import dont6 from '../../assets/img/typography/dont6.png';
+import dont62x from '../../assets/img/typography/dont6@2x.png';
+import dont7 from '../../assets/img/typography/dont7.png';
+import dont72x from '../../assets/img/typography/do7@2x.png';
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Typography</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/components-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/components-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>Typography is the practice of making informed decisions about the setting of type. Using typography plays a vital role in establishing hierarchies, arranging information, and effectively guiding users throughout the pages. Primus Design System uses Inter typeface.</p>
+
+                    <div className="artwork">
+                        <p>The quick brown fox jumps over the lazy dog</p>
+                        <a href="https://fonts.google.com/specimen/Inter" target="_blank" className="btn btn-primary"><i className="pi-download"></i> Download font</a>
+                    </div>
+                </section>
+
+                <section>
+                    ## Key principles
+                    <p className='mb32 text-lg'>Primus Design System uses typography for 6 types of principles;</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Accessibility
+                            <p>Appropriate fonts that meet accessibility requirements help users with visual or reading difficulties access the content easily.</p>
+                        </div>
+                        <div className="col">
+                            <img src={accessibility} srcset={accessibility + ' 1x,' + accessibility2x + ' 2x'} alt='Accessibility'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Readability
+                            <p>Correct font selection makes texts legible and understandable. It positively affects the user experience by allowing users to read content comfortably.</p>
+                        </div>
+                        <div className="col">
+                            <img src={readability} srcset={readability + ' 1x,' + readability2x + ' 2x'} alt='Readability'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hierarchy
+                            <p>Different font weights, sizes, and styles can be used to emphasize hierarchy between contents. Highlighting important information and headings enables users to scan the content more easily.</p>
+                        </div>
+                        <div className="col">
+                            <img src={hierarchy} srcset={hierarchy + ' 1x,' + hierarchy2x + ' 2x'} alt='Hierarchy'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Device compatibility
+                            <p>It is crucial for fonts to appear correctly on various screen sizes and devices. Being mindful of responsive design and font selection ensures users have a seamless experience across different platforms.</p>
+                        </div>
+                        <div className="col">
+                            <img src={device} srcset={device + ' 1x,' + device2x + ' 2x'} alt='Device compatibility'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Speed
+                            <p>Proper font usage can impact page loading times. Optimized fonts can enhance loading speeds, thereby improving the user experience.</p>
+                        </div>
+                        <div className="col">
+                            <img src={speed} srcset={speed + ' 1x,' + speed2x + ' 2x'} alt='Speed'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Design
+                            <p>To create a good design using typography, we should use it effectively, make texts readable by selecting appropriate fonts, and establish hierarchy. Proper typographic choices enhance the user experience and ensure the content is conveyed impressively and effectively.</p>
+                        </div>
+                        <div className="col">
+                            <img src={design} srcset={design + ' 1x,' + design2x + ' 2x'} alt='Design'/>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src={anatomy} srcset={anatomy + ' 1x,' + anatomy2x + ' 2x'} alt='Anatomy'/>
+                    <ul className='lejant'>
+                        <li><p><strong>Baseline:</strong> Line where characters rest, ensuring alignment in a text.</p></li>
+                        <li><p><strong>Cap height:</strong> Height of uppercase letters.</p></li>
+                        <li><p><strong>X-height:</strong> Height of lowercase letters.</p></li>
+                        <li><p><strong>Letter-spacing:</strong> Space between characters.</p></li>
+                        <li><p><strong>Line height (Leading):</strong> Vertical distance between two lines of type, measured from the baseline of one line of type to the baseline of the next.</p></li>
+                    </ul>
+                </section>
+
+
+
+
+
+                <section>
+                    ## Inter typeface overview
+                    <p className='mb40 text-lg'>Inter is a variable font family carefully crafted & designed for computer screens.</p>
+
+
+
+                    ### Weight
+                    <p>In typography, "weight" refers to the thickness or heaviness of a typeface. It is one of the fundamental characteristics of a font that determines how bold or light the text appears on screen. In the Primus Design System, we use regular, medium, semi bold, and bold weights.</p>
+
+                    <div className="row flex-wrap mb40">
+                        <div className="col">
+                            <div className="card">
+                                <img src={weight400} srcset={weight400 + ' 1x,' + weight4002x + ' 2x'} alt='Regular 400'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={weight500} srcset={weight500 + ' 1x,' + weight5002x + ' 2x'} alt='Medium 500'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={weight600} srcset={weight600 + ' 1x,' + weight6002x + ' 2x'} alt='SemiBold 600'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={weight700} srcset={weight700 + ' 1x,' + weight7002x + ' 2x'} alt='Bold 700'/>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    ### Style
+                    <p>In typography, "style" refers to the overall appearance and design characteristics of a typeface or font family. It encompasses various visual attributes that give a font its unique personality and distinguish it from other typefaces. In the Primus Design System, the italic style is utilized when deemed necessary</p>
+
+                    <div className="row flex-wrap mb40">
+                        <div className="col">
+                            <div className="card">
+                                <img src={italic400} srcset={italic400 + ' 1x,' + italic4002x + ' 2x'} alt='Regular 400'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={italic500} srcset={italic500 + ' 1x,' + italic5002x + ' 2x'} alt='Medium 500'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={italic600} srcset={italic600 + ' 1x,' + italic6002x + ' 2x'} alt='SemiBold 600'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={italic700} srcset={italic700 + ' 1x,' + italic7002x + ' 2x'} alt='Bold 700'/>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    ### Text position
+                    <p>In typography, there are several text positions that refer to the vertical alignment of characters in relation to the baseline. These positions play a crucial role in creating a balanced and visually appealing text layout.In the Primus Design System, we use three main text positions for typography.</p>
+
+                    <div className="row row-cols-3-custom flex-wrap mb40 align-items-start">
+                        <div className="col">
+                            <div className="card">
+                                <img src={position1} srcset={position1 + ' 1x,' + position12x + ' 2x'} alt='Normal (Baseline)'/>
+                                <div className="cardBody">
+                                    <p><strong>Normal (Baseline):</strong> This is the standard alignment, where characters rest on the imaginary baseline, providing a consistent and easily readable appearance for regular text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={position2} srcset={position2 + ' 1x,' + position22x + ' 2x'} alt='Superscript'/>
+                                <div className="cardBody">
+                                    <p><strong>Superscript:</strong> Characters or symbols are positioned above the baseline in a reduced size, typically used for footnotes, mathematical exponents, or special annotations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={position3} srcset={position3 + ' 1x,' + position32x + ' 2x'} alt='Subscript'/>
+                                <div className="cardBody">
+                                    <p><strong>Subscript:</strong> Characters or symbols are positioned below the baseline, used for chemical formulas, mathematical subscripts, and other specific notations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    ### Text decoration
+                    <p>Text decorations refer to visual alterations applied to text to add emphasis or convey specific meanings. In typography, there are various text decorations that can be used to modify the appearance of text. The three main text decorations are regular, underline, and strikethrough.</p>
+
+                    <div className="row row-cols-3-custom flex-wrap align-items-start">
+                        <div className="col">
+                            <div className="card">
+                                <img src={decoration1} srcset={decoration1 + ' 1x,' + decoration12x + ' 2x'} alt='Regular Text'/>
+                                <div className="cardBody">
+                                    <p><strong>Regular Text:</strong> Also known as plain text or normal text, is the default style of text without any additional formatting or decoration. It appears as simple and does not have lines like underline or strikethrough.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={decoration2} srcset={decoration2 + ' 1x,' + decoration22x + ' 2x'} alt='Underline'/>
+                                <div className="cardBody">
+                                    <p><strong>Underline:</strong> Underlining involves drawing a horizontal line below the text. It is often used to emphasize certain words or phrases.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={decoration3} srcset={decoration3 + ' 1x,' + decoration32x + ' 2x'} alt='Strikethrough'/>
+                                <div className="cardBody">
+                                    <p><strong>Strikethrough:</strong> It involves drawing a horizontal line through the middle of the text. It is typically used to indicate that the content has been deleted, canceled, or is no longer valid.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                <section>
+                    ## Scale
+                    <p className="mb40 text-lg">In typography, "scale" refers to the relative size of a typeface or letterforms in relation to other elements in a design. The Primus Design System utilizes three main scale categories: "display," "header," and "text," each serving a specific role in creating a cohesive typographic hierarchy.</p>
+
+
+
+                    ### Display
+                    <p>Display scale employs larger font sizes for headings and titles, effectively emphasizing essential content and establishing prominent visual focal points in a design.</p>
+
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>display-bold</p>
+                                <div className='display bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 48 px(3 rem)<br/>Line height 64 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>display-semibold</p>
+                                <div className='display semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi bold 48 px(3 rem)<br/>Line height 64 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+
+                    </table>
+
+                    ### Header
+                    <p>The header scale involves intermediate font sizes used for subheadings, section titles, or secondary elements. It establishes visual hierarchy and aids navigation through content. In the Primus Design System, we use headings in six different font sizes.</p>
+
+                    <div className='h4'>Header 1 (h1)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h1-bold</p>
+                                <div className='h1 bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 28 px(1.75 rem)<br/>Line height 40 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h1-semibold</p>
+                                <div className='h1 semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 28 px(1.75 rem)<br/>Line height 40 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Header 2 (h2)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h2-bold</p>
+                                <div className='h2 bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 24 px(1.5 rem)<br/>Line height 32 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h2-semibold</p>
+                                <div className='h2 semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 24 px(1.5 rem)<br/>Line height 32 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Header 3 (h3)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h3-bold</p>
+                                <div className='h3 bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 22 px(1.375 rem)<br/>Line height 32 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h3-semibold</p>
+                                <div className='h3 semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 22 px(1.375 rem)<br/>Line height 32 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Header 4 (h4)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h4-bold</p>
+                                <div className='h4 bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 18 px(1.125 rem)<br/>Line height 24 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h4-semibold</p>
+                                <div className='h4 semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 18 px(1.125 rem)<br/>Line height 24 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Header 5 (h5)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h5-bold</p>
+                                <div className='h5 bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 16 px(1 rem)<br/>Line height 24 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h5-semibold</p>
+                                <div className='h5 semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 16 px(1 rem)<br/>Line height 24 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Header 6 (h6)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h6-bold</p>
+                                <div className='h6 bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 14 px(0.875 rem)<br/>Line height 20 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>h6-semibold</p>
+                                <div className='h6 semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 14 px(0.875 rem)<br/>Line height 20 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+
+
+
+                    ### Text
+                    <p>Font sizes for body text and supporting content, optimizing readability and ensuring consistency in visual presentation for effective communication.In the Primus Design System, we use texts in six different font sizes.</p>
+
+                    <div className='h4'>Text Large (text-lg)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-lg-bold</p>
+                                <div className='text-lg bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 16 px(1 rem)<br/>Line height 24 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-lg-semibold</p>
+                                <div className='text-lg semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 16 px(1 rem)<br/>Line height 24 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-lg-medium</p>
+                                <div className='text-lg medium'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Medium&nbsp;500</td>
+                            <td>Semi Bold 16 px(1 rem)<br/>Line height 24 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-lg-regular</p>
+                                <div className='text-lg regular'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Regular&nbsp;400</td>
+                            <td>Semi Bold 16 px(1 rem)<br/>Line height 24 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Text Medium (text-md)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-md-bold</p>
+                                <div className='text-md bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 14 px(0.875 rem)<br/>Line height 20 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-md-semibold</p>
+                                <div className='text-md semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 14 px(0.875 rem)<br/>Line height 20 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-md-medium</p>
+                                <div className='text-md medium'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Medium&nbsp;500</td>
+                            <td>Semi Bold 14 px(0.875 rem)<br/>Line height 20 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-md-regular</p>
+                                <div className='text-md regular'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Regular&nbsp;400</td>
+                            <td>Semi Bold 14 px(0.875 rem)<br/>Line height 20 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Text Small (text-sm)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-sm-bold</p>
+                                <div className='text-sm bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 12 px(0.75 rem)<br/>Line height 16 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-sm-semibold</p>
+                                <div className='text-sm semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 12 px(0.75 rem)<br/>Line height 16 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-sm-medium</p>
+                                <div className='text-sm medium'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Medium&nbsp;500</td>
+                            <td>Semi Bold 12 px(0.75 rem)<br/>Line height 16 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-sm-regular</p>
+                                <div className='text-sm regular'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Regular&nbsp;400</td>
+                            <td>Semi Bold 12 px(0.75 rem)<br/>Line height 16 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Text Extra Small (text-xs)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-xs-bold</p>
+                                <div className='text-xs bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 10 px(0.625 rem)<br/>Line height 12 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-xs-semibold</p>
+                                <div className='text-xs semibold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>SemiBold&nbsp;600</td>
+                            <td>Semi Bold 10 px(0.625 rem)<br/>Line height 12 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-xs-medium</p>
+                                <div className='text-xs medium'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Medium&nbsp;500</td>
+                            <td>Semi Bold 10 px(0.625 rem)<br/>Line height 12 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-xs-regular</p>
+                                <div className='text-xs regular'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Regular&nbsp;400</td>
+                            <td>Semi Bold 10 px(0.625 rem)<br/>Line height 12 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                    <div className='h4'>Text Extra Extra Small (text-xxs)</div>
+                    <table className='docsTable typography'>
+                        <tr>
+                            <th className='text-start'>Role(style)</th>
+                            <th>Weight</th>
+                            <th>Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='name'>text-xxs-bold</p>
+                                <div className='text-xxs bold'>The quick brown fox jumps over the lazy dog</div>
+                            </td>
+                            <td className='text-center'>Bold&nbsp;700</td>
+                            <td>Bold 10 px(0.625 rem)<br/>Line height 12 px<br/>Letter spacing 0 px</td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+                </section>
+
+
+                <section>
+                    ## Hierarchy
+                    <p className="mb32 text-lg">Using different font weights and scales in typography creates a visually appealing hierarchy, improves readability, and adds aesthetic appeal to the design. It helps emphasize important elements and guides the reader's eye through the content effectively.</p>
+
+                    <div className="artwork hierarchy">
+                        <div className='display bold'>Display Text - Lorem ipsum</div>
+                        <div className='h2 semibold'>Headline Text - Lorem ipsum</div>
+
+                        <p className='text-lg regular'>Body text - At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. <strong className='semibold'>Et harum quidem rerum facilis est et expedita distinctio.</strong> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella*</p>
+                        <p className='text-sm regular'>Secondary text - *Officiis debitis aut rerum necessitatibus saepe</p>
+                    </div>
+                </section>
+
+                <section>
+                    ## Line length
+                    <p className="mb32 text-lg">For left-aligned typography, ensure a balanced ragged edge by avoiding word breaks, leaving short words hanging, big indents on single lines, overextended words, and widows at paragraph ends. This enhances legibility and overall appearance.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={dolength} srcset={dolength + ' 1x,' + dolength2x + ' 2x'} alt='Do line length'/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>When setting left-aligned typography, it's crucial to balance the ragged edge of the text for improved legibility and text appearance, while for right-to-left languages, right-align the text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dontlength} srcset={dontlength + ' 1x,' + dontlength2x + ' 2x'} alt="Don't line length"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>When setting left-aligned typography, it's crucial to balance the ragged edge of the text for improved legibility and text appearance, while for right-to-left languages, right-align the text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section>
+                    ## Alignment
+                    <p text-lg>You can align the title and text in three ways: center, right, and left alignment, but do not use justification.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={doleft} srcset={doleft + ' 1x,' + doleft2x + ' 2x'} alt='Do left aligned'/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>If a left-aligned structure is to be created, both the text and the title should be left-aligned.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={docentred} srcset={docentred + ' 1x,' + docentred2x + ' 2x'} alt="Do centred"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>If a center-aligned structure is to be created, both the text and the title should be centered.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={doright} srcset={doright + ' 1x,' + doright2x + ' 2x'} alt="Do right aligned"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>If a right-aligned structure is to be created, both the text and the title should be right-aligned.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dontalignment} srcset={dontalignment + ' 1x,' + dontalignment2x + ' 2x'} alt="Don't justify"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t justify text and title.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section>
+
+
+                    ## Spacing
+                    <p className='blank text-lg'>&nbsp;</p>
+
+                    ### Header and body text spacing
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga</p>
+
+                    <div className="row row-cols-3-custom flex-wrap align-items-start">
+                        <div className="col">
+                            <div className="card">
+                                <img src={spacing1} srcset={spacing1 + ' 1x,' + spacing12x + ' 2x'} alt='Header 1 (h1) and body text spacing'/>
+                                <div className="cardBody">
+                                    <p><strong>16px</strong> of padding between Header 1 <strong>(h1)</strong> and <strong>text-lg</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={spacing2} srcset={spacing2 + ' 1x,' + spacing22x + ' 2x'} alt='Header 2 (h2) and body text spacing'/>
+                                <div className="cardBody">
+                                    <p><strong>16px</strong> of padding between Header 2 <strong>(h2)</strong> and <strong>text-lg</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={spacing3} srcset={spacing3 + ' 1x,' + spacing32x + ' 2x'} alt='Header 3 (h3) and body text spacing'/>
+                                <div className="cardBody">
+                                    <p><strong>12px</strong> of padding between Header 3 <strong>(h3)</strong> and <strong>text-md</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={spacing4} srcset={spacing4 + ' 1x,' + spacing42x + ' 2x'} alt='Header 4 (h4) and body text spacing'/>
+                                <div className="cardBody">
+                                    <p><strong>12px</strong> of padding between Header 4 <strong>(h4)</strong> and <strong>text-md</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={spacing5} srcset={spacing5 + ' 1x,' + spacing52x + ' 2x'} alt='Header 5 (h5) and body text spacing'/>
+                                <div className="cardBody">
+                                    <p><strong>8px</strong> of padding between Header 5 <strong>(h5)</strong> and <strong>text-sm</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={spacing6} srcset={spacing6 + ' 1x,' + spacing62x + ' 2x'} alt='Header 6 (h6) and body text spacing'/>
+                                <div className="cardBody">
+                                    <p><strong>8px</strong> of padding between Header 6 <strong>(h6)</strong> and <strong>text-sm</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    ### Paragraph spacing
+                    <p>Keep the paragraph spacing the same as the line height of the font you used.</p>
+
+                    <div className="row row-cols-3-custom flex-wrap align-items-start">
+                        <div className="col">
+                            <div className="card">
+                                <img src={paragraph1} srcset={paragraph1 + ' 1x,' + paragraph12x + ' 2x'} alt='Paragraph spacing text-lg'/>
+                                <div className="cardBody">
+                                    <p>Paragraph spacing for <strong>text-lg</strong> is <strong>24 px</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={paragraph2} srcset={paragraph2 + ' 1x,' + paragraph22x + ' 2x'} alt='Paragraph spacing text-md'/>
+                                <div className="cardBody">
+                                    <p>Paragraph spacing for <strong>text-md</strong> is <strong>20 px</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={paragraph3} srcset={paragraph3 + ' 1x,' + paragraph32x + ' 2x'} alt='Paragraph spacing text-sm'/>
+                                <div className="cardBody">
+                                    <p>Paragraph spacing for <strong>text-sm</strong> is <strong>16 px</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    ### Type Color 
+                    <p>The choice of type color directly impacts readability and accessibility, making it a critical consideration. To ensure optimal legibility, neutral type colors are preferred for running text. Remember that the colors used together will create a hierarchy.</p>
+
+                    <div className="artwork typecolor flex-wrap">
+                        <div className="type neutral-white">
+                            <ul className="colormap">
+                                <li><span>text-color-onbrand</span></li>
+                                <li><span>neutral-white</span></li>
+                                <li><span className='color'>#FFFFFF</span></li>
+                            </ul>
+                            <p className='h1 bold markPrimary'>The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                        <div className="type neutral-90">
+                            <ul className="colormap">
+                                <li><span>text-color-onbrand</span></li>
+                                <li><span>neutral-90</span></li>
+                                <li><span className='color'>#1E1E1E</span></li>
+                            </ul>
+                            <p className='h1 bold'>The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                        <div className="type neutral-80">
+                            <ul className="colormap">
+                                <li><span>text-color-body</span></li>
+                                <li><span>neutral-80</span></li>
+                                <li><span className='color'>#333333</span></li>
+                            </ul>
+                            <p className='h1 bold'>The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                        <div className="type neutral-70">
+                            <ul className="colormap">
+                                <li><span>text-color-secondary</span></li>
+                                <li><span>neutral-70</span></li>
+                                <li><span className='color'>#454545</span></li>
+                            </ul>
+                            <p className='h1 bold'>The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                        <div className="type neutral-50">
+                            <ul className="colormap">
+                                <li><span>text-color-passive</span></li>
+                                <li><span>neutral-50</span></li>
+                                <li><span className='color'>#757575</span></li>
+                            </ul>
+                            <p className='h1 bold'>The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                        <div className="type neutral-7">
+                            <ul className="colormap">
+                                <li><span>text-color-placeholder</span></li>
+                                <li><span>neutral-7</span></li>
+                                <li><span className='color'>#EDEDED</span></li>
+                            </ul>
+                            <p className='h1 bold'>The quick brown fox jumps over the lazy dog</p>
+                        </div>
+                    </div>
+
+
+                    ### Inline text links 
+                    <p>The inline text link should maintain the same font weight as the surrounding text, be underlined, and utilize our primary color.</p>
+                    
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={dotextlink} srcset={dotextlink + ' 1x,' + dotextlink2x + ' 2x'} alt="Do text links"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>The inline text link should match the text's font weight, be underlined, and use our primary color.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={donttextlink} srcset={donttextlink + ' 1x,' + donttextlink2x + ' 2x'} alt="Don't text links"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't generate alternative versions for inline text links.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    ## Do’s and Dont’s 
+                    <p className=" text-lg">Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={do1} srcset={do1 + ' 1x,' + do12x + ' 2x'} alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Prioritize accessible typography by selecting typefaces and text sizes that ensure legibility for all users, especially those with visual impairments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dont1} srcset={dont1 + ' 1x,' + dont12x + ' 2x'} alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t overlook the importance of contrast between text and background colors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={do2} srcset={do2 + ' 1x,' + do22x + ' 2x'} alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Opt for high-contrast text and background combinations to enhance readability, especially for users with visual impairments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dont2} srcset={dont2 + ' 1x,' + dont22x + ' 2x'} alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't use low-contrast combinations,</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={do3} srcset={do3 + ' 1x,' + do32x + ' 2x'} alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use sentence-case capitalization.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dont3} srcset={dont3 + ' 1x,' + dont32x + ' 2x'} alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use title case captalization or all caps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={do4} srcset={do4 + ' 1x,' + do42x + ' 2x'} alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Maintain consistent text alignment throughout your design, as it aids readability and comprehension for all users.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dont4} srcset={dont4 + ' 1x,' + dont42x + ' 2x'} alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't mix different text alignments in the same content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={do5} srcset={do5 + ' 1x,' + do52x + ' 2x'} alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Ensure appropriate spacing between header and body text to improve content structure and readability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dont5} srcset={dont5 + ' 1x,' + dont52x + ' 2x'} alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't let inconsistent spacing between headers and body text go unaddressed.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={do6} srcset={do6 + ' 1x,' + do62x + ' 2x'} alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Maintain the paragraph spacing consistent with the line height of the font you've chosen, as this enhances readability and visual harmony.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dont6} srcset={dont6 + ' 1x,' + dont62x + ' 2x'} alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't ignore the guideline of aligning paragraph spacing with the font's line height</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src={do7} srcset={do7 + ' 1x,' + do72x + ' 2x'} alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Apply same style for all content</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src={dont7} srcset={dont7 + ' 1x,' + dont72x + ' 2x'} alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t mix the different styles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                    
+
+
+
+            </TabPanel>
+            <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

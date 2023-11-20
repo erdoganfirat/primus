@@ -1,0 +1,82 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Principles.mdx */}
+
+<Meta title="Overview/Principles" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Principles</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/components-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/components-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Principles</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+            
+                <section>
+                    <p>We use Hepsiburada design principles to continually push us to improve our website, app, and integrations to help people. Below are six design principles of our design system that help us make design decisions that reflect our design philosophy.</p>
+
+                    ### CONSISTENCY
+                    <p>Ensuring that the design of different elements is consistent, so that users can easily understand and navigate the product.</p>
+
+                    ### CLARITY
+                    <p>Making sure that the design communicates its purpose and function clearly, so that users can understand what they need to do and how to do it.</p>
+
+                    ### USABILITY
+                    <p>Designing the product in a way that is easy to use and understand, so that users can accomplish their goals efficiently and effectively.</p>
+
+                    ### FLEXIBILITY
+                    <p>Allowing the design to adapt to different devices, screen sizes, and user needs, so that it can be used in a variety of different contexts.</p>
+
+                    ### ACCESSIBILITY
+                    <p>Ensuring that the design is accessible to users with disabilities, so that everyone can use the product.</p>
+
+                    ### BRAND ALIGNMENT
+                    <p>Ensuring that the design aligns with the brand’s values</p>
+                </section>
+
+
+
+
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

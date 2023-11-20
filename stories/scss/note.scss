@@ -1,0 +1,167 @@
+/*
+Tokens (Toplantı Notları) - 19.10.2023
+
+
+.btn-primary{
+  background-color:var(--color-primary-default)
+}
+
+.btn-primary:hover{
+  background-color:var(--color-primary-hover)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Toplantı Amacı (Token Bilgilendirmesi) - 18.10.2023
+
+    Bugün ki toplantının amacı 
+    * Token konusunda ki yaklaşımımız nedir? 
+    * Nereye doğru gidiyoruz?
+    * Nerelerde sorun ön görüyoruz?
+
+    Bu konular hakkında bilgilendirme sağlayacağız.
+
+
+
+# -- Sizes array'inin bizde karşılığı yok. (Figma da da gerek olmayabilir)
+
+    $sizes: (
+        0: 0px,
+        1: 1px,
+        2: 2px,
+        4: 4px,
+        6: 6px,
+        8: 8px,
+        12: 12px
+        12: 24px, (Güncelleme)
+        ...
+    )
+
+
+
+    mobil ekran
+    --btn-padding-x: #{map.get($sizes,12)};
+    --btn-border-width: #{map.get($sizes,1)};
+    --btn-outline-width: #{map.get($sizes,2)};
+    --btn-font-size: #{map.get($sizes,12)}; (Güncelleme)
+
+    --btn-padding-x: 12px;
+    --btn-border-width: 1px;
+    --btn-outline-width: 2px;
+
+    her iki yöntem de teknik olarak aynı sonucu veriyor.
+
+
+
+# -- Size Yaklaşımı
+
+    #HATALI KULLANIM
+    name                        xs      md      lg
+    --btn-border-radius-12      8px     [12px]  12px
+    --btn-border-radius-20      18px    [20px]  22px
+
+
+    #ÖNERİLEN KULLANIM
+    name                        xs      md      lg
+    --btn-border-radius-0       0px     0px     0px
+    --btn-border-radius-1       2px     4px     6px
+    --btn-border-radius-2       4px     6px     8px
+    --btn-border-radius-3       6px     8px     10px
+    --btn-border-radius-4       8px     10px    12px
+    --btn-border-radius-5       12px    16px    20px
+
+
+
+    --btn-border-width : 1px
+    buton için border width hep 1px mi? farklı varyantları olacak mı?
+    ** Size'larda farklılaşmasından bahsetmiyorum.
+
+    Örnek 1
+
+    name                    xs      md      lg
+    --btn-border-radius     8px     12px    16px
+    --btn-border-radius     18px    20px    22px
+
+
+
+# -- Önemsiz
+
+    --hepsiburada-btn-padding-y
+    --btn-padding-y
+
+    Önceki modellerde olduğu gibi brand kullanımı olmayacak. 
+    Bu ne kadar sorun teşkil eder?
+
+    Prefix (--primus-btn) kullanımı sadece class name'ler için kullanılacak.
+
+
+
+# --
+
+radius kullanımı
+
+--#{$brand}-btn-top-left-radius: 1px;
+--#{$brand}-btn-top-right-radius: 1px;
+--#{$brand}-btn-bottom-left-radius: 1px;
+--#{$brand}-btn-bottom-right-radius: 1px;
+
+
+
+ÖNERİ !!!
+    ** Sorunlar önümüze düştükçe çözümler üreterek ilerleyelim.
+    ** Sürekli ön görüler ile ilerlemek problem olabiliyor.
+
+
+
+*/

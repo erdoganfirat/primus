@@ -1,0 +1,22 @@
+.TabsNav { display: flex; flex-direction: row;margin-top: 16px !important;}
+.TabsNav .TabItem{ 
+  border-radius: 8px 8px 0px 0px;
+  padding: 12px 8px 8px;
+  background: #fafafa;
+  margin-right: 4px;
+  cursor: pointer;
+  color: #454545;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;  
+}
+.TabsNav .TabItem.active{
+  color: #FF6000;
+  background: #fff;
+} 
+.TabsNav .TabItem:last-child{ 
+  margin: 0;
+}
+.TabContent{ padding: 24px;background: #fff;}
+

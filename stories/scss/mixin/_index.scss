@@ -1,0 +1,10 @@
+@mixin neutral-colors{
+  @for $i from 0 to 100 {
+      @if $i == 7 {
+          --whiteblack-#{$i}: #{map.get($colors, "neutral", $i)};
+      }
+      @if $i % 5 == 0 {
+          --whiteblack-#{$i}: #{map.get($colors, "neutral", $i)};
+      }
+  }
+}

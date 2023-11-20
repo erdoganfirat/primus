@@ -1,0 +1,143 @@
+:root{
+  /* Colors */
+  --white: #{map.get($colors, "neutral", "white")};
+  --black: #{map.get($colors, "neutral", "black")};
+  --overlay: #{map.get($colors, "neutral", "overlay")}; 
+  --transparent: transparent;
+
+
+  /* General */
+  --font-family: 'Inter', sans-serif;
+  --body-font-family: var(--font-family);
+  --body-font-size: 14px;
+  --body-color: #{map.get($colors, "neutral", 90)};
+  --body-bg: var(--white);
+
+
+  /* Border */
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #{map.get($colors, "neutral", 15)};
+  --border-radius: 0.375rem;
+  --border-radius-sm: 0.25rem;
+  --border-radius-lg: 0.5rem;
+
+
+  /* Outline */
+  --outline-width: 0px;
+  --outline-style: solid;
+  --outline-color: #{map.get($colors, "neutral", 15)};
+
+
+  /* Border */
+  @each $size, $val in $sizes {
+    --border-width-#{$size}: #{$val}px;
+  }
+
+  /* Width */
+  @each $size, $val in $sizes {
+    --width-#{$size}: #{$val}px;
+  }
+
+  /* Size */
+  @each $size, $val in $sizes {
+    --size-#{$size}: #{$val}px;
+  }  
+
+
+  /* Neatural Colors */
+
+  //Backgrounds
+  --neatural-bg-white: #{map.get($colors, "neutral", "white")};
+  @for $i from 0 to 100 {
+      @if $i == 7 {
+          --neatural-bg-#{$i}: #{map.get($colors, "neutral", $i)};
+      }
+      @if $i % 5 == 0 {
+          --neatural-bg-#{$i}: #{map.get($colors, "neutral", $i)};
+      }
+  }  
+  --neatural-bg-black: #{map.get($colors, "neutral", "black")};
+
+  //Colors
+  --neatural-color-white: #{map.get($colors, "neutral", "white")};
+  @for $i from 0 to 100 {
+      @if $i == 7 {
+          --neatural-color-#{$i}: #{map.get($colors, "neutral", $i)};
+      }
+      @if $i % 5 == 0 {
+          --neatural-color-#{$i}: #{map.get($colors, "neutral", $i)};
+      }
+  }  
+  --neatural-color-black: #{map.get($colors, "neutral", "black")};
+
+
+  /* Neatural Colors */
+
+}
+
+
+
+
+@each $brand in $brands {
+  [brand=#{$brand}] {
+    
+    --primary: #{map.get($colors, "brands", $brand, 50)};
+    --primary-hover: #{map.get($colors, "brands", $brand, 40)};
+    --primary-active: #{map.get($colors, "brands", $brand, 60)};
+    --primary-disabled: #{map.get($colors, "brands", $brand, 20)};
+    --color-focus: #{map.get($colors, "brands", $brand, 20)};
+    --valid: #{map.get($colors, "brands", $brand, 40)};
+    --invalid: #{map.get($colors, "brands", $brand, 40)};
+
+    --secondary: #{map.get($colors, "brands", $brand, 5)};
+    --secondary-hover: #{map.get($colors, "brands", $brand, 0)};
+    --secondary-active: #{map.get($colors, "brands", $brand, 10)};
+    --secondary-disabled: #{map.get($colors, "brands", $brand, 0)};
+
+
+    //--secondary-hover: var(--primary);
+    //--secondary-color-hover: var(--primary-hover);
+
+    // --tertiary: #{map.get($colors, "brands", $brand, 50)};
+    // --ghost: #{map.get($colors, "brands", $brand, 50)};
+    // --borderedGray: #{map.get($colors, "brands", $brand, 50)};
+    --success: #{map.get($colors, "brands", $brand, 50)};
+    --error: #{map.get($colors, "brands", $brand, 50)};
+    //cancel - danger // continue - approve - complete
+
+
+    --valid: #{map.get($colors, "brands", $brand, 50)};
+    --invalid: #{map.get($colors, "brands", $brand, 50)};
+
+
+
+    /*Backgrounds*/
+    @for $i from 0 to 100 {
+      @if $i == 5 {
+          --#{$brand}-bg-#{$i}: #{map.get($colors, "brands", $brand, $i)};
+      }
+      @if $i % 10 == 0 {
+          --#{$brand}-bg-#{$i}: #{map.get($colors, "brands", $brand, $i)};
+      }
+      @if $i == 95 {
+          --#{$brand}-bg-#{$i}: #{map.get($colors, "brands", $brand, $i)};
+      }
+    }
+
+    /*Colors*/
+    @for $i from 0 to 100 {
+      @if $i == 5 {
+          --#{$brand}-color-#{$i}: #{map.get($colors, "brands", $brand, $i)};
+      }
+      @if $i % 10 == 0 {
+          --#{$brand}-color-#{$i}: #{map.get($colors, "brands", $brand, $i)};
+      }
+      @if $i == 95 {
+          --#{$brand}-color-#{$i}: #{map.get($colors, "brands", $brand, $i)};
+      }
+    }
+
+
+  }
+}    
