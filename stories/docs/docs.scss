@@ -10,10 +10,11 @@
 
 
 #storybook-docs img{display: block;}
+#storybook-docs .mb0{margin-bottom: 0px!important;}
+#storybook-docs .mb24{margin-bottom: 24px!important;}
 #storybook-docs .mb32{margin-bottom: 32px!important;}
 #storybook-docs .mb40{margin-bottom: 40px!important;}
 #storybook-docs .p40{padding: 40px!important;}
-#storybook-docs strong{font-weight: 700;}
 
 
 
@@ -35,7 +36,7 @@
     color: var(--text-color-headline, #1E1E1E);
 }
 #storybook-docs .semibold{font-weight: 600 !important;}
-#storybook-docs .bold{font-weight: 700 !important;}
+#storybook-docs .bold, #storybook-docs strong{font-weight: 700 !important;}
 #storybook-docs .medium{font-weight: 500 !important;}
 #storybook-docs .regular{font-weight: 400 !important;}
 
@@ -102,6 +103,9 @@
     font-size: 8px;
     line-height: 12px;
 }
+
+.bg-primary{background: var(--primary-default, #FF6000) !important;}
+.text-white{color:var(--text-color-inverse, #FFF) !important;}
 
 
 
@@ -283,6 +287,7 @@
     display: flex;
     position: relative;
     min-width: 176px;
+    max-width: 176px;
 }
 #storybook-docs .tocNav .container{
     padding-top: 40px;
@@ -314,7 +319,7 @@
     padding-left: 6px;
 }
 #storybook-docs .tocNav .toc-link + ol .toc-link{padding-left: 16px;}
-#storybook-docs .tocNav .toc-link + ol .toc-link + ol .toc-link{padding-left: 24px;}
+//#storybook-docs .tocNav .toc-link + ol .toc-link + ol .toc-link{padding-left: 24px;}
 #storybook-docs .tocNav .is-active-link { border-color: var(--primary-default, #FF6000);}
 
 
@@ -412,9 +417,8 @@
 }
 #storybook-docs .row.row-cols-2 .col p{margin:0;}
 
-#storybook-docs ul.lejant {list-style: none;counter-reset: li-counter;padding: 0;}
-#storybook-docs ul.lejant>li:before {
-    content: counter(li-counter);
+#storybook-docs ul.lejant {list-style: none;padding: 0;}
+#storybook-docs ul.lejant>li>.number {
     border-radius: 99px;
     background: var(--primary-default, #FF6000);
     display: flex;
@@ -430,7 +434,6 @@
     line-height: 18px;
 }
 #storybook-docs ul.lejant>li {
-    counter-increment: li-counter;
     display: flex;
     align-items: flex-start;
     gap: 8px;
@@ -439,7 +442,6 @@
 }
 #storybook-docs ul.lejant>li:last-child{margin-bottom: 0;}
 #storybook-docs ul.lejant>li p{margin: 0;}
-#storybook-docs ul.lejant>li strong{font-weight: 600;}
 
 #storybook-docs .card .cardBody{margin-top: 16px;}
 #storybook-docs .card .cardBody p{
@@ -468,6 +470,8 @@
     line-height: 20px;
     font-size: 14px;
 }
+#storybook-docs table.docsTable.iconography th {padding: 12px;}
+
 #storybook-docs table.docsTable th:first-child{padding-left: 12px;}
 #storybook-docs table.docsTable th:last-child{padding-right: 12px;}
 
@@ -499,6 +503,34 @@
 #storybook-docs .sbdocs-content table.docsTable td .h4,
 #storybook-docs .sbdocs-content table.docsTable td .h5{margin: 0;}
 
+
+#storybook-docs .strokeTable{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#storybook-docs table.docsTable.stroke{
+    margin: 0;
+    display: table-caption;
+}
+#storybook-docs table.docsTable.stroke tr td:first-child {
+    background: var(--elevation-1, #FAFAFA) !important;
+    padding: 12px 6px;
+    color: var(--text-color-headline, #1E1E1E);
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: left;
+    width: 86px;
+    padding: 12px;
+}
+#storybook-docs table.docsTable.stroke tr td:nth-child(2) {
+    padding-left: 32px;
+}
+#storybook-docs table.docsTable.stroke td {
+    padding: 12px;
+    width: 130px;
+}
 
 #storybook-docs .dodont{
     align-items: flex-start;
@@ -532,9 +564,15 @@
     gap: 4px;
     align-items: center;
 }
-#storybook-docs ul.colormap{margin-bottom: 12px;}
 #storybook-docs ul.colormap li:after {content: "=";}
 #storybook-docs ul.colormap li:last-child:after {display: none;}
+#storybook-docs ul.colormap li.icon:after{display: none;}
+#storybook-docs ul.colormap li.icon{margin-right: 12px;font-size: 24px;}
+#storybook-docs ul.colormap li.icon i{
+    font-size: 24px;
+    line-height: 24px; 
+    padding: 4px;
+}
 #storybook-docs ul.colormap li{
     font-size: 12px;
     font-weight: 500;
@@ -616,6 +654,34 @@ color: var(--text-color-headline, #1E1E1E);
 #storybook-docs .artwork.typecolor .type.neutral-7 p {
     color: var(--text-color-placeholder, #EDEDED);
 }
+#storybook-docs .artwork.typecolor .type p{margin-bottom: 0;margin-top: 12px;}
+
+
+
+
+#storybook-docs .artwork.typecolor.icon .type{padding:12px 24px;}
+#storybook-docs .artwork.typecolor.icon .type.neutral-white ul.colormap li span.color:before {background: var(--color-neutral-white, #FFFFFF);}
+#storybook-docs .artwork.typecolor.icon .type.neutral-white ul.colormap li.icon i{color:var(--text-color-inverse, #FFF);}
+
+#storybook-docs .artwork.typecolor.icon .type.neutral-50 ul.colormap li span.color:before {background: var(--color-neutral-50, #757575);}
+#storybook-docs .artwork.typecolor.icon .type.neutral-50 ul.colormap li.icon i{color:var(--color-neutral-50, #757575);}
+
+#storybook-docs .artwork.typecolor.icon .type.primary-default ul.colormap li span.color:before {background: var(--primary-default, #FF6000);}
+#storybook-docs .artwork.typecolor.icon .type.primary-default ul.colormap li.icon i{color:var(--primary-default, #FF6000);}
+
+#storybook-docs .artwork.typecolor.icon .type.succes-fg-default ul.colormap li span.color:before {background: var(--success-fg-default, #008450);}
+#storybook-docs .artwork.typecolor.icon .type.succes-fg-default ul.colormap li.icon i{color:var(--success-fg-default, #008450);}
+
+#storybook-docs .artwork.typecolor.icon .type.information-fg-default ul.colormap li span.color:before {background: var(--information-fg-default, #0583D2);}
+#storybook-docs .artwork.typecolor.icon .type.information-fg-default ul.colormap li.icon i{color:var(--information-fg-default, #0583D2);}
+
+#storybook-docs .artwork.typecolor.icon .type.error-fg-default ul.colormap li span.color:before {background: var(--error-fg-default, #F00);}
+#storybook-docs .artwork.typecolor.icon .type.error-fg-default ul.colormap li.icon i{color:var(--error-fg-default, #F00);}
+
+#storybook-docs .artwork.typecolor.icon .type.warning-fg-default ul.colormap li span.color:before {background: var(--warning-fg-default, #FFC400);}
+#storybook-docs .artwork.typecolor.icon .type.warning-fg-default ul.colormap li.icon i{color:var(--warning-fg-default, #FFC400);}
+
+
 
 /* 
 #storybook-docs table tr th:nth-child(1){max-width: 371px;}

@@ -243,11 +243,26 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     ## Anatomy
                     <img src={anatomy} srcset={anatomy + ' 1x,' + anatomy2x + ' 2x'} alt='Anatomy'/>
                     <ul className='lejant'>
-                        <li><p><strong>Baseline:</strong> Line where characters rest, ensuring alignment in a text.</p></li>
-                        <li><p><strong>Cap height:</strong> Height of uppercase letters.</p></li>
-                        <li><p><strong>X-height:</strong> Height of lowercase letters.</p></li>
-                        <li><p><strong>Letter-spacing:</strong> Space between characters.</p></li>
-                        <li><p><strong>Line height (Leading):</strong> Vertical distance between two lines of type, measured from the baseline of one line of type to the baseline of the next.</p></li>
+                        <li>
+                            <span class="number">1</span>
+                            <p><strong className="semibold">Baseline:</strong> Line where characters rest, ensuring alignment in a text.</p>
+                        </li>
+                        <li>
+                            <span class="number">2</span>
+                            <p><strong className="semibold">Cap height:</strong> Height of uppercase letters.</p>
+                        </li>
+                        <li>
+                            <span class="number">3</span>
+                            <p><strong className="semibold">X-height:</strong> Height of lowercase letters.</p>
+                        </li>
+                        <li>
+                            <span class="number">4</span>
+                            <p><strong className="semibold">Letter-spacing:</strong> Space between characters.</p>
+                        </li>
+                        <li>
+                            <span class="number">5</span>
+                            <p><strong className="semibold">Line height (Leading):</strong> Vertical distance between two lines of type, measured from the baseline of one line of type to the baseline of the next.</p>
+                        </li>
                     </ul>
                 </section>
 
@@ -994,7 +1009,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                                 <li><span>neutral-white</span></li>
                                 <li><span className='color'>#FFFFFF</span></li>
                             </ul>
-                            <p className='h1 bold markPrimary'>The quick brown fox jumps over the lazy dog</p>
+                            <p className='h1 bold bg-primary text-white'>The quick brown fox jumps over the lazy dog</p>
                         </div>
                         <div className="type neutral-90">
                             <ul className="colormap">
