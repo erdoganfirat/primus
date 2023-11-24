@@ -15,6 +15,7 @@ const config = {
     name: "@storybook/react-vite",
     options: {},
   },
+  staticDirs: ['../stories/assets/img/'],
   docs: {
     autodocs: "tag",
     docsMode: true,
