@@ -5,120 +5,6 @@ import { Meta } from "@storybook/blocks";
 <Meta title="Design System/Style/Typography" />
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import accessibility from '../../assets/img/typography/accessibility.png';
-import accessibility2x from '../../assets/img/typography/accessibility@2x.png';
-import readability from '../../assets/img/typography/readability.png';
-import readability2x from '../../assets/img/typography/readability@2x.png';
-
-import hierarchy from '../../assets/img/typography/hierarchy.png';
-import hierarchy2x from '../../assets/img/typography/hierarchy@2x.png';
-import device from '../../assets/img/typography/device.png';
-import device2x from '../../assets/img/typography/device@2x.png';
-import speed from '../../assets/img/typography/speed.png';
-import speed2x from '../../assets/img/typography/speed@2x.png';
-import design from '../../assets/img/typography/design.png';
-import design2x from '../../assets/img/typography/design@2x.png';
-import anatomy from '../../assets/img/typography/anatomy.png';
-import anatomy2x from '../../assets/img/typography/anatomy@2x.png';
-
-import weight400 from '../../assets/img/typography/weight400.png';
-import weight4002x from '../../assets/img/typography/weight400@2x.png';
-import weight500 from '../../assets/img/typography/weight500.png';
-import weight5002x from '../../assets/img/typography/weight500@2x.png';
-import weight600 from '../../assets/img/typography/weight600.png';
-import weight6002x from '../../assets/img/typography/weight600@2x.png';
-import weight700 from '../../assets/img/typography/weight700.png';
-import weight7002x from '../../assets/img/typography/weight700@2x.png';
-import italic400 from '../../assets/img/typography/italic400.png';
-import italic4002x from '../../assets/img/typography/italic400@2x.png';
-import italic500 from '../../assets/img/typography/italic500.png';
-import italic5002x from '../../assets/img/typography/italic500@2x.png';
-import italic600 from '../../assets/img/typography/italic600.png';
-import italic6002x from '../../assets/img/typography/italic600@2x.png';
-import italic700 from '../../assets/img/typography/italic700.png';
-import italic7002x from '../../assets/img/typography/italic700@2x.png';
-
-import position1 from '../../assets/img/typography/position1.png';
-import position12x from '../../assets/img/typography/position1@2x.png';
-import position2 from '../../assets/img/typography/position2.png';
-import position22x from '../../assets/img/typography/position2@2x.png';
-import position3 from '../../assets/img/typography/position3.png';
-import position32x from '../../assets/img/typography/position3@2x.png';
-import decoration1 from '../../assets/img/typography/decoration1.png';
-import decoration12x from '../../assets/img/typography/decoration1@2x.png';
-import decoration2 from '../../assets/img/typography/decoration2.png';
-import decoration22x from '../../assets/img/typography/decoration2@2x.png';
-import decoration3 from '../../assets/img/typography/decoration3.png';
-import decoration32x from '../../assets/img/typography/decoration3@2x.png';
-
-import dolength from '../../assets/img/typography/dolength.png';
-import dolength2x from '../../assets/img/typography/dolength@2x.png';
-import dontlength from '../../assets/img/typography/dontlength.png';
-import dontlength2x from '../../assets/img/typography/dontlength@2x.png';
-
-import doleft from '../../assets/img/typography/doleft.png';
-import doleft2x from '../../assets/img/typography/doleft@2x.png';
-import docentred from '../../assets/img/typography/docentred.png';
-import docentred2x from '../../assets/img/typography/docentred@2x.png';
-import doright from '../../assets/img/typography/doright.png';
-import doright2x from '../../assets/img/typography/doright@2x.png';
-import dontalignment from '../../assets/img/typography/dontalignment.png';
-import dontalignment2x from '../../assets/img/typography/dontalignment@2x.png';
-
-import spacing1 from '../../assets/img/typography/spacing1.png';
-import spacing12x from '../../assets/img/typography/spacing1@2x.png';
-import spacing2 from '../../assets/img/typography/spacing2.png';
-import spacing22x from '../../assets/img/typography/spacing2@2x.png';
-import spacing3 from '../../assets/img/typography/spacing3.png';
-import spacing32x from '../../assets/img/typography/spacing3@2x.png';
-import spacing4 from '../../assets/img/typography/spacing4.png';
-import spacing42x from '../../assets/img/typography/spacing4@2x.png';
-import spacing5 from '../../assets/img/typography/spacing5.png';
-import spacing52x from '../../assets/img/typography/spacing5@2x.png';
-import spacing6 from '../../assets/img/typography/spacing6.png';
-import spacing62x from '../../assets/img/typography/spacing6@2x.png';
-
-import paragraph1 from '../../assets/img/typography/paragraph1.png';
-import paragraph12x from '../../assets/img/typography/paragraph1@2x.png';
-import paragraph2 from '../../assets/img/typography/paragraph2.png';
-import paragraph22x from '../../assets/img/typography/paragraph2@2x.png';
-import paragraph3 from '../../assets/img/typography/paragraph3.png';
-import paragraph32x from '../../assets/img/typography/paragraph3@2x.png';
-
-import dotextlink from '../../assets/img/typography/dotextlink.png';
-import dotextlink2x from '../../assets/img/typography/dotextlink@2x.png';
-import donttextlink from '../../assets/img/typography/donttextlink.png';
-import donttextlink2x from '../../assets/img/typography/donttextlink@2x.png';
-
-import do1 from '../../assets/img/typography/do1.png';
-import do12x from '../../assets/img/typography/do1@2x.png';
-import do2 from '../../assets/img/typography/do2.png';
-import do22x from '../../assets/img/typography/do2@2x.png';
-import do3 from '../../assets/img/typography/do3.png';
-import do32x from '../../assets/img/typography/do3@2x.png';
-import do4 from '../../assets/img/typography/do4.png';
-import do42x from '../../assets/img/typography/do4@2x.png';
-import do5 from '../../assets/img/typography/do5.png';
-import do52x from '../../assets/img/typography/do5@2x.png';
-import do6 from '../../assets/img/typography/do6.png';
-import do62x from '../../assets/img/typography/do6@2x.png';
-import do7 from '../../assets/img/typography/do7.png';
-import do72x from '../../assets/img/typography/do7@2x.png';
-import dont1 from '../../assets/img/typography/dont1.png';
-import dont12x from '../../assets/img/typography/dont1@2x.png';
-import dont2 from '../../assets/img/typography/dont2.png';
-import dont22x from '../../assets/img/typography/dont2@2x.png';
-import dont3 from '../../assets/img/typography/dont3.png';
-import dont32x from '../../assets/img/typography/dont3@2x.png';
-import dont4 from '../../assets/img/typography/dont4.png';
-import dont42x from '../../assets/img/typography/dont4@2x.png';
-import dont5 from '../../assets/img/typography/dont5.png';
-import dont52x from '../../assets/img/typography/dont5@2x.png';
-import dont6 from '../../assets/img/typography/dont6.png';
-import dont62x from '../../assets/img/typography/dont6@2x.png';
-import dont7 from '../../assets/img/typography/dont7.png';
-import dont72x from '../../assets/img/typography/do7@2x.png';
-
 
 
 <div className="headBox">
@@ -176,7 +62,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                             <p>Appropriate fonts that meet accessibility requirements help users with visual or reading difficulties access the content easily.</p>
                         </div>
                         <div className="col">
-                            <img src={accessibility} srcset={accessibility + ' 1x,' + accessibility2x + ' 2x'} alt='Accessibility'/>
+                            <img src="/stories/assets/img/typography/accessibility.png" srcset="/stories/assets/img/typography/accessibility.png 1x, /stories/assets/img/typography/accessibility@2x.png 2x" alt='Accessibility'/>
                         </div>
                     </div>
 
@@ -186,7 +72,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                             <p>Correct font selection makes texts legible and understandable. It positively affects the user experience by allowing users to read content comfortably.</p>
                         </div>
                         <div className="col">
-                            <img src={readability} srcset={readability + ' 1x,' + readability2x + ' 2x'} alt='Readability'/>
+                            <img src="/stories/assets/img/typography/readability.png" srcset="/stories/assets/img/typography/readability.png 1x, /stories/assets/img/typography/readability@2x.png 2x" alt='Readability'/>
                         </div>
                     </div>
 
@@ -196,7 +82,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                             <p>Different font weights, sizes, and styles can be used to emphasize hierarchy between contents. Highlighting important information and headings enables users to scan the content more easily.</p>
                         </div>
                         <div className="col">
-                            <img src={hierarchy} srcset={hierarchy + ' 1x,' + hierarchy2x + ' 2x'} alt='Hierarchy'/>
+                            <img src="/stories/assets/img/typography/hierarchy.png" srcset="/stories/assets/img/typography/hierarchy.png 1x, /stories/assets/img/typography/hierarchy@2x.png 2x" alt='Hierarchy'/>
                         </div>
                     </div>
 
@@ -206,7 +92,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                             <p>It is crucial for fonts to appear correctly on various screen sizes and devices. Being mindful of responsive design and font selection ensures users have a seamless experience across different platforms.</p>
                         </div>
                         <div className="col">
-                            <img src={device} srcset={device + ' 1x,' + device2x + ' 2x'} alt='Device compatibility'/>
+                            <img src="/stories/assets/img/typography/device.png" srcset="/stories/assets/img/typography/device.png 1x, /stories/assets/img/typography/device@2x.png 2x" alt='Device compatibility'/>
                         </div>
                     </div>
 
@@ -216,7 +102,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                             <p>Proper font usage can impact page loading times. Optimized fonts can enhance loading speeds, thereby improving the user experience.</p>
                         </div>
                         <div className="col">
-                            <img src={speed} srcset={speed + ' 1x,' + speed2x + ' 2x'} alt='Speed'/>
+                            <img src="/stories/assets/img/typography/speed.png" srcset="/stories/assets/img/typography/speed.png 1x, /stories/assets/img/typography/speed@2x.png 2x" alt='Speed'/>
                         </div>
                     </div>
 
@@ -226,7 +112,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                             <p>To create a good design using typography, we should use it effectively, make texts readable by selecting appropriate fonts, and establish hierarchy. Proper typographic choices enhance the user experience and ensure the content is conveyed impressively and effectively.</p>
                         </div>
                         <div className="col">
-                            <img src={design} srcset={design + ' 1x,' + design2x + ' 2x'} alt='Design'/>
+                            <img src="/stories/assets/img/typography/design.png" srcset="/stories/assets/img/typography/design.png 1x, /stories/assets/img/typography/design@2x.png 2x" alt='Design'/>
                         </div>
                     </div>
                 </section>
@@ -241,26 +127,26 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
 
                 <section>
                     ## Anatomy
-                    <img src={anatomy} srcset={anatomy + ' 1x,' + anatomy2x + ' 2x'} alt='Anatomy'/>
+                    <img src="/stories/assets/img/typography/anatomy.png" srcset="/stories/assets/img/typography/anatomy.png 1x, /stories/assets/img/typography/anatomy@2x.png 2x" alt='Anatomy'/>
                     <ul className='lejant'>
                         <li>
-                            <span class="number">1</span>
+                            <span className="number">1</span>
                             <p><strong className="semibold">Baseline:</strong> Line where characters rest, ensuring alignment in a text.</p>
                         </li>
                         <li>
-                            <span class="number">2</span>
+                            <span className="number">2</span>
                             <p><strong className="semibold">Cap height:</strong> Height of uppercase letters.</p>
                         </li>
                         <li>
-                            <span class="number">3</span>
+                            <span className="number">3</span>
                             <p><strong className="semibold">X-height:</strong> Height of lowercase letters.</p>
                         </li>
                         <li>
-                            <span class="number">4</span>
+                            <span className="number">4</span>
                             <p><strong className="semibold">Letter-spacing:</strong> Space between characters.</p>
                         </li>
                         <li>
-                            <span class="number">5</span>
+                            <span className="number">5</span>
                             <p><strong className="semibold">Line height (Leading):</strong> Vertical distance between two lines of type, measured from the baseline of one line of type to the baseline of the next.</p>
                         </li>
                     </ul>
@@ -282,22 +168,22 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row flex-wrap mb40">
                         <div className="col">
                             <div className="card">
-                                <img src={weight400} srcset={weight400 + ' 1x,' + weight4002x + ' 2x'} alt='Regular 400'/>
+                                <img src="/stories/assets/img/typography/weight400.png" srcset="/stories/assets/img/typography/weight400.png 1x, /stories/assets/img/typography/weight400@2x.png 2x" alt='Regular 400'/>
                             </div>
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={weight500} srcset={weight500 + ' 1x,' + weight5002x + ' 2x'} alt='Medium 500'/>
+                                <img src="/stories/assets/img/typography/weight500.png" srcset="/stories/assets/img/typography/weight500.png 1x, /stories/assets/img/typography/weight500@2x.png 2x" alt='Medium 500'/>
                             </div>
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={weight600} srcset={weight600 + ' 1x,' + weight6002x + ' 2x'} alt='SemiBold 600'/>
+                                <img src="/stories/assets/img/typography/weight600.png" srcset="/stories/assets/img/typography/weight600.png 1x, /stories/assets/img/typography/weight600@2x.png 2x" alt='SemiBold 600'/>
                             </div>
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={weight700} srcset={weight700 + ' 1x,' + weight7002x + ' 2x'} alt='Bold 700'/>
+                                <img src="/stories/assets/img/typography/weight700.png" srcset="/stories/assets/img/typography/weight700.png 1x, /stories/assets/img/typography/weight700@2x.png 2x" alt='Bold 700'/>
                             </div>
                         </div>
                     </div>
@@ -310,22 +196,22 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row flex-wrap mb40">
                         <div className="col">
                             <div className="card">
-                                <img src={italic400} srcset={italic400 + ' 1x,' + italic4002x + ' 2x'} alt='Regular 400'/>
+                                <img src="/stories/assets/img/typography/italic400.png" srcset="/stories/assets/img/typography/italic400.png 1x, /stories/assets/img/typography/italic400@2x.png 2x" alt='Regular 400'/>
                             </div>
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={italic500} srcset={italic500 + ' 1x,' + italic5002x + ' 2x'} alt='Medium 500'/>
+                                <img src="/stories/assets/img/typography/italic500.png" srcset="/stories/assets/img/typography/italic500.png 1x, /stories/assets/img/typography/italic500@2x.png 2x" alt='Medium 500'/>
                             </div>
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={italic600} srcset={italic600 + ' 1x,' + italic6002x + ' 2x'} alt='SemiBold 600'/>
+                                <img src="/stories/assets/img/typography/italic600.png" srcset="/stories/assets/img/typography/italic600.png 1x, /stories/assets/img/typography/italic600@2x.png 2x" alt='SemiBold 600'/>
                             </div>
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={italic700} srcset={italic700 + ' 1x,' + italic7002x + ' 2x'} alt='Bold 700'/>
+                                <img src="/stories/assets/img/typography/italic700.png" srcset="/stories/assets/img/typography/italic700.png 1x, /stories/assets/img/typography/italic700@2x.png 2x" alt='Bold 700'/>
                             </div>
                         </div>
                     </div>
@@ -338,7 +224,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-3-custom flex-wrap mb40 align-items-start">
                         <div className="col">
                             <div className="card">
-                                <img src={position1} srcset={position1 + ' 1x,' + position12x + ' 2x'} alt='Normal (Baseline)'/>
+                                <img src="/stories/assets/img/typography/position1.png" srcset="/stories/assets/img/typography/position1.png 1x, /stories/assets/img/typography/position1@2x.png 2x" alt='Normal (Baseline)'/>
                                 <div className="cardBody">
                                     <p><strong>Normal (Baseline):</strong> This is the standard alignment, where characters rest on the imaginary baseline, providing a consistent and easily readable appearance for regular text.</p>
                                 </div>
@@ -346,7 +232,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={position2} srcset={position2 + ' 1x,' + position22x + ' 2x'} alt='Superscript'/>
+                                <img src="/stories/assets/img/typography/position2.png" srcset="/stories/assets/img/typography/position2.png 1x, /stories/assets/img/typography/position2@2x.png 2x" alt='Superscript'/>
                                 <div className="cardBody">
                                     <p><strong>Superscript:</strong> Characters or symbols are positioned above the baseline in a reduced size, typically used for footnotes, mathematical exponents, or special annotations.</p>
                                 </div>
@@ -354,7 +240,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={position3} srcset={position3 + ' 1x,' + position32x + ' 2x'} alt='Subscript'/>
+                                <img src="/stories/assets/img/typography/position3.png" srcset="/stories/assets/img/typography/position3.png 1x, /stories/assets/img/typography/position3@2x.png 2x" alt='Subscript'/>
                                 <div className="cardBody">
                                     <p><strong>Subscript:</strong> Characters or symbols are positioned below the baseline, used for chemical formulas, mathematical subscripts, and other specific notations.</p>
                                 </div>
@@ -370,7 +256,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-3-custom flex-wrap align-items-start">
                         <div className="col">
                             <div className="card">
-                                <img src={decoration1} srcset={decoration1 + ' 1x,' + decoration12x + ' 2x'} alt='Regular Text'/>
+                                <img src="/stories/assets/img/typography/decoration1.png" srcset="/stories/assets/img/typography/decoration1.png 1x, /stories/assets/img/typography/decoration1@2x.png 2x" alt='Regular Text'/>
                                 <div className="cardBody">
                                     <p><strong>Regular Text:</strong> Also known as plain text or normal text, is the default style of text without any additional formatting or decoration. It appears as simple and does not have lines like underline or strikethrough.</p>
                                 </div>
@@ -378,7 +264,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={decoration2} srcset={decoration2 + ' 1x,' + decoration22x + ' 2x'} alt='Underline'/>
+                                <img src="/stories/assets/img/typography/decoration2.png" srcset="/stories/assets/img/typography/decoration2.png 1x, /stories/assets/img/typography/decoration2@2x.png 2x" alt='Underline'/>
                                 <div className="cardBody">
                                     <p><strong>Underline:</strong> Underlining involves drawing a horizontal line below the text. It is often used to emphasize certain words or phrases.</p>
                                 </div>
@@ -386,7 +272,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={decoration3} srcset={decoration3 + ' 1x,' + decoration32x + ' 2x'} alt='Strikethrough'/>
+                                <img src="/stories/assets/img/typography/decoration3.png" srcset="/stories/assets/img/typography/decoration3.png 1x, /stories/assets/img/typography/decoration3@2x.png 2x" alt='Strikethrough'/>
                                 <div className="cardBody">
                                     <p><strong>Strikethrough:</strong> It involves drawing a horizontal line through the middle of the text. It is typically used to indicate that the content has been deleted, canceled, or is no longer valid.</p>
                                 </div>
@@ -839,7 +725,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={dolength} srcset={dolength + ' 1x,' + dolength2x + ' 2x'} alt='Do line length'/>
+                                <img src="/stories/assets/img/typography/dolength.png" srcset="/stories/assets/img/typography/dolength.png 1x, /stories/assets/img/typography/dolength@2x.png 2x" alt='Do line length'/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>When setting left-aligned typography, it's crucial to balance the ragged edge of the text for improved legibility and text appearance, while for right-to-left languages, right-align the text.</p>
@@ -848,7 +734,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dontlength} srcset={dontlength + ' 1x,' + dontlength2x + ' 2x'} alt="Don't line length"/>
+                                <img src="/stories/assets/img/typography/dontlength.png" srcset="/stories/assets/img/typography/dontlength.png 1x, /stories/assets/img/typography/dontlength@2x.png 2x" alt="Don't line length"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>When setting left-aligned typography, it's crucial to balance the ragged edge of the text for improved legibility and text appearance, while for right-to-left languages, right-align the text.</p>
@@ -866,7 +752,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={doleft} srcset={doleft + ' 1x,' + doleft2x + ' 2x'} alt='Do left aligned'/>
+                                <img src="/stories/assets/img/typography/doleft.png" srcset="/stories/assets/img/typography/doleft.png 1x, /stories/assets/img/typography/doleft@2x.png 2x" alt='Do left aligned'/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>If a left-aligned structure is to be created, both the text and the title should be left-aligned.</p>
@@ -875,7 +761,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={docentred} srcset={docentred + ' 1x,' + docentred2x + ' 2x'} alt="Do centred"/>
+                                <img src="/stories/assets/img/typography/docentred.png" srcset="/stories/assets/img/typography/docentred.png 1x, /stories/assets/img/typography/docentred@2x.png 2x" alt="Do centred"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>If a center-aligned structure is to be created, both the text and the title should be centered.</p>
@@ -886,7 +772,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={doright} srcset={doright + ' 1x,' + doright2x + ' 2x'} alt="Do right aligned"/>
+                                <img src="/stories/assets/img/typography/doright.png" srcset="/stories/assets/img/typography/doright.png 1x, /stories/assets/img/typography/doright@2x.png 2x" alt="Do right aligned"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>If a right-aligned structure is to be created, both the text and the title should be right-aligned.</p>
@@ -895,7 +781,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dontalignment} srcset={dontalignment + ' 1x,' + dontalignment2x + ' 2x'} alt="Don't justify"/>
+                                <img src="/stories/assets/img/typography/dontalignment.png" srcset="/stories/assets/img/typography/dontalignment.png 1x, /stories/assets/img/typography/dontalignment@2x.png 2x" alt="Don't justify"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don’t justify text and title.</p>
@@ -919,7 +805,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-3-custom flex-wrap align-items-start">
                         <div className="col">
                             <div className="card">
-                                <img src={spacing1} srcset={spacing1 + ' 1x,' + spacing12x + ' 2x'} alt='Header 1 (h1) and body text spacing'/>
+                                <img src="/stories/assets/img/typography/spacing1.png" srcset="/stories/assets/img/typography/spacing1.png 1x, /stories/assets/img/typography/spacing1@2x.png 2x" alt='Header 1 (h1) and body text spacing'/>
                                 <div className="cardBody">
                                     <p><strong>16px</strong> of padding between Header 1 <strong>(h1)</strong> and <strong>text-lg</strong></p>
                                 </div>
@@ -927,7 +813,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={spacing2} srcset={spacing2 + ' 1x,' + spacing22x + ' 2x'} alt='Header 2 (h2) and body text spacing'/>
+                                <img src="/stories/assets/img/typography/spacing2.png" srcset="/stories/assets/img/typography/spacing2.png 1x, /stories/assets/img/typography/spacing2@2x.png 2x" alt='Header 2 (h2) and body text spacing'/>
                                 <div className="cardBody">
                                     <p><strong>16px</strong> of padding between Header 2 <strong>(h2)</strong> and <strong>text-lg</strong></p>
                                 </div>
@@ -935,7 +821,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={spacing3} srcset={spacing3 + ' 1x,' + spacing32x + ' 2x'} alt='Header 3 (h3) and body text spacing'/>
+                                <img src="/stories/assets/img/typography/spacing3.png" srcset="/stories/assets/img/typography/spacing3.png 1x, /stories/assets/img/typography/spacing3@2x.png 2x" alt='Header 3 (h3) and body text spacing'/>
                                 <div className="cardBody">
                                     <p><strong>12px</strong> of padding between Header 3 <strong>(h3)</strong> and <strong>text-md</strong></p>
                                 </div>
@@ -943,7 +829,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={spacing4} srcset={spacing4 + ' 1x,' + spacing42x + ' 2x'} alt='Header 4 (h4) and body text spacing'/>
+                                <img src="/stories/assets/img/typography/spacing4.png" srcset="/stories/assets/img/typography/spacing4.png 1x, /stories/assets/img/typography/spacing4@2x.png 2x" alt='Header 4 (h4) and body text spacing'/>
                                 <div className="cardBody">
                                     <p><strong>12px</strong> of padding between Header 4 <strong>(h4)</strong> and <strong>text-md</strong></p>
                                 </div>
@@ -951,7 +837,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={spacing5} srcset={spacing5 + ' 1x,' + spacing52x + ' 2x'} alt='Header 5 (h5) and body text spacing'/>
+                                <img src="/stories/assets/img/typography/spacing5.png" srcset="/stories/assets/img/typography/spacing5.png 1x, /stories/assets/img/typography/spacing5@2x.png 2x" alt='Header 5 (h5) and body text spacing'/>
                                 <div className="cardBody">
                                     <p><strong>8px</strong> of padding between Header 5 <strong>(h5)</strong> and <strong>text-sm</strong></p>
                                 </div>
@@ -959,7 +845,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={spacing6} srcset={spacing6 + ' 1x,' + spacing62x + ' 2x'} alt='Header 6 (h6) and body text spacing'/>
+                                <img src="/stories/assets/img/typography/spacing6.png" srcset="/stories/assets/img/typography/spacing6.png 1x, /stories/assets/img/typography/spacing6@2x.png 2x" alt='Header 6 (h6) and body text spacing'/>
                                 <div className="cardBody">
                                     <p><strong>8px</strong> of padding between Header 6 <strong>(h6)</strong> and <strong>text-sm</strong></p>
                                 </div>
@@ -974,7 +860,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-3-custom flex-wrap align-items-start">
                         <div className="col">
                             <div className="card">
-                                <img src={paragraph1} srcset={paragraph1 + ' 1x,' + paragraph12x + ' 2x'} alt='Paragraph spacing text-lg'/>
+                                <img src="/stories/assets/img/typography/paragraph1.png" srcset="/stories/assets/img/typography/paragraph1.png 1x, /stories/assets/img/typography/paragraph1@2x.png 2x" alt='Paragraph spacing text-lg'/>
                                 <div className="cardBody">
                                     <p>Paragraph spacing for <strong>text-lg</strong> is <strong>24 px</strong></p>
                                 </div>
@@ -982,7 +868,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={paragraph2} srcset={paragraph2 + ' 1x,' + paragraph22x + ' 2x'} alt='Paragraph spacing text-md'/>
+                                <img src="/stories/assets/img/typography/paragraph2.png" srcset="/stories/assets/img/typography/paragraph2.png 1x, /stories/assets/img/typography/paragraph2@2x.png 2x" alt='Paragraph spacing text-md'/>
                                 <div className="cardBody">
                                     <p>Paragraph spacing for <strong>text-md</strong> is <strong>20 px</strong></p>
                                 </div>
@@ -990,7 +876,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={paragraph3} srcset={paragraph3 + ' 1x,' + paragraph32x + ' 2x'} alt='Paragraph spacing text-sm'/>
+                                <img src="/stories/assets/img/typography/paragraph3.png" srcset="/stories/assets/img/typography/paragraph3.png 1x, /stories/assets/img/typography/paragraph3@2x.png 2x" alt='Paragraph spacing text-sm'/>
                                 <div className="cardBody">
                                     <p>Paragraph spacing for <strong>text-sm</strong> is <strong>16 px</strong></p>
                                 </div>
@@ -1009,7 +895,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                                 <li><span>neutral-white</span></li>
                                 <li><span className='color'>#FFFFFF</span></li>
                             </ul>
-                            <p className='h1 bold bg-primary text-white'>The quick brown fox jumps over the lazy dog</p>
+                            <p className='h1 bold bg-primary text-white d-inline-block'>The quick brown fox jumps over the lazy dog</p>
                         </div>
                         <div className="type neutral-90">
                             <ul className="colormap">
@@ -1060,7 +946,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={dotextlink} srcset={dotextlink + ' 1x,' + dotextlink2x + ' 2x'} alt="Do text links"/>
+                                <img src="/stories/assets/img/typography/dotextlink.png" srcset="/stories/assets/img/typography/dotextlink.png 1x, /stories/assets/img/typography/dotextlink@2x.png 2x" alt="Do text links"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>The inline text link should match the text's font weight, be underlined, and use our primary color.</p>
@@ -1069,7 +955,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={donttextlink} srcset={donttextlink + ' 1x,' + donttextlink2x + ' 2x'} alt="Don't text links"/>
+                                <img src="/stories/assets/img/typography/donttextlink.png" srcset="/stories/assets/img/typography/donttextlink.png 1x, /stories/assets/img/typography/donttextlink@2x.png 2x" alt="Don't text links"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don't generate alternative versions for inline text links.</p>
@@ -1086,7 +972,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={do1} srcset={do1 + ' 1x,' + do12x + ' 2x'} alt="Do"/>
+                                <img src="/stories/assets/img/typography/do1.png" srcset="/stories/assets/img/typography/do1.png 1x, /stories/assets/img/typography/do1@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>Prioritize accessible typography by selecting typefaces and text sizes that ensure legibility for all users, especially those with visual impairments.</p>
@@ -1095,7 +981,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dont1} srcset={dont1 + ' 1x,' + dont12x + ' 2x'} alt="Don't"/>
+                                <img src="/stories/assets/img/typography/dont1.png" srcset="/stories/assets/img/typography/dont1.png 1x, /stories/assets/img/typography/dont1@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don’t overlook the importance of contrast between text and background colors.</p>
@@ -1106,7 +992,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={do2} srcset={do2 + ' 1x,' + do22x + ' 2x'} alt="Do"/>
+                                <img src="/stories/assets/img/typography/do2.png" srcset="/stories/assets/img/typography/do2.png 1x, /stories/assets/img/typography/do2@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>Opt for high-contrast text and background combinations to enhance readability, especially for users with visual impairments.</p>
@@ -1115,7 +1001,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dont2} srcset={dont2 + ' 1x,' + dont22x + ' 2x'} alt="Don't"/>
+                                <img src="/stories/assets/img/typography/dont2.png" srcset="/stories/assets/img/typography/dont2.png 1x, /stories/assets/img/typography/dont2@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don't use low-contrast combinations,</p>
@@ -1126,7 +1012,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={do3} srcset={do3 + ' 1x,' + do32x + ' 2x'} alt="Do"/>
+                                <img src="/stories/assets/img/typography/do3.png" srcset="/stories/assets/img/typography/do3.png 1x, /stories/assets/img/typography/do3@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>Use sentence-case capitalization.</p>
@@ -1135,7 +1021,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dont3} srcset={dont3 + ' 1x,' + dont32x + ' 2x'} alt="Don't"/>
+                                <img src="/stories/assets/img/typography/dont3.png" srcset="/stories/assets/img/typography/dont3.png 1x, /stories/assets/img/typography/dont3@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don’t use title case captalization or all caps.</p>
@@ -1146,7 +1032,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={do4} srcset={do4 + ' 1x,' + do42x + ' 2x'} alt="Do"/>
+                                <img src="/stories/assets/img/typography/do4.png" srcset="/stories/assets/img/typography/do4.png 1x, /stories/assets/img/typography/do4@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>Maintain consistent text alignment throughout your design, as it aids readability and comprehension for all users.</p>
@@ -1155,7 +1041,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dont4} srcset={dont4 + ' 1x,' + dont42x + ' 2x'} alt="Don't"/>
+                                <img src="/stories/assets/img/typography/dont4.png" srcset="/stories/assets/img/typography/dont4.png 1x, /stories/assets/img/typography/dont4@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don't mix different text alignments in the same content.</p>
@@ -1166,7 +1052,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={do5} srcset={do5 + ' 1x,' + do52x + ' 2x'} alt="Do"/>
+                                <img src="/stories/assets/img/typography/do5.png" srcset="/stories/assets/img/typography/do5.png 1x, /stories/assets/img/typography/do5@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>Ensure appropriate spacing between header and body text to improve content structure and readability.</p>
@@ -1175,7 +1061,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dont5} srcset={dont5 + ' 1x,' + dont52x + ' 2x'} alt="Don't"/>
+                                <img src="/stories/assets/img/typography/dont5.png" srcset="/stories/assets/img/typography/dont5.png 1x, /stories/assets/img/typography/dont5@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don't let inconsistent spacing between headers and body text go unaddressed.</p>
@@ -1186,7 +1072,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={do6} srcset={do6 + ' 1x,' + do62x + ' 2x'} alt="Do"/>
+                                <img src="/stories/assets/img/typography/do6.png" srcset="/stories/assets/img/typography/do6.png 1x, /stories/assets/img/typography/do6@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>Maintain the paragraph spacing consistent with the line height of the font you've chosen, as this enhances readability and visual harmony.</p>
@@ -1195,7 +1081,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dont6} srcset={dont6 + ' 1x,' + dont62x + ' 2x'} alt="Don't"/>
+                                <img src="/stories/assets/img/typography/dont6.png" srcset="/stories/assets/img/typography/dont6.png 1x, /stories/assets/img/typography/dont6@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don't ignore the guideline of aligning paragraph spacing with the font's line height</p>
@@ -1206,7 +1092,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                     <div className="row row-cols-2 dodont">
                         <div className="col">
                             <div className="card">
-                                <img src={do7} srcset={do7 + ' 1x,' + do72x + ' 2x'} alt="Do"/>
+                                <img src="/stories/assets/img/typography/do7.png" srcset="/stories/assets/img/typography/do7.png 1x, /stories/assets/img/typography/do7@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
                                     <p>Apply same style for all content</p>
@@ -1215,7 +1101,7 @@ import dont72x from '../../assets/img/typography/do7@2x.png';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src={dont7} srcset={dont7 + ' 1x,' + dont72x + ' 2x'} alt="Don't"/>
+                                <img src="/stories/assets/img/typography/dont7.png" srcset="/stories/assets/img/typography/dont7.png 1x, /stories/assets/img/typography/dont7@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
                                     <p>Don’t mix the different styles.</p>

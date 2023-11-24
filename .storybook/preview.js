@@ -1,4 +1,4 @@
-import "../stories/assets/icon/style.css";
+import "../stories/assets/icon/style.min.css";
 import "../stories/docs/docs.scss";
 import "../stories/scss/fonts/fonts.scss";
 

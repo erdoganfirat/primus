@@ -19,6 +19,7 @@
 
 
 #storybook-docs .d-flex { display: flex!important; }
+#storybook-docs .d-inline-block { display: inline-block!important; }
 #storybook-docs .flex-column { flex-direction: column!important; } 
 #storybook-docs .flex-wrap{flex-wrap: wrap!important;}
 #storybook-docs .justify-content-between{justify-content: space-between!important;}
@@ -398,6 +399,11 @@
 #storybook-docs .artwork.hierarchy .h2{margin-bottom: 16px;}
 #storybook-docs .artwork.hierarchy p:last-child{margin-top: 24px; color: var(--text-color-secondary, #454545);}
 
+#storybook-docs .artwork.circle {
+    gap: 48px;
+    font-size: 32px;
+    color: var(--primary-default, #FF6000);
+}
 
 
 #storybook-docs .row {
@@ -523,6 +529,7 @@
     text-align: left;
     width: 86px;
     padding: 12px;
+    border-radius: 4px;
 }
 #storybook-docs table.docsTable.stroke tr td:nth-child(2) {
     padding-left: 32px;
@@ -681,6 +688,86 @@ color: var(--text-color-headline, #1E1E1E);
 #storybook-docs .artwork.typecolor.icon .type.warning-fg-default ul.colormap li span.color:before {background: var(--warning-fg-default, #FFC400);}
 #storybook-docs .artwork.typecolor.icon .type.warning-fg-default ul.colormap li.icon i{color:var(--warning-fg-default, #FFC400);}
 
+
+#storybook-docs .modifiers {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#storybook-docs .modifiers .row>.col.head {
+    background: var(--elevation-color-1, #FAFAFA);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px;
+}
+#storybook-docs .modifiers>.row {gap: 0;margin: 0;align-items: flex-start;}
+#storybook-docs .modifiers .row>.col>.row>.col{padding: 12px;}
+
+
+#storybook-docs .table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+#storybook-docs .table .row{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#storybook-docs .table .cell.header {
+    border-radius: 4px;
+    background: var(--elevation-color-1, #FAFAFA);
+    padding: 12px;
+    font-weight: 600;
+}
+#storybook-docs .table .cell {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 12px 0;
+}
+
+#storybook-docs .table.stroke{max-width: 766px;}
+#storybook-docs .table.stroke .cell.header {max-width: 86px; margin-right: 8px;}
+#storybook-docs .table.modifiers .cell.header {max-width: 220px; margin-right: 8px;}
+#storybook-docs .table.modifiers.method .cell.header {max-width: 130px; margin-right: 35px;}
+#storybook-docs .table.modifiers.textandnumber .cell.header {max-width: 62px; margin-right: 8px;}
+
+
+#storybook-docs .table.modifiers .iconbox{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 14px 0;    
+}
+#storybook-docs .table.modifiers.textandnumber .iconbox{padding: 10px 0;}
+#storybook-docs .table.modifiers .iconbox>.icon{max-width: 16px;flex: auto !important;}
+#storybook-docs .table.modifiers .iconbox>.icon>img{width: 16px;}
+
+#storybook-docs .table.modifiers.method .iconbox{padding: 6px 0;gap: 48px;}
+#storybook-docs .table.modifiers.method .iconbox>.icon{max-width: 32px;flex: auto !important;}
+#storybook-docs .table.modifiers.method .iconbox>.icon>i{font-size: 32px;color: var(--primary-default, #FF6000);}
+
+#storybook-docs ul.list {
+    list-style: decimal;
+    margin: 0;
+    padding-left: 24px;
+}
+#storybook-docs ul.list>li{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;    
+    margin: 0;
+}
+#storybook-docs ul.disc {list-style: disc;}
 
 
 /* 
