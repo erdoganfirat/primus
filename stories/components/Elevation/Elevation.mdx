@@ -1,0 +1,403 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Elevation.mdx */}
+
+<Meta title="Design System/Foundation/Elevation (z-index)" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Elevation (z-index)</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>In the Primus Design System, elevation plays a vital role by imitating real-world principles of light and darkness. This imitation is instrumental in defining a hierarchy and directing attention to crucial elements of our product.</p>
+                    <img className="mb32" src='elevation/elevationartwork.png' srcset={'elevation/elevationartwork.png 1x, elevation/elevationartwork@2x.png 2x'} alt="Elevation Artwork"/>
+                </section>
+
+                <section>
+                    ## Metaphor
+                    <p className="text-lg">When using elevation in design, it's advisable to keep in mind a metaphor that can be helpful for both light and dark modes. In this context, the "sun" metaphor can simplify the decision-making process. Just like an object appears brighter when it gets closer to the sun, you can apply this metaphor to both light and dark theme designs. As a result, design elements positioned higher should appear brighter.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hierarchy
+                            <p>Elevation rules help define a structured hierarchy of elements, ensuring that users can easily discern the relative importance of various on-screen elements.</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/hierarchy.png" srcset="elevation/hierarchy.png 1x, elevation/hierarchy@2x.png 2x" alt='Hierarchy'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Attention and Focus
+                            <p>Elevation is a powerful tool for directing user attention. Higher elevations naturally draw focus, guiding users to key content and actions.</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/attentionandfocus.png" srcset="elevation/attentionandfocus.png 1x, elevation/attentionandfocus@2x.png 2x" alt='Attention and Focus'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Accessibility
+                            <p>Elevation aids accessibility by providing visual separation between elements, benefiting users with diverse visual needs.</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/accessibility.png" srcset="elevation/accessibility.png 1x, elevation/accessibility@2x.png 2x" alt='Accessibility'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Realism and Skeuomorphism
+                            <p className="mb8">Elevation can be employed to add a touch of realism, replicating physical attributes in our digital interfaces when appropriate.By simulating real-world principles of light and shadow, elevation creates a sense of depth, enhancing the spatial relationships between different interface components.</p>
+                            <p className="text-xs"><strong style={{ color: 'var(--error-fg-default)' }}>Elevation can be employed to add a touch of realism, replicating physical attributes in our.</strong></p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/realism.png" srcset="elevation/realism.png 1x, elevation/realism@2x.png 2x" alt='Realism and Skeuomorphism'/>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                <section>
+                    ## Types of Elevation
+                    <p>Primus Design System has 7 types of buttons for each light and dark theme.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Elevation -2
+                            <p className="mb24">This level should be used for design elements that do not require interaction or are disabled.</p>
+                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/elevation-2.png" srcset="elevation/elevation-2.png 1x, elevation/elevation-2@2x.png 2x" alt='Elevation -2'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Elevation -1
+                            <p className="mb24">The color and inner shadow selection designed for this level is exclusively utilized for inputs.</p>
+                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/elevation-1.png" srcset="elevation/elevation-1.png 1x, elevation/elevation-1@2x.png 2x" alt='Elevation -1'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Elevation 0 (Background)
+                            <p className="mb24">The color and inner shadow selection designed for this level is exclusively utilized for inputs.</p>
+                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/elevation-0.png" srcset="elevation/elevation-0.png 1x, elevation/elevation-0@2x.png 2x" alt='Elevation 0 (Background)'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Elevation 1
+                            <p className="mb24" style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/elevation1.png" srcset="elevation/elevation1.png 1x, elevation/elevation1@2x.png 2x" alt='Elevation 1'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Elevation 2
+                            <p className="mb24" style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/elevation2.png" srcset="elevation/elevation2.png 1x, elevation/elevation2@2x.png 2x" alt='Elevation 2'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Elevation 3
+                            <p className="mb24" style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/elevation3.png" srcset="elevation/elevation3.png 1x, elevation/elevation3@2x.png 2x" alt='Elevation 3'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Overlay
+                            <p className="mb24">This level is mainly used with a special component featuring a semi-transparent background overlay. The elevation guides users to focus solely on one element.</p>
+                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                        </div>
+                        <div className="col">
+                            <img src="elevation/overlay.png" srcset="elevation/overlay.png 1x, elevation/overlay@2x.png 2x" alt='Overlay'/>
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+
+
+                <section>
+                    ## Hierarchy
+                    <p className="mb0">In design, using elevation levels effectively is key to guiding users. Here are two key principles:</p>
+                    <ul className="list disc mb32">
+                        <li>Focus with Elevation: Elevate elements to draw attention. Objects that appear closer naturally grab users' focus, making it useful for highlighting essential actions or elements.</li>
+                        <li>Avoid Overusing Elevation: Don't overcomplicate with elevation. Using it too much can confuse users. Stick to elevating what truly matters.</li>
+                    </ul>
+
+                    ### Hierarchy of elevation
+                    <img className="mb24" src="elevation/hierarchyelevation.png" srcset="elevation/hierarchyelevation.png 1x, elevation/hierarchyelevation@2x.png 2x" alt='Hierarchy of elevation'/>
+                    <img src="elevation/hierarchyelevation2.png" srcset="elevation/hierarchyelevation2.png 1x, elevation/hierarchyelevation2@2x.png 2x" alt='Hierarchy of elevation'/>
+                </section>
+
+
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="elevation/anatomy.png" srcset="elevation/anatomy.png 1x, elevation/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Surface</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Inner Shadow</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    ### Surface
+                    <p>Colored surface used as backdrop. Visual appearance differs based on elevation level.</p>
+
+                    ### Border
+                    <p>Border helps establish a clear visual hierarchy by separating elements from surrounding content, and they are generally used with border radius.</p>
+
+                    ### Inner Shadow
+                    <p>The inner shadow is a design effect that makes an element appear as though it has a shadow on its inside edges, creating the illusion of depth or a recessed area.</p>
+
+
+                </section>
+
+
+
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="elevation/do1.png" srcset="elevation/do1.png 1x elevation/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="elevation/dont1.png" srcset="elevation/dont1.png 1x elevation/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+
+                <section>
+                    ## Usage
+                    <p>In the Primus Design System, not every part needs elevation. Use elevation thoughtfully to improve the user experience. Overusing it can make things look cluttered and confusing. Most components can go with elevation 2 (background), but if something requires more definition, consider using color or elevation 3 as an alternative.</p>
+                </section>
+
+
+
+                <section>
+                    ## Tokenization
+                    <p>Tokenization for elevation involves defining key properties to ensure consistency and adaptability throughout the design system. These tokens encapsulate essential visual and interactive elements:</p>
+
+
+                    <table className='docsTable radius'>
+                        <tr>
+                            <th className='text-start'>Token name</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">elevation-color--2</span>
+                                    <span>=</span>
+                                    <span className="code">neutral-10</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#E5E5E5'}}></i> #E5E5E5</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">elevation-color--1</span>
+                                    <span>=</span>
+                                    <span className="code">neutral-white</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FFFFFF'}}></i> #FFFFFF</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">elevation-color-0</span>
+                                    <span>=</span>
+                                    <span className="code">neutral-5</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#F5F5F5'}}></i> #F5F5F5</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">elevation-color-1</span>
+                                    <span>=</span>
+                                    <span className="code">neutral-0</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FAFAFA'}}></i> #FAFAFA</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">elevation-color-2</span>
+                                    <span>=</span>
+                                    <span className="code">neutral-white</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FFFFFF'}}></i> #FFFFFF</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">elevation-color-3</span>
+                                    <span>=</span>
+                                    <span className="code">neutral-white</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FFFFFF'}}></i> #FFFFFF</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">elevation-border-color-3</span>
+                                    <span>=</span>
+                                    <span className="code">border-default</span>
+                                    <span>=</span>
+                                    <span className="code">neutral-7</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#EDEDED'}}></i> #EDEDED</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">elevation-color-overlay</span>
+                                    <span>=</span>
+                                    <span className="code">neutral-overlay</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000080'}}></i> #000000 %50</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </section>
+
+            </TabPanel>
+            <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

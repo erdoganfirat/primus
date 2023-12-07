@@ -1,0 +1,411 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Color.mdx */}
+
+<Meta title="Design System/Foundation/Color" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Color</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>In the Primus Design System, we use different colors to help users, create a unique look for our brand, highlight important stuff, and make sure everyone can easily access the content.</p>
+                    <img className="mb32" src='color/colorartwork.png' srcset={'color/colorartwork.png 1x, color/colorartwork@2x.png 2x'} alt="Color Artwork"/>
+                    {/* <div className="artwork color mb32">
+                        <div className="row">
+                            <div className="col colorBox">
+                                <div className="contrast">AAA 15.6</div>
+                                <div className="content">
+                                    <div className="name">0</div>
+                                    <div className="code">#FFF6F0</div>
+                                </div>
+                            </div>
+                            <div className="col colorBox">
+                                <div className="contrast">AAA 15.6</div>
+                                <div className="content">
+                                    <div className="name">0</div>
+                                    <div className="code">#FFF6F0</div>
+                                </div>
+                            </div>
+                            <div className="col colorBox">
+                                <div className="contrast">AAA 15.6</div>
+                                <div className="content">
+                                    <div className="name">0</div>
+                                    <div className="code">#FFF6F0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
+
+                </section>
+
+                <section>
+                    ## Principles
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Use Sparingly and Purposefully 
+                            <p>The Primus Design System employs functional coloring designed to support products intended for use on workstations. Color is used for communication rather than ornamentation. We employ color sparingly and deliberately to emphasize critical information, enabling extended use throughout the day while minimizing visual strain.</p>
+                        </div>
+                        <div className="col">
+                            <img src="color/principles1.png" srcset="color/principles1.png 1x, color/principles1@2x.png 2x" alt='Use Sparingly and Purposefully'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Implement Color Roles 
+                            <p>Within the Primus Design System, we provide a curated selection of colors, each intended for specific roles. For instance, we consistently apply colors to elements like text, status indicators, buttons, and navigation. This aids users in recognizing a component's function and its relationship within its context.</p>
+                        </div>
+                        <div className="col">
+                            <img src="color/principles2.png" srcset="color/principles2.png 1x, color/principles2@2x.png 2x" alt='Implement Color Roles'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Accessibility 
+                            <p>When applying the color system, we ensure compliance with color accessibility standards. We adhere to WCAG 2.1 level A, which mandates a text contrast ratio of 3.0. In Primus Design System, we never rely solely on color for communication. Our commitment to accessibility ensures our product is usable for individuals with visual impairments while enhancing legibility for all users.</p>
+                        </div>
+                        <div className="col">
+                            <img src="color/principles3.png" srcset="color/principles3.png 1x, color/principles3@2x.png 2x" alt='Accessibility'/>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    ## Terminology
+                    <p>In our design system, we have a few words we use to talk about colors. These words might be a bit different from what others use in design and development, but we picked them on purpose. These words are important for understanding how our color system works.</p>
+
+                    <div className="row row-cols-2 mb24">
+                        <div className="col">
+                            <div className="card">
+                                <img src="color/terminology1.png" srcset="color/terminology1.png 1x, color/terminology1@2x.png 2x" alt='Terminology'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="color/terminology2.png" srcset="color/terminology2.png 1x, color/terminology2@2x.png 2x" alt="Terminology"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    ### Tone
+                    <p>Tone encompasses both the concepts of lightness and darkness within a color. It addresses the overall value of a color, regardless of its specific hue. The term "tone" is used to describe a color's placement along the lightness-darkness spectrum.</p>
+
+                    ### Tint
+                    <p>Tint describes a color achieved by adding white to the original hue. This process increases the lightness of the color while preserving its underlying hue. For example, the color pink is a tint of red.</p>
+
+                    ### Shade
+                    <p>Shade refers to a color that results from mixing black with the original hue. This mixture results in a darker color while retaining the initial hue. An instance of this is the color maroon, which is a shade of red.</p>
+
+                    ### Hue 
+                    <p>Hue is the characteristic that distinguishes a specific color from others on the color spectrum. It is the attribute that allows us to identify colors such as red, blue, or green.</p>
+
+                    ### Saturation
+                    <p>Saturation, also referred to as chroma or intensity, denotes the degree of purity or vividness of a color. A high level of saturation indicates a color that is vibrant and rich, while low saturation results in a more subdued or muted appearance.</p>
+
+                    ### Lightness
+                    <p>Lightness, known as value or brightness as well, signifies the perceptual attribute of a color related to its luminance. It defines the relative amount of light that a color reflects, leading to variations from dark to light. Higher lightness values correspond to colors that are closer to white, whereas lower values indicate colors that are closer to black.</p>
+
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Color value 
+                            <p>Color value is the alphanumeric code that accurately defines a specific color within various color systems or models.</p>
+                        </div>
+                        <div className="col">
+                            <img src="color/colorvalue.png" srcset="color/colorvalue.png 1x, color/colorvalue@2x.png 2x" alt='Color value'/>
+                        </div>
+                    </div>
+
+
+
+                    ### Hex Code 
+                    <p>A hex code is a six-digit code that represents colors in digital design and programming. It's used to define precise colors for websites, graphics, and more.</p>
+
+                    ### Color Token
+                    <p>A specialized design token for color use. It refers to variable color values linked to themes. Color tokens are named by color and a number, like orange-50 for the #FF6000.</p>
+
+                    ### Color Index
+                    <p>Color index is a numeric label used to identify and reference a particular color within a collection or system of colors.</p>
+
+                    <img className="mb24" src="color/colorindex1.png" srcset="color/colorindex1.png 1x, color/colorindex1@2x.png 2x" alt='Color Index'/>
+
+                    ### Contrast Ratio
+                    <p>The measurable contrast in brightness between two related color values, determined by applying the WCAG relative luminance formula.</p>
+
+                    ### WCAG Contrast Minimum
+                    <p>The WCAG (Web Content Accessibility Guidelines) contrast minimum refers to a specific requirement set by the WCAG to ensure that there is a sufficient contrast between text and its background on digital content, such as websites or applications. This requirement aims to enhance accessibility for people with visual impairments, making it easier for them to read and understand the content.
+                    <br/>The WCAG defines specific contrast ratios between text and background colors that must be met to achieve sufficient readability. The contrast ratio is calculated by comparing the luminance values of the text and background colors. The minimum contrast ratio is typically expressed as a pair of numbers, such as 4.5:1 or 7:1, depending on the level of accessibility being targeted (such as AA or AAA).AA and AAA are levels of accessibility compliance. AA means basic accessibility, while AAA signifies a higher level of accessibility with more advanced features.</p>
+
+                    ### Device Color Mode 
+                    <p>A device color mode (also known as "mode") is a setting in the operating system that affects how the whole device looks. Most devices offer two options: device light mode and device dark mode. Primus Design System provides  for both the device light mode and the device dark mode with accessibility features like high-contrast modes</p>
+
+                    ### Color Theme
+                    <p>The Primus Design System encompasses three distinct color themes, each tailored to accommodate varying levels of visual acuity. These themes include the default, high contrast, and color blindness variants, each thoughtfully designed to cater to specific visual preferences and needs.</p>
+
+                    ### Brand Color Palette
+                    <p>The Primus Design System has ten unique brand color palettes. Even though Hepsiburada is the main brand, each subsidiary brand has its own identity. These brands use their primary colors for main interactions and share common colors for things like backgrounds, elevation, and text etc. The brand names in this system include Hepsiburada, Hepsipay, İş Ortağım, Hepsiburada Premium, Hepsiburada Market, Hepsiburada Çiçek, Hepsiburada Su, Hepsiglobal, Hepsiburada Seyahat, and Hepsiburada Oyun.</p>
+
+                </section>
+
+
+                <section>
+                    ## Color System
+                    <p>The Primus Design System utilizes color relationships and their characteristics to build a scalable color foundation in the design system.</p>
+
+                    ### Naturals - Text & BG & Border
+                    <p>In the Primus Design System, each color theme incorporates a range of 23 tints and shades of gray, which can harmonize effectively with any color.</p>
+
+                    <img className="mb32" src='color/naturalsartwork.png' srcset={'color/naturalsartwork.png 1x, color/naturalsartwork@2x.png 2x'} alt="Naturals - Text & BG & Border"/>
+
+                    ### Color Scheme
+                    <p>The Primus Design System includes 31 colors for each color theme, each having 12 different shades. These colors are strategically employed to emphasize hierarchy and facilitate effective communication.</p>
+
+                    <img className="mb32" src='color/schemeartwork.png' srcset={'color/schemeartwork.png 1x, color/schemeartwork@2x.png 2x'} alt="Color Scheme"/>
+
+
+                    <div className="row flex-wrap mb40">
+                        <div className="col semantics">
+                            ### Color Semantics(System Feedbacks) 
+                            <p>In the Primus Design System, specific colors are given general meanings to ensure users understand them consistently. These meanings are used across components. Semantic colors, like informative, success, error, and warning, help communicate messages clearly and predictably through a component's appearance.</p>
+                        </div>
+                        <div className="col">
+                            <img src="color/semantics.png" srcset="color/semantics.png 1x, color/semantics@2x.png 2x" alt='Color Semantics(System Feedbacks)'/>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>Button should contain at least one text, icon or both (text + icon).</li>
+                        <li>The first letter of the word on the buttons is capitalized and the rest is lowercase.</li>
+                        <li>The icon should signify what the button does</li>
+                        <li>Button texts are limited to one line.</li>
+                        <li>They should be discoverable, easy to identify, and specific.</li>
+                        <li>When deciding which button to use, consider the level of priority of the action, as well as how much visual emphasis the button should have in the context.                    </li>
+                    </ul>
+                </section>
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="color/do1.png" srcset="color/do1.png 1x color/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use Primus Design System colors</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="color/dont1.png" srcset="color/dont1.png 1x color/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't create your own colors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="color/do2.png" srcset="color/do2.png 1x color/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Create hierarchy with background layer colors</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="color/dont2.png" srcset="color/dont2.png 1x color/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use the low contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="color/do3.png" srcset="color/do3.png 1x color/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Communicating with color</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="color/dont3.png" srcset="color/dont3.png 1x color/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t change the communication of colors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section>
+                    ## Palette
+                    <table className='docsTable colorPalette'>
+                        <tr>
+                            <th className='text-start'>Preview</th>
+                            <th className='text-start'>Color name</th>
+                            <th className='text-start'>Token</th>
+                            <th className='text-start'>Contrast</th>
+                            <th className='text-start'>Hex value</th>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#FFF6F0' }}></span></td>
+                            <td>Hepsiburada Orange 0</td>
+                            <td><span className="code">hepsiburadaorange-0</span></td>
+                            <td>15.6</td>
+                            <td>#FFF6F0</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#FFEDE0' }}></span></td>
+                            <td>Hepsiburada Orange 5</td>
+                            <td><span className="code">hepsiburadaorange-5</span></td>
+                            <td>14.6</td>
+                            <td>#FFEDE0</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#FFDECC' }}></span></td>
+                            <td>Hepsiburada Orange 10</td>
+                            <td><span className="code">hepsiburadaorange-10</span></td>
+                            <td>13.2</td>
+                            <td>#FFDECC</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#FFBA8F' }}></span></td>
+                            <td>Hepsiburada Orange 20</td>
+                            <td><span className="code">hepsiburadaorange-20</span></td>
+                            <td>10.1</td>
+                            <td>#FFBA8F</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#FF914D' }}></span></td>
+                            <td>Hepsiburada Orange 30</td>
+                            <td><span className="code">hepsiburadaorange-30</span></td>
+                            <td>7.5</td>
+                            <td>#FF914D</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#FF731F' }}></span></td>
+                            <td>Hepsiburada Orange 40</td>
+                            <td><span className="code">hepsiburadaorange-40</span></td>
+                            <td>6.1</td>
+                            <td>#FF731F</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#FF6000' }}></span></td>
+                            <td>Hepsiburada Orange 50</td>
+                            <td><span className="code">hepsiburadaorange-50</span></td>
+                            <td>3.0</td>
+                            <td>#FF6000</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#C74B00' }}></span></td>
+                            <td>Hepsiburada Orange 60</td>
+                            <td><span className="code">hepsiburadaorange-60</span></td>
+                            <td>4.7</td>
+                            <td>#C74B00</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#9C3B00' }}></span></td>
+                            <td>Hepsiburada Orange 70</td>
+                            <td><span className="code">hepsiburadaorange-70</span></td>
+                            <td>6.9</td>
+                            <td>#9C3B00</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#702A00' }}></span></td>
+                            <td>Hepsiburada Orange 80</td>
+                            <td><span className="code">hepsiburadaorange-80</span></td>
+                            <td>10.4</td>
+                            <td>#702A00</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#521F00' }}></span></td>
+                            <td>Hepsiburada Orange 90</td>
+                            <td><span className="code">hepsiburadaorange-90</span></td>
+                            <td>13.5</td>
+                            <td>#521F00</td>
+                        </tr>
+                        <tr>
+                            <td><span className="box" style={{ background: '#2F1200' }}></span></td>
+                            <td>Hepsiburada Orange 95</td>
+                            <td><span className="code">hepsiburadaorange-95</span></td>
+                            <td>17.4</td>
+                            <td>#2F1200</td>
+                        </tr>
+                    </table>
+                </section>
+
+
+            </TabPanel>
+            <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

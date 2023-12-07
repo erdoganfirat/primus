@@ -115,7 +115,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <ul className="colormap">
                                 <li className="icon"><i className="pi-home"></i></li>
                                 <li><span>icon-color-default</span></li>
-                                <li><span>neutral-50</span></li>
+                                <li><span className='color'>neutral-50</span></li>
                                 <li><span className='color'>#757575</span></li>
                             </ul>
                         </div>
@@ -123,7 +123,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <ul className="colormap">
                                 <li className="icon"><i className="pi-home"></i></li>
                                 <li><span>icon-color-brandcolor</span></li>
-                                <li><span>primary-default</span></li>
+                                <li><span className='color'>primary-default</span></li>
                                 <li><span className='color'>#FF6000</span></li>
                             </ul>
                         </div>
@@ -131,7 +131,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <ul className="colormap">
                                 <li className="icon"><i className="pi-home"></i></li>
                                 <li><span>icon-color-succes</span></li>
-                                <li><span>succes-fg-default</span></li>
+                                <li><span className='color'>succes-fg-default</span></li>
                                 <li><span className='color'>#008450</span></li>
                             </ul>
                         </div>
@@ -139,7 +139,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <ul className="colormap">
                                 <li className="icon"><i className="pi-home"></i></li>
                                 <li><span>icon-color-information</span></li>
-                                <li><span>information-fg-default</span></li>
+                                <li><span className='color'>information-fg-default</span></li>
                                 <li><span className='color'>#0583D2</span></li>
                             </ul>
                         </div>
@@ -147,7 +147,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <ul className="colormap">
                                 <li className="icon"><i className="pi-home"></i></li>
                                 <li><span>icon-color-error</span></li>
-                                <li><span>error-fg-default</span></li>
+                                <li><span className='color'>error-fg-default</span></li>
                                 <li><span className='color'>#FF0000</span></li>
                             </ul>
                         </div>
@@ -155,7 +155,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <ul className="colormap">
                                 <li className="icon"><i className="pi-home"></i></li>
                                 <li><span>icon-color-warning</span></li>
-                                <li><span>warning-fg-default</span></li>
+                                <li><span className='color'>warning-fg-default</span></li>
                                 <li><span className='color'>#FFC400</span></li>
                             </ul>
                         </div>
@@ -226,7 +226,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     </table>
 
 
-                    ### Pairing icon sizes with text style
+                    ### Pairing Icon Sizes With Text Style
                     <p>16 px, 20 px, 24 px, and 32 px icons are paired with text-sm-semibold (12/16), h6-semibold (14/20), h4-semibold (18/24), h2-semibold (24/32)</p>
 
                     <div className="row flex-wrap mb40">
@@ -338,7 +338,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                     ### Alignment
                     <p>Alignment rule is a rule that the designer arranges by considering the line intensities and applying it intuitively and by trial and error method.</p>
-                    <img src="iconography/alignment.png" srcset="iconography/alignment.png 1x, iconography/alignment@2x.png 2x" alt='Alignment'/>
+                    <img className="mb24" src="iconography/alignment.png" srcset="iconography/alignment.png 1x, iconography/alignment@2x.png 2x" alt='Alignment'/>
                     <p className="mb32">You can align the title and text in three ways: center, right, and left alignment, but do not use justification.</p>
                     <div className="row row-cols-2 dodont">
                         <div className="col">
@@ -479,7 +479,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     ### Stroke
                     <p>All icons of the same size should have equal visual weight. Avoid variations in weight within a single icon and make sure no icon appears heavier or lighter than others.</p>
 
-                    #### Stroke terminal 
+                    #### Stroke Terminal 
                     <p>A straight or curved end line extension.</p>
 
                     <div className="row row-cols-2 mb24">
@@ -495,9 +495,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                     </div>
 
-                    #### Solid stroke 
+                    #### Solid Stroke 
                     <p>Stroke size is set as 2px for 32x32px icon. Stroke size changes proportionally to icon size. Solid stroke can be parallel or over base grids line.</p>
                     
+
                     <div className="table stroke">
                         <div className="row">
                             <div className="cell header">Stroke width</div>
@@ -528,7 +529,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                     </div>
 
-                    #### Dashed stroke 
+                    #### Dashed Stroke 
                     <p>Dashed stroke size is 2px. Below are the details of the dashed line. There is no dotted stroke style. According to the needs of the visualization, more than 1 px radius circles can used side by side instead of a dotted stroke.</p>
                     
                     <div className="row row-cols-2 mb24">
@@ -551,7 +552,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <div className="row flex-wrap mb0">
                         <div className="col">
                             <div className="card">
-                                <img src="iconography/corner1.png" srcset="iconography/corner1.png 1x, iconography/corner1@2x.png 2x" alt='Circle'/>
+                                <img src="iconography/corner1.png" srcset="iconography/corner1.png 1x, iconography/corner1@2x.png 2x" alt='Corner'/>
                                 <div className="cardBody">
                                     <p className="text-center">2px</p>
                                 </div>
@@ -559,7 +560,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src="iconography/corner2.png" srcset="iconography/corner2.png 1x, iconography/corner2@2x.png 2x" alt='Square'/>
+                                <img src="iconography/corner2.png" srcset="iconography/corner2.png 1x, iconography/corner2@2x.png 2x" alt='Corner'/>
                                 <div className="cardBody">
                                     <p className="text-center">4px</p>
                                 </div>
@@ -567,7 +568,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src="iconography/corner3.png" srcset="iconography/corner3.png 1x, iconography/corner3@2x.png 2x" alt='Vertical rectangle'/>
+                                <img src="iconography/corner3.png" srcset="iconography/corner3.png 1x, iconography/corner3@2x.png 2x" alt='Corner'/>
                                 <div className="cardBody">
                                     <p className="text-center">6px</p>
                                 </div>
@@ -575,7 +576,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src="iconography/corner4.png" srcset="iconography/corner4.png 1x, iconography/corner4@2x.png 2x" alt='Horizontal rectangle'/>
+                                <img src="iconography/corner4.png" srcset="iconography/corner4.png 1x, iconography/corner4@2x.png 2x" alt='Corner'/>
                                 <div className="cardBody">
                                     <p className="text-center">8px</p>
                                 </div>
@@ -583,7 +584,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                     </div>
 
-                    #### Interior corner
+                    #### Interior Corner
                     <p>For the rounded style symbols, interior corner radius can be the sharp style according to design.</p>
 
                     <div className="row row-cols-2 dodont">
@@ -608,7 +609,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     </div>
 
 
-                    #### Exterior corner
+                    #### Exterior Corner
                     <p>Rounded corners of icons are used.</p>
 
                     <div className="row row-cols-2 dodont">
@@ -633,12 +634,12 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     </div>
 
                     <p>The following example shows that 2px and different radius sizes are used for the rounded style icon. In this case, different measurements can be used to visualize the desired icon.</p>
-                    <img src="iconography/radius.png" srcset="iconography/radius.png 1x, iconography/radius@2x.png 2x" alt="Radius"/>
+                    <img className="mb24" src="iconography/radius.png" srcset="iconography/radius.png 1x, iconography/radius@2x.png 2x" alt="Radius"/>
 
 
                     ### Joint
                     <p>Joints can be round or sharp edge, depending on the visualization's needs.</p>
-                    <img src="iconography/joint.png" srcset="iconography/joint.png 1x, iconography/joint@2x.png 2x" alt="Joint"/>
+                    <img className="mb24" src="iconography/joint.png" srcset="iconography/joint.png 1x, iconography/joint@2x.png 2x" alt="Joint"/>
 
                     ### Caps
                     <p>Use round caps in stroke ending.</p>
@@ -656,12 +657,12 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                     </div>
 
-                    ### Counter area
+                    ### Counter Area
                     <p>Negative space without the line or shape contained in the icon.</p>
-                    <img src="iconography/counter.png" srcset="iconography/counter.png 1x, iconography/counter@2x.png 2x" alt="Counter"/>
+                    <img className="mb24" src="iconography/counter.png" srcset="iconography/counter.png 1x, iconography/counter@2x.png 2x" alt="Counter"/>
 
 
-                    ### Icon modifiers
+                    ### Icon Modifiers
                     <p>Primus DS - Icon Library comes with modifiers that help you express icons more effectively. To make the most of these modifiers, it's important to incorporate them into your design.</p>
 
                     <div className="table modifiers">
@@ -733,7 +734,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                     <div className="row row-cols-2">
                         <div className="col">
-                            #### Integration method
+                            #### Integration Method
                             <p>First, if the icon's linear density and design structure allow for it, you can seamlessly integrate the modifiers into the icon itself, making them look like a natural part of the design. At this stage, it is sufficient to adhere to the icon design rules rather than conforming to the modifier rules</p>
                         </div>
                         <div className="col">
@@ -743,7 +744,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                     <div className="row row-cols-2 reverse">
                         <div className="col">
-                            #### Modifier method
+                            #### Modifier Method
                             <p>Alternatively, you can opt for the second approach, which involves placing the modifiers in a 16x16 px area at the bottom right of the icon. This placement ensures that the modifiers maintain a clear and cohesive connection with the primary icon, making their purpose easily understandable.</p>
                         </div>
                         <div className="col">
@@ -783,7 +784,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     </div>
 
 
-                    #### Text and number
+                    #### Text and Number
                     <p>We have designed letters and numbers for use in icons. You can use them as needed in your design.</p>
 
                     <div className="table modifiers textandnumber">
@@ -872,7 +873,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <div className="row row-cols-3-custom flex-wrap align-items-start">
                         <div className="col">
                             <div className="card">
-                                <img src="iconography/dot1.png" srcset="iconography/dot1.png 1x, iconography/dot1@2x.png 2x" alt='Normal (Baseline)'/>
+                                <img src="iconography/dot1.png" srcset="iconography/dot1.png 1x, iconography/dot1@2x.png 2x" alt='Dot'/>
                                 <div className="cardBody text-center">
                                     <p className="mb0">Dot</p>
                                 </div>
@@ -880,7 +881,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src="iconography/dot2.png" srcset="iconography/dot2.png 1x, iconography/dot2@2x.png 2x" alt='Superscript'/>
+                                <img src="iconography/dot2.png" srcset="iconography/dot2.png 1x, iconography/dot2@2x.png 2x" alt='Disk'/>
                                 <div className="cardBody text-center">
                                     <p className="mb0">Disk</p>
                                 </div>
@@ -888,7 +889,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                         <div className="col">
                             <div className="card">
-                                <img src="iconography/dot3.png" srcset="iconography/dot3.png 1x, iconography/dot3@2x.png 2x" alt='Subscript'/>
+                                <img src="iconography/dot3.png" srcset="iconography/dot3.png 1x, iconography/dot3@2x.png 2x" alt='Circle'/>
                                 <div className="cardBody text-center">
                                     <p className="mb0">Circle</p>
                                 </div>
@@ -902,7 +903,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 
                 <section>
-                    ## Creating icons
+                    ## Creating Icons
                     <ul className="list disc mb32">
                         <li>Follow the rules described so far.</li>
                         <li>You may need to design a filled area inside the line icon you designed while metaphorizing. Instead of designing with a solid shape, fill it using stroke of appropriate thickness.</li>

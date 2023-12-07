@@ -1,11 +1,13 @@
+import { Meta, Canvas, Controls, Source, Story } from "@storybook/blocks";
+
 {/* Button.mdx */}
 
+<Meta title="Design System/Components/Button" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Button } from "./Button";
 import * as ButtonStories from "./Button.stories";
-import { Meta, Canvas, Controls, Source, Story } from "@storybook/blocks";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-<Meta of={ButtonStories} />
 
 
 
@@ -25,7 +27,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 </div>
 <div className="docsContent">
     <div className="docsBody">
-        <Tabs defaultIndex={1} onSelect={() => {
+        <Tabs defaultIndex={0} onSelect={() => {
             setTimeout(() => {
                 tocbot.init({ 
                     tocSelector: '.js-toc-content', 
@@ -45,9 +47,533 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
             </TabList>
 
             <TabPanel className="TabContent">
-                ## Under Construction
-                <p className="text-lg">Underconstruction</p>
+                <section>
+                    <p>Buttons provide users with the ability to take action or navigate to different pages. They come in various styles to different requirements and are effective in highlighting areas where users need to take action to proceed in a workflow.</p>
+                    <img src='button/buttonartwork.png' srcset={'button/buttonartwork.png 1x, button/buttonartwork@2x.png 2x'} alt="Button Artwork"/>
+                </section>
+
+                <section>
+                    ## Types of Buttons
+                    <p className="mb32 text-lg">Primus Design System has 8 types of buttons for each light and dark theme.</p>
+
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Primary
+                            <p>This is a stateful button that to create the strongest emphasis for CTAs</p>
+                        </div>
+                        <div className="col">
+                            <img src="button/primary.png" srcset="button/primary.png 1x, button/primary@2x.png 2x" alt='Primary'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-text-color-primary</span>
+                                    <span>=</span>
+                                    <span className="code">text-color-inverse</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-white</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FFFFFF'}}></i> #FFFFFF</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-primary</span>
+                                    <span>=</span>
+                                    <span className="code">text-color-inverse</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-white</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FFFFFF'}}></i> #FFFFFF</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-bg-color-primary</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-border-color-primary</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>                         
+
+
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Secondary
+                            <p>This is a stateful button that should be used as an alternative to a primary button when dialing back the need to call the user’s attention. </p>
+                        </div>
+                        <div className="col">
+                            <img src="button/secondary.png" srcset="button/secondary.png 1x, button/secondary@2x.png 2x" alt='Secondary'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-text-color-secondary</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-secondary</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-bg-color-secondary</span>
+                                    <span>=</span>
+                                    <span className="code">secondary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-5</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FFEDE0'}}></i> #FFEDE0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-border-color-secondary</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>                         
+
+
+
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Tertiary
+                            <p>This is a stateful button when three actions are used in the same space, the tertiary button should be used in the last position to pull back the visual attraction given to the primary and secondary button.</p>
+                        </div>
+                        <div className="col">
+                            <img src="button/tertiary.png" srcset="button/tertiary.png 1x, button/tertiary@2x.png 2x" alt='Tertiary'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-tertiary</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-tertiary</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-text-color-tertiary</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-border-color-tertiary</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>  
+
+
+
+
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Ghost
+                            <p>This is a stateful button when four actions are used in the same space, the ghost button should be used in the last position to pull back the visual attraction given to the primary, secondary and tertiary button.</p>
+                        </div>
+                        <div className="col">
+                            <img src="button/ghost.png" srcset="button/ghost.png 1x, button/ghost@2x.png 2x" alt='Ghost'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>                      
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-ghost</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-ghost</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-text-color-ghost</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-border-color-ghost</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>  
+
+
+
+
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Bordered Ghost
+                            <p>This is a stateful button that to create the strongest emphasis for CTAs</p>
+                        </div>
+                        <div className="col">
+                            <img src="button/borderedghost.png" srcset="button/borderedghost.png 1x, button/borderedghost@2x.png 2x" alt='Bordered Ghost'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>                      
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-borderedgray</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-borderedgray</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-text-color-borderedgray</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-border-color-borderedgray</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>  
+
+                    
+
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Success
+                            <p>This is a informative button for show that approved positive actions of user.</p>
+                        </div>
+                        <div className="col">
+                            <img src="button/success.png" srcset="button/success.png 1x, button/success@2x.png 2x" alt='Success'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>           
+                                <div className="codeGroup">
+                                    <span className="code">btn-text-color-success</span>
+                                    <span>=</span>
+                                    <span className="code">success-fg-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-system feedback-success-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#008450'}}></i> #008450</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-success</span>
+                                    <span>=</span>
+                                    <span className="code">success-fg-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-system feedback-success-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#008450'}}></i> #008450</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-bg-color-success</span>
+                                    <span>=</span>
+                                    <span className="code">success-bg-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-system feedback-success-5</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#E6F3EE'}}></i> #E6F3EE</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-border-color-success</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>  
+                     
+
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Error
+                            <p>This is a informative button for show that could have destructive effects on the user negative actions.</p>
+                        </div>
+                        <div className="col">
+                            <img src="button/error.png" srcset="button/error.png 1x, button/error@2x.png 2x" alt='Error'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>           
+                                <div className="codeGroup">
+                                    <span className="code">btn-text-color-error</span>
+                                    <span>=</span>
+                                    <span className="code">error-fg-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-system feedback-error-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF0000'}}></i> #FF0000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-icon-color-error</span>
+                                    <span>=</span>
+                                    <span className="code">error-fg-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-system feedback-error-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF0000'}}></i> #FF0000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-bg-color-error</span>
+                                    <span>=</span>
+                                    <span className="code">error-bg-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-system feedback-error-5</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FFE6E6'}}></i> #FFE6E6</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">btn-border-color-success</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>  
+                     
+
+                </section>
+
+
+
+
+
+                <section>
+                    ## Hierarchy
+                    <p className="mb32 text-lg">Each screen must have a prominent button that stands out as the primary action. This button should attract the most attention and make it clear that other buttons are of lesser importance.</p>
+                    <p className="mb32 text-lg">In a layout, it is possible for a product to display multiple buttons simultaneously. When using multiple buttons, it is important to ensure that the appearance of an enabled button does not resemble that of a disabled button.</p>
+                    <p className="mb32 text-lg">It is not necessary to strictly follow the order implied by the labels of the buttons. For instance, the secondary button does not always have to be the second button in your layout.</p>
+
+                    <img src='button/hierarchy.png' srcset={'button/hierarchy.png 1x, button/hierarchy@2x.png 2x'} alt="Button Hierarchy"/>
+                </section>
+
+
+ 
             </TabPanel>
+ 
+ 
+ 
             <TabPanel className="TabContent Dev">
 
               ## Playground

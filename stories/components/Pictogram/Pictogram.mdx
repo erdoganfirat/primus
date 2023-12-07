@@ -1,0 +1,1147 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Pictogram.mdx */}
+
+<Meta title="Design System/Foundation/Pictogram" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Pictogram</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>Primus DS - Pictogram Library showcases pictograms characterized by clarity, simplicity, and consistency across a range of platforms. These pictograms adhere to the core principles of our design system, emphasizing a focus on rationality and metaphorical representation within their visual style. Explore our <a href="#" target="_blank">pictogram page</a> to access a comprehensive library of these pictograms.
+                    <br/><br/>Before you begin reading this document, please be aware that the Pictogram Library has been created based on our previously established icon library. The design approach showcased in the icon library forms the foundation for the pictograms. If you have not yet examined that documentation, you can access it <a href="#" target="_blank">here</a>. Upon closer examination, you will discover that the icons are materials that can be used in the designs of pictograms. Additionally, you can observe the variations in size, color, and usage among them</p>
+                    <img className="mb32" src='pictogram/pictogramartwork.png' srcset={'pictogram/pictogramartwork.png 1x, pictogram/pictogramartwork@2x.png 2x'} alt="Pictogram Artwork"/>
+                </section>
+
+                <section>
+                    ## Characteristics
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Metaphorical Representation 
+                            <p>In the Primus Design System, clear and impactful pictogram metaphors enhance user experiences by describing tools and topics with precision. We use established metaphors for consistency and a seamless, intuitive user experience.</p>
+                        </div>
+                        <div className="col">
+                            <img src="pictogram/characteristics1.png" srcset="pictogram/characteristics1.png 1x, pictogram/characteristics1@2x.png 2x" alt='Metaphorical  Representation'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Pictogram Clarity 
+                            <p>A pictogram is a simplified visual symbol that represents objects, actions, sounds, gestures, states, or emotions using basic shapes. Pictograms aim to convey metaphorical meanings without relying on text labels. Universally recognized symbols, like an basket, a pin, or bell, eliminate the need for extra things, making them easily understood and functional.</p>
+                        </div>
+                        <div className="col">
+                            <img src="pictogram/characteristics2.png" srcset="pictogram/characteristics2.png 1x, pictogram/characteristics2@2x.png 2x" alt='Pictogram Clarity'/>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    ## Visual Style
+
+                    ### Color 
+                    <p>Incorporate color contrast standards when using pictograms on backgrounds, adhering to light and dark themes.</p>
+
+                    #### General Usage 
+                    <p>Pictogram colors match the brand's primary and secondary default colors. Across all platforms, common pictograms use these color combinations.</p>
+
+                    <div className="artwork typecolor pictogram flex-wrap">
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/location1.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:Hepsiburada</span>
+                                    <span>Pictogram:Location</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-default</span></li>
+                                    <li><span className='code'>primary-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FF6000' }}></i>#FF6000</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-default</span></li>
+                                    <li><span className='code'>secondary-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFEDE0' }}></i>#FFEDE0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/location2.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:Hepsi Market</span>
+                                    <span>Pictogram:Location</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-default</span></li>
+                                    <li><span className='code'>primary-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#5AA300' }}></i>#5AA300</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-default</span></li>
+                                    <li><span className='code'>secondary-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#EDFBDA' }}></i>#EDFBDA</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/location3.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:Hepsipay</span>
+                                    <span>Pictogram:Location</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-default</span></li>
+                                    <li><span className='code'>primary-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#7723DB' }}></i>#7723DB</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-default</span></li>
+                                    <li><span className='code'>secondary-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#F7F2FD' }}></i>#F7F2FD</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    #### Exceptions 
+                    <p>In the colors of pictograms, there are some exceptional usages. These pictograms are named with proper nouns because they are common across all Hepsiburada brands. The exceptional usages are listed below.</p>
+
+                    <div className="artwork typecolor pictogram flex-wrap">
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/sys-success.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:Success</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-success</span></li>
+                                    <li><span className='code'>success-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#008450' }}></i>#008450</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-success</span></li>
+                                    <li><span className='code'>success-bg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#E6F3EE' }}></i>#E6F3EE</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/payment-3d-secure.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:3D Secure</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-3dsecure</span></li>
+                                    <li><span className='code'>success-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#008450' }}></i>#008450</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-3dsecure</span></li>
+                                    <li><span className='code'>success-bg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#E6F3EE' }}></i>#E6F3EE</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/sys-warning.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:Warning</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-warning</span></li>
+                                    <li><span className='code'>warning-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFC400' }}></i>#FFC400</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-warning</span></li>
+                                    <li><span className='code'>warning-bg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFF9E6' }}></i>#FFF9E6</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/star-empty.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:Star empty</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-starempty</span></li>
+                                    <li><span className='code'>warning-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFC400' }}></i>#FFC400</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-starempty</span></li>
+                                    <li><span className='code'>warning-bg-hover</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFFBF0' }}></i>#FFFBF0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/star-filled.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:Star filled</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-starfilled</span></li>
+                                    <li><span className='code'>warning-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFC400' }}></i>#FFC400</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-starfilled</span></li>
+                                    <li><span className='code'>warning-fg-hover</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFD033' }}></i>#FFD033</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/sys-error.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:Error</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-error</span></li>
+                                    <li><span className='code'>error-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FF0000' }}></i>#FF0000</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-error</span></li>
+                                    <li><span className='code'>error-bg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFE6E6' }}></i>#FFE6E6</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/sys-denied.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:Denied</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-denied</span></li>
+                                    <li><span className='code'>error-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FF0000' }}></i>#FF0000</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-denied</span></li>
+                                    <li><span className='code'>error-bg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#FFE6E6' }}></i>#FFE6E6</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/sys-information.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:Information</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-information</span></li>
+                                    <li><span className='code'>information-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#0583D2' }}></i>#0583D2</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-information</span></li>
+                                    <li><span className='code'>information-bg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#E6F3FB' }}></i>#E6F3FB</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="type">
+                            <div className="brand">
+                                <img src="pictogram/hepsipay.svg"/>
+                                <div className="d-flex flex-column">
+                                    <span>Brand:All brands</span>
+                                    <span>Pictogram:Location</span>
+                                </div>
+                            </div>
+                            <div className="map">
+                                <ul className="colormap">
+                                    <li><span>pictogram-key-color-hepsipay</span></li>
+                                    <li><span className='code'>hepsipay-fg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#7723DB' }}></i>#7723DB</span></li>
+                                </ul>
+                                <ul className="colormap">
+                                    <li><span>pictogram-spotlight-color-hepsipay</span></li>
+                                    <li><span className='code'>hepsipay-bg-default</span></li>
+                                    <li><span className="code"><i className="colorBox" style={{ background: '#F7F2FD' }}></i>#F7F2FD</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    ### Size 
+                    <p>Pictograms are optimized for four specific sizes: 40 px, 48 px, 64 px, and 80 px. It is recommended to utilize the pictograms at their original sizes as they were designed to perform optimally at these dimensions.</p>
+
+                    <div className="row flex-wrap mb40">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/size1.png" srcset="pictogram/size1.png 1x, pictogram/size1@2x.png 2x" alt='40px Pictogram'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/size2.png" srcset="pictogram/size2.png 1x, pictogram/size2@2x.png 2x" alt='48px Pictogram'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/size3.png" srcset="pictogram/size3.png 1x, pictogram/size3@2x.png 2x" alt='64px Pictogram'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/size4.png" srcset="pictogram/size4.png 1x, pictogram/size4@2x.png 2x" alt='80px Pictogram'/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table className='docsTable iconography'>
+                        <tr>
+                            <th className='text-start'>Pictogram size</th>
+                            <th className='text-start'>Stroke width</th>
+                            <th className='text-start'>Padding</th>
+                            <th className='text-start'>Live area</th>
+                            <th className='text-start'>Corners</th>
+                        </tr>
+                        <tr>
+                            <td>40 px</td>
+                            <td>1 px</td>
+                            <td>1 px</td>
+                            <td>38x38 px</td>
+                            <td>Round</td>
+                        </tr>
+                        <tr>
+                            <td>48 px</td>
+                            <td>1.25 px</td>
+                            <td>1.2 px</td>
+                            <td>47.6x47.6 px</td>
+                            <td>Round</td>
+                        </tr>
+                        <tr>
+                            <td>64 px</td>
+                            <td>1.6 px</td>
+                            <td>1.6 px</td>
+                            <td>60.8x60.8 px</td>
+                            <td>Round</td>
+                        </tr>
+                        <tr>
+                            <td>80 px</td>
+                            <td>2 px</td>
+                            <td>2 px</td>
+                            <td>76x76 px</td>
+                            <td>Round</td>
+                        </tr>
+                    </table>
+
+                    ### Base Grid
+                    <p>In the Primus Design System - Pictogram Library, pictogram are constructed based on a foundational grid system. By utilizing this grid, you can create icons that align with the specific parameters set by the Icon Library, ensuring consistency throughout. The canvas maintains a base grid of 80x80 px, providing a framework for designing icons within these dimensions.</p>
+                    <img className="mb24" src="pictogram/basegrid.png" srcset="pictogram/basegrid.png 1x, pictogram/basegrid@2x.png 2x" alt='Base Grid'/>
+
+                    ### Safe Area
+                    <p>The safe area ensures the pictogram's complete visibility when scaled, with no portion extending into the surrounding white space. Additionally, a 2 px padding surrounds the live area of the icon.</p>
+                    <img className="mb24" src="pictogram/safearea.png" srcset="pictogram/safearea.png 1x, pictogram/safearea@2x.png 2x" alt='Safe Area'/>
+
+                    ### Key Shapes
+                    <p>Key shapes ensure uniformity in size and proportions throughout the pictogram collection, ensuring that pictograms maintain their visual alignment and style when placed near one another.</p>
+                    <img className="mb24" src="pictogram/keyshapes.png" srcset="pictogram/keyshapes.png 1x, pictogram/keyshapes@2x.png 2x" alt='Key Shapes'/>
+
+                    <div className="row flex-wrap mb0">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/shapes1.png" srcset="pictogram/shapes1.png 1x, pictogram/shapes1@2x.png 2x" alt='Circle'/>
+                                <div className="cardBody">
+                                    <p className="text-center">Circle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/shapes2.png" srcset="pictogram/shapes2.png 1x, pictogram/shapes2@2x.png 2x" alt='Square'/>
+                                <div className="cardBody">
+                                    <p className="text-center">Square</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/shapes3.png" srcset="pictogram/shapes3.png 1x, pictogram/shapes3@2x.png 2x" alt='Vertical rectangle'/>
+                                <div className="cardBody">
+                                    <p className="text-center">Vertical rectangle</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/shapes4.png" srcset="pictogram/shapes4.png 1x, pictogram/shapes4@2x.png 2x" alt='Horizontal rectangle'/>
+                                <div className="cardBody">
+                                    <p className="text-center">Horizontal rectangle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    ### Alignment
+                    <p>Alignment rule is a rule that the designer arranges by considering the line intensities and applying it intuitively and by trial and error method.</p>
+                    <img className="mb24" src="pictogram/alignment.png" srcset="pictogram/alignment.png 1x, pictogram/alignment@2x.png 2x" alt='Alignment'/>
+
+                    ### Density
+                    <p>Density in pictograms does not depend on a rule like the density in icon design. It depends on the visual balance of the pictogram the designer wants to design. Please follow the general rules of the basic pictogram when creating this balance and examine the examples below.</p>
+                    <img className="mb24" src="pictogram/density.png" srcset="pictogram/density.png 1x, pictogram/density@2x.png 2x" alt='Density'/>
+
+                    ### Proximity
+                    <p>When objects are close together, our eyes see them as a group. If they are at the same spot, draw them together. If they're not at the same spot, we use the figure-ground principle. This principle means we naturally see objects as either in the foreground (the main focus) or in the background. They appear as though they are in front of each other.</p>
+
+                    <div className="row row-cols-2 mb24">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/proximity1.png" srcset="pictogram/proximity1.png 1x, pictogram/proximity1@2x.png 2x" alt='Proximity'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/proximity2.png" srcset="pictogram/proximity2.png 1x, pictogram/proximity2@2x.png 2x" alt="Proximity"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <section>
+                    ## Anatomy
+                    <img src="pictogram/anatomy.png" srcset="pictogram/anatomy.png 1x, pictogram/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Stroke</p>
+                                </li>
+                                <li>
+                                    <span className="number">1.1</span>
+                                    <p className="semibold">Stroke terminal</p>
+                                </li>
+                                <li>
+                                    <span className="number">1.2</span>
+                                    <p className="semibold">Solid stroke</p>
+                                </li>
+                                <li>
+                                    <span className="number">1.3</span>
+                                    <p className="semibold">Dashed stroke</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Corner</p>
+                                </li>
+                                <li>
+                                    <span className="number">2.1</span>
+                                    <p className="semibold">Interior corner</p>
+                                </li>
+                                <li>
+                                    <span className="number">2.2</span>
+                                    <p className="semibold">Exterior corner</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Joint</p>
+                                </li>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Cap</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">Icon modifier </p>
+                                </li>
+                                <li>
+                                    <span className="number">6</span>
+                                    <p className="semibold">Counter area</p>
+                                </li>
+                                <li>
+                                    <span className="number">7</span>
+                                    <p className="semibold">Spotlight area</p>
+                                </li>
+                                <li>
+                                    <span className="number">8</span>
+                                    <p className="semibold">Circle</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Stroke
+                    <p>All icons of the same size should have equal visual weight. Avoid variations in weight within a single icon and make sure no icon appears heavier or lighter than others.</p>
+
+                    #### Stroke Terminal 
+                    <p>A straight or curved end line extension.</p>
+
+                    <div className="row row-cols-2 mb24">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/terminal1.png" srcset="pictogram/terminal1.png 1x, pictogram/terminal1@2x.png 2x" alt='straight'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/terminal2.png" srcset="pictogram/terminal2.png 1x, pictogram/terminal2@2x.png 2x" alt="curved"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    #### Solid Stroke 
+                    <p>Stroke size is set as 2px for 32x32px icon. Stroke size changes proportionally to icon size. Solid stroke can be parallel or over base grids line.</p>
+
+                    <div className="table stroke">
+                        <div className="row">
+                            <div className="cell header">Stroke width</div>
+                            <div className="cell">2px</div>
+                            <div className="cell">1.6px</div>
+                            <div className="cell">1.2px</div>
+                            <div className="cell">1px</div>
+                        </div>
+                        <div className="row">
+                            <div className="cell header">Icon size</div>
+                            <div className="cell">80px</div>
+                            <div className="cell">64x</div>
+                            <div className="cell">48px</div>
+                            <div className="cell">40px</div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 mb24">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/solid1.png" srcset="pictogram/solid1.png 1x, pictogram/solid1@2x.png 2x" alt='Solid stroke'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/solid2.png" srcset="pictogram/solid2.png 1x, pictogram/solid2@2x.png 2x" alt="Solid stroke"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    #### Dashed Stroke 
+                    <p>Dashed stroke size is 2px. Below are the details of the dashed line. There is no dotted stroke style. According to the needs of the visualization, more than 1 px radius circles can used side by side instead of a dotted stroke.</p>
+                    
+                    <div className="row row-cols-2 mb24">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dashed1.png" srcset="pictogram/dashed1.png 1x, pictogram/dashed1@2x.png 2x" alt='Dashed stroke'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dashed2.png" srcset="pictogram/dashed2.png 1x, pictogram/dashed2@2x.png 2x" alt="Dashed stroke"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    ### Corner
+                    <p>Apply a corner radius of 2px to the icons. If needed for better comprehension or defining the object's shape, the 2px radius can be increased.</p>
+
+                    <div className="row flex-wrap">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/corner1.png" srcset="pictogram/corner1.png 1x, pictogram/corner1@2x.png 2x" alt='Corner'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/corner2.png" srcset="pictogram/corner2.png 1x, pictogram/corner2@2x.png 2x" alt='Corner'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/corner3.png" srcset="pictogram/corner3.png 1x, pictogram/corner3@2x.png 2x" alt='Corner'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/corner4.png" srcset="pictogram/corner4.png 1x, pictogram/corner4@2x.png 2x" alt='Corner'/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    #### Interior Corner
+                    <p>For the rounded style symbols, interior corner radius can be the sharp style according to design.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/docorner1.png" srcset="pictogram/docorner1.png 1x, pictogram/docorner1@2x.png 2x" alt='Do interior corner'/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/docorner2.png" srcset="pictogram/docorner2.png 1x, pictogram/docorner2@2x.png 2x" alt="Do interior corner"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    #### Exterior Corner
+                    <p>Rounded corners of icons are used.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/docorner3.png" srcset="pictogram/docorner3.png 1x, pictogram/docorner3@2x.png 2x" alt='Do exterior corner'/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dontcorner.png" srcset="pictogram/dontcorner.png 1x, pictogram/dontcorner@2x.png 2x" alt="Don't exterior corner"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>The following example shows that 2px and different radius sizes are used for the rounded style icon. In this case, different measurements can be used to visualize the desired icon.</p>
+                    <img className="mb24" src="pictogram/radius.png" srcset="pictogram/radius.png 1x, pictogram/radius@2x.png 2x" alt="Radius"/>
+
+                    ### Joint
+                    <p>Joints can be round or sharp edge, depending on the visualization's needs.</p>
+                    <img className="mb24" src="pictogram/joint.png" srcset="pictogram/joint.png 1x, pictogram/joint@2x.png 2x" alt="Joint"/>
+
+                    ### Caps
+                    <p>Use round caps in stroke ending.</p>
+
+                    <div className="row row-cols-2 mb24">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/caps1.png" srcset="pictogram/caps1.png 1x, pictogram/caps1@2x.png 2x" alt='Caps'/>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/caps2.png" srcset="pictogram/caps2.png 1x, pictogram/caps2@2x.png 2x" alt="Caps"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    ### Counter Area
+                    <p>Negative space without the line or shape contained in the icon.</p>
+                    <img className="mb24" src="pictogram/counter.png" srcset="pictogram/counter.png 1x, pictogram/counter@2x.png 2x" alt="Counter"/>
+
+
+                    ### Spotlight Area
+                    <p>A spotlight area is a highlighted section in a pictogram meant to draw attention and stand out. Typically, it is in a secondary default color and is surrounded by a stroke.</p>
+                    <img className="mb24" src="pictogram/spotlight.png" srcset="pictogram/spotlight.png 1x, pictogram/spotlight@2x.png 2x" alt="Spotlight"/>
+
+                    ### Pictogram Modifier
+                    <p>The Primus DS - Pictogram Library features modifiers for enhancing pictogram expressions. These modifiers should be incorporated into the design if the linear density and design structure of the pictogram permit it during the metaphorization process. They must be positioned in a 32x32 px area at the bottom right of the pictogram and should be coherent with the added pictogram.
+                    <br/><br/>While all icons have the potential to serve as modifiers, it's important to note that an icon already employed as a modifier cannot subsequently function as a modifier for a pictogram.It has to be directly integrated to design.</p>
+
+
+                    <table className='docsTable iconTable'>
+                        <tr>
+                            <td><div className="head">Example of pictogram modifiers</div></td>
+                            <td>
+                                <div className="iconbar">
+                                    <div className="icon"><i className="pi-product-stock"></i></div>
+                                    <div className="icon"><i className="pi-gift"></i></div>
+                                    <div className="icon"><i className="pi-star"></i></div>
+                                    <div className="icon"><i className="pi-megaphone-announcement"></i></div>
+                                    <div className="icon"><i className="pi-key"></i></div>
+                                    <div className="icon"><i className="pi-catalogue"></i></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            #### Integration Method 
+                            <p>First, if the pictogram's linear density and design structure allow for it, you can seamlessly integrate the modifiers into the pictogram itself, making them look like a natural part of the design. At this stage, it is sufficient to adhere to the pictogram design rules rather than conforming to the modifier rules</p>
+                        </div>
+                        <div className="col">
+                            <img src="pictogram/integration.png" srcset="pictogram/integration.png 1x, pictogram/integration@2x.png 2x" alt='Integration'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            #### Modifier Method 
+                            <p>Alternatively, you can opt for the second approach, which involves placing the modifiers in a 32x32 px area at the bottom right of the pictogram. This placement ensures that the modifiers maintain a clear and cohesive connection with the primary pictogram, making their purpose easily understandable.</p>
+                        </div>
+                        <div className="col">
+                            <img src="pictogram/modifier.png" srcset="pictogram/modifier.png 1x, pictogram/modifier@2x.png 2x" alt='Modifier'/>
+                        </div>
+                    </div>
+
+                    <img className="mb24" src="pictogram/modifiersartwork.png" srcset="pictogram/modifiersartwork.png 1x, pictogram/modifiersartwork@2x.png 2x" alt="Modifiers"/>
+                    <p>In pictograms, if a modifier overlaps with lines, the stokes should have rounded caps.</p>
+
+                    <img className="mb24" src="pictogram/capsartwork.png" srcset="pictogram/capsartwork.png 1x, pictogram/capsartwork@2x.png 2x" alt="Caps"/>
+
+
+
+
+
+
+                    ### Circle
+                    <p>The borders of the circles used are 2 px. The radius of the circle is at least 1 px. Due to the border thickness of the circles, it looks like a disk* until its radius is 2.5 px. After 2.5 px, it takes the form of a circle because of the space formed inside.
+                    <br/><br/><span className="semibold text-sm">*Disk is the region in a plane bounded by a circle.</span></p>
+
+                    <img className="mb24" src="pictogram/circleartwork.png" srcset="pictogram/circleartwork.png 1x, pictogram/circleartwork@2x.png 2x" alt="Circle"/>
+
+                    <div className="row row-cols-3-custom flex-wrap align-items-start">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dot1.png" srcset="pictogram/dot1.png 1x, pictogram/dot1@2x.png 2x" alt='Dot'/>
+                                <div className="cardBody text-center">
+                                    <p className="mb0">Dot</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dot2.png" srcset="pictogram/dot2.png 1x, pictogram/dot2@2x.png 2x" alt='Disk'/>
+                                <div className="cardBody text-center">
+                                    <p className="mb0">Disk</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dot3.png" srcset="pictogram/dot3.png 1x, pictogram/dot3@2x.png 2x" alt='Circle'/>
+                                <div className="cardBody text-center">
+                                    <p className="mb0">Circle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Text and Number 
+                            <p>We have designed letters and numbers for use in icons. You can use them as needed in your design.</p>
+                        </div>
+                        <div className="col">
+                            <img src="pictogram/textandnumber.png" srcset="pictogram/textandnumber.png 1x, pictogram/textandnumber@2x.png 2x" alt='Text and Number'/>
+                        </div>
+                    </div>
+
+                    <div className="table modifiers textandnumber">
+                        <div className="row">
+                            <div className="cell header">Letters</div>
+                            <div className="iconbox">
+                                <div className="icon"><img src="iconography/letters/0.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/1.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/2.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/3.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/4.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/5.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/6.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/7.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/8.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/9.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/10.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/11.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/12.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/13.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/14.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/15.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/16.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/17.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/18.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/19.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/20.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/21.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/22.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/23.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/24.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/25.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/26.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/27.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/28.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/29.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/30.svg"/></div>
+                                <div className="icon"><img src="iconography/letters/31.svg"/></div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="cell header">Numbers</div>
+                            <div className="iconbox">
+                                <div className="icon"><img src="iconography/numbers/32.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/33.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/34.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/35.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/36.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/37.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/38.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/39.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/40.svg"/></div>
+                                <div className="icon"><img src="iconography/numbers/41.svg"/></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+
+
+                <section>
+                    ## Creating pictograms
+                    <ul className="list disc mb32">
+                        <li>Follow the rules described so far and also check iconography documentation here.</li>
+                        <li>You may need to design a filled area inside the pictogram you designed while metaphorizing. Instead of designing with a solid shape, fill it using stroke of appropriate thickness.</li>
+                        <li>You may need to draw a circle with a radius of 1  px. In this case, instead of using the circle shape, use a stroke with a length of 0,01  px, a thickness of 2 px, a rounded cap with center alignment.</li>
+                        <li>You may need to draw a circle with a radius of 1,5 px or longer. In this case use the circle shape without fill option, select stroke a thickness of 2 px, and a rounded cap.</li>
+                        <li>If you need to cover empty space in circle, draw a stroke parallel with radius.</li>
+                    </ul>
+                    <img src="pictogram/creating.png" srcset="pictogram/creating.png 1x, pictogram/creating@2x.png 2x" alt='Creating pictograms'/>
+                </section>
+
+
+                <section>
+                    ## Usage
+                    <p>The specific cases in which the pictograms below are used are indicated.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/usage1.png" srcset="pictogram/usage1.png 1x, pictogram/usage1@2x.png 2x" alt="Usage"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use on the 'No orders yet' empty state page.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/usage2.png" srcset="pictogram/usage2.png 1x, pictogram/usage2@2x.png 2x" alt="Usage"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use on the 'No refund request' empty state page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/usage3.png" srcset="pictogram/usage3.png 1x, pictogram/usage3@2x.png 2x" alt="Usage"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use on the 'You haven't reviewed yet' empty state page.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/usage4.png" srcset="pictogram/usage4.png 1x, pictogram/usage4@2x.png 2x" alt="Usage"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use on the 'Cart is empty' empty state page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/usage5.png" srcset="pictogram/usage5.png 1x, pictogram/usage5@2x.png 2x" alt="Usage"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use on the 'Lorem ipsum' empty state page.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/usage6.png" srcset="pictogram/usage6.png 1x, pictogram/usage6@2x.png 2x" alt="Usage"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use on the 'Lorem ipsum' empty state page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/usage7.png" srcset="pictogram/usage7.png 1x, pictogram/usage7@2x.png 2x" alt="Usage"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use on the 'No search result' empty state page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/do1.png" srcset="pictogram/do1.png 1x, pictogram/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use all pictograms as components.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dont1.png" srcset="pictogram/dont1.png 1x, pictogram/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t detach pictograms components.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/do2.png" srcset="pictogram/do2.png 1x, pictogram/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use a standard size icon.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dont2.png" srcset="pictogram/dont2.png 1x, pictogram/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t change default sizes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/do3.png" srcset="pictogram/do3.png 1x, pictogram/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use main stroke size.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dont3.png" srcset="pictogram/dont3.png 1x, pictogram/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t change stroke size.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/do4.png" srcset="pictogram/do4.png 1x, pictogram/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Pictogram must be fit in safe area.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dont4.png" srcset="pictogram/dont4.png 1x, pictogram/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Do not place the pictogram outside the safe area.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/do5.png" srcset="pictogram/do5.png 1x, pictogram/do5@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use spotlight area with border</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dont5.png" srcset="pictogram/dont5.png 1x, pictogram/dont5@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Do not use spotlight area without border</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/do6.png" srcset="pictogram/do6.png 1x, pictogram/do6@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use the pictograms with their assigned colors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dont6.png" srcset="pictogram/dont6.png 1x, pictogram/dont6@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't change the colors of the pictograms.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/do7.png" srcset="pictogram/do7.png 1x, pictogram/do7@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>An icon with a modifier is used as part of the design of a pictogram</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="pictogram/dont7.png" srcset="pictogram/dont7.png 1x, pictogram/dont7@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>An icon with a modifier cannot be the modifier of a pictogram</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+
+
+
+            </TabPanel>
+            <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

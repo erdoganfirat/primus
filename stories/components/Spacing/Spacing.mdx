@@ -1,0 +1,493 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Spacing.mdx */}
+
+<Meta title="Design System/Foundation/Spacing" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Spacing</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>Spacing is the negative area between elements and components. Consistent use of the spacing aims for a more cohesive experience for users. It also lays a foundation for responsive design that will improve the overall quality, usability and accessibility of our products.</p>
+                    <img className="mb32" src='spacing/spacingartwork.png' srcset={'spacing/spacingartwork.png 1x, spacing/spacingartwork@2x.png 2x'} alt="Spacing Artwork"/>
+                </section>
+
+                <section>
+                    ## Space-centric design
+                    <p className="text-lg">Strategic spacing between UI elements directly impacts the relationships and hierarchy within the design.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Relationship
+                            <p>Elements positioned closely in a design are perceived as having meaningful relationships. As space increases between elements, their perceived connection diminishes.Spacing also fosters relationships, with elements arranged in the same pattern being seen as related pieces of equal importance. Space serves as a marker for associated information groups, enabling content sections on a page without requiring lines or graphical dividers.</p>
+                        </div>
+                        <div className="col">
+                            <img src="spacing/relationship.png" srcset="spacing/relationship.png 1x, spacing/relationship@2x.png 2x" alt='Relationship'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Hierarchy
+                            <p>The perception of importance is influenced by the amount of space surrounding elements. Elements placed closely together may be overlooked, as users tend to perceive them as a group rather than individual items. To ensure focus on elements of high importance, consider providing additional surrounding space to attract attention.</p>
+                        </div>
+                        <div className="col">
+                            <img src="spacing/hierarchy.png" srcset="spacing/hierarchy.png 1x, spacing/hierarchy@2x.png 2x" alt='Hierarchy'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### White space
+                            <p>White space (empty space) is a crucial element in design. It serves multiple purposes, such as breaking up page sections and emphasizing specific elements. This gap aids information processing, preventing users from feeling overwhelmed by dense content. Although specific sections of the UI may contain dense content, it is essential to balance the overall page with white space to offer users a visual break and a more comfortable viewing experience.</p>
+                        </div>
+                        <div className="col">
+                            <img src="spacing/whitespace.png" srcset="spacing/whitespace.png 1x, spacing/whitespace@2x.png 2x" alt='White space'/>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+                <section>
+                    ## Spacing scale
+                    <p className="text-lg" style={{ color: 'var(--error-fg-default)' }}>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga</p>
+
+
+                    <table className='docsTable radius'>
+                        <tr>
+                            <th className='text-start'>Token name</th>
+                            <th className="text-start">Pixel</th>
+                            <th className="text-start">Rem</th>
+                            <th className="text-start">Visual representation</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-0</span>
+                                    <span>=</span>
+                                    <span className="code">size-0</span>
+                                    <span>=</span>
+                                    <span className="code">0</span>
+                                </div>
+                            </td>
+                            <td>0 px</td>
+                            <td>0.0 rem</td>
+                            <td><span className="bar" style={{width:'0px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-2</span>
+                                    <span>=</span>
+                                    <span className="code">size-2</span>
+                                    <span>=</span>
+                                    <span className="code">2</span>
+                                </div>
+                            </td>
+                            <td>2 px</td>
+                            <td>0.125 rem</td>
+                            <td><span className="bar" style={{width:'2px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-4</span>
+                                    <span>=</span>
+                                    <span className="code">size-4</span>
+                                    <span>=</span>
+                                    <span className="code">4</span>
+                                </div>
+                            </td>
+                            <td>4 px</td>
+                            <td>0.25 rem</td>
+                            <td><span className="bar" style={{width:'4px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-6</span>
+                                    <span>=</span>
+                                    <span className="code">size-6</span>
+                                    <span>=</span>
+                                    <span className="code">6</span>
+                                </div>
+                            </td>
+                            <td>6 px</td>
+                            <td>0.375 rem</td>
+                            <td><span className="bar" style={{width:'6px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-8</span>
+                                    <span>=</span>
+                                    <span className="code">size-8</span>
+                                    <span>=</span>
+                                    <span className="code">8</span>
+                                </div>
+                            </td>
+                            <td>8 px</td>
+                            <td>0.5 rem</td>
+                            <td><span className="bar" style={{width:'8px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-12</span>
+                                    <span>=</span>
+                                    <span className="code">size-12</span>
+                                    <span>=</span>
+                                    <span className="code">12</span>
+                                </div>
+                            </td>
+                            <td>12 px</td>
+                            <td>0.75 rem</td>
+                            <td><span className="bar" style={{width:'12px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-16</span>
+                                    <span>=</span>
+                                    <span className="code">size-16</span>
+                                    <span>=</span>
+                                    <span className="code">16</span>
+                                </div>
+                            </td>
+                            <td>16 px</td>
+                            <td>1 rem</td>
+                            <td><span className="bar" style={{width:'16px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-20</span>
+                                    <span>=</span>
+                                    <span className="code">size-20</span>
+                                    <span>=</span>
+                                    <span className="code">20</span>
+                                </div>
+                            </td>
+                            <td>20 px</td>
+                            <td>1.25 rem</td>
+                            <td><span className="bar" style={{width:'20px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-24</span>
+                                    <span>=</span>
+                                    <span className="code">size-24</span>
+                                    <span>=</span>
+                                    <span className="code">24</span>
+                                </div>
+                            </td>
+                            <td>24 px</td>
+                            <td>1.5 rem</td>
+                            <td><span className="bar" style={{width:'24px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-32</span>
+                                    <span>=</span>
+                                    <span className="code">size-32</span>
+                                    <span>=</span>
+                                    <span className="code">32</span>
+                                </div>
+                            </td>
+                            <td>32 px</td>
+                            <td>2 rem</td>
+                            <td><span className="bar" style={{width:'32px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-40</span>
+                                    <span>=</span>
+                                    <span className="code">size-40</span>
+                                    <span>=</span>
+                                    <span className="code">40</span>
+                                </div>
+                            </td>
+                            <td>40 px</td>
+                            <td>2.5 rem</td>
+                            <td><span className="bar" style={{width:'40px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-48</span>
+                                    <span>=</span>
+                                    <span className="code">size-48</span>
+                                    <span>=</span>
+                                    <span className="code">48</span>
+                                </div>
+                            </td>
+                            <td>48 px</td>
+                            <td>3 rem</td>
+                            <td><span className="bar" style={{width:'48px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-64</span>
+                                    <span>=</span>
+                                    <span className="code">size-64</span>
+                                    <span>=</span>
+                                    <span className="code">64</span>
+                                </div>
+                            </td>
+                            <td>64 px</td>
+                            <td>4 rem</td>
+                            <td><span className="bar" style={{width:'64px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-80</span>
+                                    <span>=</span>
+                                    <span className="code">size-80</span>
+                                    <span>=</span>
+                                    <span className="code">80</span>
+                                </div>
+                            </td>
+                            <td>80 px</td>
+                            <td>5 rem</td>
+                            <td><span className="bar" style={{width:'80px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-96</span>
+                                    <span>=</span>
+                                    <span className="code">size-96</span>
+                                    <span>=</span>
+                                    <span className="code">96</span>
+                                </div>
+                            </td>
+                            <td>96 px</td>
+                            <td>6 rem</td>
+                            <td><span className="bar" style={{width:'96px'}}></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">padding-120</span>
+                                    <span>=</span>
+                                    <span className="code">size-120</span>
+                                    <span>=</span>
+                                    <span className="code">120</span>
+                                </div>
+                            </td>
+                            <td>120 px</td>
+                            <td>7.5 rem</td>
+                            <td><span className="bar" style={{width:'120px'}}></span></td>
+                        </tr>
+                    </table>
+
+
+
+
+                </section>
+
+                <section>
+                    ## Usage and examples
+                    <ul className="list disc mb32">
+                        <li>Please read space-centric design part before using spacing value.</li>
+                        <li>All values ​​are available for vertical and horizontal spacing.</li>
+                    </ul>
+
+                    <p>Our spacing scale can be broken into x different size ranges:</p>
+                    <img className="mb32" src="spacing/usageartwork.png" srcset="spacing/usageartwork.png 1x, spacing/usageartwork@2x.png 2x" alt='Usage'/>
+
+                    ### Small values
+                    <p>Use values (0 to 8px) for small and compact elements.</p>
+                    <strong className="text-md">EXAMPLES</strong>
+                    <ul className="list disc mb32">
+                        <li>Gap between small icons and text</li>
+                        <li>Container padding of small components (ie badges, icon buttons, table cells)</li>
+                        <li>Gap between repeating elements (ie button groups)</li>
+                        <li>Padding within input components</li>
+                        <li>Vertical spacing between elements in a card (ie a title and description, a description and actions)</li>
+                        <li>Gap between the trigger and elevated element (ie between dropdown button & menu)</li>
+                    </ul>
+                    <img className="mb32" src="spacing/placehold.png" srcset="spacing/placehold.png 1x, spacing/placehold@2x.png 2x" alt='Small values'/>
+
+                    ### Medium values
+                    <p>Use values (12 to 24px) for larger and less dense elements.</p>
+                    <strong className="text-md">EXAMPLES</strong>
+                    <ul className="list disc mb32">
+                        <li>Container padding of larger components (ie buttons)</li>
+                        <li>Space between avatar/large icon and content (ie section messages)</li>
+                        <li>Vertical spacing between elements in cards</li>
+                        <li>Spacing between items in less densely packed or larger components</li>
+                    </ul>
+                    <img className="mb32" src="spacing/placehold.png" srcset="spacing/placehold.png 1x, spacing/placehold@2x.png 2x" alt='Small values'/>
+
+                    ### Large values
+                    <p>Use values (32 to 120px) for the largest elements.</p>
+                    <strong className="text-md">EXAMPLES</strong>
+                    <ul className="list disc mb32">
+                        <li>The space between content on the page (ie spacing between top of page and header)</li>
+                        <li>Alignment within larger pieces of content</li>
+                    </ul>
+                    <img className="mb32" src="spacing/placehold.png" srcset="spacing/placehold.png 1x, spacing/placehold@2x.png 2x" alt='Small values'/>
+
+                    ### X values
+                    <p>Use values (y to zpx) for the largest elements.</p>
+                    <strong className="text-md">EXAMPLES</strong>
+                    <ul className="list disc mb32">
+                        <li style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
+                        <li style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
+                        <li style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
+                    </ul>
+                    <img className="mb32" src="spacing/placehold.png" srcset="spacing/placehold.png 1x, spacing/placehold@2x.png 2x" alt='Small values'/>
+
+
+                   
+                </section>
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="spacing/do1.png" srcset="spacing/do1.png 1x spacing/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use spacing value coming from the design system.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="spacing/dont1.png" srcset="spacing/dont1.png 1x spacing/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use custom values.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="spacing/do2.png" srcset="spacing/do2.png 1x spacing/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Group similar items together using similar spacing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="spacing/dont2.png" srcset="spacing/dont2.png 1x spacing/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t group similar items differently.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="spacing/do3.png" srcset="spacing/do3.png 1x spacing/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Group related items close together so that users can scan the content more easily.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="spacing/dont3.png" srcset="spacing/dont3.png 1x spacing/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t group related items far apart.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="spacing/do4.png" srcset="spacing/do4.png 1x spacing/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use scale and whitespace to rank elements</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="spacing/dont4.png" srcset="spacing/dont4.png 1x spacing/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Dont give every element the same visual importance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </TabPanel>
+            <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,361 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Radius.mdx */}
+
+<Meta title="Design System/Foundation/Radius" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Radius</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-style-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>Radius in the Primus Design System is mainly a stylistic choice to achieve a modern, friendly look and enhance perceived fidelity. Most components have rounded corners, except for specific exceptions.</p>
+                    <img className="mb32" src='radius/radiusartwork.png' srcset={'radius/radiusartwork.png 1x, radius/radiusartwork@2x.png 2x'} alt="Radius Artwork"/>
+                </section>
+
+                <section>
+                    ## Size of radius
+                    <p>Primus Design System has 2 types of radius. General radiuses and full round (a.k.a full corner radius)</p>
+
+                    ### General radius 
+                    <p>The Primus Design System employs functional coloring designed to support products intended for use on workstations. Color is used for communication rather than ornamentation. We employ color sparingly and deliberately to emphasize critical information, enabling extended use throughout the day while minimizing visual strain.</p>
+
+                    <table className='docsTable radius'>
+                        <tr>
+                            <th className='text-start'>Token name</th>
+                            <th className="text-start">Pixel</th>
+                            <th className="text-start">Visual representation</th>
+                            <th className="text-start">Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-0</span>
+                                    <span>=</span>
+                                    <span className="code">size-0</span>
+                                    <span>=</span>
+                                    <span className="code">0</span>
+                                </div>
+                            </td>
+                            <td>0 px</td>
+                            <td><img src="radius/radius1.png" srcset="radius/radius1.png 1x, radius/radius1@2x.png 2x" alt='border-radius-0'/></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-2</span>
+                                    <span>=</span>
+                                    <span className="code">size-2</span>
+                                    <span>=</span>
+                                    <span className="code">2</span>
+                                </div>
+                            </td>
+                            <td>2 px</td>
+                            <td><img src="radius/radius2.png" srcset="radius/radius2.png 1x, radius/radius2@2x.png 2x" alt='border-radius-2'/></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-4</span>
+                                    <span>=</span>
+                                    <span className="code">size-4</span>
+                                    <span>=</span>
+                                    <span className="code">4</span>
+                                </div>
+                            </td>
+                            <td>4 px</td>
+                            <td><img src="radius/radius3.png" srcset="radius/radius3.png 1x, radius/radius3@2x.png 2x" alt='border-radius-4'/></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-6</span>
+                                    <span>=</span>
+                                    <span className="code">size-6</span>
+                                    <span>=</span>
+                                    <span className="code">6</span>
+                                </div>
+                            </td>
+                            <td>6 px</td>
+                            <td><img src="radius/radius4.png" srcset="radius/radius4.png 1x, radius/radius4@2x.png 2x" alt='border-radius-6'/></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-8</span>
+                                    <span>=</span>
+                                    <span className="code">size-8</span>
+                                    <span>=</span>
+                                    <span className="code">8</span>
+                                </div>
+                            </td>
+                            <td>8 px</td>
+                            <td><img src="radius/radius5.png" srcset="radius/radius5.png 1x, radius/radius5@2x.png 2x" alt='border-radius-8'/></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-12</span>
+                                    <span>=</span>
+                                    <span className="code">size-12</span>
+                                    <span>=</span>
+                                    <span className="code">12</span>
+                                </div>
+                            </td>
+                            <td>12 px</td>
+                            <td><img src="radius/radius6.png" srcset="radius/radius6.png 1x, radius/radius6@2x.png 2x" alt='border-radius-12'/></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-16</span>
+                                    <span>=</span>
+                                    <span className="code">size-16</span>
+                                    <span>=</span>
+                                    <span className="code">16</span>
+                                </div>
+                            </td>
+                            <td>16 px</td>
+                            <td><img src="radius/radius7.png" srcset="radius/radius7.png 1x, radius/radius7@2x.png 2x" alt='border-radius-16'/></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-24</span>
+                                    <span>=</span>
+                                    <span className="code">size-24</span>
+                                    <span>=</span>
+                                    <span className="code">24</span>
+                                </div>
+                            </td>
+                            <td>24 px</td>
+                            <td><img src="radius/radius8.png" srcset="radius/radius8.png 1x, radius/radius8@2x.png 2x" alt='border-radius-24'/></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-32</span>
+                                    <span>=</span>
+                                    <span className="code">size-32</span>
+                                    <span>=</span>
+                                    <span className="code">32</span>
+                                </div>
+                            </td>
+                            <td>32 px</td>
+                            <td><img src="radius/radius9.png" srcset="radius/radius9.png 1x, radius/radius9@2x.png 2x" alt='border-radius-32'/></td>
+                            <td>TBD</td>
+                        </tr>
+                    </table>
+
+
+                    ### Full corner radius
+                    <p>The applied radius equals half the height of the element.</p>
+
+                    <table className='docsTable radius'>
+                        <tr>
+                            <th className='text-start'>Token name</th>
+                            <th className="text-start">Pixel</th>
+                            <th className="text-start">Visual representation</th>
+                            <th className="text-start">Example</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-9999</span>
+                                    <span>=</span>
+                                    <span className="code">size-9999</span>
+                                    <span>=</span>
+                                    <span className="code">9999</span>
+                                </div>
+                            </td>
+                            <td>9999 px</td>
+                            <td><img src="radius/radius10.png" srcset="radius/radius10.png 1x, radius/radius10@2x.png 2x" alt='border-radius-9999'/></td>
+                            <td>Square shapes like circle button</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">border-radius-9999</span>
+                                    <span>=</span>
+                                    <span className="code">size-9999</span>
+                                    <span>=</span>
+                                    <span className="code">9999</span>
+                                </div>
+                            </td>
+                            <td>9999 px</td>
+                            <td><img src="radius/radius11.png" srcset="radius/radius11.png 1x, radius/radius11@2x.png 2x" alt='border-radius-9999'/></td>
+                            <td>Rectangle shapes like pills</td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>If not specified for the component, all radius must always have the same value to ensure the shape is not distorted.</li>
+                        <li>The radius of the inside of the nested design elements is half of the radius of the outside.</li>
+                        <li>When you want to design a circle, make the radius of the rectangle you draw 9999px to get a circle.</li>
+                        <li>The radius of the corners of two sticked design elements where they touch each other is 0 px.</li>
+                    </ul>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            <ul className="list disc mb24">
+                                <li>The border radius of the exterior corner should be equal to the sum of the border radius of the Interior corner and the distance between the two elements.</li>
+                            </ul>
+                            <p>Exterior Radius = Interior Radius + Distance</p>
+                        </div>
+                        <div className="col">
+                            <img src="radius/usage.png" srcset="radius/usage.png 1x, radius/usage@2x.png 2x" alt='Usage'/>
+                        </div>
+                    </div>                    
+                </section>
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="radius/do1.png" srcset="radius/do1.png 1x radius/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use same value for each corner.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="radius/dont1.png" srcset="radius/dont1.png 1x radius/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Do not mix the value of corner.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="radius/do2.png" srcset="radius/do2.png 1x radius/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>The radius of the corners of two sticked design elements where they touch each other is 0 px.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="radius/dont2.png" srcset="radius/dont2.png 1x radius/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Do not use any radius other than 0 at the corners where two stickeddesign elements touch.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="radius/do3.png" srcset="radius/do3.png 1x radius/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use a radius that matches the dimensions of the design element!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="radius/dont3.png" srcset="radius/dont3.png 1x radius/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Do not make an incompatible radius match with the dimensions of the design element.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="radius/do4.png" srcset="radius/do4.png 1x radius/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>The radius of the design elements used side by side must be the same.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="radius/dont4.png" srcset="radius/dont4.png 1x radius/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>The radius of the design elements used side by side cannot be different.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </TabPanel>
+            <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

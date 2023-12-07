@@ -1,119 +1,119 @@
 
 > designsystem-v2@0.1.0 build-storybook
-> storybook build --output-dir /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9
+> storybook build --output-dir /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ
 
 @storybook/cli v7.4.5
 
-info => Cleaning outputDir: /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9
+info => Cleaning outputDir: /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ
 info => Loading presets
 info => Building manager..
-(node:17709) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+(node:18341) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
 (Use `node --trace-warnings ...` to show where the warning was created)
-info => Manager built (208 ms)
-info => Copying static files: /Users/efirat/Desktop/DesignSystemNew/node_modules/@storybook/manager/static at /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/sb-common-assets
+info => Manager built (235 ms)
+info => Copying static files: /Users/efirat/Desktop/DesignSystemNew/node_modules/@storybook/manager/static at /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/sb-common-assets
 vite v4.4.9 building for production...
 
 ./sb-common-assets/fonts.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
 transforming...
-info => Copying static files: /Users/efirat/Desktop/DesignSystemNew/stories/assets/img at /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/
+info => Copying static files: /Users/efirat/Desktop/DesignSystemNew/stories/assets/img at /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/
 node_modules/telejson/dist/index.mjs (1413:15) Use of eval in "node_modules/telejson/dist/index.mjs" is strongly discouraged as it poses security risks and may cause issues with minification.
 node_modules/telejson/dist/index.mjs (1416:18) Use of eval in "node_modules/telejson/dist/index.mjs" is strongly discouraged as it poses security risks and may cause issues with minification.
 ✓ 591 modules transformed.
 rendering chunks...
 computing gzip size...
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/logo-figma-b2bcb0b9.svg                          1.59 kB │ gzip:   0.68 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/iframe.html                                            12.74 kB │ gzip:   3.57 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Regular-ed64c5d8.woff2                    98.76 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Thin-4b4de24f.woff2                       99.14 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Black-1d1374a7.woff2                     103.83 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Light-16eb6c3d.woff2                     104.84 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraLight-ad65e3b1.woff2                105.33 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Medium-a4ad8ac6.woff2                    105.94 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-SemiBold-d6d09054.woff2                  106.79 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraBold-d7c30894.woff2                 107.00 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Bold-04079eb5.woff2                      107.24 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/primus-icon-fe641959.ttf                       129.13 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/primus-icon-2488ba91.woff                      129.21 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/primus-icon-33c8fcab.eot                       129.31 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Regular-6ab20422.woff                    149.34 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Thin-610f2d4e.woff                       150.90 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Black-fa9c24ee.woff                      155.01 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Light-703f829f.woff                      156.08 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraLight-17132a9c.woff                 156.33 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Medium-860f80f6.woff                     157.89 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraBold-ba6d2d4b.woff                  158.94 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-SemiBold-492190c4.woff                   159.08 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Bold-51c34c5f.woff                       159.38 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Regular-df548578.ttf                     401.79 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Light-30ffa7fd.ttf                       401.93 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Regular-f74336e1.eot                     401.99 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Light-5210eb82.eot                       402.14 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraLight-d22f5373.ttf                  402.36 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraLight-5b556c55.eot                  402.59 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Thin-73def667.ttf                        402.63 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Thin-b463d5d9.eot                        402.84 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Medium-d4beba3c.ttf                      406.31 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Medium-2c1c0b7a.eot                      406.53 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-SemiBold-1c9fb7eb.ttf                    407.26 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-SemiBold-ea28c859.eot                    407.48 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Bold-a7f19a24.ttf                        407.54 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Bold-bcef6c27.eot                        407.73 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraBold-ad26181f.ttf                   408.31 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Black-b9a1eb1f.ttf                       408.53 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraBold-efb469ca.eot                   408.54 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Black-14b9bc78.eot                       408.74 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/primus-icon-4a044e3c.svg                       469.47 kB │ gzip: 133.89 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Black-e29b3294.svg                     1,880.77 kB │ gzip: 256.97 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Regular-d6da102d.svg                   1,885.31 kB │ gzip: 246.94 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Thin-df919726.svg                      1,896.99 kB │ gzip: 245.26 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraLight-c01783ea.svg                1,927.39 kB │ gzip: 265.05 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Light-36c55e53.svg                     1,936.21 kB │ gzip: 265.88 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-ExtraBold-e1edfd46.svg                 1,957.10 kB │ gzip: 271.21 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Medium-92ce861e.svg                    1,962.07 kB │ gzip: 270.59 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-Bold-4fd4e3cf.svg                      1,962.16 kB │ gzip: 271.65 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Inter-SemiBold-2746e082.svg                  1,966.61 kB │ gzip: 271.73 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Button-22f2b9d1.css                             32.76 kB │ gzip:   4.14 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-7d620c45.css                            37.71 kB │ gzip:   7.54 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/index-9eea8125.js                                0.25 kB │ gzip:   0.20 kB │ map:     0.10 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/WithTooltip-J57HCPYA-92a43ff3.js                 0.39 kB │ gzip:   0.25 kB │ map:     0.11 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/syntaxhighlighter-PONEFOSF-fd7cd249.js           0.41 kB │ gzip:   0.27 kB │ map:     0.12 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-6d25f076.js                              0.52 kB │ gzip:   0.33 kB │ map:     0.53 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/index-a1cf9e47.js                                0.53 kB │ gzip:   0.34 kB │ map:     4.28 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-cb0eb70f.js                              0.57 kB │ gzip:   0.42 kB │ map:     1.69 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/react-18-38063e1e.js                             0.59 kB │ gzip:   0.38 kB │ map:     2.62 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-87eac49b.js                              0.68 kB │ gzip:   0.48 kB │ map:     3.91 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/_commonjsHelpers-de833af9.js                     0.75 kB │ gzip:   0.43 kB │ map:     0.11 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/index-356e4a49.js                                0.81 kB │ gzip:   0.51 kB │ map:     3.26 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/index-8d47fad6.js                                0.84 kB │ gzip:   0.55 kB │ map:     4.10 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-b3c37142.js                              0.90 kB │ gzip:   0.59 kB │ map:     2.97 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/jsx-runtime-29545a09.js                          1.02 kB │ gzip:   0.64 kB │ map:     2.30 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/DocsRenderer-3PUGWF3O-6bd3ccc2.js                1.25 kB │ gzip:   0.69 kB │ map:     2.59 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-bed967c6.js                              2.38 kB │ gzip:   1.24 kB │ map:    10.99 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/index-d37d4223.js                                2.63 kB │ gzip:   1.30 kB │ map:     7.48 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-15309724.js                              3.22 kB │ gzip:   1.39 kB │ map:    10.25 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Principles-b9c09348.js                           3.49 kB │ gzip:   1.43 kB │ map:     6.17 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Button.stories-4ff25615.js                       3.92 kB │ gzip:   1.23 kB │ map:     3.08 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Introduction-83274477.js                         4.01 kB │ gzip:   1.69 kB │ map:     6.80 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Button-3204a7df.js                               4.71 kB │ gzip:   1.69 kB │ map:     9.00 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/iframe-9c7b80fe.js                               5.69 kB │ gzip:   1.82 kB │ map:     5.76 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/TabPanel-e67a638a.js                             6.29 kB │ gzip:   2.48 kB │ map:    25.20 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/index-76fb7be0.js                                7.21 kB │ gzip:   2.95 kB │ map:    15.72 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-b8d6c68d.js                              7.67 kB │ gzip:   1.59 kB │ map:    14.23 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-2059b184.js                              8.32 kB │ gzip:   3.20 kB │ map:    29.43 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/GlobalScrollAreaStyles-UY5SB7EJ-0bd77632.js     15.00 kB │ gzip:   2.79 kB │ map:    21.42 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/preview-6751e51d.js                             21.12 kB │ gzip:   7.00 kB │ map:    68.35 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/OverlayScrollbars-GZGLA7DL-14afcb95.js          28.95 kB │ gzip:  14.20 kB │ map:   108.14 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Color-6VNJS4EI-d10cd276.js                      31.00 kB │ gzip:  11.63 kB │ map:   112.68 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Typography-a643a418.js                          49.65 kB │ gzip:   7.62 kB │ map:   110.14 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/Iconography-910608e9.js                         53.80 kB │ gzip:   8.81 kB │ map:   119.67 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/index-ffc7e5ff.js                              212.55 kB │ gzip:  66.45 kB │ map:   653.11 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/config-5449214f.js                             213.48 kB │ gzip:  66.38 kB │ map:   803.35 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/index-6874766a.js                              516.85 kB │ gzip: 169.20 kB │ map: 1,484.43 kB
-../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9/assets/formatter-SWP5E3XI-dc2ed1a4.js                 601.59 kB │ gzip: 185.02 kB │ map: 1,318.59 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/logo-figma-b2bcb0b9.svg                          1.59 kB │ gzip:   0.68 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/iframe.html                                            12.74 kB │ gzip:   3.57 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Regular-ed64c5d8.woff2                    98.76 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Thin-4b4de24f.woff2                       99.14 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Black-1d1374a7.woff2                     103.83 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Light-16eb6c3d.woff2                     104.84 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraLight-ad65e3b1.woff2                105.33 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Medium-a4ad8ac6.woff2                    105.94 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-SemiBold-d6d09054.woff2                  106.79 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraBold-d7c30894.woff2                 107.00 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Bold-04079eb5.woff2                      107.24 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/primus-icon-fe641959.ttf                       129.13 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/primus-icon-2488ba91.woff                      129.21 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/primus-icon-33c8fcab.eot                       129.31 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Regular-6ab20422.woff                    149.34 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Thin-610f2d4e.woff                       150.90 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Black-fa9c24ee.woff                      155.01 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Light-703f829f.woff                      156.08 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraLight-17132a9c.woff                 156.33 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Medium-860f80f6.woff                     157.89 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraBold-ba6d2d4b.woff                  158.94 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-SemiBold-492190c4.woff                   159.08 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Bold-51c34c5f.woff                       159.38 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Regular-df548578.ttf                     401.79 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Light-30ffa7fd.ttf                       401.93 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Regular-f74336e1.eot                     401.99 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Light-5210eb82.eot                       402.14 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraLight-d22f5373.ttf                  402.36 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraLight-5b556c55.eot                  402.59 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Thin-73def667.ttf                        402.63 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Thin-b463d5d9.eot                        402.84 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Medium-d4beba3c.ttf                      406.31 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Medium-2c1c0b7a.eot                      406.53 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-SemiBold-1c9fb7eb.ttf                    407.26 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-SemiBold-ea28c859.eot                    407.48 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Bold-a7f19a24.ttf                        407.54 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Bold-bcef6c27.eot                        407.73 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraBold-ad26181f.ttf                   408.31 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Black-b9a1eb1f.ttf                       408.53 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraBold-efb469ca.eot                   408.54 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Black-14b9bc78.eot                       408.74 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/primus-icon-4a044e3c.svg                       469.47 kB │ gzip: 133.89 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Black-e29b3294.svg                     1,880.77 kB │ gzip: 256.97 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Regular-d6da102d.svg                   1,885.31 kB │ gzip: 246.94 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Thin-df919726.svg                      1,896.99 kB │ gzip: 245.26 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraLight-c01783ea.svg                1,927.39 kB │ gzip: 265.05 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Light-36c55e53.svg                     1,936.21 kB │ gzip: 265.88 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-ExtraBold-e1edfd46.svg                 1,957.10 kB │ gzip: 271.21 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Medium-92ce861e.svg                    1,962.07 kB │ gzip: 270.59 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-Bold-4fd4e3cf.svg                      1,962.16 kB │ gzip: 271.65 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Inter-SemiBold-2746e082.svg                  1,966.61 kB │ gzip: 271.73 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Button-22f2b9d1.css                             32.76 kB │ gzip:   4.14 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-7d620c45.css                            37.71 kB │ gzip:   7.54 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/index-9eea8125.js                                0.25 kB │ gzip:   0.20 kB │ map:     0.10 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/WithTooltip-J57HCPYA-2ce090f4.js                 0.39 kB │ gzip:   0.25 kB │ map:     0.11 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/syntaxhighlighter-PONEFOSF-06560938.js           0.41 kB │ gzip:   0.27 kB │ map:     0.12 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-20a935ce.js                              0.52 kB │ gzip:   0.33 kB │ map:     0.53 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/index-a1cf9e47.js                                0.53 kB │ gzip:   0.34 kB │ map:     4.28 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-cb0eb70f.js                              0.57 kB │ gzip:   0.42 kB │ map:     1.69 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/react-18-38063e1e.js                             0.59 kB │ gzip:   0.38 kB │ map:     2.62 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-87eac49b.js                              0.68 kB │ gzip:   0.48 kB │ map:     3.91 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/_commonjsHelpers-de833af9.js                     0.75 kB │ gzip:   0.43 kB │ map:     0.11 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/index-356e4a49.js                                0.81 kB │ gzip:   0.51 kB │ map:     3.26 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/index-8d47fad6.js                                0.84 kB │ gzip:   0.55 kB │ map:     4.10 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-b3c37142.js                              0.90 kB │ gzip:   0.59 kB │ map:     2.97 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/jsx-runtime-29545a09.js                          1.02 kB │ gzip:   0.64 kB │ map:     2.30 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/DocsRenderer-3PUGWF3O-5d5db6ef.js                1.25 kB │ gzip:   0.68 kB │ map:     2.59 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-bed967c6.js                              2.38 kB │ gzip:   1.24 kB │ map:    10.99 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/index-d37d4223.js                                2.63 kB │ gzip:   1.30 kB │ map:     7.48 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-15309724.js                              3.22 kB │ gzip:   1.39 kB │ map:    10.25 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Principles-3bc35b52.js                           3.49 kB │ gzip:   1.43 kB │ map:     6.17 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Button.stories-4ff25615.js                       3.92 kB │ gzip:   1.23 kB │ map:     3.08 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Introduction-9d09a659.js                         4.01 kB │ gzip:   1.69 kB │ map:     6.80 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Button-11802ec1.js                               4.71 kB │ gzip:   1.69 kB │ map:     9.00 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/iframe-f54cd6a0.js                               5.69 kB │ gzip:   1.82 kB │ map:     5.76 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/TabPanel-e67a638a.js                             6.29 kB │ gzip:   2.48 kB │ map:    25.20 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/index-76fb7be0.js                                7.21 kB │ gzip:   2.95 kB │ map:    15.72 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-b8d6c68d.js                              7.67 kB │ gzip:   1.59 kB │ map:    14.23 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-2059b184.js                              8.32 kB │ gzip:   3.20 kB │ map:    29.43 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/GlobalScrollAreaStyles-UY5SB7EJ-f2ee97a1.js     15.00 kB │ gzip:   2.78 kB │ map:    21.42 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/preview-6751e51d.js                             21.12 kB │ gzip:   7.00 kB │ map:    68.35 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/OverlayScrollbars-GZGLA7DL-14afcb95.js          28.95 kB │ gzip:  14.20 kB │ map:   108.14 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Color-6VNJS4EI-043419dc.js                      31.00 kB │ gzip:  11.63 kB │ map:   112.68 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Typography-54d0c436.js                          49.65 kB │ gzip:   7.62 kB │ map:   110.14 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/Iconography-b175d95e.js                         53.81 kB │ gzip:   8.82 kB │ map:   119.68 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/index-ffc7e5ff.js                              212.55 kB │ gzip:  66.45 kB │ map:   653.11 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/config-5449214f.js                             213.48 kB │ gzip:  66.38 kB │ map:   803.35 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/index-e4d0bd69.js                              516.85 kB │ gzip: 169.20 kB │ map: 1,484.43 kB
+../../../../var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ/assets/formatter-SWP5E3XI-45a5a390.js                 601.59 kB │ gzip: 185.02 kB │ map: 1,318.59 kB
 
 (!) Some chunks are larger than 500 kBs after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 6.32s
-info => Output directory: /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--17591-dNAvR3Obuze9
+✓ built in 6.31s
+info => Output directory: /var/folders/nf/s5c1k9c548sb1v5xvhf77b8rnv4nh6/T/chromatic--18226-T1OL0diBIeaZ
