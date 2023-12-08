@@ -631,7 +631,7 @@
     font-size: 32px;
     color: #ff6000;
 }
-#storybook-docs table.docsTable .codeGroup{margin-left: 32px;}
+#storybook-docs table.docsTable td+td .codeGroup{margin-left: 32px;}
 
 #storybook-docs table.radius td{padding: 16px 6px;}
 
