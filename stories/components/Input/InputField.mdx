@@ -1,0 +1,483 @@
+import { Meta } from "@storybook/blocks";
+
+{/* InputField.mdx */}
+
+<Meta title="Design System/Components/Inputs/Input Field" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Input Field</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>The Input field component is a fundamental element in our design system, used for capturing user input across various forms and interfaces. It allows users to enter text, numbers, or other relevant information.</p>
+                </section>
+
+                <section>
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Default state
+                            <p>Always use a label and associate the label to the input properly.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/default-state.png" srcset="inputfield/default-state.png 1x, inputfield/default-state@2x.png 2x" alt='Default state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hover state
+                            <p>The input field hover state is the visually change and orange stroke that occurs when the cursor hovers over an input field. It is often used to emphasize interaction</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/hover-state.png" srcset="inputfield/hover-state.png 1x, inputfield/hover-state@2x.png 2x" alt='Hover state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Focus state
+                            <p>The input field focus state visually highlights the currently selected field, adding users in efficient navigation and interaction with keyboard.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/focus-state.png" srcset="inputfield/focus-state.png 1x, inputfield/focus-state@2x.png 2x" alt='Focus state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Disabled state
+                            <p>The disabled state of an input field indicates that the field is currently inactive and cannot be interacted with by the user.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/disabled-state.png" srcset="inputfield/disabled-state.png 1x, inputfield/disabled-state@2x.png 2x" alt='Disabled state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Active state
+                            <p>When a user is actively entering information into the field. The orange stroke appears and the value title turns into a label title. <span style={{ color: 'var(--error-fg-default)' }}>Counter is used if necessary.</span></p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/active-state.png" srcset="inputfield/active-state.png 1x, inputfield/active-state@2x.png 2x" alt='Active state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Filled state
+                            <p>The input field's filled state signifies that it contains user-entered data or content. <span style={{ color: 'var(--error-fg-default)' }}>Counter is used if necessary.</span></p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/filled-state.png" srcset="inputfield/filled-state.png 1x, inputfield/filled-state@2x.png 2x" alt='Filled state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Read-only state
+                            <p>Users can review but not edit the input field; it's non-interactive like the disabled state but remains focusable, accessible, and visually readable.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/readyonly-state.png" srcset="inputfield/readyonly-state.png 1x, inputfield/readyonly-state@2x.png 2x" alt='Read-only state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Error state
+                            <p>An input field error status indicates that there is a problem with the data entered. It is visually highlighted with a red border and helper text. It signals to the user that a correction is required.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/error-state.png" srcset="inputfield/error-state.png 1x, inputfield/error-state@2x.png 2x" alt='Error state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Success state
+                            <p>The input field success status indicates that the data entered is valid and accepted. It is represented by a visual sign with a green border and a helper test. Positive feedback is provided to the user.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/success-state.png" srcset="inputfield/success-state.png 1x, inputfield/success-state@2x.png 2x" alt='Success state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Helper state
+                            <p>The input field helper state refers to a feature that offers supplementary guidance or information to users when interacting with an input field, aiding them in understanding how to complete the field correctly or providing context for the input.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/helper-state.png" srcset="inputfield/helper-state.png 1x, inputfield/helper-state@2x.png 2x" alt='Helper state'/>
+                        </div>                   
+                    </div>
+
+                </section>
+
+
+                <section>
+                    ## Options
+                    <p className='mb40 text-lg'>The Primus Design System offers a variety of input field options to enhance usability and improve the user experience.</p>
+
+                    <div className="row row-cols-2 reverse">
+                        <div className="col">
+                            ### Icon usage 
+                            <p>The implementation of icons in input fields can be adjusted to improve the user experience.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/options1.png" srcset="inputfield/options1.png 1x, inputfield/options1@2x.png 2x" alt='Options'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Additional element 
+                            <p>Additional elements can be incorporated into the text field to enhance the user experience, such as payment logos, dropdown icons, and country flags.</p>
+                        </div>
+                        <div className="col">
+                            <img src="inputfield/options2.png" srcset="inputfield/options2.png 1x, inputfield/options2@2x.png 2x" alt="Options"/>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="inputfield/anatomy.png" srcset="inputfield/anatomy.png 1x, inputfield/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Inner shadow</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Icon / Left & Right</p>
+                                </li>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Label text (unpopulated)</p>
+                                </li>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Surface</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">Label text (populated)</p>
+                                </li>
+                                <li>
+                                    <span className="number">6</span>
+                                    <p className="semibold">Asterisk</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">7</span>
+                                    <p className="semibold">Character counter</p>
+                                </li>
+                                <li>
+                                    <span className="number">8</span>
+                                    <p className="semibold">Helper text icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">9</span>
+                                    <p className="semibold">Helper text</p>
+                                </li>
+                                <li>
+                                    <span className="number">10</span>
+                                    <p className="semibold">Input text</p>
+                                </li>
+                                <li>
+                                    <span className="number">11</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Inner shadow
+                    <p>It can be used when the component is in its default, filled or inactive states.</p>
+
+                    ### Icon / Left & Right
+                    <p>Visual support for component.</p>
+
+                    ### Label text (unpopulated)
+                    <p>Both types of text fields feature a container to visually signal interaction and provide identical functionality.</p>
+
+                    ### Surface
+                    <p style={{ color: 'var(--error-fg-default)' }}>Colored surface used as backdrop. Visual appearance differs based on theme.</p>
+
+                    ### Label text (populated)
+                    <p>Both types of text fields feature a container to visually signal interaction and provide identical functionality.</p>
+
+                    ### Asterisk
+                    <p>If the field is mandatory, include an asterisk (*) alongside the label text.</p>
+
+                    ### Character counter
+                    <p>Text input can show a character count indicator when the text length must not exceed a predetermined limit.</p>
+
+                    ### Helper text icon
+                    <p>It visually represents attendance and complements the meaning of the helper text</p>
+
+                    ### Helper text
+                    <p>An input field can include helper text below it to provide users with additional context or instructions on what to input. The helper text area offers three options: a description, an approval message, and an error message.</p>
+
+                    ### Input text
+                    <p>The input text refers to the text entered by the user in a text field.</p>
+
+                    ### Border
+                    <p>It can be employed to signify ongoing user interaction or draw attention.</p>
+
+                </section>
+
+
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg" style={{ color: 'var(--error-fg-default)' }}>Primus Design System has x different input field sizes: large(lg), medium(md), small (sm) and extra-small(xs). </p>
+
+                    ### Large (lg)
+                    <p>Primus Design System has x different input field sizes: large(lg), medium(md), small (sm) and extra-small(xs). </p>
+                    <img className="mb24" src="inputfield/large.png" srcset="inputfield/large.png 1x, inputfield/large@2x.png 2x" alt='Large (lg)'/>
+                    <img className="mb32" src="inputfield/large2.png" srcset="inputfield/large2.png 1x, inputfield/large2@2x.png 2x" alt='Large (lg)'/>
+                </section>
+
+
+
+
+                <section>
+                    ## Usage
+                    <p>Input fields support various input types to suit different needs and use cases.</p>
+                    <p className="mb0">Here are some recommended input types for specific use cases:</p>
+                    <ul className="list disc mb32">
+                        <li>Text: Suitable for single-line text input.</li>
+                        <li style={{ color: 'var(--error-fg-default)' }}>URL: Designed for entering URLs.</li>
+                        <li>Phone: Intended for telephone number input.</li>
+                        <li style={{ color: 'var(--error-fg-default)' }}>Email: Used for entering email addresses.</li>
+                        <li style={{ color: 'var(--error-fg-default)' }}>Password: Used for creating password fields. </li>
+                        <li>Date: Used for entering date</li>
+                        <li>Credit card number:Designed for entering credit card number.</li>
+                    </ul>
+                </section>
+
+
+
+
+
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/do1.png" srcset="inputfield/do1.png 1x inputfield/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/dont1.png" srcset="inputfield/dont1.png 1x inputfield/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p style={{ color: 'var(--error-fg-default)' }}>Don’t use x words or more than y characters including spaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/do2.png" srcset="inputfield/do2.png 1x inputfield/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Avoid using punctuation marks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/dont2.png" srcset="inputfield/dont2.png 1x inputfield/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use punctuation marks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/do3.png" srcset="inputfield/do3.png 1x inputfield/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/dont3.png" srcset="inputfield/dont3.png 1x inputfield/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use the low contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/do4.png" srcset="inputfield/do4.png 1x inputfield/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use input field with a label.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/dont4.png" srcset="inputfield/dont4.png 1x inputfield/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use only input text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/do5.png" srcset="inputfield/do5.png 1x inputfield/do5@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use input field with a label.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/dont5.png" srcset="inputfield/dont5.png 1x inputfield/dont5@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use only input text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/do6.png" srcset="inputfield/do6.png 1x inputfield/do6@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use helper text to make situation clear.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="inputfield/dont6.png" srcset="inputfield/dont6.png 1x inputfield/dont6@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't use input field without helper text in an error, warn or info situation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                </section>
+
+
+                 <section>
+                    ## Properties
+                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </section>
+
+
+                 <section>
+                    ## Tokenization
+                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </section>
+
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+
