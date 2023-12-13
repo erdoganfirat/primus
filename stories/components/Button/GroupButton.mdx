@@ -1,0 +1,435 @@
+import { Meta } from "@storybook/blocks";
+
+{/* GroupButton.mdx */}
+
+<Meta title="Design System/Components/Button/Group Button" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Group Button</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>Text link button is an actionable hyperlink based componet with connection to another web pages.</p>
+                </section>
+
+                <section>
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Type of Text Link Buttons
+                            <p>Primus Design System has one types of text link button(primary) for each light and dark theme.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textlink/textlinkbuttons.png" srcset="textlink/textlinkbuttons.png 1x, textlink/textlinkbuttons@2x.png 2x" alt='Type of Text Link Buttons'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">text link btn-text-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">text link btn-icon-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">text link btn-bg-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">text link btn-border-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>                         
+                </section>
+
+
+                <section>
+                    ## States
+                    <p>Buttons have different states to describe the interaction status with the user.</p>
+
+                    ### Default state
+                    <p>This is the initial state of a button when it is not being interacted with. It usually represents a neutral or inactive state and is often displayed with a standard appearance.</p>
+
+                    ### Hover state
+                    <p>When a user hovers the cursor over a button, it enters the hover state. The button may change its appearance slightly to provide visual feedback. It helps indicate that the button is interactive and can be clicked.</p>
+
+                    ### Focused state
+                    <p>The focused state is essential for accessibility, indicating when a user selects an element using a keyboard or voice input. It is crucial for visually impaired or limited mobility users relying on screen readers or keyboard navigation.</p>
+
+                    ### Active(pressed state)
+                    <p>When a user clicks or taps on a button, it enters the active or pressed state. This state indicates that the button is being actively interacted with. The appearance of the button may change to provide immediate feedback to the user.</p>
+
+                    ### Disabled state
+                    <p>In certain cases, buttons may be disabled to indicate that they are temporarily unavailable or that the associated action cannot be performed. The disabled state typically displays the button with a different visual treatment, such as reduced opacity or grayscale, to indicate that it is inactive.</p>
+                    <img className="mb32" src='textlink/exampleusage.png' srcset={'textlink/exampleusage.png 1x, textlink/exampleusage@2x.png 2x'} alt="Example usage"/>
+
+                    <div className="table stroke">
+                        <div className="row">
+                            <div className="cell header">Default</div>
+                            <div className="cell"><img src="groupbutton/button-group.png" srcset="groupbutton/button-group.png 1x, groupbutton/button-group@2x.png 2x" alt='Group Button'/></div>
+                        </div>
+                        <div className="row">
+                            <div className="cell header">Hover</div>
+                            <div className="cell"><img src="groupbutton/button-group-hover.png" srcset="groupbutton/button-group-hover.png 1x, groupbutton/button-group-hover@2x.png 2x" alt='Group Button Hover'/></div>
+                        </div>
+                        <div className="row">
+                            <div className="cell header">Focused</div>
+                            <div className="cell"><img src="groupbutton/button-group-focused.png" srcset="groupbutton/button-group-focused.png 1x, groupbutton/button-group-focused@2x.png 2x" alt='Group Button Focused'/></div>
+                        </div>
+                        <div className="row">
+                            <div className="cell header">Active</div>
+                            <div className="cell"><img src="groupbutton/button-group-active.png" srcset="groupbutton/button-group-active.png 1x, groupbutton/button-group-active@2x.png 2x" alt='Group Button Active'/></div>
+                        </div>
+                        <div className="row">
+                            <div className="cell header">Disabled</div>
+                            <div className="cell"><img src="groupbutton/button-group-disabled.png" srcset="groupbutton/button-group-disabled.png 1x, groupbutton/button-group-disabled@2x.png 2x" alt='Group Button Disabled'/></div>
+                        </div>
+                    </div>
+
+                    ### Usage quantities
+                    <p>Group buttons can consist of at least 3 and at most 5 buttons.</p>
+                    <img className="mb32" src='groupbutton/usage-quantities.png' srcset={'groupbutton/usage-quantities.png 1x, groupbutton/usage-quantities@2x.png 2x'} alt="Usage quantities"/>
+                </section>
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="groupbutton/anatomy.png" srcset="groupbutton/anatomy.png 1x, groupbutton/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Surface</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Icon</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Label</p>
+                                </li>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Surface
+                    <p>Colored surface used as backdrop. Visual appearance differs based on theme.</p>
+
+                    ### Icon
+                    <p>Visual support for label.</p>
+
+                    ### Label
+                    <p>Text that supports a contextual messaging. </p>
+
+                    ### Border
+                    <p>A border is used by default to separate elements.</p>
+                </section>
+
+
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has 4 different group button sizes: large(lg), medium(md), small (sm) and extra-small(xs). Buttons have 2 different options. These are with icon, without icon.</p>
+
+                    ### Large (lg)
+                    <p>The height of the component will be fixed at 56 px/pts. Large group  buttons width can enlarge with label and icon.</p>
+                    <img className="mb32" src="groupbutton/large.png" srcset="groupbutton/large.png 1x, groupbutton/large@2x.png 2x" alt='Large (lg)'/>
+
+
+                    ### Medium (md)
+                    <p>The height of the component will be fixed at 48 px/pts. Large group  buttons width can enlarge with label and icon.</p>
+                    <img className="mb32" src="groupbutton/medium.png" srcset="groupbutton/medium.png 1x, groupbutton/medium@2x.png 2x" alt='Medium (md)'/>
+
+                    ### Small (sm)
+                    <p>The height of the component will be fixed at 40 px/pts. Large group  buttons width can enlarge with label and icon.</p>
+                    <img className="mb32" src="groupbutton/small.png" srcset="groupbutton/small.png 1x, groupbutton/small@2x.png 2x" alt='Small (sm)'/>
+
+                    ### Extra-small (xs)
+                    <p>The height of the component will be fixed at 32 px/pts. Large group  buttons width can enlarge with label and icon.</p>
+                    <img className="mb32" src="groupbutton/xsmall.png" srcset="groupbutton/xsmall.png 1x, groupbutton/xsmall@2x.png 2x" alt='Extra-small (xs)'/>
+                </section>
+
+
+
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>Text link button should contain hypertext.</li>
+                        <li>The first letter of the word on the text button is capitalized and the rest is lowercase.</li>
+                        <li>Text button texts are limited to one line.</li>
+                    </ul>
+                </section>
+
+
+
+
+
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/do1.png" srcset="groupbutton/do1.png 1x groupbutton/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use to do the point text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/dont1.png" srcset="groupbutton/dont1.png 1x groupbutton/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t write long text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/do2.png" srcset="groupbutton/do2.png 1x groupbutton/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use label.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/dont2.png" srcset="groupbutton/dont2.png 1x groupbutton/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use without label.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/do3.png" srcset="groupbutton/do3.png 1x groupbutton/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use the high contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/dont3.png" srcset="groupbutton/dont3.png 1x groupbutton/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use the low contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/do4.png" srcset="groupbutton/do4.png 1x groupbutton/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use iconography provided by Primus DS - Icon Library for the icons.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/dont4.png" srcset="groupbutton/dont4.png 1x groupbutton/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use external assets, iconography, or emojis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/do5.png" srcset="groupbutton/do5.png 1x groupbutton/do5@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use a single line label.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/dont5.png" srcset="groupbutton/dont5.png 1x groupbutton/dont5@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use label with multiple lines.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/do6.png" srcset="groupbutton/do6.png 1x groupbutton/do6@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use primary color.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/dont6.png" srcset="groupbutton/dont6.png 1x groupbutton/dont6@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t change button colors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/do7.png" srcset="groupbutton/do7.png 1x groupbutton/do7@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use primary color.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="groupbutton/dont7.png" srcset="groupbutton/dont7.png 1x groupbutton/dont7@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t change button colors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section>
+
+ 
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+
