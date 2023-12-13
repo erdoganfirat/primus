@@ -1,0 +1,395 @@
+import { Meta } from "@storybook/blocks";
+
+{/* TextLink.mdx */}
+
+<Meta title="Design System/Foundation/Text Link" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Text Link</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>Text link button is an actionable hyperlink based componet with connection to another web pages.</p>
+                </section>
+
+                <section>
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Type of Text Link Buttons
+                            <p>Primus Design System has one types of text link button(primary) for each light and dark theme.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textlink/textlinkbuttons.png" srcset="textlink/textlinkbuttons.png 1x, textlink/textlinkbuttons@2x.png 2x" alt='Type of Text Link Buttons'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">text link btn-text-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">text link btn-icon-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">primary-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">text link btn-bg-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">text link btn-border-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>                         
+                </section>
+
+
+                <section>
+                    ## States
+                    <p>Buttons have different states to describe the interaction status with the user.</p>
+
+                    ### Default state
+                    <p>This is the initial state of a button when it is not being interacted with. It usually represents a neutral or inactive state and is often displayed with a standard appearance.</p>
+
+                    ### Hover state
+                    <p>When a user hovers the cursor over a button, it enters the hover state. The button may change its appearance slightly to provide visual feedback. It helps indicate that the button is interactive and can be clicked.</p>
+
+                    ### Focused state
+                    <p>The focused state is essential for accessibility, indicating when a user selects an element using a keyboard or voice input. It is crucial for visually impaired or limited mobility users relying on screen readers or keyboard navigation.</p>
+
+                    ### Active(pressed state)
+                    <p>When a user clicks or taps on a button, it enters the active or pressed state. This state indicates that the button is being actively interacted with. The appearance of the button may change to provide immediate feedback to the user.</p>
+
+                    ### Disabled state
+                    <p>In certain cases, buttons may be disabled to indicate that they are temporarily unavailable or that the associated action cannot be performed. The disabled state typically displays the button with a different visual treatment, such as reduced opacity or grayscale, to indicate that it is inactive.</p>
+                    <img className="mb32" src='textlink/exampleusage.png' srcset={'textlink/exampleusage.png 1x, textlink/exampleusage@2x.png 2x'} alt="Example usage"/>
+
+                    <table className='docsTable'>
+                        <tr>
+                            <th className='text-start'>Default</th>
+                            <th className='text-start'>Hover</th>
+                            <th className='text-start'>Focused</th>
+                            <th className='text-start'>Active</th>
+                            <th className='text-start'>Disabled</th>
+                        </tr>
+                        <tr>
+                            <td><img src="textlink/text-link.png" srcset="textlink/text-link.png 1x, textlink/text-link@2x.png 2x" alt='Text Link'/></td>
+                            <td><img src="textlink/text-link-hover.png" srcset="textlink/text-link-hover.png 1x, textlink/text-link-hover@2x.png 2x" alt='Text Link Hover'/></td>
+                            <td><img src="textlink/text-link-focused.png" srcset="textlink/text-link-focused.png 1x, textlink/text-link-focused@2x.png 2x" alt='Text Link Focused'/></td>
+                            <td><img src="textlink/text-link-active.png" srcset="textlink/text-link-active.png 1x, textlink/text-link-active@2x.png 2x" alt='Text Link Active'/></td>
+                            <td><img src="textlink/text-link-disabled.png" srcset="textlink/text-link-disabled.png 1x, textlink/text-link-disabled@2x.png 2x" alt='Text Link Disabled'/></td>
+                        </tr>
+                    </table>
+
+                </section>
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="textlink/anatomy.png" srcset="textlink/anatomy.png 1x, textlink/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Label</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Surface</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Icon / Left & Right
+                    <p>Visual support for label.</p>
+
+                    ### Label
+                    <p>Hyperlink that supports a contextual messaging. </p>
+
+                    ### Surface
+                    <p>Uncolored surface used as backdrop. Visual appearance differs based on theme.</p>
+                </section>
+
+
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has 3 different text link button sizes: large(lg), medium(md) and small (sm). Text link buttons have 3 different options. These are with label and right&left icon, with label and right icon and  with label and left icon.</p>
+
+                    ### Large (lg)
+                    <p>The height of the component will be fixed at 24 px/pts. Large buttons width can enlarge with hyperlink and icons.</p>
+                    <img className="mb32" src="textlink/large.png" srcset="textlink/large.png 1x, textlink/large@2x.png 2x" alt='Large (lg)'/>
+
+
+                    ### Medium (md)
+                    <p>The height of the component will be fixed at 24 px/pts. Large buttons width can enlarge with hyperlink and icons.</p>
+                    <img className="mb32" src="textlink/medium.png" srcset="textlink/medium.png 1x, textlink/medium@2x.png 2x" alt='Medium (md)'/>
+
+                    ### Small (sm)
+                    <p>The height of the component will be fixed at 20 px/pts. Large buttons width can enlarge with hyperlink and icons.</p>
+                    <img className="mb32" src="textlink/small.png" srcset="textlink/small.png 1x, textlink/small@2x.png 2x" alt='Small (sm)'/>
+                </section>
+
+
+
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>Text link button should contain hypertext.</li>
+                        <li>The first letter of the word on the text button is capitalized and the rest is lowercase.</li>
+                        <li>Text button texts are limited to one line.</li>
+                    </ul>
+                </section>
+
+
+
+
+
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/do1.png" srcset="textlink/do1.png 1x textlink/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use to do the point text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/dont1.png" srcset="textlink/dont1.png 1x textlink/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t write long text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/do2.png" srcset="textlink/do2.png 1x textlink/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use label.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/dont2.png" srcset="textlink/dont2.png 1x textlink/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use without label.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/do3.png" srcset="textlink/do3.png 1x textlink/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use the high contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/dont3.png" srcset="textlink/dont3.png 1x textlink/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use the low contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/do4.png" srcset="textlink/do4.png 1x textlink/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use iconography provided by Primus DS - Icon Library for the icons.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/dont4.png" srcset="textlink/dont4.png 1x textlink/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use external assets, iconography, or emojis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/do5.png" srcset="textlink/do5.png 1x textlink/do5@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use a single line label.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/dont5.png" srcset="textlink/dont5.png 1x textlink/dont5@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use label with multiple lines.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/do6.png" srcset="textlink/do6.png 1x textlink/do6@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use primary color.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textlink/dont6.png" srcset="textlink/dont6.png 1x textlink/dont6@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t change button colors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section>
+
+ 
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+
