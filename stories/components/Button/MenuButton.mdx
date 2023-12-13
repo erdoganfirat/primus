@@ -1,0 +1,506 @@
+import { Meta } from "@storybook/blocks";
+
+{/* MenuButton.mdx */}
+
+<Meta title="Design System/Components/Button/Menu Button" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Menu Button</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>The menu button assists users in performing actions, selecting from a variety of options, configuring settings, and more.</p>
+                </section>
+
+                <section>
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Type of Menu Button
+                            <p>Primus Design System has 1 type of button for each light and dark theme.</p>
+                        </div>
+                        <div className="col">
+                            <img src="menubutton/menubutton.png" srcset="menubutton/menubutton.png 1x, menubutton/menubutton@2x.png 2x" alt='Type of Text Link Buttons'/>
+                        </div>                   
+                    </div>
+
+                    <table className='docsTable tokenTable'>
+                        <tr>
+                            <td><div className="head">Text color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">menu btn-text-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-90</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#1E1E1E'}}></i> #1E1E1E</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Icon color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">menu btn-icon-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-90</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#1E1E1E'}}></i> #1E1E1E</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Background color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">menu btn-bg-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-transparent</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><div className="head">Border color</div></td>
+                            <td>
+                                <div className="codeGroup">
+                                    <span className="code">menu btn-border-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">color-neutral-30</span>
+                                    <span>=</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#B3B3B3'}}></i> #B3B3B3</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>                         
+                </section>
+
+
+                <section>
+                    ## States
+                    <p>Menu buttons have different states to describe the interaction status with the user.</p>
+
+                    ### Default state
+                    <p>This is the initial state of a button when it is not being interacted with. It usually represents a neutral or inactive state and is often displayed with a standard appearance.</p>
+
+                    ### Hover state
+                    <p>When a user hovers the cursor over a button, it enters the hover state. The button may change its appearance slightly to provide visual feedback. It helps indicate that the button is interactive and can be clicked.</p>
+
+                    ### Focused state
+                    <p>The focused state is essential for accessibility, indicating when a user selects an element using a keyboard or voice input. It is crucial for visually impaired or limited mobility users relying on screen readers or keyboard navigation.</p>
+
+                    ### Active(pressed state)
+                    <p>When a user clicks or taps on a button, it enters the active or pressed state. This state indicates that the button is being actively interacted with. The appearance of the button may change to provide immediate feedback to the user.</p>
+
+                    ### Disabled state
+                    <p>In certain cases, buttons may be disabled to indicate that they are temporarily unavailable or that the associated action cannot be performed. The disabled state typically displays the button with a different visual treatment to indicate that it is inactive.</p>
+                    <img className="mb32" src='menubutton/exampleusage.png' srcset={'menubutton/exampleusage.png 1x, menubutton/exampleusage@2x.png 2x'} alt="Example usage"/>
+
+                    <table className='docsTable'>
+                        <tr>
+                            <th className='text-start'></th>
+                            <th className='text-start'>With label and right&left icon</th>
+                            <th className='text-start'>With label and right icon</th>
+                            <th className='text-start'>Without label</th>
+                        </tr>
+                        <tr>
+                            <td>Default</td>
+                            <td><img src="menubutton/menubutton-rightleft-icon.png" srcset="menubutton/menubutton-rightleft-icon.png 1x, menubutton/menubutton-rightleft-icon@2x.png 2x" alt='With label and right&left icon (Default)'/></td>
+                            <td><img src="menubutton/menubutton-right-icon.png" srcset="menubutton/menubutton-right-icon.png 1x, menubutton/menubutton-right-icon@2x.png 2x" alt='With label and right icon (Default)'/></td>
+                            <td><img src="menubutton/menubutton-label.png" srcset="menubutton/menubutton-label.png 1x, menubutton/menubutton-label@2x.png 2x" alt='Without label (Default)'/></td>
+                        </tr>
+                        <tr>
+                            <td>Hover</td>
+                            <td><img src="menubutton/menubutton-rightleft-icon-hover.png" srcset="menubutton/menubutton-rightleft-icon-hover.png 1x, menubutton/menubutton-rightleft-icon-hover@2x.png 2x" alt='With label and right&left icon (Hover)'/></td>
+                            <td><img src="menubutton/menubutton-right-icon-hover.png" srcset="menubutton/menubutton-right-icon-hover.png 1x, menubutton/menubutton-right-icon-hover@2x.png 2x" alt='With label and right icon (Hover)'/></td>
+                            <td><img src="menubutton/menubutton-label-hover.png" srcset="menubutton/menubutton-label-hover.png 1x, menubutton/menubutton-label-hover@2x.png 2x" alt='Without label (Hover)'/></td>
+                        </tr>
+                        <tr>
+                            <td>Focused</td>
+                            <td><img src="menubutton/menubutton-rightleft-icon-focused.png" srcset="menubutton/menubutton-rightleft-icon-focused.png 1x, menubutton/menubutton-rightleft-icon-focused@2x.png 2x" alt='With label and right&left icon (Focused)'/></td>
+                            <td><img src="menubutton/menubutton-right-icon-focused.png" srcset="menubutton/menubutton-right-icon-focused.png 1x, menubutton/menubutton-right-icon-focused@2x.png 2x" alt='With label and right icon (Focused)'/></td>
+                            <td><img src="menubutton/menubutton-label-focused.png" srcset="menubutton/menubutton-label-focused.png 1x, menubutton/menubutton-label-focused@2x.png 2x" alt='Without label (Focused)'/></td>
+                        </tr>
+                        <tr>
+                            <td>Active</td>
+                            <td><img src="menubutton/menubutton-rightleft-icon-active.png" srcset="menubutton/menubutton-rightleft-icon-active.png 1x, menubutton/menubutton-rightleft-icon-active@2x.png 2x" alt='With label and right&left icon (Active)'/></td>
+                            <td><img src="menubutton/menubutton-right-icon-active.png" srcset="menubutton/menubutton-right-icon-active.png 1x, menubutton/menubutton-right-icon-active@2x.png 2x" alt='With label and right icon (Active)'/></td>
+                            <td><img src="menubutton/menubutton-label-active.png" srcset="menubutton/menubutton-label-active.png 1x, menubutton/menubutton-label-active@2x.png 2x" alt='Without label (Active)'/></td>
+                        </tr>
+                        <tr>
+                            <td>Disabled</td>
+                            <td><img src="menubutton/menubutton-rightleft-icon-disabled.png" srcset="menubutton/menubutton-rightleft-icon-disabled.png 1x, menubutton/menubutton-rightleft-icon-disabled@2x.png 2x" alt='With label and right&left icon (Disabled)'/></td>
+                            <td><img src="menubutton/menubutton-right-icon-disabled.png" srcset="menubutton/menubutton-right-icon-disabled.png 1x, menubutton/menubutton-right-icon-disabled@2x.png 2x" alt='With label and right icon (Disabled)'/></td>
+                            <td><img src="menubutton/menubutton-label-disabled.png" srcset="menubutton/menubutton-label-disabled.png 1x, menubutton/menubutton-label-disabled@2x.png 2x" alt='Without label (Disabled)'/></td>
+                        </tr>
+                    </table>
+
+                    ### Usage quantities
+                    <p>Group buttons can consist of at least 3 and at most 5 buttons.</p>
+                    <img className="mb32" src='menubutton/usage-quantities.png' srcset={'menubutton/usage-quantities.png 1x, menubutton/usage-quantities@2x.png 2x'} alt="Usage quantities"/>
+                </section>
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="menubutton/anatomy.png" srcset="menubutton/anatomy.png 1x, menubutton/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Label</p>
+                                </li>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Dropdown icon</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Surface</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Icon
+                    <p>Visual support for label or single usage.</p>
+
+                    ### Label
+                    <p>Text that supports a contextual messaging.</p>
+
+                    ### Dropdown icon
+                    <p>Only the chevron icon is used. Used for dropdown action</p>
+
+                    ### Surface
+                    <p>Colored surface used as backdrop. Visual appearance differs based on theme.</p>
+
+                    ### Border
+                    <p>Border helps establish a clear visual hierarchy by separating buttons from surrounding content, and they are generally used with border radius.</p>
+                </section>
+
+
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has 4 different group button sizes: large(lg), medium(md), small (sm) and extra-small(xs). Buttons have 2 different options. These are with icon, without icon.</p>
+
+                    ### Large (lg)
+                    <p>The height of the component will be fixed at 56 px/pts. Large menu  button width can enlarge with label and icon.</p>
+                    <img className="mb32" src="menubutton/large.png" srcset="menubutton/large.png 1x, menubutton/large@2x.png 2x" alt='Large (lg)'/>
+
+
+                    ### Medium (md)
+                    <p>The height of the component will be fixed at 48 px/pts. Large menu  button width can enlarge with label and icon.</p>
+                    <img className="mb32" src="menubutton/medium.png" srcset="menubutton/medium.png 1x, menubutton/medium@2x.png 2x" alt='Medium (md)'/>
+
+                    ### Small (sm)
+                    <p>The height of the component will be fixed at 40 px/pts. Large menu  button width can enlarge with label and icon.</p>
+                    <img className="mb32" src="menubutton/small.png" srcset="menubutton/small.png 1x, menubutton/small@2x.png 2x" alt='Small (sm)'/>
+
+                    ### Extra-small (xs)
+                    <p>The height of the component will be fixed at 32px/pts. Large menu  button width can enlarge with label and icon.</p>
+                    <img className="mb32" src="menubutton/xsmall.png" srcset="menubutton/xsmall.png 1x, menubutton/xsmall@2x.png 2x" alt='Extra-small (xs)'/>
+                </section>
+
+
+
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>Menu button should contain at least one text, icon or both (text + icon).</li>
+                        <li>The first letter of the word on the menu button is capitalized and the rest is lowercase.</li>
+                        <li>The icon should signify what the menu button does</li>
+                        <li>Menu button texts are limited to one line.</li>
+                        <li>They should be discoverable, easy to identify, and specific.</li>
+                    </ul>
+                </section>
+
+
+
+
+
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do1.png" srcset="menubutton/do1.png 1x menubutton/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p style={{ color: 'var(--error-fg-default)' }}>Use x words or fewer than y characters including spaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont1.png" srcset="menubutton/dont1.png 1x menubutton/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p style={{ color: 'var(--error-fg-default)' }}>Don’t use x words or more than y characters including spaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do2.png" srcset="menubutton/do2.png 1x menubutton/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Avoid using punctuation marks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont2.png" srcset="menubutton/dont2.png 1x menubutton/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use punctuation marks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do3.png" srcset="menubutton/do3.png 1x menubutton/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use the high contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont3.png" srcset="menubutton/dont3.png 1x menubutton/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use the low contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do4.png" srcset="menubutton/do4.png 1x menubutton/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use sentence-case capitalization.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont4.png" srcset="menubutton/dont4.png 1x menubutton/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use title case captalization or all caps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do5.png" srcset="menubutton/do5.png 1x menubutton/do5@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use iconography provided by Primus DS - Icon Library for the icons.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont5.png" srcset="menubutton/dont5.png 1x menubutton/dont5@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use external assets, iconography, or emojis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do6.png" srcset="menubutton/do6.png 1x menubutton/do6@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use the spacing and sizing provided by the component.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont6.png" srcset="menubutton/dont6.png 1x menubutton/dont6@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t resize the inside dimensions of the buttons.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do7.png" srcset="menubutton/do7.png 1x menubutton/do7@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use colors provided by the variant options determined by the button type.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont7.png" srcset="menubutton/dont7.png 1x menubutton/dont7@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use label with multiple lines.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do8.png" srcset="menubutton/do8.png 1x menubutton/do8@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Right button can be used as menu button</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont8.png" srcset="menubutton/dont8.png 1x menubutton/dont8@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use left or middle button as menu button.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/do9.png" srcset="menubutton/do9.png 1x menubutton/do9@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="menubutton/dont9.png" srcset="menubutton/dont9.png 1x menubutton/dont9@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>don't use less than 16 pixel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </section>
+
+
+                 <section>
+                    ## Properties
+                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </section>
+
+
+                 <section>
+                    ## Tokenization
+                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </section>
+
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+
