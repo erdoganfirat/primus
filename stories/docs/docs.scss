@@ -449,6 +449,7 @@
 }
 
 #storybook-docs .row.row-cols-2 .col {width: 50%}
+#storybook-docs .row.row-cols-3 .col {width: 33.3333333333%; width: calc(100% / 3)}
 #storybook-docs .row.row-cols-4 .col {width: 25%}
 #storybook-docs .row.row-cols-3-custom .col {max-width: 301px;}
 #storybook-docs .row.row-cols-3-custom .col:nth-child(3n+2) {max-width: 302px;}
@@ -634,7 +635,7 @@
 #storybook-docs table.docsTable td+td .codeGroup{margin-left: 32px;}
 
 #storybook-docs table.radius td{padding: 16px 6px;}
-
+#storybook-docs table.docsTable td .images {gap: 16px;}
 
 #storybook-docs .dodont{
     align-items: flex-start;

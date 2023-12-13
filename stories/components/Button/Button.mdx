@@ -2,7 +2,7 @@ import { Meta, Canvas, Controls, Source, Story } from "@storybook/blocks";
 
 {/* Button.mdx */}
 
-<Meta title="Design System/Components/Button" />
+<Meta title="Design System/Components/Button/Button" />
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Button } from "./Button";
@@ -569,8 +569,515 @@ import * as ButtonStories from "./Button.stories";
                 </section>
 
 
+                <section>
+                    ## States
+                    <p>Buttons have different states to describe the interaction status with the user.</p>
+
+                    <img className="mb40" src='button/states.png' srcset={'button/states.png 1x, button/states@2x.png 2x'} alt="Button States"/>
+
+                    ### Default state
+                    <p>This is the initial state of a button when it is not being interacted with. It usually represents a neutral or inactive state and is often displayed with a standard appearance.</p>
+
+                    ### Hover state
+                    <p>When a user hovers the cursor over a button, it enters the hover state. The button may change its appearance slightly to provide visual feedback. It helps indicate that the button is interactive and can be clicked.</p>
+
+                    ### Focused state
+                    <p>The focused state is essential for accessibility, indicating when a user selects an element using a keyboard or voice input. It is crucial for visually impaired or limited mobility users relying on screen readers or keyboard navigation.</p>
+
+                    ### Active(pressed state)
+                    <p>When a user clicks or taps on a button, it enters the active or pressed state. This state indicates that the button is being actively interacted with. The appearance of the button may change to provide immediate feedback to the user.</p>
+
+                    ### Disabled state
+                    <p>In certain cases, buttons may be disabled to indicate that they are temporarily unavailable or that the associated action cannot be performed. The disabled state typically displays the button with a different visual treatment to indicate that it is inactive.</p>
+
+                    ### Loading state
+                    <p>This state show that button visually indicates a loading state to users. This helps prevent them from pressing the button again while a process is underway. Disabling the button during progress is crucial to avoid any action errors.</p>
+
+                    ### Success state
+                    <p>The success state of a button signifies a successful action or completion.</p>
+
+                    ### Error state
+                    <p>The error state of a button indicates an unsuccessful action or error related to its intended function or purpose.</p>
+                </section>
+
+                <section>
+                    ## Light Theme
+                    ### Stateful buttons 
+
+                    <table className='docsTable'>
+                        <tr>
+                            <th className='text-start'>State</th>
+                            <th className='text-start'>Primary</th>
+                            <th className='text-start'>Secondary</th>
+                            <th className='text-start'>Tertiary</th>
+                            <th className='text-start'>Ghost</th>
+                            <th className='text-start'>Bordered Gray</th>                        
+                        </tr>
+                        <tr>
+                            <td>Default</td>
+                            <td><img src="button/button-primary.png" srcset="button/button-primary.png 1x, button/button-primary@2x.png 2x" alt='Button Primary'/></td>
+                            <td><img src="button/button-secondary.png" srcset="button/button-secondary.png 1x, button/button-secondary@2x.png 2x" alt='Button Secondary'/></td>
+                            <td><img src="button/button-tertiary.png" srcset="button/button-tertiary.png 1x, button/button-tertiary@2x.png 2x" alt='Button Tertiary'/></td>
+                            <td><img src="button/button-ghost.png" srcset="button/button-ghost.png 1x, button/button-ghost@2x.png 2x" alt='Button Ghost'/></td>
+                            <td><img src="button/button-bordered-gray.png" srcset="button/button-bordered-gray.png 1x, button/button-bordered-gray@2x.png 2x" alt='Button Bordered Gray'/></td>
+                        </tr>
+                        <tr>
+                            <td>Hover</td>
+                            <td><img src="button/button-primary-hover.png" srcset="button/button-primary-hover.png 1x, button/button-primary-hover@2x.png 2x" alt='Button Primary Hover'/></td>
+                            <td><img src="button/button-secondary-hover.png" srcset="button/button-secondary-hover.png 1x, button/button-secondary-hover@2x.png 2x" alt='Button Secondary Hover'/></td>
+                            <td><img src="button/button-tertiary-hover.png" srcset="button/button-tertiary-hover.png 1x, button/button-tertiary-hover@2x.png 2x" alt='Button Tertiary Hover'/></td>
+                            <td><img src="button/button-ghost-hover.png" srcset="button/button-ghost-hover.png 1x, button/button-ghost-hover@2x.png 2x" alt='Button Ghost Hover'/></td>
+                            <td><img src="button/button-bordered-gray-hover.png" srcset="button/button-bordered-gray-hover.png 1x, button/button-bordered-gray-hover@2x.png 2x" alt='Button Bordered Gray Hover'/></td>
+                        </tr>
+                        <tr>
+                            <td>Focused</td>
+                            <td><img src="button/button-primary-focused.png" srcset="button/button-primary-focused.png 1x, button/button-primary-focused@2x.png 2x" alt='Button Primary Focused'/></td>
+                            <td><img src="button/button-secondary-focused.png" srcset="button/button-secondary-focused.png 1x, button/button-secondary-focused@2x.png 2x" alt='Button Secondary Focused'/></td>
+                            <td><img src="button/button-tertiary-focused.png" srcset="button/button-tertiary-focused.png 1x, button/button-tertiary-focused@2x.png 2x" alt='Button Tertiary Focused'/></td>
+                            <td><img src="button/button-ghost-focused.png" srcset="button/button-ghost-focused.png 1x, button/button-ghost-focused@2x.png 2x" alt='Button Ghost Focused'/></td>
+                            <td><img src="button/button-bordered-gray-focused.png" srcset="button/button-bordered-gray-focused.png 1x, button/button-bordered-gray-focused@2x.png 2x" alt='Button Bordered Gray Focused'/></td>
+                        </tr>
+                        <tr>
+                            <td>Active</td>
+                            <td><img src="button/button-primary-active.png" srcset="button/button-primary-active.png 1x, button/button-primary-active@2x.png 2x" alt='Button Primary Active'/></td>
+                            <td><img src="button/button-secondary-active.png" srcset="button/button-secondary-active.png 1x, button/button-secondary-active@2x.png 2x" alt='Button Secondary Active'/></td>
+                            <td><img src="button/button-tertiary-active.png" srcset="button/button-tertiary-active.png 1x, button/button-tertiary-active@2x.png 2x" alt='Button Tertiary Active'/></td>
+                            <td><img src="button/button-ghost-active.png" srcset="button/button-ghost-active.png 1x, button/button-ghost-active@2x.png 2x" alt='Button Ghost Active'/></td>
+                            <td><img src="button/button-bordered-gray-active.png" srcset="button/button-bordered-gray-active.png 1x, button/button-bordered-gray-active@2x.png 2x" alt='Button Bordered Gray Active'/></td>
+                        </tr>
+                        <tr>
+                            <td>Disabled</td>
+                            <td><img src="button/button-primary-disabled.png" srcset="button/button-primary-disabled.png 1x, button/button-primary-disabled@2x.png 2x" alt='Button Primary Disabled'/></td>
+                            <td><img src="button/button-secondary-disabled.png" srcset="button/button-secondary-disabled.png 1x, button/button-secondary-disabled@2x.png 2x" alt='Button Secondary Disabled'/></td>
+                            <td><img src="button/button-tertiary-disabled.png" srcset="button/button-tertiary-disabled.png 1x, button/button-tertiary-disabled@2x.png 2x" alt='Button Tertiary Disabled'/></td>
+                            <td><img src="button/button-ghost-disabled.png" srcset="button/button-ghost-disabled.png 1x, button/button-ghost-disabled@2x.png 2x" alt='Button Ghost Disabled'/></td>
+                            <td><img src="button/button-bordered-disabled.png" srcset="button/button-bordered-disabled.png 1x, button/button-bordered-disabled@2x.png 2x" alt='Button Bordered Gray Disabled'/></td>
+                        </tr>
+                        <tr>
+                            <td>Loading</td>
+                            <td><img src="button/button-primary-loading.png" srcset="button/button-primary-loading.png 1x, button/button-primary-loading@2x.png 2x" alt='Button Primary Loading'/></td>
+                            <td><img src="button/button-secondary-loading.png" srcset="button/button-secondary-loading.png 1x, button/button-secondary-loading@2x.png 2x" alt='Button Secondary Loading'/></td>
+                            <td><img src="button/button-tertiary-loading.png" srcset="button/button-tertiary-loading.png 1x, button/button-tertiary-loading@2x.png 2x" alt='Button Tertiary Loading'/></td>
+                            <td><img src="button/button-ghost-loading.png" srcset="button/button-ghost-loading.png 1x, button/button-ghost-loading@2x.png 2x" alt='Button Ghost Loading'/></td>
+                            <td><img src="button/button-bordered-gray-loading.png" srcset="button/button-bordered-gray-loading.png 1x, button/button-bordered-gray-loading@2x.png 2x" alt='Button Bordered Gray Loading'/></td>
+                        </tr>
+                        <tr>
+                            <td>Success</td>
+                            <td><img src="button/button-success.png" srcset="button/button-success.png 1x, button/button-success@2x.png 2x" alt='Button Success'/></td>
+                            <td><img src="button/button-secondary-success.png" srcset="button/button-secondary-success.png 1x, button/button-secondary-success@2x.png 2x" alt='Button Success'/></td>
+                            <td><img src="button/button-secondary-success.png" srcset="button/button-secondary-success.png 1x, button/button-secondary-success@2x.png 2x" alt='Button Success'/></td>
+                            <td><img src="button/button-secondary-success.png" srcset="button/button-secondary-success.png 1x, button/button-secondary-success@2x.png 2x" alt='Button Success'/></td>
+                            <td><img src="button/button-secondary-success.png" srcset="button/button-secondary-success.png 1x, button/button-secondary-success@2x.png 2x" alt='Button Success'/></td>
+                        </tr>
+                        <tr>
+                            <td>Error</td>
+                            <td><img src="button/button-error.png" srcset="button/button-error.png 1x, button/button-error@2x.png 2x" alt='Button Error'/></td>
+                            <td><img src="button/button-error.png" srcset="button/button-error.png 1x, button/button-error@2x.png 2x" alt='Button Error'/></td>
+                            <td><img src="button/button-error.png" srcset="button/button-error.png 1x, button/button-error@2x.png 2x" alt='Button Error'/></td>
+                            <td><img src="button/button-error.png" srcset="button/button-error.png 1x, button/button-error@2x.png 2x" alt='Button Error'/></td>
+                            <td><img src="button/button-error.png" srcset="button/button-error.png 1x, button/button-error@2x.png 2x" alt='Button Error'/></td>
+                        </tr>
+                    </table>                    
+
+
+                    ### Informative buttons  
+
+                    <table className='docsTable'>
+                        <tr>
+                            <th className='text-start'>State</th>
+                            <th className='text-start'>Success</th>
+                            <th className='text-start'>Error</th>
+                        </tr>
+                        <tr>
+                            <td>Default</td>
+                            <td><img src="button/button-informative-success.png" srcset="button/button-informative-success.png 1x, button/button-informative-success@2x.png 2x" alt='Informative Button Success'/></td>
+                            <td><img src="button/button-informative-error.png" srcset="button/button-informative-error.png 1x, button/button-informative-error@2x.png 2x" alt='Informative Button Error'/></td>
+                        </tr>
+                        <tr>
+                            <td>Hover</td>
+                            <td><img src="button/button-informative-success-hover.png" srcset="button/button-informative-success-hover.png 1x, button/button-informative-success-hover@2x.png 2x" alt='Informative Button Success Hover'/></td>
+                            <td><img src="button/button-informative-error-hover.png" srcset="button/button-informative-error-hover.png 1x, button/button-informative-error-hover@2x.png 2x" alt='Informative Button Error Hover'/></td>
+                        </tr>
+                        <tr>
+                            <td>Focused</td>
+                            <td><img src="button/button-informative-success-focused.png" srcset="button/button-informative-success-focused.png 1x, button/button-informative-success-focused@2x.png 2x" alt='Informative Button Success Focused'/></td>
+                            <td><img src="button/button-informative-error-focused.png" srcset="button/button-informative-error-focused.png 1x, button/button-informative-error-focused@2x.png 2x" alt='Informative Button Error Focused'/></td>
+                        </tr>
+                        <tr>
+                            <td>Active</td>
+                            <td><img src="button/button-informative-success-active.png" srcset="button/button-informative-success-active.png 1x, button/button-informative-success-active@2x.png 2x" alt='Informative Button Success Active'/></td>
+                            <td><img src="button/button-informative-error-active.png" srcset="button/button-informative-error-active.png 1x, button/button-informative-error-active@2x.png 2x" alt='Informative Button Error Active'/></td>
+                        </tr>
+                        <tr>
+                            <td>Disabled</td>
+                            <td><img src="button/button-informative-success-disabled.png" srcset="button/button-informative-success-disabled.png 1x, button/button-informative-success-disabled@2x.png 2x" alt='Informative Button Success Disabled'/></td>
+                            <td><img src="button/button-informative-error-disabled.png" srcset="button/button-informative-error-disabled.png 1x, button/button-informative-error-disabled@2x.png 2x" alt='Informative Button Error Disabled'/></td>
+                        </tr>
+                    </table>                    
+
+                </section>
+
+                <section>
+                    ## Anatomy
+                    <img src="button/anatomy.png" srcset="button/anatomy.png 1x, button/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Surface</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Label</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Icon / Left & Right</p>
+                                </li>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Surface
+                    <p>Colored surface used as backdrop. Visual appearance differs based on button type.</p>
+
+                    ### Label
+                    <p>Text that supports a contextual messaging.</p>
+
+                    ### Icon / Left & Right
+                    <p>Visual support for label.</p>
+
+                    ### Border
+                    <p>Border helps establish a clear visual hierarchy by separating buttons from surrounding content, and they are generally used with border radius.</p>
+
+                </section>
+
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has 4 different button sizes: large(lg), medium(md), small (sm) and extra-small(xs). Buttons have 4 different options. These are with label and right&left icon, with label and right icon, with label and left icon, without icon.</p>
+
+                    ### Large (lg)
+                    <p>The height of the component will be fixed at 56 px/pts. Large buttons can optional be full-width and take up 100% of the container’s width.</p>
+                    <img className="mb32" src="button/large.png" srcset="button/large.png 1x, button/large@2x.png 2x" alt='Large (lg)'/>
+
+
+                    ### Medium (md)
+                    <p>The height of the component will be fixed at 48 px/pts. Medium buttons can optional be full-width and take up 100% of the container’s width.</p>
+                    <img className="mb32" src="button/medium.png" srcset="button/medium.png 1x, button/medium@2x.png 2x" alt='Medium (md)'/>
+
+                    ### Small (sm)
+                    <p>The height of the component will be fixed at 40 px/pts. Small buttons can optional be full-width and take up 100% of the container’s width.</p>
+                    <img className="mb32" src="button/small.png" srcset="button/small.png 1x, button/small@2x.png 2x" alt='Small (sm)'/>
+
+                    ### Extra-small (xs)
+                    <p>The height of the component will be fixed at 32 px/pts. Extra-small buttons can optional be full-width and take up 100% of the container’s width.</p>
+                    <img className="mb32" src="button/xsmall.png" srcset="button/xsmall.png 1x, button/xsmall@2x.png 2x" alt='Extra-small (xs)'/>
+
+                </section>
+
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>Button should contain at least one text, icon or both (text + icon).</li>
+                        <li>The first letter of the word on the buttons is capitalized and the rest is lowercase.</li>
+                        <li>The icon should signify what the button does</li>
+                        <li>Button texts are limited to one line.</li>
+                        <li>They should be discoverable, easy to identify, and specific.</li>
+                        <li>When deciding which button to use, consider the level of priority of the action, as well as how much visual emphasis the button should have in the context.</li>
+                    </ul>
+                </section>
+
+
+
+                <section>
+                    ## Do’s and Dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do1.png" srcset="button/do1.png 1x button/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p style={{ color: 'var(--error-fg-default)' }}>Don’t use x words or more than y characters including spaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont1.png" srcset="button/dont1.png 1x button/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p style={{ color: 'var(--error-fg-default)' }}>Don’t use x words or more than y characters including spaces.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do2.png" srcset="button/do2.png 1x button/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Avoid using punctuation marks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont2.png" srcset="button/dont2.png 1x button/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use punctuation marks.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do3.png" srcset="button/do3.png 1x button/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use the high contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont3.png" srcset="button/dont3.png 1x button/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use the low contrast color with the button and background.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do4.png" srcset="button/do4.png 1x button/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use sentence-case capitalization.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont4.png" srcset="button/dont4.png 1x button/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use title case captalization or all caps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do5.png" srcset="button/do5.png 1x button/do5@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use primary button as the main action , put the tertiary as the second option.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont5.png" srcset="button/dont5.png 1x button/dont5@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use primary button next to secondary.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do6.png" srcset="button/do6.png 1x button/do6@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use primary button as the main action , put the secondary button as the second option.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont6.png" srcset="button/dont6.png 1x button/dont6@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use primary button next to secondary.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do7.png" srcset="button/do7.png 1x button/do7@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use active verbs or phrases that clearly indicate action.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont7.png" srcset="button/dont7.png 1x button/dont7@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use vague and generic labels that make the user read the dialog before taking action.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do8.png" srcset="button/do8.png 1x button/do8@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use primary buttonin the top position when buttons are stacked vertically.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont8.png" srcset="button/dont8.png 1x button/dont8@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use primary button under any other button.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do9.png" srcset="button/do9.png 1x button/do9@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use iconography provided by <a href="#">Primus DS - Icon Library</a> for the icons.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont9.png" srcset="button/dont9.png 1x button/dont9@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use external assets, iconography, or emojis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do10.png" srcset="button/do10.png 1x button/do10@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use the spacing and sizing provided by the component.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont10.png" srcset="button/dont10.png 1x button/dont10@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t resize the inside dimensions of the buttons.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do11.png" srcset="button/do11.png 1x button/do11@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use colors provided by the variant options determined by the button type.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont11.png" srcset="button/dont11.png 1x button/dont11@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t change button colors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do12.png" srcset="button/do12.png 1x button/do12@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use a single line label.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont12.png" srcset="button/dont12.png 1x button/dont12@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use label with multiple lines.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/do13.png" srcset="button/do13.png 1x button/do13@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use 16 pixels between buttons.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="button/dont13.png" srcset="button/dont13.png 1x button/dont13@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't use less than 16 pixel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
  
             </TabPanel>
+ 
+
+
+
+
+
+
+
+
  
  
  

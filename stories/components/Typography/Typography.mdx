@@ -128,28 +128,51 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                 <section>
                     ## Anatomy
                     <img src="typography/anatomy.png" srcset="typography/anatomy.png 1x, typography/anatomy@2x.png 2x" alt='Anatomy'/>
-                    <ul className='lejant'>
-                        <li>
-                            <span className="number">1</span>
-                            <p><strong className="semibold">Baseline:</strong> Line where characters rest, ensuring alignment in a text.</p>
-                        </li>
-                        <li>
-                            <span className="number">2</span>
-                            <p><strong className="semibold">Cap height:</strong> Height of uppercase letters.</p>
-                        </li>
-                        <li>
-                            <span className="number">3</span>
-                            <p><strong className="semibold">X-height:</strong> Height of lowercase letters.</p>
-                        </li>
-                        <li>
-                            <span className="number">4</span>
-                            <p><strong className="semibold">Letter-spacing:</strong> Space between characters.</p>
-                        </li>
-                        <li>
-                            <span className="number">5</span>
-                            <p><strong className="semibold">Line height (Leading):</strong> Vertical distance between two lines of type, measured from the baseline of one line of type to the baseline of the next.</p>
-                        </li>
-                    </ul>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Baseline</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Cap height</p>
+                                </li>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">X-height</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Letter-spacing</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">Line height (Leading)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Baseline
+                    <p>Line where characters rest, ensuring alignment in a text.</p>
+
+                    ### Cap height
+                    <p>Height of uppercase letters.</p>
+
+                    ### X-height
+                    <p>Height of lowercase letters.</p>
+
+                    ### Letter-spacing
+                    <p>Space between characters.</p>
+
+                    ### Line height (Leading)
+                    <p>Vertical distance between two lines of type, measured from the baseline of one line of type to the baseline of the next.</p>
                 </section>
 
 
@@ -967,7 +990,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                 <section>
                     ## Do’s and Dont’s 
-                    <p className=" text-lg">Please review the examples below.</p>
+                    <p className="text-lg">Please review the examples below.</p>
 
                     <div className="row row-cols-2 dodont">
                         <div className="col">
