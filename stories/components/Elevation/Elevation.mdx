@@ -11,7 +11,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
     <div className="headContent">
         <div className="title">
             <h1>Elevation (z-index)</h1>
-            <span className="badge success"><i className="pi-success"></i> Live</span>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
         </div>
         <div className="badges">
             <span className="version">v 0.1.0</span>
@@ -52,6 +52,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     ## Metaphor
                     <p className="mb40 text-lg">When using elevation in design, it's advisable to keep in mind a metaphor that can be helpful for both light and dark modes. In this context, the "sun" metaphor can simplify the decision-making process. Just like an object appears brighter when it gets closer to the sun, you can apply this metaphor to both light and dark theme designs. As a result, design elements positioned higher should appear brighter.</p>
 
+                    ## Principles
+                    <p className="mb40 text-lg">Elevation rules in our design system are founded on the fundamental principle of creating a clear and visually intuitive hierarchy within our user interface. These rules serve as a guiding framework to establish depth, emphasize importance, and enhance user comprehension.</p>
+
                     <div className="row row-cols-2">
                         <div className="col">
                             ### Hierarchy
@@ -86,7 +89,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         <div className="col">
                             ### Realism and Skeuomorphism
                             <p className="mb8">Elevation can be employed to add a touch of realism, replicating physical attributes in our digital interfaces when appropriate.By simulating real-world principles of light and shadow, elevation creates a sense of depth, enhancing the spatial relationships between different interface components.</p>
-                            <p className="text-xs"><strong style={{ color: 'var(--error-fg-default)' }}>Elevation can be employed to add a touch of realism, replicating physical attributes in our.</strong></p>
                         </div>
                         <div className="col">
                             <img src="elevation/realism.png" srcset="elevation/realism.png 1x, elevation/realism@2x.png 2x" alt='Realism and Skeuomorphism'/>
@@ -106,7 +108,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         <div className="col">
                             ### Elevation -2
                             <p className="mb24">This level should be used for design elements that do not require interaction or are disabled.</p>
-                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                            <p><strong>Usage: </strong>TBD</p>
                         </div>
                         <div className="col">
                             <img src="elevation/elevation-2.png" srcset="elevation/elevation-2.png 1x, elevation/elevation-2@2x.png 2x" alt='Elevation -2'/>
@@ -117,7 +119,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         <div className="col">
                             ### Elevation -1
                             <p className="mb24">The color and inner shadow selection designed for this level is exclusively utilized for inputs.</p>
-                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                            <p><strong>Usage: </strong>TBD</p>
                         </div>
                         <div className="col">
                             <img src="elevation/elevation-1.png" srcset="elevation/elevation-1.png 1x, elevation/elevation-1@2x.png 2x" alt='Elevation -1'/>
@@ -127,8 +129,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <div className="row row-cols-2">
                         <div className="col">
                             ### Elevation 0 (Background)
-                            <p className="mb24">The color and inner shadow selection designed for this level is exclusively utilized for inputs.</p>
-                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                            <p className="mb24">This level is used for elements on background such as mobile app, desktop and tablet page backgrounds.</p>
+                            <p><strong>Usage: </strong>TBD</p>
                         </div>
                         <div className="col">
                             <img src="elevation/elevation-0.png" srcset="elevation/elevation-0.png 1x, elevation/elevation-0@2x.png 2x" alt='Elevation 0 (Background)'/>
@@ -138,8 +140,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <div className="row row-cols-2">
                         <div className="col">
                             ### Elevation 1
-                            <p className="mb24" style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                            <p className="mb24">This level uses a design element on top of the background, hierarchically closest to the element on Elevation 0, but it is still higher</p>
+                            <p><strong>Usage: </strong>TBD</p>
                         </div>
                         <div className="col">
                             <img src="elevation/elevation1.png" srcset="elevation/elevation1.png 1x, elevation/elevation1@2x.png 2x" alt='Elevation 1'/>
@@ -149,8 +151,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <div className="row row-cols-2">
                         <div className="col">
                             ### Elevation 2
-                            <p className="mb24" style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                            <p className="mb24">This level used for design elements above Elevation 1.</p>
+                            <p><strong>Usage: </strong>TBD</p>
                         </div>
                         <div className="col">
                             <img src="elevation/elevation2.png" srcset="elevation/elevation2.png 1x, elevation/elevation2@2x.png 2x" alt='Elevation 2'/>
@@ -160,8 +162,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <div className="row row-cols-2">
                         <div className="col">
                             ### Elevation 3
-                            <p className="mb24" style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                            <p className="mb24">This level is used with border support above Elevation 2.</p>
+                            <p><strong>Usage: </strong>TBD</p>
                         </div>
                         <div className="col">
                             <img src="elevation/elevation3.png" srcset="elevation/elevation3.png 1x, elevation/elevation3@2x.png 2x" alt='Elevation 3'/>
@@ -172,7 +174,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         <div className="col">
                             ### Overlay
                             <p className="mb24">This level is mainly used with a special component featuring a semi-transparent background overlay. The elevation guides users to focus solely on one element.</p>
-                            <p><strong>Usage: </strong>Example1, Example2, Example3</p>
+                            <p><strong>Usage: </strong>Bottom sheets, TBD</p>
                         </div>
                         <div className="col">
                             <img src="elevation/overlay.png" srcset="elevation/overlay.png 1x, elevation/overlay@2x.png 2x" alt='Overlay'/>
@@ -241,6 +243,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                 </section>
 
+                <section>
+                    ## Usage
+                    <p className="text-lg">In the Primus Design System, not every part needs elevation. Use elevation thoughtfully to improve the user experience. Overusing it can make things look cluttered and confusing. Most components can go with elevation 2 (background), but if something requires more definition, consider using color or elevation 3 as an alternative.</p>
+                </section>
 
 
 
@@ -255,7 +261,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="elevation/do1.png" srcset="elevation/do1.png 1x elevation/do1@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Lorem Ipsum</p>
+                                    <p>Design lower-level elevations as a subtle background for higher-level elevations to provide context and create a layered representation.</p>
                                 </div>
                             </div>
                         </div>
@@ -264,7 +270,28 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="elevation/dont1.png" srcset="elevation/dont1.png 1x elevation/dont1@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Lorem Ipsum</p>
+                                    <p>Avoid overlaying higher-level elevations directly onto lower-level elevations without clear separation, as it can lead to confusion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="elevation/do2.png" srcset="elevation/do2.png 1x elevation/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Ensure smooth transitions between surfaces in elevation levels, avoiding dramatic changes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="elevation/dont2.png" srcset="elevation/dont2.png 1x elevation/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Avoid creating abrupt or dramatic transitions between surfaces in elevation levels.</p>
                                 </div>
                             </div>
                         </div>
@@ -273,10 +300,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                 </section>
 
 
-                <section>
-                    ## Usage
-                    <p className="text-lg">In the Primus Design System, not every part needs elevation. Use elevation thoughtfully to improve the user experience. Overusing it can make things look cluttered and confusing. Most components can go with elevation 2 (background), but if something requires more definition, consider using color or elevation 3 as an alternative.</p>
-                </section>
 
 
 

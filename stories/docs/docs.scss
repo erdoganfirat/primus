@@ -257,6 +257,18 @@
     background: var(--success-bg-default, #E6F3EE);
     color: var(--success-fg-default, #008450);
 }
+#storybook-docs .badge.information {
+    background: var(--information-bg-default, #E6F3FB);
+    color:var(--information-fg-default, #0583D2);
+}
+#storybook-docs .badge.error {
+    background: var(--error-bg-default, #FFE6E6);
+    color:var(--error-fg-default, #FF0000);
+}
+#storybook-docs .badge.warning {
+    background: var(--warning-bg-default, #FFF9E6);
+    color:var(--warning-fg-default, #FFC400);
+}
 #storybook-docs .badge.secondary {
     border-radius: 6px;
     background: var(--button-bg-color-secondary, #FFEDE0);    
@@ -464,7 +476,7 @@
 #storybook-docs ul.lejant {list-style: none;padding: 0;}
 #storybook-docs ul.lejant>li>.number {
     border-radius: 99px;
-    background: var(--primary-default, #FF6000);
+    background: var(--text-color-secondary, #454545);
     display: flex;
     min-width: 30px;
     flex-direction: column;

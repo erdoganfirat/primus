@@ -10,7 +10,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
     <div className="headContent">
         <div className="title">
             <h1>Iconography</h1>
-            <span className="badge success"><i className="pi-success"></i> Live</span>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
         </div>
         <div className="badges">
             <span className="version">v 0.1.0</span>
@@ -54,7 +54,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <div className="row row-cols-2">
                         <div className="col">
                             ### Icon Clarity
-                            <p>An icon is a visual representation that can symbolize various elements such as objects, actions, sounds, gestures, states, or emotions. Its design should be minimalistic, consisting of basic shapes.</p>
+                            <p className="mb24">An icon is a visual representation that can symbolize various elements such as objects, actions, sounds, gestures, states, or emotions. Its design should be minimalistic, consisting of basic shapes.</p>
                             <p>The purpose of an icon is for users to decode its metaphorical meaning, the implied message it conveys, without the reliance on text labels. Symbols like an apple, a phone, or pencils are universally recognized, eliminating the need for additional captions. The familiarity of icons is what makes them functional, as they can be easily understood and interpreted by users.</p>
                         </div>
                         <div className="col">
@@ -75,7 +75,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <div className="row row-cols-2">
                         <div className="col">
                             ### Appearance
-                            <p>The core principle guiding the appearance of icons in the Primus Design System is simplicity. Each icon is designed to be as minimalistic as necessary, with unnecessary details omitted. The focus is on creating icons that effectively serve their specific purpose and function.</p>
+                            <p className="mb24">The core principle guiding the appearance of icons in the Primus Design System is simplicity. Each icon is designed to be as minimalistic as necessary, with unnecessary details omitted. The focus is on creating icons that effectively serve their specific purpose and function.</p>
                             <p>Another important aspect of the Primus Design System's icons is their color scheme. The icons follow a monochromatic approach, meaning they are typically rendered in a single color. The specific color of an icon may vary based on factors such as the interactive state (default, hover, disabled) or the chosen color theme within the design system. This approach ensures visual consistency and coherence across the entire icon set.</p>
                         </div>
                         <div className="col">
@@ -226,7 +226,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     </table>
 
 
-                    ### Pairing Icon Sizes With Text Style
+                    ### Pairing icon sizes with text style
                     <p>16 px, 20 px, 24 px, and 32 px icons are paired with text-sm-semibold (12/16), h6-semibold (14/20), h4-semibold (18/24), h2-semibold (24/32)</p>
 
                     <div className="row flex-wrap mb40">
@@ -346,7 +346,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconography/doalignment.png" srcset="iconography/doalignment.png 1x, iconography/doalignment@2x.png 2x" alt='Do line alignment'/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>When conducting alignment, ensure the establishment of an optical balance</p>
+                                    <p>When conducting alignment, ensure the establishment of an optical balance.</p>
                                 </div>
                             </div>
                         </div>
@@ -425,23 +425,23 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 </li>
                                 <li>
                                     <span className="number">1.1</span>
-                                    <p className="semibold">Exterior corner</p>
-                                </li>
-                                <li>
-                                    <span className="number">1.2</span>
                                     <p className="semibold">Stroke terminal</p>
                                 </li>
                                 <li>
-                                    <span className="number">1.3</span>
-                                    <p className="semibold">Joint</p>
-                                </li>
-                                <li>
-                                    <span className="number">2</span>
+                                    <span className="number">1.2</span>
                                     <p className="semibold">Solid stroke</p>
                                 </li>
                                 <li>
+                                    <span className="number">1.3</span>
+                                    <p className="semibold">Dashed stroke</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Corner</p>
+                                </li>
+                                <li>
                                     <span className="number">2.1</span>
-                                    <p className="semibold">Cap</p>
+                                    <p className="semibold">Interior corner</p>
                                 </li>
                             </ul>
                         </div>
@@ -449,23 +449,23 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <ul className='lejant'>
                                 <li>
                                     <span className="number">2.2</span>
-                                    <p className="semibold">Dashed stroke</p>
+                                    <p className="semibold">Exterior corner</p>
                                 </li>
                                 <li>
                                     <span className="number">3</span>
-                                    <p className="semibold">Icon modifier</p>
+                                    <p className="semibold">Joint</p>
                                 </li>
                                 <li>
                                     <span className="number">4</span>
-                                    <p className="semibold">Corner </p>
+                                    <p className="semibold">Cap</p>
                                 </li>
                                 <li>
                                     <span className="number">5</span>
-                                    <p className="semibold">Counter area</p>
+                                    <p className="semibold">Icon modifier</p>
                                 </li>
                                 <li>
                                     <span className="number">6</span>
-                                    <p className="semibold">Interior corner</p>
+                                    <p className="semibold">Counter area</p>
                                 </li>
                                 <li>
                                     <span className="number">7</span>
@@ -479,7 +479,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     ### Stroke
                     <p>All icons of the same size should have equal visual weight. Avoid variations in weight within a single icon and make sure no icon appears heavier or lighter than others.</p>
 
-                    #### Stroke Terminal 
+                    #### Stroke terminal 
                     <p>A straight or curved end line extension.</p>
 
                     <div className="row row-cols-2 mb24">
@@ -495,7 +495,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                     </div>
 
-                    #### Solid Stroke 
+                    #### Solid stroke 
                     <p>Stroke size is set as 2px for 32x32px icon. Stroke size changes proportionally to icon size. Solid stroke can be parallel or over base grids line.</p>
                     
 
@@ -529,7 +529,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                     </div>
 
-                    #### Dashed Stroke 
+                    #### Dashed stroke 
                     <p>Dashed stroke size is 2px. Below are the details of the dashed line. There is no dotted stroke style. According to the needs of the visualization, more than 1 px radius circles can used side by side instead of a dotted stroke.</p>
                     
                     <div className="row row-cols-2 mb24">
@@ -593,7 +593,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconography/docorner1.png" srcset="iconography/docorner1.png 1x, iconography/docorner1@2x.png 2x" alt='Do interior corner'/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                             </div>
                         </div>
@@ -602,7 +601,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconography/docorner2.png" srcset="iconography/docorner2.png 1x, iconography/docorner2@2x.png 2x" alt="Do interior corner"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                             </div>
                         </div>
@@ -618,7 +616,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconography/docorner3.png" srcset="iconography/docorner3.png 1x, iconography/docorner3@2x.png 2x" alt='Do exterior corner'/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                             </div>
                         </div>
@@ -627,7 +624,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconography/dontcorner.png" srcset="iconography/dontcorner.png 1x, iconography/dontcorner@2x.png 2x" alt="Don't exterior corner"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                             </div>
                         </div>
@@ -657,12 +653,12 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                     </div>
 
-                    ### Counter Area
+                    ### Counter area
                     <p>Negative space without the line or shape contained in the icon.</p>
                     <img className="mb24" src="iconography/counter.png" srcset="iconography/counter.png 1x, iconography/counter@2x.png 2x" alt="Counter"/>
 
 
-                    ### Icon Modifiers
+                    ### Icon modifiers
                     <p>Primus DS - Icon Library comes with modifiers that help you express icons more effectively. To make the most of these modifiers, it's important to incorporate them into your design.</p>
 
                     <div className="table modifiers">

@@ -9,12 +9,18 @@
 
     --success-bg-default: #E6F3EE;
     --success-fg-default: #008450;
+
+    --warning-bg-default: #FFF9E6;
     --warning-fg-default: #FFC400;
+
+    --information-bg-default: #E6F3FB;
     --information-fg-default: #0583D2;
 
-    --error-fg-default: #F00;
+    --error-bg-default: #FFE6E6;
+    --error-fg-default: #FF0000;
     --error-bg-hover: #FFF5F5;
 
+    background: var(--error-bg-default, #FFE6E6);
 
     --text-color-body: #333;
     --text-color-inverse: #FFF;
