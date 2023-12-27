@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'primus-icon';
-  src:  url('fonts/primus-icon.eot?il3fgp');
-  src:  url('fonts/primus-icon.eot?il3fgp#iefix') format('embedded-opentype'),
-    url('fonts/primus-icon.ttf?il3fgp') format('truetype'),
-    url('fonts/primus-icon.woff?il3fgp') format('woff'),
-    url('fonts/primus-icon.svg?il3fgp#primus-icon') format('svg');
+  src:  url('fonts/primus-icon.eot?yc94i5');
+  src:  url('fonts/primus-icon.eot?yc94i5#iefix') format('embedded-opentype'),
+    url('fonts/primus-icon.ttf?yc94i5') format('truetype'),
+    url('fonts/primus-icon.woff?yc94i5') format('woff'),
+    url('fonts/primus-icon.svg?yc94i5#primus-icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.pi-packman:before {
+.pi-spacing-large:before {
+  content: "\ea83";
+}
+.pi-spacing-medium:before {
+  content: "\ea84";
+}
+.pi-spacing-small:before {
+  content: "\ea85";
+}
+.pi-pac-man:before {
   content: "\e900";
 }
 .pi-yarin-kapinda:before {

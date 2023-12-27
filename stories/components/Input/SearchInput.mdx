@@ -1,0 +1,292 @@
+import { Meta } from "@storybook/blocks";
+
+{/* SearchInput.mdx */}
+
+<Meta title="Design System/Components/Inputs/Search input" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Search input</h1>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>A search input facilitates item searching and filtering.</p>
+                </section>
+
+                <section>
+                    ## States
+                    <p>Primus Design System has 10 states of input field.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Default state
+                            <p>Default state: In this state, the OTP input field is initially contains a placeholder short line. It's the starting point before the user enters any OTP.</p>
+                        </div>
+                        <div className="col">
+                            <img src="searchinput/default-state.png" srcset="searchinput/default-state.png 1x, searchinput/default-state@2x.png 2x" alt='Default state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hover state
+                            <p>OTP input hover states are visual changes when hovering over the OTP input field, helping users understand it's interactive and providing feedback for a better user experience.</p>
+                        </div>
+                        <div className="col">
+                            <img src="searchinput/hover-state.png" srcset="searchinput/hover-state.png 1x, searchinput/hover-state@2x.png 2x" alt='Hover state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Focus state
+                            <p>The OTP input field focus state visually highlights the currently selected field, adding users in efficient navigation and interaction with keyboard.</p>
+                        </div>
+                        <div className="col">
+                            <img src="searchinput/focus-state.png" srcset="searchinput/focus-state.png 1x, searchinput/focus-state@2x.png 2x" alt='Focus state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Active state
+                            <p>When a user interacts with the OTP input field (usually by clicking or tapping it), it enters the active state, ready to accept user input.</p>
+                        </div>
+                        <div className="col">
+                            <img src="searchinput/active-state.png" srcset="searchinput/active-state.png 1x, searchinput/active-state@2x.png 2x" alt='Active state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Filled state
+                            <p>After entering the OTP, the field transitions to the filled state, displaying the user's input.</p>
+                        </div>
+                        <div className="col">
+                            <img src="searchinput/filled-state.png" srcset="searchinput/filled-state.png 1x, searchinput/filled-state@2x.png 2x" alt='Filled state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Disabled state
+                            <p>The field does not accept any further user interactions or input. In this state:</p>
+                        </div>
+                        <div className="col">
+                            <img src="searchinput/disabled-state.png" srcset="searchinput/disabled-state.png 1x, searchinput/disabled-state@2x.png 2x" alt='Disabled state'/>
+                        </div>                   
+                    </div>
+
+
+
+                </section>
+
+
+
+                <section>
+                    ## Options
+ 
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Standard 
+                            <p>Standard component used in the design system.</p>
+                        </div>
+                        <div className="col">
+                            <img src="searchinput/options1.png" srcset="searchinput/options1.png 1x, searchinput/options1@2x.png 2x" alt='Options'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### With brand stripe 
+                            <p>This version is used in the searches found on the homepage.</p>
+                        </div>
+                        <div className="col">
+                            <img src="searchinput/options2.png" srcset="searchinput/options2.png 1x, searchinput/options2@2x.png 2x" alt="Options"/>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="searchinput/anatomy.png" srcset="searchinput/anatomy.png 1x, searchinput/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Search icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Place holder text</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Inner shadow</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">Right icon</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Search icon
+                    <p>The search icon in its designated area serves as a visual cue for users to perform a search and cannot be changed.</p>
+
+                    ### Place holder text
+                    <p>Text is visible before the user types into the field.</p>
+
+                    ### Inner shadow
+                    <p>It can be used when the component is in its default, filled or inactive states.</p>
+
+                    ### Border
+                    <p>It can be employed to signify ongoing user interaction or draw attention.</p>
+
+                    ### Right icon
+                    <p>Visual support for component.</p>
+                </section>
+
+
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has one search input size.</p>
+                    <img className="mb24" src="searchinput/size.png" srcset="searchinput/size.png 1x, searchinput/size@2x.png 2x" alt='OTP input size'/>
+                </section>
+
+
+
+                <section>
+                    ## Do’s and dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="searchinput/do1.png" srcset="searchinput/do1.png 1x searchinput/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use short text hinting at what the user can search.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="searchinput/dont1.png" srcset="searchinput/dont1.png 1x searchinput/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use unrelated key words.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="searchinput/do2.png" srcset="searchinput/do2.png 1x searchinput/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use the close icon, if the search field is full or being filled.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="searchinput/dont2.png" srcset="searchinput/dont2.png 1x searchinput/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use search input without close icon if it is full or being filled.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+                    
+                </section>
+
+
+
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

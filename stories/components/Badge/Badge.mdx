@@ -1,0 +1,331 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Badge.mdx */}
+
+<Meta title="Design System/Components/Badge" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Badge</h1>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>A badge component is a small visual element used in user interfaces to provide information or highlight attributes. It can include text, icons, or numbers and is commonly used to convey status, category, or notifications associated with an element.</p>
+                </section>
+
+                <section>
+                    ## Option of badges
+                    <p>Badge components play a crucial role in user interfaces by visually enhancing elements and providing key information. Here are different types of badges:</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### With icon badge
+                            <p>Incorporates both a small graphical icon and accompanying text to represent a particular category, status, or characteristic.</p>
+                        </div>
+                        <div className="col">
+                            <img src="badge/options1.png" srcset="badge/options1.png 1x, badge/options1@2x.png 2x" alt='Single select'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Without icon badge
+                            <p>Utilizes only text within the badge to convey information, making it a simple and space-efficient option for denoting status or category.</p>
+                        </div>
+                        <div className="col">
+                            <img src="badge/options2.png" srcset="badge/options2.png 1x, badge/options2@2x.png 2x" alt='Multi select'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Number badge 
+                            <p>Primarily used to signify the presence of new or unread items, such as messages, alerts, or updates.</p>
+                        </div>
+                        <div className="col">
+                            <img src="badge/options3.png" srcset="badge/options3.png 1x, badge/options3@2x.png 2x" alt='With helper text'/>
+                        </div>                   
+                    </div>
+                </section>
+
+
+                <section>
+                    ## Badge color usage
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            <img src="badge/usage1.png" srcset="badge/usage1.png 1x, badge/usage1@2x.png 2x" alt='With and without icon badges'/>
+                        </div>                   
+                        <div className="col">
+                            <img src="badge/usage2.png" srcset="badge/usage2.png 1x, badge/usage2@2x.png 2x" alt='Number Badge'/>
+                        </div>                   
+                    </div>
+                    <p>In our design system, while the anatomy of badges remains consistent, they can be displayed in different colors based on their usage and the messages they aim to convey. These are primarily in the core Hepsiburada colors but can also vary according to other brands or the statuses they represent.</p>
+                </section>
+
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="badge/anatomy.png" srcset="badge/anatomy.png 1x, badge/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Label</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Background</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Border
+                    <p>It can be employed to signify ongoing user interaction or draw attention.</p>
+
+                    ### Label
+                    <p>This is the area where the content of the badge is explained.</p>
+
+                    ### Icon
+                    <p>Icon is used to enhance understandability.</p>
+
+                    ### Background
+                    <p>Colored surface used as backdrop.</p>
+
+                </section>
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has four different badge sizes: large(lg), medium(md), small (sm), extra-small(xs)</p>
+
+                    ### Large (lg)
+                    <p>The component maintains a consistent height of 32 px/pts, whether it includes a icon or not. For number badges, the fixed height of the component is 24 px/pts. The width is flexible and adjusts based on the length of the text.</p>
+                    <img className="mb32" src="badge/size-lg.png" srcset="badge/size-lg.png 1x, badge/size-lg@2x.png 2x" alt='Size large (lg)'/>
+
+                    ### Medium (md)
+                    <p>The component maintains a consistent height of 24 px, whether it includes a icon or not. For number badges, the fixed height of the component is 16 px. The width is flexible and adjusts based on the length of the text.</p>
+                    <img className="mb32" src="badge/size-md.png" srcset="badge/size-md.png 1x, badge/size-md@2x.png 2x" alt='Size medium (md)'/>
+
+                    ### Small (sm)
+                    <p>The component maintains a consistent height of 20 px , whether it includes a icon or not. For number badges, the fixed height of the component is 12 px. The width is flexible and adjusts based on the length of the text.</p>
+                    <img className="mb32" src="badge/size-sm.png" srcset="badge/size-sm.png 1x, badge/size-sm@2x.png 2x" alt='Size small (sm)'/>
+
+                    ### Extra-small (xs)
+                    <p>The component maintains a consistent height of 16 px. The width is flexible and adjusts based on the length of the text. For number badges, the dimensions are fixed, with a height and width of the component set at 6 px.</p>
+                    <img className="mb32" src="badge/size-xs.png" srcset="badge/size-xs.png 1x, badge/size-xs@2x.png 2x" alt='Size extra-small (xs)'/>
+                </section>
+
+
+
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>Badges are non-interactive and primarily serve to visually communicate status, display notifications, or categorize items within the interface. They are not designed to be clickable.</li>
+                        <li>Utilize badges to communicate the status of an item, such as "New," "Approved," or "In Progress." Different colors or icons can be assigned to convey distinct statuses.</li>
+                        <li>Implement badges to display the count of notifications or alerts related to specific elements. This is particularly useful to draw attention to updates or pending actions.</li>
+                        <li>Employ badges to categorize items or content, providing users with a visual cue about the type or classification of information.</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    ## Do’s and dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/do1.png" srcset="badge/do1.png 1x badge/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>When using multiple badges, choose different colors or hierarchies to distinguish them.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/dont1.png" srcset="badge/dont1.png 1x badge/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Avoid using badges of the same color side by side for clarity and differentiation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/do2.png" srcset="badge/do2.png 1x badge/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>There is no XS badge icon usage.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/dont2.png" srcset="badge/dont2.png 1x badge/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Do not use XS badge with an icon.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/do3.png" srcset="badge/do3.png 1x badge/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Badges do not have interactive features; for interactive elements, use the chips component.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/dont3.png" srcset="badge/dont3.png 1x badge/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Avoid adding interactivity to badges.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/do4.png" srcset="badge/do4.png 1x badge/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Select the dimensions of number badges based on the component they are used in.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/dont4.png" srcset="badge/dont4.png 1x badge/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>The numeric representation of number badges is not suitable for use with all sizes of components.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/do5.png" srcset="badge/do5.png 1x badge/do5@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Leave the XS size number badge unchanged; utilize it as it is.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="badge/dont5.png" srcset="badge/dont5.png 1x badge/dont5@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Do not modify the XS size number badge; use it as is.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    
+                </section>
+
+
+
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -2,7 +2,7 @@ import { Meta } from "@storybook/blocks";
 
 {/* GroupButton.mdx */}
 
-<Meta title="Design System/Components/Buttons/Group Button" />
+<Meta title="Design System/Components/Buttons/Group button" />
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
@@ -12,7 +12,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 <div className="headBox">
     <div className="headContent">
         <div className="title">
-            <h1>Group Button</h1>
+            <h1>Group button</h1>
             <span className="badge information"><i className="pi-info"></i> Beta</span>
         </div>
         <div className="badges">
@@ -46,17 +46,17 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
             <TabPanel className="TabContent">
                 <section>
-                    <p>Text link button is an actionable hyperlink based componet with connection to another web pages.</p>
+                    <p>Group buttons refers to a collection of buttons that are grouped together based on their related actions or functions.</p>
                 </section>
 
                 <section>
                     <div className="row row-cols-2">
                         <div className="col">
-                            ### Type of Text Link Buttons
-                            <p>Primus Design System has one types of text link button(primary) for each light and dark theme.</p>
+                            ### Overview
+                            <p>Primus Design System has one type of group button.</p>
                         </div>
                         <div className="col">
-                            <img src="textlink/textlinkbuttons.png" srcset="textlink/textlinkbuttons.png 1x, textlink/textlinkbuttons@2x.png 2x" alt='Type of Text Link Buttons'/>
+                            <img src="groupbutton/groupbutton.png" srcset="groupbutton/groupbutton.png 1x, groupbutton/groupbutton@2x.png 2x" alt='Group button'/>
                         </div>                   
                     </div>
 
@@ -65,13 +65,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <td><div className="head">Text color</div></td>
                             <td>
                                 <div className="codeGroup">
-                                    <span className="code">text link btn-text-color-default</span>
+                                    <span className="code">group btn-text-color-default</span>
                                     <span>=</span>
-                                    <span className="code">primary-default</span>
+                                    <span className="code">color-neutral-50</span>
                                     <span>=</span>
-                                    <span className="code">color-hepsiburada orange-50</span>
-                                    <span>=</span>
-                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#757575'}}></i> #757575</span>
                                 </div>
                             </td>
                         </tr>
@@ -79,13 +77,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <td><div className="head">Icon color</div></td>
                             <td>
                                 <div className="codeGroup">
-                                    <span className="code">text link btn-icon-color-default</span>
+                                    <span className="code">group btn-icon-color-default</span>
                                     <span>=</span>
-                                    <span className="code">primary-default</span>
+                                    <span className="code">color-neutral-50</span>
                                     <span>=</span>
-                                    <span className="code">color-hepsiburada orange-50</span>
-                                    <span>=</span>
-                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#757575'}}></i> #757575</span>
                                 </div>
                             </td>
                         </tr>
@@ -93,7 +89,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <td><div className="head">Background color</div></td>
                             <td>
                                 <div className="codeGroup">
-                                    <span className="code">text link btn-bg-color-default</span>
+                                    <span className="code">group btn-bg-color-default</span>
+                                    <span>=</span>
+                                    <span className="code">border-transparent</span>
                                     <span>=</span>
                                     <span className="code">color-neutral-transparent</span>
                                     <span>=</span>
@@ -105,23 +103,50 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <td><div className="head">Border color</div></td>
                             <td>
                                 <div className="codeGroup">
-                                    <span className="code">text link btn-border-color-default</span>
+                                    <span className="code">group btn-border-color-default</span>
                                     <span>=</span>
-                                    <span className="code">border-transparent</span>
+                                    <span className="code">primary-default</span>
                                     <span>=</span>
-                                    <span className="code">color-neutral-transparent</span>
+                                    <span className="code">color-hepsiburada orange-50</span>
                                     <span>=</span>
-                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#00000000'}}></i> #000000 %0</span>
+                                    <span className="code d-flex align-items-center"><i className="colorbox" style={{background:'#FF6000'}}></i> #FF6000</span>
                                 </div>
                             </td>
                         </tr>
                     </table>                         
                 </section>
 
+                <section>
+                    ## Option of group button
+                    <p>Our group button component comes in two options: With menu and without menu. These variations cater to different user needs, optimizing the interface for both traditional selection and efficient searching.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Without menu 
+                            <p>Without menuu option is a straightforward button without dropdowns, ideal for direct actions and a clean interface design.</p>
+                        </div>
+                        <div className="col">
+                            <img src="groupbutton/groupbutton1.png" srcset="groupbutton/groupbutton1.png 1x, groupbutton/groupbutton1@2x.png 2x" alt='Group button'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### With menu 
+                            <p>With menu option includes a dropdown for scenarios with multiple actions, allowing users to access additional features efficiently. You may review the functionality of the dropdown component <a href="#" target="_blank">here</a>.</p>
+                        </div>
+                        <div className="col">
+                            <img src="groupbutton/groupbutton2.png" srcset="groupbutton/groupbutton2.png 1x, groupbutton/groupbutton2@2x.png 2x" alt='Group button'/>
+                        </div>                   
+                    </div>
+
+                </section>
+
 
                 <section>
                     ## States
                     <p>Buttons have different states to describe the interaction status with the user.</p>
+                    <img className="mb32" src="groupbutton/states.png" srcset="groupbutton/states.png 1x, groupbutton/states@2x.png 2x" alt='Group button states'/>
 
                     ### Default state
                     <p>This is the initial state of a button when it is not being interacted with. It usually represents a neutral or inactive state and is often displayed with a standard appearance.</p>
@@ -137,28 +162,42 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                     ### Disabled state
                     <p>In certain cases, buttons may be disabled to indicate that they are temporarily unavailable or that the associated action cannot be performed. The disabled state typically displays the button with a different visual treatment, such as reduced opacity or grayscale, to indicate that it is inactive.</p>
-                    <img className="mb32" src='textlink/exampleusage.png' srcset={'textlink/exampleusage.png 1x, textlink/exampleusage@2x.png 2x'} alt="Example usage"/>
 
                     <div className="table stroke">
                         <div className="row">
                             <div className="cell header">Default</div>
-                            <div className="cell"><img src="groupbutton/button-group.png" srcset="groupbutton/button-group.png 1x, groupbutton/button-group@2x.png 2x" alt='Group Button'/></div>
+                            <div className="cell d-flex gap-20">
+                                <img src="groupbutton/button-group.png" srcset="groupbutton/button-group.png 1x, groupbutton/button-group@2x.png 2x" alt='Group Button'/>
+                                <img src="groupbutton/button-group2.png" srcset="groupbutton/button-group2.png 1x, groupbutton/button-group2@2x.png 2x" alt='Group Button'/>
+                            </div>
                         </div>
                         <div className="row">
                             <div className="cell header">Hover</div>
-                            <div className="cell"><img src="groupbutton/button-group-hover.png" srcset="groupbutton/button-group-hover.png 1x, groupbutton/button-group-hover@2x.png 2x" alt='Group Button Hover'/></div>
+                            <div className="cell d-flex gap-20">
+                                <img src="groupbutton/button-group-hover.png" srcset="groupbutton/button-group-hover.png 1x, groupbutton/button-group-hover@2x.png 2x" alt='Group Button Hover'/>
+                                <img src="groupbutton/button-group2-hover.png" srcset="groupbutton/button-group2-hover.png 1x, groupbutton/button-group2-hover@2x.png 2x" alt='Group Button Hover'/>
+                            </div>
                         </div>
                         <div className="row">
                             <div className="cell header">Focused</div>
-                            <div className="cell"><img src="groupbutton/button-group-focused.png" srcset="groupbutton/button-group-focused.png 1x, groupbutton/button-group-focused@2x.png 2x" alt='Group Button Focused'/></div>
+                            <div className="cell d-flex gap-20">
+                                <img src="groupbutton/button-group-focused.png" srcset="groupbutton/button-group-focused.png 1x, groupbutton/button-group-focused@2x.png 2x" alt='Group Button Focused'/>
+                                <img src="groupbutton/button-group2-focused.png" srcset="groupbutton/button-group2-focused.png 1x, groupbutton/button-group2-focused@2x.png 2x" alt='Group Button Focused'/>
+                            </div>
                         </div>
                         <div className="row">
-                            <div className="cell header">Active</div>
-                            <div className="cell"><img src="groupbutton/button-group-active.png" srcset="groupbutton/button-group-active.png 1x, groupbutton/button-group-active@2x.png 2x" alt='Group Button Active'/></div>
+                            <div className="cell header">Pressed</div>
+                            <div className="cell d-flex gap-20">
+                                <img src="groupbutton/button-group-active.png" srcset="groupbutton/button-group-active.png 1x, groupbutton/button-group-active@2x.png 2x" alt='Group Button Active'/>
+                                <img src="groupbutton/button-group2-active.png" srcset="groupbutton/button-group2-active.png 1x, groupbutton/button-group2-active@2x.png 2x" alt='Group Button Active'/>
+                            </div>
                         </div>
                         <div className="row">
                             <div className="cell header">Disabled</div>
-                            <div className="cell"><img src="groupbutton/button-group-disabled.png" srcset="groupbutton/button-group-disabled.png 1x, groupbutton/button-group-disabled@2x.png 2x" alt='Group Button Disabled'/></div>
+                            <div className="cell d-flex gap-20">
+                                <img src="groupbutton/button-group-disabled.png" srcset="groupbutton/button-group-disabled.png 1x, groupbutton/button-group-disabled@2x.png 2x" alt='Group Button Disabled'/>
+                                <img src="groupbutton/button-group2-disabled.png" srcset="groupbutton/button-group2-disabled.png 1x, groupbutton/button-group2-disabled@2x.png 2x" alt='Group Button Disabled'/>
+                            </div>
                         </div>
                     </div>
 
@@ -200,7 +239,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     </div>
 
                     ### Surface
-                    <p>Colored surface used as backdrop. Visual appearance differs based on theme.</p>
+                    <p>Surface used as backdrop. Visual appearance differs based on state.</p>
 
                     ### Icon
                     <p>Visual support for label.</p>
@@ -220,20 +259,20 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <p className="mb32 text-lg">Primus Design System has 4 different group button sizes: large(lg), medium(md), small (sm) and extra-small(xs). Buttons have 2 different options. These are with icon, without icon.</p>
 
                     ### Large (lg)
-                    <p>The height of the component will be fixed at 56 px/pts. Large group  buttons width can enlarge with label and icon.</p>
+                    <p>The height of the component will be fixed at 56 px. Large group buttons width can enlarge with label and icon.</p>
                     <img className="mb32" src="groupbutton/large.png" srcset="groupbutton/large.png 1x, groupbutton/large@2x.png 2x" alt='Large (lg)'/>
 
 
                     ### Medium (md)
-                    <p>The height of the component will be fixed at 48 px/pts. Large group  buttons width can enlarge with label and icon.</p>
+                    <p>The height of the component will be fixed at 48 px. Large group buttons width can enlarge with label and icon.</p>
                     <img className="mb32" src="groupbutton/medium.png" srcset="groupbutton/medium.png 1x, groupbutton/medium@2x.png 2x" alt='Medium (md)'/>
 
                     ### Small (sm)
-                    <p>The height of the component will be fixed at 40 px/pts. Large group  buttons width can enlarge with label and icon.</p>
+                    <p>The height of the component will be fixed at 40 px. Large group buttons width can enlarge with label and icon.</p>
                     <img className="mb32" src="groupbutton/small.png" srcset="groupbutton/small.png 1x, groupbutton/small@2x.png 2x" alt='Small (sm)'/>
 
                     ### Extra-small (xs)
-                    <p>The height of the component will be fixed at 32 px/pts. Large group  buttons width can enlarge with label and icon.</p>
+                    <p>The height of the component will be fixed at 32 px. Large group buttons width can enlarge with label and icon.</p>
                     <img className="mb32" src="groupbutton/xsmall.png" srcset="groupbutton/xsmall.png 1x, groupbutton/xsmall@2x.png 2x" alt='Extra-small (xs)'/>
                 </section>
 
@@ -243,9 +282,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                 <section>
                     ## Usage
                     <ul className="list disc mb32">
-                        <li>Text link button should contain hypertext.</li>
-                        <li>The first letter of the word on the text button is capitalized and the rest is lowercase.</li>
-                        <li>Text button texts are limited to one line.</li>
+                        <li>Group button should contain at least one text or text and icon.</li>
+                        <li>The first letter of the word on the group button is capitalized and the rest is lowercase.</li>
+                        <li>The icon should signify what the group button does</li>
+                        <li>Group button texts are limited to one line.</li>
+                        <li>Group button actions together only when they can be instantly executed with a single click. If any action within the group requires additional steps or cannot be completed in one click, consider using a different component.</li>
                     </ul>
                 </section>
 
@@ -256,7 +297,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 
                 <section>
-                    ## Do’s and Dont’s
+                    ## Do’s and dont’s
                     <p>Please review the examples below.</p>
 
                     <div className="row row-cols-2 dodont">
@@ -265,7 +306,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="groupbutton/do1.png" srcset="groupbutton/do1.png 1x groupbutton/do1@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p style={{ color: 'var(--error-fg-default)' }}>Use x words or fewer than y characters including spaces.</p>
+                                    <p>Group button labels should be short and understandable.</p>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +315,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="groupbutton/dont1.png" srcset="groupbutton/dont1.png 1x groupbutton/dont1@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p style={{ color: 'var(--error-fg-default)' }}>Don’t use x words or more than y characters including spaces.</p>
+                                    <p>Avoid using long and unnecessary labels.</p>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +326,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="groupbutton/do2.png" srcset="groupbutton/do2.png 1x groupbutton/do2@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Use icon&label, label or icon only.</p>
+                                    <p>Use icon & label, label or icon only.</p>
                                 </div>
                             </div>
                         </div>
@@ -401,18 +442,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     </div>
 
                     
-                </section>
-
-
-                 <section>
-                    ## Properties
-                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </section>
-
-
-                 <section>
-                    ## Tokenization
-                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </section>
 
             </TabPanel>

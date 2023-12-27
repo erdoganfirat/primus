@@ -1,0 +1,375 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Textarea.mdx */}
+
+<Meta title="Design System/Components/Textarea" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Textarea</h1>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>In the Primus Design System, the text area component facilitates multiline text input and display, perfect for paragraphs and comments, enhancing user interaction and content presentation.</p>
+                </section>
+
+
+                <section>
+                    ## States
+                    <p>Primus Design System has 10 states of input field for each light and dark theme.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Default state
+                            <p>Always use a label and associate the label to the input properly.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea.png" srcset="textarea/textarea.png 1x, textarea/textarea@2x.png 2x" alt='Textarea'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hover state
+                            <p>The text area hover state refers to the visual change, including the appearance of an orange stroke, that occurs when the cursor hovers over an input field. It is commonly used to highlight interactive elements.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-hover.png" srcset="textarea/textarea-hover.png 1x, textarea/textarea-hover@2x.png 2x" alt='Textarea hover'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Focus state
+                            <p>The text area focus state visually highlights the currently selected area, adding users in efficient navigation and interaction with keyboard.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-focus.png" srcset="textarea/textarea-focus.png 1x, textarea/textarea-focus@2x.png 2x" alt='Textarea focus'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Disabled state
+                            <p>The disabled state of an text area indicates that the component is currently inactive and cannot be interacted with by the user.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-disabled.png" srcset="textarea/textarea-disabled.png 1x, textarea/textarea-disabled@2x.png 2x" alt='Textarea disabled'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Active state
+                            <p>When a user actively enters information, an orange outline appears, and the value title transforms into a label title. Counter is used if necessary.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-active.png" srcset="textarea/textarea-active.png 1x, textarea/textarea-active@2x.png 2x" alt='Textarea active'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Filled state
+                            <p>The text area's filled state signifies that it contains user-entered data or content. Counter is used if necessary.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-filled.png" srcset="textarea/textarea-filled.png 1x, textarea/textarea-filled@2x.png 2x" alt='Textarea filled'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Read-only state
+                            <p>Users can review but not edit the text area; it's non-interactive like the disabled state but remains focusable, accessible, and visually readable.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-read-only.png" srcset="textarea/textarea-read-only.png 1x, textarea/textarea-read-only@2x.png 2x" alt='Textarea read-only'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Error state
+                            <p>An input field error status indicates that there is a problem with the data entered. It is visually highlighted with a red border and helper text. It signals to the user that a correction is required.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-error.png" srcset="textarea/textarea-error.png 1x, textarea/textarea-error@2x.png 2x" alt='Textarea error'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Success state
+                            <p>The text area success status indicates that the data entered is valid and accepted. It is represented by a visual sign with a green border and a helper test. Positive feedback is provided to the user.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-success.png" srcset="textarea/textarea-success.png 1x, textarea/textarea-success@2x.png 2x" alt='Textarea success'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Helper state
+                            <p>The text area helper state refers to a feature that offers supplementary guidance or information to users when interacting with an input field, aiding them in understanding how to complete the field correctly or providing context for the input.</p>
+                        </div>
+                        <div className="col">
+                            <img src="textarea/textarea-helper.png" srcset="textarea/textarea-helper.png 1x, textarea/textarea-helper@2x.png 2x" alt='Textarea helper'/>
+                        </div>                   
+                    </div>
+
+                </section>
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="textarea/anatomy.png" srcset="textarea/anatomy.png 1x, textarea/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Inner shadow</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Label text (unpopulated)</p>
+                                </li>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Label text (populated)</p>
+                                </li>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Asterisk</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">Character counter</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">6</span>
+                                    <p className="semibold">Input text</p>
+                                </li>
+                                <li>
+                                    <span className="number">7</span>
+                                    <p className="semibold">Helper text icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">8</span>
+                                    <p className="semibold">Helper text</p>
+                                </li>
+                                <li>
+                                    <span className="number">9</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                                <li>
+                                    <span className="number">10</span>
+                                    <p className="semibold">Surface</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Inner shadow
+                    <p>It can be used when the component is in its default, filled or inactive states.</p>
+
+                    ### Label text (unpopulated) & label text (populated)
+                    <p>Both types of text fields feature a container to visually signal interaction and provide identical functionality.</p>
+
+                    ### Asterisk
+                    <p>If the field is mandatory, include an asterisk (*) alongside the label text.</p>
+
+                    ### Character counter
+                    <p>Text input can show a character count indicator when the text length must not exceed a predetermined limit.</p>
+
+                    ### Input text
+                    <p>The input text refers to the text entered by the user in a text field.</p>
+
+                    ### Helper text icon
+                    <p>It visually represents attendance and complements the meaning of the helper text</p>
+
+                    ### Helper text
+                    <p>An input field can include helper text below it to provide users with additional context or instructions on what to input. The helper text area offers three options: a description, an approval message, and an error message.</p>
+
+                    ### Border
+                    <p>It can be employed to signify ongoing user interaction or draw attention.</p>
+
+                    ### Surface
+                    <p>Colored surface used as backdrop. Visual appearance differs based on theme.</p>
+
+                    ### Size
+                    <p>Primus Design System has one text area size.</p>
+                </section>
+
+
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has one text area size.</p>
+
+                    <img className="mb32" src="textarea/size1.png" srcset="textarea/size1.png 1x, textarea/size1@2x.png 2x" alt='Textarea size'/>
+                    <img className="mb32" src="textarea/size2.png" srcset="textarea/size2.png 1x, textarea/size2@2x.png 2x" alt='Textarea size'/>
+
+                </section>
+
+
+
+                <section>
+                    ## Do’s and dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textarea/do1.png" srcset="textarea/do1.png 1x textarea/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use text area with a label.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textarea/dont1.png" srcset="textarea/dont1.png 1x textarea/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t use without label text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textarea/do2.png" srcset="textarea/do2.png 1x textarea/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Utilize full width for the text field.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textarea/dont2.png" srcset="textarea/dont2.png 1x textarea/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Avoid resizing the text field if the screen permits.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textarea/do3.png" srcset="textarea/do3.png 1x textarea/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Enable scrolling within the text field if the content exceeds its visible area.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textarea/dont3.png" srcset="textarea/dont3.png 1x textarea/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Avoid displaying incomplete or truncated text if it doesn't fit within the text field.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="textarea/do4.png" srcset="textarea/do4.png 1x textarea/do4@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>There is no character limit for the helper text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="textarea/dont4.png" srcset="textarea/dont4.png 1x textarea/dont4@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't restrict the helper text to a specific character limit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

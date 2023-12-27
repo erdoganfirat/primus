@@ -2,7 +2,7 @@ import { Meta } from "@storybook/blocks";
 
 {/* IconButton.mdx */}
 
-<Meta title="Design System/Components/Buttons/Icon Button" />
+<Meta title="Design System/Components/Buttons/Icon button" />
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
@@ -11,7 +11,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 <div className="headBox">
     <div className="headContent">
         <div className="title">
-            <h1>Icon Button</h1>
+            <h1>Icon button</h1>
             <span className="badge information"><i className="pi-info"></i> Beta</span>
         </div>
         <div className="badges">
@@ -45,13 +45,13 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
             <TabPanel className="TabContent">
                 <section>
-                    <p>Buttons provide users with the ability to take action or navigate to different pages. They come in various styles to different requirements and are effective in highlighting areas where users need to take action to proceed in a workflow.</p>
+                    <p>Icon button is a user interface element that uses a graphical symbol or icon to represent a specific action or function. It eliminates the need for text labels and relies on visual cues alone. Icon buttons are commonly used in toolbars, navigation menus, and interfaces with limited space. They provide a visually appealing and intuitive way for users to interact with actions or functions by clicking or tapping on the icon.</p>
                     <img src='iconbutton/iconbuttonartwork.png' srcset={'iconbutton/iconbuttonartwork.png 1x, iconbutton/iconbuttonartwork@2x.png 2x'} alt="Button Artwork"/>
                 </section>
 
                 <section>
-                    ## Types of Buttons
-                    <p className="mb32 text-lg">Primus Design System has 7 types of icon buttons for each light and dark theme. Each button has circle and rounded form.</p>
+                    ## Types of buttons
+                    <p className="mb32 text-lg">Primus Design System has 7 types of icon buttons. Each button has circle and rounded form.</p>
 
 
                     <div className="row row-cols-3">
@@ -286,7 +286,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                     <div className="row row-cols-3">
                         <div className="col">
-                            ### Gray Scale
+                            ### Gray scale
                             <p>Gray scale button when five actions are used in the same space, the bordered ghost button should be used in the last position to pull back the visual attraction given to the primary, secondary, tertiary and ghost button.</p>
                         </div>
                         <div className="col">
@@ -487,7 +487,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     ### Focused state
                     <p>The focused state is essential for accessibility, indicating when a user selects an element using a keyboard or voice input. It is crucial for visually impaired or limited mobility users relying on screen readers or keyboard navigation.</p>
 
-                    ### Active(pressed state)
+                    ### Pressed (active) state
                     <p>When a user clicks or taps on a button, it enters the active or pressed state. This state indicates that the button is being actively interacted with. The appearance of the button may change to provide immediate feedback to the user.</p>
 
                     ### Disabled state
@@ -504,8 +504,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                 </section>
 
                 <section>
-                    ## Light Theme
-                    ### Stateful buttons 
+                    ## Option of icon buttons
+                    <p>Our buttons come in two options: stateful and informative.</p>
+
+                    ### Stateful icon buttons  
 
                     <table className='docsTable'>
                         <tr>
@@ -783,7 +785,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     </table>                    
 
 
-                    ### Informative buttons  
+                    ### Informative icon buttons   
 
                     <table className='docsTable'>
                         <tr>
@@ -900,7 +902,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <p>Colored surface used as backdrop. Visual appearance differs based on button type.</p>
 
                     ### Icon
-                    <p>Visual support for label.</p>
+                    <p>Visual support for button.</p>
 
                     ### Border
                     <p>Border helps establish a clear visual hierarchy by separating buttons from surrounding content.</p>
@@ -911,23 +913,23 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                 <section>
                     ## Size
-                    <p className="mb32 text-lg">Primus Design System has 4 different button sizes: large(lg), medium(md), small (sm) and extra-small(xs). Buttons have 4 different options. These are with label and right&left icon, with label and right icon, with label and left icon, without icon.</p>
+                    <p className="mb32 text-lg">Primus Design System has 4 different icon button sizes: large(lg), medium(md), small (sm) and extra-small(xs).</p>
 
                     ### Large (lg)
-                    <p>The height of the component will be fixed at 56 px/pts. Large buttons can optional be full-width and take up 100% of the container’s width.</p>
+                    <p>The height and width of the component will be fixed at 56 px.</p>
                     <img className="mb32" src="iconbutton/large.png" srcset="iconbutton/large.png 1x, iconbutton/large@2x.png 2x" alt='Large (lg)'/>
 
 
                     ### Medium (md)
-                    <p>The height of the component will be fixed at 48 px/pts. Medium buttons can optional be full-width and take up 100% of the container’s width.</p>
+                    <p>The height and width of the component will be fixed at 40 px.</p>
                     <img className="mb32" src="iconbutton/medium.png" srcset="iconbutton/medium.png 1x, iconbutton/medium@2x.png 2x" alt='Medium (md)'/>
 
                     ### Small (sm)
-                    <p>The height of the component will be fixed at 40 px/pts. Small buttons can optional be full-width and take up 100% of the container’s width.</p>
+                    <p>The height and width of the component will be fixed at 32 px.</p>
                     <img className="mb32" src="iconbutton/small.png" srcset="iconbutton/small.png 1x, iconbutton/small@2x.png 2x" alt='Small (sm)'/>
 
                     ### Extra-small (xs)
-                    <p>The height of the component will be fixed at 32 px/pts. Extra-small buttons can optional be full-width and take up 100% of the container’s width.</p>
+                    <p>The height and width of the component will be fixed at 24 px.</p>
                     <img className="mb32" src="iconbutton/xsmall.png" srcset="iconbutton/xsmall.png 1x, iconbutton/xsmall@2x.png 2x" alt='Extra-small (xs)'/>
 
                 </section>
@@ -937,7 +939,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     ## Usage
                     <ul className="list disc mb32">
                         <li>Icon button should contain an icon from Primus Design System.</li>
-                        <li>The icon should signify what the button does</li>
+                        <li>The icon should signify what the button does.</li>
                         <li>Icon button should be discoverable, easy to identify, and specific.</li>
                         <li>When deciding which icon button to use, consider the level of priority of the action, as well as how much visual emphasis the button should have in the context.</li>
                     </ul>
@@ -946,7 +948,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 
                 <section>
-                    ## Do’s and Dont’s
+                    ## Do’s and dont’s
                     <p>Please review the examples below.</p>
 
                     <div className="row row-cols-2 dodont">
@@ -955,7 +957,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/do1.png" srcset="iconbutton/do1.png 1x iconbutton/do1@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p style={{ color: 'var(--error-fg-default)' }}>Don’t use x words or more than y characters including spaces.</p>
+                                    <p>Icon button will always appear with a tooltip while hovering, defining the icon’s meaning.</p>
                                 </div>
                             </div>
                         </div>
@@ -964,7 +966,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/dont1.png" srcset="iconbutton/dont1.png 1x iconbutton/dont1@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p style={{ color: 'var(--error-fg-default)' }}>Don’t use x words or more than y characters including spaces.</p>
+                                    <p>Don’t use icon button without adding a tooltip while hovering.</p>
                                 </div>
                             </div>
                         </div>
@@ -975,7 +977,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/do2.png" srcset="iconbutton/do2.png 1x iconbutton/do2@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Avoid using punctuation marks.</p>
+                                    <p>Use iconography provided by Primus DS - Icon Library for the icons.</p>
                                 </div>
                             </div>
                         </div>
@@ -984,7 +986,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/dont2.png" srcset="iconbutton/dont2.png 1x iconbutton/dont2@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Don’t use punctuation marks.</p>
+                                    <p>Don’t use external images, iconography, or emojis.</p>
                                 </div>
                             </div>
                         </div>
@@ -1015,7 +1017,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/do4.png" srcset="iconbutton/do4.png 1x iconbutton/do4@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Use sentence-case capitalization.</p>
+                                    <p>Use the spacing and sizing provided by the component.</p>
                                 </div>
                             </div>
                         </div>
@@ -1024,7 +1026,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/dont4.png" srcset="iconbutton/dont4.png 1x iconbutton/dont4@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Don’t use title case captalization or all caps.</p>
+                                    <p>Don’t resize the inside dimensions of the buttons.</p>
                                 </div>
                             </div>
                         </div>
@@ -1035,7 +1037,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/do5.png" srcset="iconbutton/do5.png 1x iconbutton/do5@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Use primary button as the main action , put the tertiary as the second option.</p>
+                                    <p>Use 16 pixels between buttons.</p>
                                 </div>
                             </div>
                         </div>
@@ -1044,7 +1046,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/dont5.png" srcset="iconbutton/dont5.png 1x iconbutton/dont5@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Don’t use primary button next to secondary.</p>
+                                    <p>Don't use less than 16 pixels.</p>
                                 </div>
                             </div>
                         </div>
@@ -1055,7 +1057,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/do6.png" srcset="iconbutton/do6.png 1x iconbutton/do6@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Use primary button as the main action , put the secondary button as the second option.</p>
+                                    <p>Use primary icon button as the main action, put the secondary button as the second option.</p>
                                 </div>
                             </div>
                         </div>
@@ -1064,7 +1066,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/dont6.png" srcset="iconbutton/dont6.png 1x iconbutton/dont6@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Don’t use primary button next to secondary.</p>
+                                    <p>Don’t use 2 primary icons together.</p>
                                 </div>
                             </div>
                         </div>
@@ -1075,7 +1077,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/do7.png" srcset="iconbutton/do7.png 1x iconbutton/do7@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Use active verbs or phrases that clearly indicate action.</p>
+                                    <p>Use colors provided by the variant options determined by the icon button type.</p>
                                 </div>
                             </div>
                         </div>
@@ -1084,7 +1086,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="iconbutton/dont7.png" srcset="iconbutton/dont7.png 1x iconbutton/dont7@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Don’t use vague and generic labels that make the user read the dialog before taking action.</p>
+                                    <p>Don’t change icon button colors.</p>
                                 </div>
                             </div>
                         </div>

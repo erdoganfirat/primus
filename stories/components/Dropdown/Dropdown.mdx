@@ -1,0 +1,269 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Dropdown.mdx */}
+
+<Meta title="Design System/Components/Dropdown/Dropdown" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Dropdown</h1>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>A dropdown is a user interface feature where a list of options becomes visible when activated, enabling users to select a choice or choices from the revealed list. It is often used to efficiently manage space and simplify user selections in various interfaces.</p>
+                    <img className="mb32" src='dropdown/dropdownartwork.png' srcset={'dropdown/dropdownartwork.png 1x, dropdown/dropdownartwork@2x.png 2x'} alt="Dropdown Artwork"/>
+                </section>
+
+                <section>
+                    ## Option of dropdown
+                    <p>In the Primus design system, there are two different dropdown options: single select and multi select.</p>
+
+                    ### Single select
+                    <p>A single select dropdown permits users to choose only one option at a time, replacing any previous selections with the newly chosen one. This is suitable when users need to make an exclusive choice from a set of options.</p>
+                    <img className="mb32" src='dropdown/options1.png' srcset={'dropdown/options1.png 1x, dropdown/options1@2x.png 2x'} alt="Single select"/>
+
+                    ### Multi select
+                    <p>A multi select dropdown allows users to choose multiple options simultaneously. Users can select and deselect options as needed, and their choices are typically displayed within the dropdown and combo box area. This feature proves useful when users have the task of making multiple selections, such as filtering content or choosing items with diverse attributes.</p>
+                    <img src='dropdown/options2.png' srcset={'dropdown/options2.png 1x, dropdown/options2@2x.png 2x'} alt="Multi select"/>
+
+
+                </section>
+
+                <section>
+                    ## States
+                    <p>The dropdown is comprised of list items, each having distinct states. These states are carefully designed to ensure a nuanced and user-friendly experience. Here's a brief overview of each state</p>
+
+                    ### Default state
+                    <p>The initial state when the combo box is not actively engaged.</p>
+                    <img className="mb32" src="dropdown/default-state.png" srcset="dropdown/default-state.png 1x, dropdown/default-state@2x.png 2x" alt='Default state'/>
+
+                    ### Hover state
+                    <p>The state when the user's cursor is over the combo box, indicating interactivity.</p>
+                    <img className="mb32" src="dropdown/hover-state.png" srcset="dropdown/hover-state.png 1x, dropdown/hover-state@2x.png 2x" alt='Hover state'/>
+
+                    ### Focus state
+                    <p>Signifies that the combo box has received keyboard focus, ready for user input.</p>
+                    <img className="mb32" src="dropdown/focus-state.png" srcset="dropdown/focus-state.png 1x, dropdown/focus-state@2x.png 2x" alt='Focus state'/>
+
+                    ### Active state
+                    <p>The state when the user is actively interacting with the combo box, such as clicking or tapping. In the active state, the combo box triggers the activation of <a href="#" target="_blank">the dropdown component.</a><br/><br/>This state emphasizes active typing, indicating the user is actively entering information. In this version, users can interact by scrolling through the dropdown list, and the search feature helps them find information. As users type in the search field, suggestions appear from the dropdown options. If a user selects any option, the search feature continues next to the selected chip.</p>
+                    <img className="mb32" src="dropdown/active-state.png" srcset="dropdown/active-state.png 1x, dropdown/active-state@2x.png 2x" alt='Active state'/>
+
+                    ### Disabled state
+                    <p>Indicates that the combo box is not currently usable or accessible.</p>
+                    <img className="mb32" src="dropdown/disabled-state.png" srcset="dropdown/disabled-state.png 1x, dropdown/disabled-state@2x.png 2x" alt='Disabled state'/>
+
+                </section>
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="dropdown/anatomy.png" srcset="dropdown/anatomy.png 1x, dropdown/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Checkbox</p>
+                                </li>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Label</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Background</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">List item </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Border
+                    <p>Border helps establish a clear visual hierarchy by separating dropdown from surrounding content, and they are generally used with border radius.</p>
+
+                    ### Checkbox
+                    <p>A checkbox in a dropdown menu enables users to select multiple options simultaneously from a list.</p>
+
+                    ### Label
+                    <p>Text that supports a contextual messaging.</p>
+
+                    ### Background
+                    <p>Colored surface used as backdrop.</p>
+
+                    ### List item
+                    <p>Each dropdown contains list items visualized with text, icons, or checkboxes, representing different options.</p>
+
+                </section>
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has one dropdown size.</p>
+                    <img className="mb32" src="dropdown/size.png" srcset="dropdown/size.png 1x, dropdown/size@2x.png 2x" alt='Size'/>
+                </section>
+
+
+
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>The dropdown is used in conjunction with the combo box component in the active state.</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    ## Do’s and dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="dropdown/do1.png" srcset="dropdown/do1.png 1x dropdown/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>The dropdown's minimum width should match the combo box width.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="dropdown/dont1.png" srcset="dropdown/dont1.png 1x dropdown/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Avoid using dropdowns narrower than the combo box.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="dropdown/do2.png" srcset="dropdown/do2.png 1x dropdown/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Each dropdown displays 5 full list items and a partial item, indicating that the dropdown includes more than 5 items with scrollable features.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="dropdown/dont2.png" srcset="dropdown/dont2.png 1x dropdown/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't use fewer than 5 items in dropdowns.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="dropdown/do3.png" srcset="dropdown/do3.png 1x dropdown/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Keep menu items concise and clear.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="dropdown/dont3.png" srcset="dropdown/dont3.png 1x dropdown/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Avoid using irrelevant or overly lengthy text items.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    
+                </section>
+
+
+
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,266 @@
+import { Meta } from "@storybook/blocks";
+
+{/* RadioButton.mdx */}
+
+<Meta title="Design System/Components/Radio button" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Radio button</h1>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>A radio input lets you pick only one choice from a list, deselecting others when selected.</p>
+                </section>
+
+                <section>
+                    ## States
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Default state
+                            <p>The initial appearance and behavior of a checkbox when the page loads, indicating an unchecked state.</p>
+                        </div>
+                        <div className="col">
+                            <img src="radiobutton/default-state.png" srcset="radiobutton/default-state.png 1x, radiobutton/default-state@2x.png 2x" alt='Default state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Hover state
+                            <p>The appearance and behavior of a checkbox when a user's mouse cursor hovers over it.</p>
+                        </div>
+                        <div className="col">
+                            <img src="radiobutton/hover-state.png" srcset="radiobutton/hover-state.png 1x, radiobutton/hover-state@2x.png 2x" alt='Hover state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Focus state
+                            <p>The state of a checkbox when it receives keyboard focus.</p>
+                        </div>
+                        <div className="col">
+                            <img src="radiobutton/focus-state.png" srcset="radiobutton/focus-state.png 1x, radiobutton/focus-state@2x.png 2x" alt='Focus state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Disabled state
+                            <p>A checkbox that is non-interactive and visually muted to indicate that it cannot be selected or changed.</p>
+                        </div>
+                        <div className="col">
+                            <img src="radiobutton/disabled-state.png" srcset="radiobutton/disabled-state.png 1x, radiobutton/disabled-state@2x.png 2x" alt='Disabled state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Error state
+                            <p>The state of a checkbox when there is a validation or input error associated with it, highlighted with a red border to alert the user. Error state ony available on unchecked option.</p>
+                        </div>
+                        <div className="col">
+                            <img src="radiobutton/error-state.png" srcset="radiobutton/error-state.png 1x, radiobutton/error-state@2x.png 2x" alt='Error state'/>
+                        </div>                   
+                    </div>
+
+
+                </section>
+
+
+
+
+                <section>
+                    ## Options
+
+                    ### Unchecked 
+                    <p>When a user picks a new item, it automatically unselects the previous choice.</p>
+                    <img className="mb32" src="radiobutton/options1.png" srcset="radiobutton/options1.png 1x, radiobutton/options1@2x.png 2x" alt='Unchecked'/>
+
+                    ### Checked
+                    <p>The choice a user makes by clicking a radio button, shown as filled.</p>
+                    <img className="mb32" src="radiobutton/options2.png" srcset="radiobutton/options2.png 1x, radiobutton/options2@2x.png 2x" alt='Checked'/>
+                </section>
+
+
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="radiobutton/anatomy.png" srcset="radiobutton/anatomy.png 1x, radiobutton/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Radio input</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Selected surface</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Border
+                    <p>It can be employed to signify ongoing user interaction, draw attention or default state.</p>
+
+                    ### Radio input
+                    <p>A radio input representing the desired selection status.</p>
+
+                    ### Current selection
+                    <p>Visual support shows the selection.</p>
+
+                </section>
+
+
+                <section>
+                    ## Size
+                    <p>Primus Design System has 3 different radio input sizes: large (lg), medium (md) and small (sm).</p>
+
+                    <div className="row row-cols-3-custom flex-wrap mb40 align-items-start">
+                        <div className="col">
+                            <div className="card">
+                                <img src="radiobutton/size-lg.png" srcset="radiobutton/size-lg.png 1x, radiobutton/size-lg@2x.png 2x" alt='Large (lg)'/>
+                                <div className="cardBody">
+                                    <p><strong>Large (lg):</strong> The height of the component will be fixed at 24x24 px.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="radiobutton/size-md.png" srcset="radiobutton/size-md.png 1x, radiobutton/size-md@2x.png 2x" alt='Medium (md)'/>
+                                <div className="cardBody">
+                                    <p><strong>Medium (md):</strong> The height of the component will be fixed at 20x20 px.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="radiobutton/size-sm.png" srcset="radiobutton/size-sm.png 1x, radiobutton/size-sm@2x.png 2x" alt='Small (sm)'/>
+                                <div className="cardBody">
+                                    <p><strong>Small (sm):</strong> The height of the component will be fixed at 16x16 px.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+
+
+
+
+
+                <section>
+                    ## Do’s and dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="radiobutton/do1.png" srcset="radiobutton/do1.png 1x radiobutton/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>For more than four radios, consider using a dropdown menu to improve user experience and prevent clutter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="radiobutton/dont1.png" srcset="radiobutton/dont1.png 1x radiobutton/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Avoid using more than four radios together.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    
+                </section>
+
+
+
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

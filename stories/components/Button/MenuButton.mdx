@@ -2,7 +2,7 @@ import { Meta } from "@storybook/blocks";
 
 {/* MenuButton.mdx */}
 
-<Meta title="Design System/Components/Buttons/Menu Button" />
+<Meta title="Design System/Components/Buttons/Menu button" />
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
@@ -52,7 +52,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                 <section>
                     <div className="row row-cols-2">
                         <div className="col">
-                            ### Type of Menu Button
+                            ### Overview
                             <p>Primus Design System has 1 type of button for each light and dark theme.</p>
                         </div>
                         <div className="col">
@@ -116,6 +116,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                 <section>
                     ## States
                     <p>Menu buttons have different states to describe the interaction status with the user.</p>
+                    <img className="mb32" src='menubutton/exampleusage.png' srcset={'menubutton/exampleusage.png 1x, menubutton/exampleusage@2x.png 2x'} alt="Example usage"/>
 
                     ### Default state
                     <p>This is the initial state of a button when it is not being interacted with. It usually represents a neutral or inactive state and is often displayed with a standard appearance.</p>
@@ -126,12 +127,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     ### Focused state
                     <p>The focused state is essential for accessibility, indicating when a user selects an element using a keyboard or voice input. It is crucial for visually impaired or limited mobility users relying on screen readers or keyboard navigation.</p>
 
-                    ### Active(pressed state)
+                    ### Pressed (active) state
                     <p>When a user clicks or taps on a button, it enters the active or pressed state. This state indicates that the button is being actively interacted with. The appearance of the button may change to provide immediate feedback to the user.</p>
 
                     ### Disabled state
                     <p>In certain cases, buttons may be disabled to indicate that they are temporarily unavailable or that the associated action cannot be performed. The disabled state typically displays the button with a different visual treatment to indicate that it is inactive.</p>
-                    <img className="mb32" src='menubutton/exampleusage.png' srcset={'menubutton/exampleusage.png 1x, menubutton/exampleusage@2x.png 2x'} alt="Example usage"/>
 
                     <table className='docsTable'>
                         <tr>
@@ -159,7 +159,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             <td><img src="menubutton/menubutton-label-focused.png" srcset="menubutton/menubutton-label-focused.png 1x, menubutton/menubutton-label-focused@2x.png 2x" alt='Without label (Focused)'/></td>
                         </tr>
                         <tr>
-                            <td>Active</td>
+                            <td>Pressed</td>
                             <td><img src="menubutton/menubutton-rightleft-icon-active.png" srcset="menubutton/menubutton-rightleft-icon-active.png 1x, menubutton/menubutton-rightleft-icon-active@2x.png 2x" alt='With label and right&left icon (Active)'/></td>
                             <td><img src="menubutton/menubutton-right-icon-active.png" srcset="menubutton/menubutton-right-icon-active.png 1x, menubutton/menubutton-right-icon-active@2x.png 2x" alt='With label and right icon (Active)'/></td>
                             <td><img src="menubutton/menubutton-label-active.png" srcset="menubutton/menubutton-label-active.png 1x, menubutton/menubutton-label-active@2x.png 2x" alt='Without label (Active)'/></td>
@@ -237,20 +237,20 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                     <p className="mb32 text-lg">Primus Design System has 4 different group button sizes: large(lg), medium(md), small (sm) and extra-small(xs). Buttons have 2 different options. These are with icon, without icon.</p>
 
                     ### Large (lg)
-                    <p>The height of the component will be fixed at 56 px/pts. Large menu  button width can enlarge with label and icon.</p>
+                    <p>The height of the component will be fixed at 56 px. Large menu  button width can enlarge with label and icon.</p>
                     <img className="mb32" src="menubutton/large.png" srcset="menubutton/large.png 1x, menubutton/large@2x.png 2x" alt='Large (lg)'/>
 
 
                     ### Medium (md)
-                    <p>The height of the component will be fixed at 48 px/pts. Large menu  button width can enlarge with label and icon.</p>
+                    <p>The height of the component will be fixed at 48 px. Large menu  button width can enlarge with label and icon.</p>
                     <img className="mb32" src="menubutton/medium.png" srcset="menubutton/medium.png 1x, menubutton/medium@2x.png 2x" alt='Medium (md)'/>
 
                     ### Small (sm)
-                    <p>The height of the component will be fixed at 40 px/pts. Large menu  button width can enlarge with label and icon.</p>
+                    <p>The height of the component will be fixed at 40 px. Large menu  button width can enlarge with label and icon.</p>
                     <img className="mb32" src="menubutton/small.png" srcset="menubutton/small.png 1x, menubutton/small@2x.png 2x" alt='Small (sm)'/>
 
                     ### Extra-small (xs)
-                    <p>The height of the component will be fixed at 32px/pts. Large menu  button width can enlarge with label and icon.</p>
+                    <p>The height of the component will be fixed at 32px. Large menu  button width can enlarge with label and icon.</p>
                     <img className="mb32" src="menubutton/xsmall.png" srcset="menubutton/xsmall.png 1x, menubutton/xsmall@2x.png 2x" alt='Extra-small (xs)'/>
                 </section>
 
@@ -275,7 +275,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 
                 <section>
-                    ## Do’s and Dont’s
+                    ## Do’s and dont’s
                     <p>Please review the examples below.</p>
 
                     <div className="row row-cols-2 dodont">
@@ -284,7 +284,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="menubutton/do1.png" srcset="menubutton/do1.png 1x menubutton/do1@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p style={{ color: 'var(--error-fg-default)' }}>Use x words or fewer than y characters including spaces.</p>
+                                    <p>Menu button labels should be short and understandable.</p>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +293,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="menubutton/dont1.png" srcset="menubutton/dont1.png 1x menubutton/dont1@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p style={{ color: 'var(--error-fg-default)' }}>Don’t use x words or more than y characters including spaces.</p>
+                                    <p>Avoid using long and unnecessary labels.</p>
                                 </div>
                             </div>
                         </div>
@@ -438,41 +438,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                             </div>
                         </div>
                     </div>
-                    <div className="row row-cols-2 dodont">
-                        <div className="col">
-                            <div className="card">
-                                <img src="menubutton/do9.png" srcset="menubutton/do9.png 1x menubutton/do9@2x.png 2x" alt="Do"/>
-                                <div className="cardBody do">
-                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className="card">
-                                <img src="menubutton/dont9.png" srcset="menubutton/dont9.png 1x menubutton/dont9@2x.png 2x" alt="Don't"/>
-                                <div className="cardBody dont">
-                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>don't use less than 16 pixel</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     
                 </section>
 
 
-                 <section>
-                    ## Properties
-                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </section>
-
-
-                 <section>
-                    ## Tokenization
-                    <p style={{ color: 'var(--error-fg-default)' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </section>
 
 
             </TabPanel>

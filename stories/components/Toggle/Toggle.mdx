@@ -1,0 +1,268 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Toggle.mdx */}
+
+<Meta title="Design System/Components/Toggle" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Toggle</h1>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>Toggles enable users to switch individual options on or off, commonly used for activating or deactivating specific settings.</p>
+                </section>
+
+                <section>
+                    ## States
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Default state
+                            <p>This is the initial appearance and behavior of a toggle input when the page loads, indicating its state before any interaction from the user.</p>
+                        </div>
+                        <div className="col">
+                            <img src="toggle/default-state.png" srcset="toggle/default-state.png 1x, toggle/default-state@2x.png 2x" alt='Default state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Hover state
+                            <p>The hover state is when a user hovers their cursor over the toggle input.</p>
+                        </div>
+                        <div className="col">
+                            <img src="toggle/hover-state.png" srcset="toggle/hover-state.png 1x, toggle/hover-state@2x.png 2x" alt='Hover state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Focus state
+                            <p>When a toggle input receives keyboard focus, it displays a visible border.</p>
+                        </div>
+                        <div className="col">
+                            <img src="toggle/focus-state.png" srcset="toggle/focus-state.png 1x, toggle/focus-state@2x.png 2x" alt='Focus state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Disabled state
+                            <p>A disabled toggle input is non-interactive and typically appears muted, indicating that the user cannot change its state.</p>
+                        </div>
+                        <div className="col">
+                            <img src="toggle/disabled-state.png" srcset="toggle/disabled-state.png 1x, toggle/disabled-state@2x.png 2x" alt='Disabled state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2-custom-sm">
+                        <div className="col">
+                            ### Loading state
+                            <p>In certain cases, a toggle may display the unchecked option while undergoing a loading or processing phase, indicated by a loading icon. Similarly, analogous to the checked option, this state occurs when the toggle is in the 'on' position but undergoing a loading or processing phase, typically accompanied by a loading icon.</p>
+                        </div>
+                        <div className="col">
+                            <img src="toggle/loading-state.png" srcset="toggle/loading-state.png 1x, toggle/loading-state@2x.png 2x" alt='Loading state'/>
+                        </div>                   
+                    </div>
+
+
+                </section>
+
+
+
+
+                <section>
+                    ## Options
+
+                    ### Unchecked 
+                    <p>This is the state of the toggle when it is in the "off" position, typically represented visually as the option being inactive or not selected.</p>
+                    <img className="mb32" src="toggle/options1.png" srcset="toggle/options1.png 1x, toggle/options1@2x.png 2x" alt='Unchecked'/>
+
+                    ### Checked
+                    <p>When the toggle is in the "on" position, it is considered "checked," visually representing the selected.</p>
+                    <img className="mb32" src="toggle/options2.png" srcset="toggle/options2.png 1x, toggle/options2@2x.png 2x" alt='Checked'/>
+                </section>
+
+
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="toggle/anatomy.png" srcset="toggle/anatomy.png 1x, toggle/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Handle</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Track</p>
+                                </li>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Unchecked</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Checked</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                                <li>
+                                    <span className="number">6</span>
+                                    <p className="semibold">Icon</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Handle
+                    <p>The interactive element users click to change the toggle's state.</p>
+
+                    ### Track
+                    <p>The background area where the handle moves, representing the toggle's range.</p>
+
+                    ### Unchecked surface
+                    <p>The part of the track when the toggle is "off".</p>
+
+                    ### Checked surface
+                    <p>The part of the track when the toggle is "on".</p>
+
+                    ### Border
+                    <p>It can be employed to signify ongoing user interaction, draw attention or default state.</p>
+
+                    ### Icon
+                    <p>Loading icon associated with the toggle's state.</p>
+
+                </section>
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has 2 different toggle sizes: large (lg) and medium (md).</p>
+
+                    ### Large (lg)
+                    <p>The height of the component will be fixed at 64x32 px.</p>
+                    <img className="mb32" src="toggle/large.png" srcset="toggle/large.png 1x, toggle/large@2x.png 2x" alt='Large (lg)'/>
+
+
+                    ### Medium (md)
+                    <p>The height of the component will be fixed at 48x24 px.</p>
+                    <img className="mb32" src="toggle/medium.png" srcset="toggle/medium.png 1x, toggle/medium@2x.png 2x" alt='Medium (md)'/>
+                </section>
+
+
+
+
+
+
+
+                <section>
+                    ## Do’s and dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="toggle/do1.png" srcset="toggle/do1.png 1x toggle/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Use primary color.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="toggle/dont1.png" srcset="toggle/dont1.png 1x toggle/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don’t change the color.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    
+                </section>
+
+
+
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

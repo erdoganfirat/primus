@@ -1,0 +1,437 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Combobox.mdx */}
+
+<Meta title="Design System/Components/Combo box" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+
+
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Combo box</h1>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/design-system-components-button--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs defaultIndex={0} onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Design</Tab>
+                <Tab className="TabItem"><i className="pi-development"></i> Development</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+                <section>
+                    <p>A combo box is a combination of an input field and an associated dropdown menu that allows the user to select, search, or browse a list of one or more options. Combo box allows users to type the entire option, type part of the option and narrow down the results, or select an option from the list. <br/><br/>To understand the combo box component better, please also examine <a href="#" target="_blabk">the dropdown component.</a></p>
+                    <img className="mb32" src='combobox/comboboxartwork.png' srcset={'combobox/comboboxartwork.png 1x, combobox/comboboxartwork@2x.png 2x'} alt="Combo box Artwork"/>
+                </section>
+
+                <section>
+                    ## Option of combo boxes
+                    <p>Our combo box comes in three options: Single select, multi select and with helper text. These variations cater to different user needs, optimizing the interface for both traditional selection and efficient searching.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Single select
+                            <p>This type likely functions as a traditional combo box where users can click on a menu trigger, revealing a list of options to choose from. Users can either select an option from the list or type into the box.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/options1.png" srcset="combobox/options1.png 1x, combobox/options1@2x.png 2x" alt='Single select'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Multi select
+                            <p>Represents the state when the combo boxs hows users to selected multiple options. </p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/options2.png" srcset="combobox/options2.png 1x, combobox/options2@2x.png 2x" alt='Multi select'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### With helper text 
+                            <p>With helper text,  combo box contains additional information or guidance that helps users make informed choices.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/options3.png" srcset="combobox/options3.png 1x, combobox/options3@2x.png 2x" alt='With helper text'/>
+                        </div>                   
+                    </div>
+                </section>
+
+                <section>
+                    ## States
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Default state
+                            <p>The initial state when the combo box is not actively engaged.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/default-state.png" srcset="combobox/default-state.png 1x, combobox/default-state@2x.png 2x" alt='Default state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hover state
+                            <p>The state when the user's cursor is over the combo box, indicating interactivity.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/hover-state.png" srcset="combobox/hover-state.png 1x, combobox/hover-state@2x.png 2x" alt='Hover state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Focus state
+                            <p>Signifies that the combo box has received keyboard focus, ready for user input.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/focus-state.png" srcset="combobox/focus-state.png 1x, combobox/focus-state@2x.png 2x" alt='Focus state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Active state
+                            <p>The state when the user is actively interacting with the combo box, such as clicking or tapping. In the active state, the combo box triggers the activation of <a href="#" target="_blank">the dropdown component.</a><br/><br/>This state emphasizes active typing, indicating the user is actively entering information. In this version, users can interact by scrolling through the dropdown list, and the search feature helps them find information. As users type in the search field, suggestions appear from the dropdown options. If a user selects any option, the search feature continues next to the selected chip.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/active-state.png" srcset="combobox/active-state.png 1x, combobox/active-state@2x.png 2x" alt='Active state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Filled state
+                            <p>Reflects the state when the combo box has a selected or inputted value.<br/><br/>If the chips displaying the choices inside the combo box do not fit within the component's container, they can expand horizontally and/or vertically based on the overall page design.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/filled-state.png" srcset="combobox/filled-state.png 1x, combobox/filled-state@2x.png 2x" alt='Filled state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Loading state
+                            <p>Communicates to the user that data or content is being loaded.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/loading-state.png" srcset="combobox/loading-state.png 1x, combobox/loading-state@2x.png 2x" alt='Loading state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Disabled state
+                            <p>Indicates that the combo box is not currently usable or accessible.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/disabled-state.png" srcset="combobox/disabled-state.png 1x, combobox/disabled-state@2x.png 2x" alt='Disabled state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Read only state
+                            <p>Communicates that the combo box is in a read-only state, where users can view but not modify the content.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/readyonly-state.png" srcset="combobox/readyonly-state.png 1x, combobox/readyonly-state@2x.png 2x" alt='Read only state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Error state
+                            <p>Indicates that there is an issue or incorrect input in the combo box.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/error-state.png" srcset="combobox/error-state.png 1x, combobox/error-state@2x.png 2x" alt='Error state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Success state
+                            <p>Communicates a successful action or valid input in the combo box.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/success-state.png" srcset="combobox/success-state.png 1x, combobox/success-state@2x.png 2x" alt='Success state'/>
+                        </div>                   
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Information state
+                            <p>Provides additional information or context in the combo box.</p>
+                        </div>
+                        <div className="col">
+                            <img src="combobox/information-state.png" srcset="combobox/information-state.png 1x, combobox/information-state@2x.png 2x" alt='Information state'/>
+                        </div>                   
+                    </div>
+
+
+                </section>
+
+
+
+                <section>
+                    ## Anatomy
+                    <img src="combobox/anatomy.png" srcset="combobox/anatomy.png 1x, combobox/anatomy@2x.png 2x" alt='Anatomy'/>
+                    <div className="row row-cols-2 align-items-start">
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">1</span>
+                                    <p className="semibold">Label text (unpopulated)</p>
+                                </li>
+                                <li>
+                                    <span className="number">2</span>
+                                    <p className="semibold">Inner shadow</p>
+                                </li>
+                                <li>
+                                    <span className="number">3</span>
+                                    <p className="semibold">Background</p>
+                                </li>
+                                <li>
+                                    <span className="number">4</span>
+                                    <p className="semibold">Right icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">5</span>
+                                    <p className="semibold">Search icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">6</span>
+                                    <p className="semibold">Label text (populated)</p>
+                                </li>
+                                <li>
+                                    <span className="number">7</span>
+                                    <p className="semibold">Input text</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col">
+                            <ul className='lejant'>
+                                <li>
+                                    <span className="number">8</span>
+                                    <p className="semibold">Close icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">9</span>
+                                    <p className="semibold">Seperator</p>
+                                </li>
+                                <li>
+                                    <span className="number">10</span>
+                                    <p className="semibold">Helper text icon</p>
+                                </li>
+                                <li>
+                                    <span className="number">11</span>
+                                    <p className="semibold">Chips</p>
+                                </li>
+                                <li>
+                                    <span className="number">12</span>
+                                    <p className="semibold">Helper text</p>
+                                </li>
+                                <li>
+                                    <span className="number">13</span>
+                                    <p className="semibold">Border</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    ### Inner shadow
+                    <p>It can be used when the component is in its default, filled or inactive states.</p>
+
+                    ### Background
+                    <p>Colored surface used as backdrop. Visual appearance differs based on combo box type.</p>
+
+                    ### Right Icon
+                    <p>Visual support for component.</p>
+
+                    ### Search icon
+                    <p>The search icon in its designated area serves as a visual cue for users to perform a search and cannot be changed.</p>
+
+                    ### Label text (populated) & label text (unpopulated)
+                    <p>Both types of text fields feature a container to visually signal interaction and provide identical functionality.</p>
+
+                    ### Input text
+                    <p>The input text refers to the text entered by the user in a text field.</p>
+
+                    ### Close icon
+                    <p>The close icon is used to clear the entered text or reset all selected inputs.</p>
+
+                    ### Input text
+                    <p>The input text refers to the text entered by the user in a text field.</p>
+
+                    ### Seperator
+                    <p>The separator is used between two icons to separate them from each other.</p>
+
+                    ### Helper text icon
+                    <p>It visually represents attendance and complements the meaning of the helper text.</p>
+
+                    ### Chips
+                    <p>It visually represents selected options.</p>
+
+                    ### Helper text
+                    <p>An input field can include helper text below it to provide users with additional context or instructions on what to input. The helper text area offers three options: a description, an approval message, and an error message.</p>
+
+                    ### Border
+                    <p>It can be employed to signify ongoing user interaction or draw attention.</p>
+
+                </section>
+
+
+                <section>
+                    ## Size
+                    <p className="mb32 text-lg">Primus Design System has one combo box size.</p>
+                    <img className="mb32" src="combobox/size.png" srcset="combobox/size.png 1x, combobox/size@2x.png 2x" alt='Size'/>
+                </section>
+
+
+
+
+                <section>
+                    ## Usage
+                    <ul className="list disc mb32">
+                        <li>The combo box is used in conjunction with the dropdown component in the active state.</li>
+                        <li>During its active state, the combo box is accompanied by a dropdown and incorporates a search functionality.</li>
+                        <li>A combo box should be used when there are a minimum of 5 choices. While it can be considered for 4 options, we do not strongly recommend it, but it is acceptable.</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    ## Do’s and dont’s
+                    <p>Please review the examples below.</p>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="combobox/do1.png" srcset="combobox/do1.png 1x combobox/do1@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>Every combo box should have a label text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="combobox/dont1.png" srcset="combobox/dont1.png 1x combobox/dont1@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't use without label text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="combobox/do2.png" srcset="combobox/do2.png 1x combobox/do2@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>The combo box can expand horizontally and/or vertically based on the layout of the containing page.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="combobox/dont2.png" srcset="combobox/dont2.png 1x combobox/dont2@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't restrict the visibility of inputs within the combo box.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2 dodont">
+                        <div className="col">
+                            <div className="card">
+                                <img src="combobox/do3.png" srcset="combobox/do3.png 1x combobox/do3@2x.png 2x" alt="Do"/>
+                                <div className="cardBody do">
+                                    <div className='title h3 bold'><i className="pi-success"></i> Do</div>
+                                    <p>When providing information with a combo box, use helper text and helper text icon.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="combobox/dont3.png" srcset="combobox/dont3.png 1x combobox/dont3@2x.png 2x" alt="Don't"/>
+                                <div className="cardBody dont">
+                                    <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
+                                    <p>Don't use an information icon as a secondary icon in the combo box.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    
+                </section>
+
+
+
+
+            </TabPanel>
+ 
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+             <TabPanel className="TabContent">
+                ## Under Construction
+                <p className="text-lg">Underconstruction</p>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

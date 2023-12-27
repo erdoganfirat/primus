@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?il3fgp');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?il3fgp#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?il3fgp') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?il3fgp') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?il3fgp##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yc94i5');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?yc94i5#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yc94i5') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yc94i5') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yc94i5##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,1939 +27,2344 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.pi-packman {
+.pi-spacing-large {
   &:before {
-    content: $pi-packman;     
+    content: $pi-spacing-large;     
+    color: #757575;
+  }
+}
+.pi-spacing-medium {
+  &:before {
+    content: $pi-spacing-medium;     
+    color: #757575;
+  }
+}
+.pi-spacing-small {
+  &:before {
+    content: $pi-spacing-small;     
+    color: #757575;
+  }
+}
+.pi-pac-man {
+  &:before {
+    content: $pi-pac-man;     
+    color: #757575;
   }
 }
 .pi-yarin-kapinda {
   &:before {
     content: $pi-yarin-kapinda;     
+    color: #757575;
   }
 }
 .pi-220-v {
   &:before {
     content: $pi-220-v;     
+    color: #757575;
   }
 }
 .pi-ads {
   &:before {
     content: $pi-ads;     
+    color: #757575;
   }
 }
 .pi-ai-chef {
   &:before {
     content: $pi-ai-chef;     
+    color: #757575;
   }
 }
 .pi-android {
   &:before {
     content: $pi-android;     
+    color: #757575;
   }
 }
 .pi-archive {
   &:before {
     content: $pi-archive;     
+    color: #757575;
   }
 }
 .pi-arrow-down {
   &:before {
     content: $pi-arrow-down;     
+    color: #757575;
   }
 }
 .pi-arrow-left {
   &:before {
     content: $pi-arrow-left;     
+    color: #757575;
   }
 }
 .pi-arrow-maximize {
   &:before {
     content: $pi-arrow-maximize;     
+    color: #757575;
   }
 }
 .pi-arrow-minimize {
   &:before {
     content: $pi-arrow-minimize;     
+    color: #757575;
   }
 }
 .pi-arrow-recycle-buyback {
   &:before {
     content: $pi-arrow-recycle-buyback;     
+    color: #757575;
   }
 }
 .pi-arrow-redo {
   &:before {
     content: $pi-arrow-redo;     
+    color: #757575;
   }
 }
 .pi-arrow-repeat {
   &:before {
     content: $pi-arrow-repeat;     
+    color: #757575;
   }
 }
 .pi-arrow-right {
   &:before {
     content: $pi-arrow-right;     
+    color: #757575;
   }
 }
 .pi-arrow-sort {
   &:before {
     content: $pi-arrow-sort;     
+    color: #757575;
   }
 }
 .pi-arrow-sort-atoz {
   &:before {
     content: $pi-arrow-sort-atoz;     
+    color: #757575;
   }
 }
 .pi-arrow-sort-list-ascending {
   &:before {
     content: $pi-arrow-sort-list-ascending;     
+    color: #757575;
   }
 }
 .pi-arrow-sort-list-descending {
   &:before {
     content: $pi-arrow-sort-list-descending;     
+    color: #757575;
   }
 }
 .pi-arrow-sort-ztoa {
   &:before {
     content: $pi-arrow-sort-ztoa;     
+    color: #757575;
   }
 }
 .pi-arrow-swap {
   &:before {
     content: $pi-arrow-swap;     
+    color: #757575;
   }
 }
 .pi-arrow-undo {
   &:before {
     content: $pi-arrow-undo;     
+    color: #757575;
   }
 }
 .pi-arrow-up {
   &:before {
     content: $pi-arrow-up;     
+    color: #757575;
   }
 }
 .pi-attachment {
   &:before {
     content: $pi-attachment;     
+    color: #757575;
   }
 }
 .pi-automated-approval {
   &:before {
     content: $pi-automated-approval;     
+    color: #757575;
   }
 }
 .pi-bag {
   &:before {
     content: $pi-bag;     
+    color: #757575;
   }
 }
 .pi-bank {
   &:before {
     content: $pi-bank;     
+    color: #757575;
   }
 }
 .pi-bank-add {
   &:before {
     content: $pi-bank-add;     
+    color: #757575;
   }
 }
 .pi-bank-okey {
   &:before {
     content: $pi-bank-okey;     
+    color: #757575;
   }
 }
 .pi-barcode {
   &:before {
     content: $pi-barcode;     
+    color: #757575;
   }
 }
 .pi-basket {
   &:before {
     content: $pi-basket;     
+    color: #757575;
   }
 }
 .pi-battery-charge {
   &:before {
     content: $pi-battery-charge;     
+    color: #757575;
   }
 }
 .pi-battery-empty {
   &:before {
     content: $pi-battery-empty;     
+    color: #757575;
   }
 }
 .pi-battery-full {
   &:before {
     content: $pi-battery-full;     
+    color: #757575;
   }
 }
 .pi-battery-half {
   &:before {
     content: $pi-battery-half;     
+    color: #757575;
   }
 }
 .pi-battery-low {
   &:before {
     content: $pi-battery-low;     
+    color: #757575;
   }
 }
 .pi-battery-very-low {
   &:before {
     content: $pi-battery-very-low;     
+    color: #757575;
   }
 }
 .pi-bed {
   &:before {
     content: $pi-bed;     
+    color: #757575;
   }
 }
 .pi-binoculars {
   &:before {
     content: $pi-binoculars;     
+    color: #757575;
   }
 }
 .pi-book {
   &:before {
     content: $pi-book;     
+    color: #757575;
   }
 }
 .pi-bookmark {
   &:before {
     content: $pi-bookmark;     
+    color: #757575;
   }
 }
 .pi-bookmark-filled {
   &:before {
     content: $pi-bookmark-filled;     
+    color: #757575;
   }
 }
 .pi-bookmark-list-add {
   &:before {
     content: $pi-bookmark-list-add;     
+    color: #757575;
   }
 }
 .pi-brand {
   &:before {
     content: $pi-brand;     
+    color: #757575;
   }
 }
 .pi-bug {
   &:before {
     content: $pi-bug;     
+    color: #757575;
   }
 }
 .pi-building {
   &:before {
     content: $pi-building;     
+    color: #757575;
   }
 }
 .pi-bus {
   &:before {
     content: $pi-bus;     
+    color: #757575;
   }
 }
 .pi-bus-chair-jumbo {
   &:before {
     content: $pi-bus-chair-jumbo;     
+    color: #757575;
   }
 }
 .pi-bus-chair-ontop {
   &:before {
     content: $pi-bus-chair-ontop;     
+    color: #757575;
   }
 }
 .pi-bus-chair-standart {
   &:before {
     content: $pi-bus-chair-standart;     
+    color: #757575;
   }
 }
 .pi-business-bag {
   &:before {
     content: $pi-business-bag;     
+    color: #757575;
   }
 }
 .pi-calculator-accounting {
   &:before {
     content: $pi-calculator-accounting;     
+    color: #757575;
   }
 }
 .pi-calendar {
   &:before {
     content: $pi-calendar;     
+    color: #757575;
   }
 }
 .pi-calendar-clock {
   &:before {
     content: $pi-calendar-clock;     
+    color: #757575;
   }
 }
 .pi-calendar-today {
   &:before {
     content: $pi-calendar-today;     
+    color: #757575;
   }
 }
 .pi-calendar-today-clock {
   &:before {
     content: $pi-calendar-today-clock;     
+    color: #757575;
   }
 }
 .pi-camera {
   &:before {
     content: $pi-camera;     
+    color: #757575;
   }
 }
 .pi-cancel-x-error {
   &:before {
     content: $pi-cancel-x-error;     
+    color: #757575;
   }
 }
 .pi-car {
   &:before {
     content: $pi-car;     
+    color: #757575;
   }
 }
 .pi-card {
   &:before {
     content: $pi-card;     
+    color: #757575;
   }
 }
 .pi-card-installment-3 {
   &:before {
     content: $pi-card-installment-3;     
+    color: #757575;
   }
 }
 .pi-card-installment-6 {
   &:before {
     content: $pi-card-installment-6;     
+    color: #757575;
   }
 }
 .pi-card-no-fees {
   &:before {
     content: $pi-card-no-fees;     
+    color: #757575;
   }
 }
 .pi-card-postponed {
   &:before {
     content: $pi-card-postponed;     
+    color: #757575;
   }
 }
 .pi-caret-down {
   &:before {
     content: $pi-caret-down;     
+    color: #757575;
   }
 }
 .pi-caret-down-filled {
   &:before {
     content: $pi-caret-down-filled;     
+    color: #757575;
   }
 }
 .pi-caret-left {
   &:before {
     content: $pi-caret-left;     
+    color: #757575;
   }
 }
 .pi-caret-left-filled {
   &:before {
     content: $pi-caret-left-filled;     
+    color: #757575;
   }
 }
 .pi-caret-right {
   &:before {
     content: $pi-caret-right;     
+    color: #757575;
   }
 }
 .pi-caret-right-filled {
   &:before {
     content: $pi-caret-right-filled;     
+    color: #757575;
   }
 }
 .pi-caret-up {
   &:before {
     content: $pi-caret-up;     
+    color: #757575;
   }
 }
 .pi-caret-up-filled {
   &:before {
     content: $pi-caret-up-filled;     
+    color: #757575;
   }
 }
 .pi-cart {
   &:before {
     content: $pi-cart;     
+    color: #757575;
   }
 }
 .pi-catalogue {
   &:before {
     content: $pi-catalogue;     
+    color: #757575;
   }
 }
 .pi-categories {
   &:before {
     content: $pi-categories;     
+    color: #757575;
   }
 }
 .pi-catering {
   &:before {
     content: $pi-catering;     
+    color: #757575;
   }
 }
 .pi-celebrate {
   &:before {
     content: $pi-celebrate;     
+    color: #757575;
   }
 }
 .pi-chat-add-comment-question {
   &:before {
     content: $pi-chat-add-comment-question;     
+    color: #757575;
   }
 }
 .pi-chat-ask-question {
   &:before {
     content: $pi-chat-ask-question;     
+    color: #757575;
   }
 }
 .pi-chat-comments {
   &:before {
     content: $pi-chat-comments;     
+    color: #757575;
   }
 }
 .pi-chat-feedback-ticket {
   &:before {
     content: $pi-chat-feedback-ticket;     
+    color: #757575;
   }
 }
 .pi-chat-live {
   &:before {
     content: $pi-chat-live;     
+    color: #757575;
   }
 }
 .pi-chat-review {
   &:before {
     content: $pi-chat-review;     
+    color: #757575;
   }
 }
 .pi-chat-with-merchant {
   &:before {
     content: $pi-chat-with-merchant;     
+    color: #757575;
   }
 }
 .pi-check-okey {
   &:before {
     content: $pi-check-okey;     
+    color: #757575;
   }
 }
 .pi-checklist-applist {
   &:before {
     content: $pi-checklist-applist;     
+    color: #757575;
   }
 }
 .pi-chevron-down {
   &:before {
     content: $pi-chevron-down;     
+    color: #757575;
   }
 }
 .pi-chevron-expand {
   &:before {
     content: $pi-chevron-expand;     
+    color: #757575;
   }
 }
 .pi-chevron-left {
   &:before {
     content: $pi-chevron-left;     
+    color: #757575;
   }
 }
 .pi-chevron-right {
   &:before {
     content: $pi-chevron-right;     
+    color: #757575;
   }
 }
 .pi-chevron-up {
   &:before {
     content: $pi-chevron-up;     
+    color: #757575;
   }
 }
 .pi-clock {
   &:before {
     content: $pi-clock;     
+    color: #757575;
   }
 }
 .pi-clock-alarm {
   &:before {
     content: $pi-clock-alarm;     
+    color: #757575;
   }
 }
 .pi-clock-bnpl-pay-later {
   &:before {
     content: $pi-clock-bnpl-pay-later;     
+    color: #757575;
   }
 }
 .pi-clock-future {
   &:before {
     content: $pi-clock-future;     
+    color: #757575;
   }
 }
 .pi-clock-history {
   &:before {
     content: $pi-clock-history;     
+    color: #757575;
   }
 }
 .pi-clock-past {
   &:before {
     content: $pi-clock-past;     
+    color: #757575;
   }
 }
 .pi-clock-waiting {
   &:before {
     content: $pi-clock-waiting;     
+    color: #757575;
   }
 }
 .pi-columns {
   &:before {
     content: $pi-columns;     
+    color: #757575;
   }
 }
 .pi-compare {
   &:before {
     content: $pi-compare;     
+    color: #757575;
   }
 }
 .pi-compass {
   &:before {
     content: $pi-compass;     
+    color: #757575;
   }
 }
 .pi-construction-market-garden-auto {
   &:before {
     content: $pi-construction-market-garden-auto;     
+    color: #757575;
   }
 }
 .pi-cooking {
   &:before {
     content: $pi-cooking;     
+    color: #757575;
   }
 }
 .pi-cooking-prepare {
   &:before {
     content: $pi-cooking-prepare;     
+    color: #757575;
   }
 }
 .pi-copy {
   &:before {
     content: $pi-copy;     
+    color: #757575;
   }
 }
 .pi-coupon {
   &:before {
     content: $pi-coupon;     
+    color: #757575;
   }
 }
 .pi-coupon-add {
   &:before {
     content: $pi-coupon-add;     
+    color: #757575;
   }
 }
 .pi-coupon-discount {
   &:before {
     content: $pi-coupon-discount;     
+    color: #757575;
   }
 }
 .pi-coupon-gift {
   &:before {
     content: $pi-coupon-gift;     
+    color: #757575;
   }
 }
 .pi-coupon-remove {
   &:before {
     content: $pi-coupon-remove;     
+    color: #757575;
   }
 }
 .pi-credit-card {
   &:before {
     content: $pi-credit-card;     
+    color: #757575;
   }
 }
 .pi-credit-card-add {
   &:before {
     content: $pi-credit-card-add;     
+    color: #757575;
   }
 }
 .pi-credit-card-cancel {
   &:before {
     content: $pi-credit-card-cancel;     
+    color: #757575;
   }
 }
 .pi-credit-card-denied {
   &:before {
     content: $pi-credit-card-denied;     
+    color: #757575;
   }
 }
 .pi-credit-card-multi {
   &:before {
     content: $pi-credit-card-multi;     
+    color: #757575;
   }
 }
 .pi-credit-card-refresh {
   &:before {
     content: $pi-credit-card-refresh;     
+    color: #757575;
   }
 }
 .pi-credit-card-waiting {
   &:before {
     content: $pi-credit-card-waiting;     
+    color: #757575;
   }
 }
 .pi-credit-card-warning {
   &:before {
     content: $pi-credit-card-warning;     
+    color: #757575;
   }
 }
 .pi-cursor {
   &:before {
     content: $pi-cursor;     
+    color: #757575;
   }
 }
 .pi-cut {
   &:before {
     content: $pi-cut;     
+    color: #757575;
   }
 }
 .pi-dashboard {
   &:before {
     content: $pi-dashboard;     
+    color: #757575;
   }
 }
 .pi-delivery-truck {
   &:before {
     content: $pi-delivery-truck;     
+    color: #757575;
   }
 }
 .pi-delivery-truck-canceled {
   &:before {
     content: $pi-delivery-truck-canceled;     
+    color: #757575;
   }
 }
 .pi-delivery-truck-cold-chain {
   &:before {
     content: $pi-delivery-truck-cold-chain;     
+    color: #757575;
   }
 }
 .pi-delivery-truck-fast {
   &:before {
     content: $pi-delivery-truck-fast;     
+    color: #757575;
   }
 }
 .pi-delivery-truck-loaded {
   &:before {
     content: $pi-delivery-truck-loaded;     
+    color: #757575;
   }
 }
 .pi-delivery-truck-location {
   &:before {
     content: $pi-delivery-truck-location;     
+    color: #757575;
   }
 }
 .pi-delivery-truck-onroad {
   &:before {
     content: $pi-delivery-truck-onroad;     
+    color: #757575;
   }
 }
 .pi-delivery-truck-satisfaction {
   &:before {
     content: $pi-delivery-truck-satisfaction;     
+    color: #757575;
   }
 }
 .pi-demand-management {
   &:before {
     content: $pi-demand-management;     
+    color: #757575;
   }
 }
 .pi-denied {
   &:before {
     content: $pi-denied;     
+    color: #757575;
   }
 }
 .pi-design {
   &:before {
     content: $pi-design;     
+    color: #757575;
   }
 }
 .pi-desktop {
   &:before {
     content: $pi-desktop;     
+    color: #757575;
   }
 }
 .pi-desktop-mobile-phone {
   &:before {
     content: $pi-desktop-mobile-phone;     
+    color: #757575;
   }
 }
 .pi-development {
   &:before {
     content: $pi-development;     
+    color: #757575;
   }
 }
 .pi-direction {
   &:before {
     content: $pi-direction;     
+    color: #757575;
   }
 }
 .pi-dislike {
   &:before {
     content: $pi-dislike;     
+    color: #757575;
   }
 }
 .pi-download {
   &:before {
     content: $pi-download;     
+    color: #757575;
   }
 }
 .pi-drag {
   &:before {
     content: $pi-drag;     
+    color: #757575;
   }
 }
 .pi-edit {
   &:before {
     content: $pi-edit;     
+    color: #757575;
   }
 }
 .pi-editors-picks {
   &:before {
     content: $pi-editors-picks;     
+    color: #757575;
   }
 }
 .pi-emoji-laugh {
   &:before {
     content: $pi-emoji-laugh;     
+    color: #757575;
   }
 }
 .pi-emoji-smile {
   &:before {
     content: $pi-emoji-smile;     
+    color: #757575;
   }
 }
 .pi-enterance {
   &:before {
     content: $pi-enterance;     
+    color: #757575;
   }
 }
 .pi-error {
   &:before {
     content: $pi-error;     
+    color: #757575;
   }
 }
 .pi-euro {
   &:before {
     content: $pi-euro;     
+    color: #757575;
   }
 }
 .pi-eye-hide {
   &:before {
     content: $pi-eye-hide;     
+    color: #757575;
   }
 }
 .pi-eye-show {
   &:before {
     content: $pi-eye-show;     
+    color: #757575;
   }
 }
 .pi-fashion {
   &:before {
     content: $pi-fashion;     
+    color: #757575;
   }
 }
 .pi-file {
   &:before {
     content: $pi-file;     
+    color: #757575;
   }
 }
 .pi-file-add {
   &:before {
     content: $pi-file-add;     
+    color: #757575;
   }
 }
 .pi-file-info {
   &:before {
     content: $pi-file-info;     
+    color: #757575;
   }
 }
 .pi-filter {
   &:before {
     content: $pi-filter;     
+    color: #757575;
   }
 }
 .pi-finger-print {
   &:before {
     content: $pi-finger-print;     
+    color: #757575;
   }
 }
 .pi-fire {
   &:before {
     content: $pi-fire;     
+    color: #757575;
   }
 }
 .pi-flash-fast {
   &:before {
     content: $pi-flash-fast;     
+    color: #757575;
   }
 }
 .pi-flower-arrangement {
   &:before {
     content: $pi-flower-arrangement;     
+    color: #757575;
   }
 }
 .pi-folder {
   &:before {
     content: $pi-folder;     
+    color: #757575;
   }
 }
 .pi-folder-add {
   &:before {
     content: $pi-folder-add;     
+    color: #757575;
   }
 }
 .pi-free-cancelation {
   &:before {
     content: $pi-free-cancelation;     
+    color: #757575;
   }
 }
 .pi-game-joystick {
   &:before {
     content: $pi-game-joystick;     
+    color: #757575;
   }
 }
 .pi-gift {
   &:before {
     content: $pi-gift;     
+    color: #757575;
   }
 }
 .pi-gift-give {
   &:before {
     content: $pi-gift-give;     
+    color: #757575;
   }
 }
 .pi-graph-line-down {
   &:before {
     content: $pi-graph-line-down;     
+    color: #757575;
   }
 }
 .pi-graph-line-performance-down {
   &:before {
     content: $pi-graph-line-performance-down;     
+    color: #757575;
   }
 }
 .pi-graph-line-performance-up {
   &:before {
     content: $pi-graph-line-performance-up;     
+    color: #757575;
   }
 }
 .pi-graph-line-three-quarter {
   &:before {
     content: $pi-graph-line-three-quarter;     
+    color: #757575;
   }
 }
 .pi-graph-line-up {
   &:before {
     content: $pi-graph-line-up;     
+    color: #757575;
   }
 }
 .pi-graph-line-with-items {
   &:before {
     content: $pi-graph-line-with-items;     
+    color: #757575;
   }
 }
 .pi-graph-pie-big {
   &:before {
     content: $pi-graph-pie-big;     
+    color: #757575;
   }
 }
 .pi-graph-pie-multi {
   &:before {
     content: $pi-graph-pie-multi;     
+    color: #757575;
   }
 }
 .pi-graph-pie-quarter {
   &:before {
     content: $pi-graph-pie-quarter;     
+    color: #757575;
   }
 }
 .pi-graph-three-bars {
   &:before {
     content: $pi-graph-three-bars;     
+    color: #757575;
   }
 }
 .pi-graph-three-bars-line {
   &:before {
     content: $pi-graph-three-bars-line;     
+    color: #757575;
   }
 }
 .pi-graph-two-bars-line {
   &:before {
     content: $pi-graph-two-bars-line;     
+    color: #757575;
   }
 }
 .pi-health-beauty {
   &:before {
     content: $pi-health-beauty;     
+    color: #757575;
   }
 }
 .pi-hepsi {
   &:before {
     content: $pi-hepsi;     
+    color: #757575;
   }
 }
 .pi-hint {
   &:before {
     content: $pi-hint;     
+    color: #757575;
   }
 }
 .pi-home {
   &:before {
     content: $pi-home;     
+    color: #757575;
   }
 }
 .pi-home-life-stationery {
   &:before {
     content: $pi-home-life-stationery;     
+    color: #757575;
   }
 }
 .pi-hourglass {
   &:before {
     content: $pi-hourglass;     
+    color: #757575;
   }
 }
 .pi-image {
   &:before {
     content: $pi-image;     
+    color: #757575;
   }
 }
 .pi-image-gallery {
   &:before {
     content: $pi-image-gallery;     
+    color: #757575;
   }
 }
 .pi-image-not-loaded {
   &:before {
     content: $pi-image-not-loaded;     
+    color: #757575;
   }
 }
 .pi-info {
   &:before {
     content: $pi-info;     
+    color: #757575;
   }
 }
 .pi-integration {
   &:before {
     content: $pi-integration;     
+    color: #757575;
   }
 }
 .pi-invoice-electronic {
   &:before {
     content: $pi-invoice-electronic;     
+    color: #757575;
   }
 }
 .pi-invoice-euro {
   &:before {
     content: $pi-invoice-euro;     
+    color: #757575;
   }
 }
 .pi-invoice-general {
   &:before {
     content: $pi-invoice-general;     
+    color: #757575;
   }
 }
 .pi-invoice-general-check {
   &:before {
     content: $pi-invoice-general-check;     
+    color: #757575;
   }
 }
 .pi-invoice-tl {
   &:before {
     content: $pi-invoice-tl;     
+    color: #757575;
   }
 }
 .pi-invoice-usd {
   &:before {
     content: $pi-invoice-usd;     
+    color: #757575;
   }
 }
 .pi-key {
   &:before {
     content: $pi-key;     
+    color: #757575;
   }
 }
 .pi-layers {
   &:before {
     content: $pi-layers;     
+    color: #757575;
   }
 }
 .pi-like {
   &:before {
     content: $pi-like;     
+    color: #757575;
   }
 }
 .pi-link {
   &:before {
     content: $pi-link;     
+    color: #757575;
   }
 }
 .pi-link-remove {
   &:before {
     content: $pi-link-remove;     
+    color: #757575;
   }
 }
 .pi-live-performace {
   &:before {
     content: $pi-live-performace;     
+    color: #757575;
   }
 }
 .pi-location {
   &:before {
     content: $pi-location;     
+    color: #757575;
   }
 }
 .pi-location-check {
   &:before {
     content: $pi-location-check;     
+    color: #757575;
   }
 }
 .pi-lock-close {
   &:before {
     content: $pi-lock-close;     
+    color: #757575;
   }
 }
 .pi-lock-open {
   &:before {
     content: $pi-lock-open;     
+    color: #757575;
   }
 }
 .pi-logout {
   &:before {
     content: $pi-logout;     
+    color: #757575;
   }
 }
 .pi-love {
   &:before {
     content: $pi-love;     
+    color: #757575;
   }
 }
 .pi-love-filled {
   &:before {
     content: $pi-love-filled;     
+    color: #757575;
   }
 }
 .pi-mail-inbox {
   &:before {
     content: $pi-mail-inbox;     
+    color: #757575;
   }
 }
 .pi-map {
   &:before {
     content: $pi-map;     
+    color: #757575;
   }
 }
 .pi-meal {
   &:before {
     content: $pi-meal;     
+    color: #757575;
   }
 }
 .pi-megaphone {
   &:before {
     content: $pi-megaphone;     
+    color: #757575;
   }
 }
 .pi-megaphone-announcement {
   &:before {
     content: $pi-megaphone-announcement;     
+    color: #757575;
   }
 }
 .pi-menu {
   &:before {
     content: $pi-menu;     
+    color: #757575;
   }
 }
 .pi-merchant-store {
   &:before {
     content: $pi-merchant-store;     
+    color: #757575;
   }
 }
 .pi-merchant-store-performance {
   &:before {
     content: $pi-merchant-store-performance;     
+    color: #757575;
   }
 }
 .pi-merchant-store-verified {
   &:before {
     content: $pi-merchant-store-verified;     
+    color: #757575;
   }
 }
 .pi-minus {
   &:before {
     content: $pi-minus;     
+    color: #757575;
   }
 }
 .pi-minus-circle {
   &:before {
     content: $pi-minus-circle;     
+    color: #757575;
   }
 }
 .pi-mobile-phone {
   &:before {
     content: $pi-mobile-phone;     
+    color: #757575;
   }
 }
 .pi-money {
   &:before {
     content: $pi-money;     
+    color: #757575;
   }
 }
 .pi-money-give {
   &:before {
     content: $pi-money-give;     
+    color: #757575;
   }
 }
 .pi-money-give-coin {
   &:before {
     content: $pi-money-give-coin;     
+    color: #757575;
   }
 }
 .pi-money-installment-3 {
   &:before {
     content: $pi-money-installment-3;     
+    color: #757575;
   }
 }
 .pi-money-instalment-6 {
   &:before {
     content: $pi-money-instalment-6;     
+    color: #757575;
   }
 }
 .pi-money-no-fees {
   &:before {
     content: $pi-money-no-fees;     
+    color: #757575;
   }
 }
 .pi-money-okey {
   &:before {
     content: $pi-money-okey;     
+    color: #757575;
   }
 }
 .pi-money-postponed {
   &:before {
     content: $pi-money-postponed;     
+    color: #757575;
   }
 }
 .pi-money-redo {
   &:before {
     content: $pi-money-redo;     
+    color: #757575;
   }
 }
 .pi-money-transfer {
   &:before {
     content: $pi-money-transfer;     
+    color: #757575;
   }
 }
 .pi-moon {
   &:before {
     content: $pi-moon;     
+    color: #757575;
   }
 }
 .pi-moon-stars {
   &:before {
     content: $pi-moon-stars;     
+    color: #757575;
   }
 }
 .pi-more-horizontal {
   &:before {
     content: $pi-more-horizontal;     
+    color: #757575;
   }
 }
 .pi-more-vertical {
   &:before {
     content: $pi-more-vertical;     
+    color: #757575;
   }
 }
 .pi-mother-baby-toys {
   &:before {
     content: $pi-mother-baby-toys;     
+    color: #757575;
   }
 }
 .pi-moto-courier {
   &:before {
     content: $pi-moto-courier;     
+    color: #757575;
   }
 }
 .pi-move {
   &:before {
     content: $pi-move;     
+    color: #757575;
   }
 }
 .pi-my-lists {
   &:before {
     content: $pi-my-lists;     
+    color: #757575;
   }
 }
 .pi-my-location {
   &:before {
     content: $pi-my-location;     
+    color: #757575;
   }
 }
 .pi-notification-bell {
   &:before {
     content: $pi-notification-bell;     
+    color: #757575;
   }
 }
 .pi-notification-bell-active {
   &:before {
     content: $pi-notification-bell-active;     
+    color: #757575;
   }
 }
 .pi-notification-bell-alert {
   &:before {
     content: $pi-notification-bell-alert;     
+    color: #757575;
   }
 }
 .pi-notification-bell-clock {
   &:before {
     content: $pi-notification-bell-clock;     
+    color: #757575;
   }
 }
 .pi-notification-bell-okey {
   &:before {
     content: $pi-notification-bell-okey;     
+    color: #757575;
   }
 }
 .pi-pause {
   &:before {
     content: $pi-pause;     
+    color: #757575;
   }
 }
 .pi-pause-circle {
   &:before {
     content: $pi-pause-circle;     
+    color: #757575;
   }
 }
 .pi-percent-discount {
   &:before {
     content: $pi-percent-discount;     
+    color: #757575;
   }
 }
 .pi-performance-price-down {
   &:before {
     content: $pi-performance-price-down;     
+    color: #757575;
   }
 }
 .pi-performance-price-up {
   &:before {
     content: $pi-performance-price-up;     
+    color: #757575;
   }
 }
 .pi-person {
   &:before {
     content: $pi-person;     
+    color: #757575;
   }
 }
 .pi-person-cancel {
   &:before {
     content: $pi-person-cancel;     
+    color: #757575;
   }
 }
 .pi-person-circle {
   &:before {
     content: $pi-person-circle;     
+    color: #757575;
   }
 }
 .pi-person-collaboration {
   &:before {
     content: $pi-person-collaboration;     
+    color: #757575;
   }
 }
 .pi-person-customers {
   &:before {
     content: $pi-person-customers;     
+    color: #757575;
   }
 }
 .pi-person-customers-add {
   &:before {
     content: $pi-person-customers-add;     
+    color: #757575;
   }
 }
 .pi-person-customers-management {
   &:before {
     content: $pi-person-customers-management;     
+    color: #757575;
   }
 }
 .pi-person-denied {
   &:before {
     content: $pi-person-denied;     
+    color: #757575;
   }
 }
 .pi-person-family {
   &:before {
     content: $pi-person-family;     
+    color: #757575;
   }
 }
 .pi-person-female {
   &:before {
     content: $pi-person-female;     
+    color: #757575;
   }
 }
 .pi-person-learning-platform {
   &:before {
     content: $pi-person-learning-platform;     
+    color: #757575;
   }
 }
 .pi-person-left {
   &:before {
     content: $pi-person-left;     
+    color: #757575;
   }
 }
 .pi-person-male {
   &:before {
     content: $pi-person-male;     
+    color: #757575;
   }
 }
 .pi-person-multi {
   &:before {
     content: $pi-person-multi;     
+    color: #757575;
   }
 }
 .pi-person-multi-management {
   &:before {
     content: $pi-person-multi-management;     
+    color: #757575;
   }
 }
 .pi-person-new-id {
   &:before {
     content: $pi-person-new-id;     
+    color: #757575;
   }
 }
 .pi-person-new-id-info {
   &:before {
     content: $pi-person-new-id-info;     
+    color: #757575;
   }
 }
 .pi-person-nfc-read {
   &:before {
     content: $pi-person-nfc-read;     
+    color: #757575;
   }
 }
 .pi-person-no-gender {
   &:before {
     content: $pi-person-no-gender;     
+    color: #757575;
   }
 }
 .pi-person-old-id {
   &:before {
     content: $pi-person-old-id;     
+    color: #757575;
   }
 }
 .pi-person-right {
   &:before {
     content: $pi-person-right;     
+    color: #757575;
   }
 }
 .pi-person-setting {
   &:before {
     content: $pi-person-setting;     
+    color: #757575;
   }
 }
 .pi-person-shared-influencer {
   &:before {
     content: $pi-person-shared-influencer;     
+    color: #757575;
   }
 }
 .pi-person-verified {
   &:before {
     content: $pi-person-verified;     
+    color: #757575;
   }
 }
 .pi-person-warning {
   &:before {
     content: $pi-person-warning;     
+    color: #757575;
   }
 }
 .pi-pets {
   &:before {
     content: $pi-pets;     
+    color: #757575;
   }
 }
 .pi-phone-call {
   &:before {
     content: $pi-phone-call;     
+    color: #757575;
   }
 }
 .pi-phone-call-warning {
   &:before {
     content: $pi-phone-call-warning;     
+    color: #757575;
   }
 }
 .pi-pin {
   &:before {
     content: $pi-pin;     
+    color: #757575;
   }
 }
 .pi-pin-remove {
   &:before {
     content: $pi-pin-remove;     
+    color: #757575;
   }
 }
 .pi-place-swap {
   &:before {
     content: $pi-place-swap;     
+    color: #757575;
   }
 }
 .pi-plane-arrival {
   &:before {
     content: $pi-plane-arrival;     
+    color: #757575;
   }
 }
 .pi-plane-departure {
   &:before {
     content: $pi-plane-departure;     
+    color: #757575;
   }
 }
 .pi-plane-left {
   &:before {
     content: $pi-plane-left;     
+    color: #757575;
   }
 }
 .pi-plane-route {
   &:before {
     content: $pi-plane-route;     
+    color: #757575;
   }
 }
 .pi-plane-up {
   &:before {
     content: $pi-plane-up;     
+    color: #757575;
   }
 }
 .pi-play {
   &:before {
     content: $pi-play;     
+    color: #757575;
   }
 }
 .pi-play-circle {
   &:before {
     content: $pi-play-circle;     
+    color: #757575;
   }
 }
 .pi-play-circle-warning {
   &:before {
     content: $pi-play-circle-warning;     
+    color: #757575;
   }
 }
 .pi-plus {
   &:before {
     content: $pi-plus;     
+    color: #757575;
   }
 }
 .pi-plus-circle {
   &:before {
     content: $pi-plus-circle;     
+    color: #757575;
   }
 }
 .pi-pointer {
   &:before {
     content: $pi-pointer;     
+    color: #757575;
   }
 }
 .pi-power-on-off {
   &:before {
     content: $pi-power-on-off;     
+    color: #757575;
   }
 }
 .pi-print {
   &:before {
     content: $pi-print;     
+    color: #757575;
   }
 }
 .pi-processor {
   &:before {
     content: $pi-processor;     
+    color: #757575;
   }
 }
 .pi-product-box {
   &:before {
     content: $pi-product-box;     
+    color: #757575;
   }
 }
 .pi-product-box-cancel {
   &:before {
     content: $pi-product-box-cancel;     
+    color: #757575;
   }
 }
 .pi-product-box-clock {
   &:before {
     content: $pi-product-box-clock;     
+    color: #757575;
   }
 }
 .pi-product-box-denied {
   &:before {
     content: $pi-product-box-denied;     
+    color: #757575;
   }
 }
 .pi-product-box-edit {
   &:before {
     content: $pi-product-box-edit;     
+    color: #757575;
   }
 }
 .pi-product-box-location {
   &:before {
     content: $pi-product-box-location;     
+    color: #757575;
   }
 }
 .pi-product-box-okey {
   &:before {
     content: $pi-product-box-okey;     
+    color: #757575;
   }
 }
 .pi-product-box-performance-up {
   &:before {
     content: $pi-product-box-performance-up;     
+    color: #757575;
   }
 }
 .pi-product-box-pick-up-point {
   &:before {
     content: $pi-product-box-pick-up-point;     
+    color: #757575;
   }
 }
 .pi-product-box-redo {
   &:before {
     content: $pi-product-box-redo;     
+    color: #757575;
   }
 }
 .pi-product-fast-shipping {
   &:before {
     content: $pi-product-fast-shipping;     
+    color: #757575;
   }
 }
 .pi-product-return {
   &:before {
     content: $pi-product-return;     
+    color: #757575;
   }
 }
 .pi-product-search {
   &:before {
     content: $pi-product-search;     
+    color: #757575;
   }
 }
 .pi-product-stock {
   &:before {
     content: $pi-product-stock;     
+    color: #757575;
   }
 }
 .pi-qr-code {
   &:before {
     content: $pi-qr-code;     
+    color: #757575;
   }
 }
 .pi-qr-code-cancel {
   &:before {
     content: $pi-qr-code-cancel;     
+    color: #757575;
   }
 }
 .pi-question {
   &:before {
     content: $pi-question;     
+    color: #757575;
   }
 }
 .pi-refresh {
   &:before {
     content: $pi-refresh;     
+    color: #757575;
   }
 }
 .pi-refund {
   &:before {
     content: $pi-refund;     
+    color: #757575;
   }
 }
 .pi-refund-1 {
   &:before {
     content: $pi-refund-1;     
+    color: #757575;
   }
 }
 .pi-remove {
   &:before {
     content: $pi-remove;     
+    color: #757575;
   }
 }
 .pi-replacement-approved {
   &:before {
     content: $pi-replacement-approved;     
+    color: #757575;
   }
 }
 .pi-report-bars {
   &:before {
     content: $pi-report-bars;     
+    color: #757575;
   }
 }
 .pi-report-lines {
   &:before {
     content: $pi-report-lines;     
+    color: #757575;
   }
 }
 .pi-report-management {
   &:before {
     content: $pi-report-management;     
+    color: #757575;
   }
 }
 .pi-report-setting {
   &:before {
     content: $pi-report-setting;     
+    color: #757575;
   }
 }
 .pi-ribbon {
   &:before {
     content: $pi-ribbon;     
+    color: #757575;
   }
 }
 .pi-rows {
   &:before {
     content: $pi-rows;     
+    color: #757575;
   }
 }
 .pi-ruler {
   &:before {
     content: $pi-ruler;     
+    color: #757575;
   }
 }
 .pi-save {
   &:before {
     content: $pi-save;     
+    color: #757575;
   }
 }
 .pi-scale-calorie {
   &:before {
     content: $pi-scale-calorie;     
+    color: #757575;
   }
 }
 .pi-search {
   &:before {
     content: $pi-search;     
+    color: #757575;
   }
 }
 .pi-search-camera {
   &:before {
     content: $pi-search-camera;     
+    color: #757575;
   }
 }
 .pi-send {
   &:before {
     content: $pi-send;     
+    color: #757575;
   }
 }
 .pi-services {
   &:before {
     content: $pi-services;     
+    color: #757575;
   }
 }
 .pi-settings {
   &:before {
     content: $pi-settings;     
+    color: #757575;
   }
 }
 .pi-seyahat {
   &:before {
     content: $pi-seyahat;     
+    color: #757575;
   }
 }
 .pi-share-android {
   &:before {
     content: $pi-share-android;     
+    color: #757575;
   }
 }
 .pi-share-ios {
   &:before {
     content: $pi-share-ios;     
+    color: #757575;
   }
 }
 .pi-share-web {
   &:before {
     content: $pi-share-web;     
+    color: #757575;
   }
 }
 .pi-shield-cancel-error {
   &:before {
     content: $pi-shield-cancel-error;     
+    color: #757575;
   }
 }
 .pi-shield-denied {
   &:before {
     content: $pi-shield-denied;     
+    color: #757575;
   }
 }
 .pi-shield-lock {
   &:before {
     content: $pi-shield-lock;     
+    color: #757575;
   }
 }
 .pi-shield-okey {
   &:before {
     content: $pi-shield-okey;     
+    color: #757575;
   }
 }
 .pi-shield-security {
   &:before {
     content: $pi-shield-security;     
+    color: #757575;
   }
 }
 .pi-shield-warning {
   &:before {
     content: $pi-shield-warning;     
+    color: #757575;
   }
 }
 .pi-shipment-tag {
   &:before {
     content: $pi-shipment-tag;     
+    color: #757575;
   }
 }
 .pi-sport-outdoor {
   &:before {
     content: $pi-sport-outdoor;     
+    color: #757575;
   }
 }
 .pi-stair-down {
   &:before {
     content: $pi-stair-down;     
+    color: #757575;
   }
 }
 .pi-stair-up {
   &:before {
     content: $pi-stair-up;     
+    color: #757575;
   }
 }
 .pi-star {
   &:before {
     content: $pi-star;     
+    color: #757575;
   }
 }
 .pi-star-filled {
   &:before {
     content: $pi-star-filled;     
+    color: #757575;
   }
 }
 .pi-steering-wheel {
   &:before {
     content: $pi-steering-wheel;     
+    color: #757575;
   }
 }
 .pi-success {
   &:before {
     content: $pi-success;     
+    color: #757575;
   }
 }
 .pi-sun {
   &:before {
     content: $pi-sun;     
+    color: #757575;
   }
 }
 .pi-tag {
   &:before {
     content: $pi-tag;     
+    color: #757575;
   }
 }
 .pi-target {
   &:before {
     content: $pi-target;     
+    color: #757575;
   }
 }
 .pi-text-align-center {
   &:before {
     content: $pi-text-align-center;     
+    color: #757575;
   }
 }
 .pi-text-align-left {
   &:before {
     content: $pi-text-align-left;     
+    color: #757575;
   }
 }
 .pi-text-align-right {
   &:before {
     content: $pi-text-align-right;     
+    color: #757575;
   }
 }
 .pi-ticket {
   &:before {
     content: $pi-ticket;     
+    color: #757575;
   }
 }
 .pi-ticket-event {
   &:before {
     content: $pi-ticket-event;     
+    color: #757575;
   }
 }
 .pi-ticket-plane {
   &:before {
     content: $pi-ticket-plane;     
+    color: #757575;
   }
 }
 .pi-ticket-star {
   &:before {
     content: $pi-ticket-star;     
+    color: #757575;
   }
 }
 .pi-timer-fast {
   &:before {
     content: $pi-timer-fast;     
+    color: #757575;
   }
 }
 .pi-tl {
   &:before {
     content: $pi-tl;     
+    color: #757575;
   }
 }
 .pi-touch {
   &:before {
     content: $pi-touch;     
+    color: #757575;
   }
 }
 .pi-touchable {
   &:before {
     content: $pi-touchable;     
+    color: #757575;
   }
 }
 .pi-tv {
   &:before {
     content: $pi-tv;     
+    color: #757575;
   }
 }
 .pi-upload {
   &:before {
     content: $pi-upload;     
+    color: #757575;
   }
 }
 .pi-usb-port {
   &:before {
     content: $pi-usb-port;     
+    color: #757575;
   }
 }
 .pi-usd {
   &:before {
     content: $pi-usd;     
+    color: #757575;
   }
 }
 .pi-wallet {
   &:before {
     content: $pi-wallet;     
+    color: #757575;
   }
 }
 .pi-wallet-add {
   &:before {
     content: $pi-wallet-add;     
+    color: #757575;
   }
 }
 .pi-wallet-down {
   &:before {
     content: $pi-wallet-down;     
+    color: #757575;
   }
 }
 .pi-wallet-left {
   &:before {
     content: $pi-wallet-left;     
+    color: #757575;
   }
 }
 .pi-wallet-right {
   &:before {
     content: $pi-wallet-right;     
+    color: #757575;
   }
 }
 .pi-wallet-up {
   &:before {
     content: $pi-wallet-up;     
+    color: #757575;
   }
 }
 .pi-wallet-waiting {
   &:before {
     content: $pi-wallet-waiting;     
+    color: #757575;
   }
 }
 .pi-wallet-warning {
   &:before {
     content: $pi-wallet-warning;     
+    color: #757575;
   }
 }
 .pi-warning {
   &:before {
     content: $pi-warning;     
+    color: #757575;
   }
 }
 .pi-water-bottle {
   &:before {
     content: $pi-water-bottle;     
+    color: #757575;
   }
 }
 .pi-water-drop {
   &:before {
     content: $pi-water-drop;     
+    color: #757575;
   }
 }
 .pi-water-drop-filled {
   &:before {
     content: $pi-water-drop-filled;     
+    color: #757575;
   }
 }
 .pi-wi-fi {
   &:before {
     content: $pi-wi-fi;     
+    color: #757575;
   }
 }
 .pi-wide-screen {
   &:before {
     content: $pi-wide-screen;     
+    color: #757575;
   }
 }
 .pi-winner-buybox {
   &:before {
     content: $pi-winner-buybox;     
+    color: #757575;
   }
 }
 .pi-winner-buybox-first {
   &:before {
     content: $pi-winner-buybox-first;     
+    color: #757575;
   }
 }
 .pi-winner-buybox-second {
   &:before {
     content: $pi-winner-buybox-second;     
+    color: #757575;
   }
 }
 .pi-winner-buybox-third {
   &:before {
     content: $pi-winner-buybox-third;     
+    color: #757575;
   }
 }
 .pi-world {
   &:before {
     content: $pi-world;     
+    color: #757575;
   }
 }
 .pi-world-aboard {
   &:before {
     content: $pi-world-aboard;     
+    color: #757575;
   }
 }
 .pi-world-location {
   &:before {
     content: $pi-world-location;     
+    color: #757575;
   }
 }
 .pi-world-plane {
   &:before {
     content: $pi-world-plane;     
+    color: #757575;
   }
 }
 .pi-zoom-in {
   &:before {
     content: $pi-zoom-in;     
+    color: #757575;
   }
 }
 .pi-zoom-out {
   &:before {
     content: $pi-zoom-out;     
+    color: #757575;
   }
 }
 

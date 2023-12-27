@@ -2,7 +2,7 @@ import { Meta } from "@storybook/blocks";
 
 {/* TextLink.mdx */}
 
-<Meta title="Design System/Foundation/Text Link" />
+<Meta title="Design System/Components/Text link" />
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
@@ -12,7 +12,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 <div className="headBox">
     <div className="headContent">
         <div className="title">
-            <h1>Text Link</h1>
+            <h1>Text link</h1>
             <span className="badge information"><i className="pi-info"></i> Beta</span>
         </div>
         <div className="badges">
@@ -46,14 +46,14 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
             <TabPanel className="TabContent">
                 <section>
-                    <p>Text link button is an actionable hyperlink based componet with connection to another web pages.</p>
+                    <p>Text link is an actionable hyperlink based componet with connection to another web pages.</p>
                 </section>
 
                 <section>
                     <div className="row row-cols-2">
                         <div className="col">
-                            ### Type of Text Link Buttons
-                            <p>Primus Design System has one types of text link button(primary) for each light and dark theme.</p>
+                            ### Overview
+                            <p>Primus Design System has one types of text link.</p>
                         </div>
                         <div className="col">
                             <img src="textlink/textlinkbuttons.png" srcset="textlink/textlinkbuttons.png 1x, textlink/textlinkbuttons@2x.png 2x" alt='Type of Text Link Buttons'/>
@@ -121,23 +121,23 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                 <section>
                     ## States
-                    <p>Buttons have different states to describe the interaction status with the user.</p>
+                    <p>Text link has different states to describe the interaction status with the user.</p>
+                    <img className="mb32" src='textlink/exampleusage.png' srcset={'textlink/exampleusage.png 1x, textlink/exampleusage@2x.png 2x'} alt="Example usage"/>
 
                     ### Default state
-                    <p>This is the initial state of a button when it is not being interacted with. It usually represents a neutral or inactive state and is often displayed with a standard appearance.</p>
+                    <p>This is the initial state of a text link when it is not being interacted with. It usually represents a neutral or inactive state and is often displayed with a standard appearance.</p>
 
                     ### Hover state
-                    <p>When a user hovers the cursor over a button, it enters the hover state. The button may change its appearance slightly to provide visual feedback. It helps indicate that the button is interactive and can be clicked.</p>
+                    <p>When a user hovers the cursor over a text link, it enters the hover state. The component may change its appearance slightly to provide visual feedback. It helps indicate that the text link is interactive and can be clicked.</p>
 
                     ### Focused state
                     <p>The focused state is essential for accessibility, indicating when a user selects an element using a keyboard or voice input. It is crucial for visually impaired or limited mobility users relying on screen readers or keyboard navigation.</p>
 
-                    ### Active(pressed state)
-                    <p>When a user clicks or taps on a button, it enters the active or pressed state. This state indicates that the button is being actively interacted with. The appearance of the button may change to provide immediate feedback to the user.</p>
+                    ### Pressed (active) state
+                    <p>When a user clicks or taps on a text link, it enters the active or pressed state. This state indicates that the component is being actively interacted with. The appearance of the text link may change to provide immediate feedback to the user.</p>
 
                     ### Disabled state
-                    <p>In certain cases, buttons may be disabled to indicate that they are temporarily unavailable or that the associated action cannot be performed. The disabled state typically displays the button with a different visual treatment, such as reduced opacity or grayscale, to indicate that it is inactive.</p>
-                    <img className="mb32" src='textlink/exampleusage.png' srcset={'textlink/exampleusage.png 1x, textlink/exampleusage@2x.png 2x'} alt="Example usage"/>
+                    <p>In certain cases, text link may be disabled to indicate that they are temporarily unavailable or that the associated action cannot be performed. The disabled state typically displays the text link with a different visual treatment, such as reduced opacity or grayscale, to indicate that it is inactive.</p>
 
                     <table className='docsTable'>
                         <tr>
@@ -186,14 +186,14 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                         </div>
                     </div>
 
-                    ### Icon / Left & Right
+                    ### Icon / left & right
                     <p>Visual support for label.</p>
 
                     ### Label
                     <p>Hyperlink that supports a contextual messaging. </p>
 
                     ### Surface
-                    <p>Uncolored surface used as backdrop. Visual appearance differs based on theme.</p>
+                    <p>Uncolored surface used as backdrop.</p>
                 </section>
 
 
@@ -201,19 +201,19 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
                 <section>
                     ## Size
-                    <p className="mb32 text-lg">Primus Design System has 3 different text link button sizes: large(lg), medium(md) and small (sm). Text link buttons have 3 different options. These are with label and right&left icon, with label and right icon and  with label and left icon.</p>
+                    <p className="mb32 text-lg">Primus Design System has 3 different text link sizes: large(lg), medium(md) and small (sm). These are with label and right&left icon, with label and right icon and with label and left icon.</p>
 
                     ### Large (lg)
-                    <p>The height of the component will be fixed at 24 px/pts. Large buttons width can enlarge with hyperlink and icons.</p>
+                    <p>The height of the component will be fixed at 24 px. Large text link width can enlarge with hyperlink and icons.</p>
                     <img className="mb32" src="textlink/large.png" srcset="textlink/large.png 1x, textlink/large@2x.png 2x" alt='Large (lg)'/>
 
 
                     ### Medium (md)
-                    <p>The height of the component will be fixed at 24 px/pts. Large buttons width can enlarge with hyperlink and icons.</p>
+                    <p>The height of the component will be fixed at 24 px. Medium text link width can enlarge with hyperlink and icons.</p>
                     <img className="mb32" src="textlink/medium.png" srcset="textlink/medium.png 1x, textlink/medium@2x.png 2x" alt='Medium (md)'/>
 
                     ### Small (sm)
-                    <p>The height of the component will be fixed at 20 px/pts. Large buttons width can enlarge with hyperlink and icons.</p>
+                    <p>The height of the component will be fixed at 20 px. Small text link width can enlarge with hyperlink and icons.</p>
                     <img className="mb32" src="textlink/small.png" srcset="textlink/small.png 1x, textlink/small@2x.png 2x" alt='Small (sm)'/>
                 </section>
 
@@ -223,9 +223,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                 <section>
                     ## Usage
                     <ul className="list disc mb32">
-                        <li>Text link button should contain hypertext.</li>
-                        <li>The first letter of the word on the text button is capitalized and the rest is lowercase.</li>
-                        <li>Text button texts are limited to one line.</li>
+                        <li>Text link should contain hypertext.</li>
+                        <li>The first letter of the word on the text is capitalized and the rest is lowercase.</li>
+                        <li>Text link texts are limited to one line.</li>
                     </ul>
                 </section>
 
@@ -236,7 +236,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 
                 <section>
-                    ## Do’s and Dont’s
+                    ## Do’s and dont’s
                     <p>Please review the examples below.</p>
 
                     <div className="row row-cols-2 dodont">
@@ -285,7 +285,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="textlink/do3.png" srcset="textlink/do3.png 1x textlink/do3@2x.png 2x" alt="Do"/>
                                 <div className="cardBody do">
                                     <div className='title h3 bold'><i className="pi-success"></i> Do</div>
-                                    <p>Use the high contrast color with the button and background.</p>
+                                    <p>Use the high contrast color with the text link and background.</p>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +294,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="textlink/dont3.png" srcset="textlink/dont3.png 1x textlink/dont3@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Don’t use the low contrast color with the button and background.</p>
+                                    <p>Don’t use the clow ontrast color with the text link and background.</p>
                                 </div>
                             </div>
                         </div>
@@ -354,7 +354,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
                                 <img src="textlink/dont6.png" srcset="textlink/dont6.png 1x textlink/dont6@2x.png 2x" alt="Don't"/>
                                 <div className="cardBody dont">
                                     <div className='title h3 bold'><i className="pi-error"></i> Don't</div>
-                                    <p>Don’t change button colors.</p>
+                                    <p>Don’t change text link color.</p>
                                 </div>
                             </div>
                         </div>

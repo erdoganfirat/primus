@@ -15,8 +15,10 @@
 #storybook-docs .mb24{margin-bottom: 24px!important;}
 #storybook-docs .mb32{margin-bottom: 32px!important;}
 #storybook-docs .mb40{margin-bottom: 40px!important;}
+
 #storybook-docs .p40{padding: 40px!important;}
 
+#storybook-docs .gap-20{gap: 20px!important;}
 
 
 #storybook-docs .d-flex { display: flex!important; }
@@ -107,6 +109,24 @@
     font-size: 8px;
     line-height: 12px;
 }
+#storybook-docs .sbdocs-content .label-lg-text{
+    font-size: 18px;
+    line-height: 24px;
+}
+#storybook-docs .sbdocs-content .label-md-text{
+    font-size: 16px;
+    line-height: 24px;
+}
+#storybook-docs .sbdocs-content .label-sm-text{
+    font-size: 14px;
+    line-height: 20px;
+}
+#storybook-docs .sbdocs-content .label-xs-text{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
 
 .bg-primary{background: var(--primary-default, #FF6000) !important;}
 .text-white{color:var(--text-color-inverse, #FFF) !important;}
@@ -138,8 +158,9 @@
     border: 1px solid var(--border-dark, #D1D1D1);
     margin-right: 2px;
 }
-#storybook-docs p>a{
-    color: var(--primary-default, #FF6000) !important;
+#storybook-docs p>a,
+#storybook-docs .TabContent li>a{
+        color: var(--primary-default, #FF6000) !important;
     text-decoration: underline;
 }
 
@@ -463,6 +484,11 @@
 #storybook-docs .row.row-cols-2 .col {width: 50%}
 #storybook-docs .row.row-cols-3 .col {width: 33.3333333333%; width: calc(100% / 3)}
 #storybook-docs .row.row-cols-4 .col {width: 25%}
+#storybook-docs .row.row-cols-2-custom .col:first-child {max-width: 627px; width: 100%;}
+#storybook-docs .row.row-cols-2-custom .col+.col {min-width: 301px;}
+#storybook-docs .row.row-cols-2-custom-sm .col:first-child {max-width: 708px; width: 100%;}
+#storybook-docs .row.row-cols-2-custom-sm .col+.col {min-width: 220px;}
+
 #storybook-docs .row.row-cols-3-custom .col {max-width: 301px;}
 #storybook-docs .row.row-cols-3-custom .col:nth-child(3n+2) {max-width: 302px;}
 #storybook-docs .row>.col.semantics {max-width: 383px;}
@@ -555,6 +581,7 @@
 #storybook-docs table.docsTable tr+tr{border-bottom: 1px solid var(--border-default, #EDEDED) !important;}
 #storybook-docs table.docsTable p{margin-bottom: 16px;}
 #storybook-docs table.docsTable td p.name{color: var(--text-color-secondary, #454545);}
+#storybook-docs table.docsTable.typography td p.name+div{color: var(--text-color-headline, #1E1E1E);}
 #storybook-docs table.docsTable.typography tr th:first-child{width: 380px;}
 #storybook-docs .sbdocs-content table.docsTable td .h1,
 #storybook-docs .sbdocs-content table.docsTable td .h2,
