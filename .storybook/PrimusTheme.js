@@ -8,7 +8,7 @@ export default create({
 
   brandTitle: 'Primus Design System',
 //   brandUrl: 'https://example.com',
-  brandImage: '../stories/assets/img/primus-logo.svg',
+  brandImage: '/primus-logo.svg',
 //   brandTarget: '_self',
 
   //
