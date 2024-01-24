@@ -3,6 +3,9 @@
 
 #storybook-docs *{
     font-family: Inter;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
 }
 #storybook-docs .sbdocs-content * :where(:not(i, th, td, .TabContent.Dev *)){
     color: var(--text-color-body, #333);
@@ -16,6 +19,7 @@
 #storybook-docs .mb32{margin-bottom: 32px!important;}
 #storybook-docs .mb40{margin-bottom: 40px!important;}
 
+#storybook-docs .p0{padding: 0px!important;}
 #storybook-docs .p40{padding: 40px!important;}
 
 #storybook-docs .gap-20{gap: 20px!important;}
@@ -125,6 +129,7 @@
     font-size: 12px;
     line-height: 16px;
 }
+
 
 
 
@@ -246,12 +251,13 @@
 
 
 #storybook-docs .docsContent{
-    max-width: 1224px;
+    max-width: 1248px;
     margin: auto;
     padding: 0 24px;
     display: flex;
-    gap: 48px;
+    gap: 0;
 }
+#storybook-docs .docsContent.full{max-width: 100%;padding: 0;}
 #storybook-docs .docsContent .docsBody{width: 100%;}
 
 #storybook-docs .version{
@@ -321,7 +327,7 @@
 
 
 /*Tabs*/
-#storybook-docs .react-tabs ul.TabsNav{list-style: none;padding: 0;margin: 0;gap: 4px; display: flex; flex-direction: row;margin-top: 36px !important;}
+#storybook-docs .react-tabs ul.TabsNav{list-style: none;padding: 0;margin: 0;gap: 4px; display: flex; flex-direction: row;margin-top: 16px !important;}
 #storybook-docs .react-tabs ul.TabsNav>li{margin: 0;}
 #storybook-docs .TabsNav .TabItem{ 
   border-radius: 8px 8px 0px 0px;
@@ -345,7 +351,8 @@
 #storybook-docs .TabsNav .TabItem i{
     font-size: 24px;
 } 
-#storybook-docs .TabContent{display: none; padding: 24px;background: var(--elevation-2, #FFF);margin-bottom: 24px;}
+#storybook-docs .TabContent,
+#storybook-docs .Content{display: none; padding: 24px;background: var(--elevation-2, #FFF);margin-bottom: 24px;}
 #storybook-docs .TabContent.react-tabs__tab-panel--selected{display: block;}
 /*Tabs*/
 
@@ -355,19 +362,24 @@
 #storybook-docs .tocNav{
     display: flex;
     position: relative;
-    min-width: 176px;
-    max-width: 176px;
+    min-width: 200px;
+    max-width: 200px;
 }
 #storybook-docs .tocNav .container{
-    padding-top: 40px;
+    padding-top: 64px;
+    padding-right: 0;
 }
 #storybook-docs .tocNav .container .toc{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding-top: 24px;
     overflow: scroll;
-    height: calc(100vh - 24px);
+    height: 100vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+#storybook-docs .tocNav .container .toc::-webkit-scrollbar {
+    display: none;
 }
 #storybook-docs .tocNav .container .toc>h3{
     font-size: 16px;
@@ -378,6 +390,7 @@
 }
 #storybook-docs .tocNav ul,#storybook-docs .tocNav ol{margin: 4px 0 0 0;padding:0;}
 #storybook-docs .tocNav .js-toc-content{
+    margin-left: 2px;
     border-left: 2px solid #FFEDE0;
 }
 #storybook-docs .tocNav .toc-list:first-child{ left: -2px; position: relative; }
@@ -576,6 +589,7 @@
     line-height: 20px;
     font-style: normal;
 }
+#storybook-docs table.docsTable.table-sm td{padding: 12px 6px;}
 #storybook-docs table.docsTable tr>td:first-child{padding-left: 12px;}
 
 #storybook-docs table.docsTable tr+tr{border-bottom: 1px solid var(--border-default, #EDEDED) !important;}
@@ -969,6 +983,159 @@ color: var(--text-color-headline, #1E1E1E);
 }
 
 
+#storybook-docs section.hero {background: #fff;padding: 8px 24px;}
+#storybook-docs section.white {background: #fff;}
+#storybook-docs .container {width: 1200px;margin:0 auto; padding: 0 24px;}
+#storybook-docs section.hero>.header-area{
+    border-radius: 8px;
+    border: 1px solid var(--elevation-border-color-3, #EDEDED);
+    background: var(--elevation-color-3, #FFF);
+    padding: 28px 24px 28px 34px;
+    position: relative;
+    margin-bottom: -44px;
+    margin-top: -68px;
+}
+#storybook-docs section.hero>.header-area>.badges{gap: 16px;}
+
+#storybook-docs .row.cards {
+    flex-wrap: wrap;
+    gap: 32px 24px;
+}
+
+#storybook-docs .row.cards>.col {
+    width: calc((100% - (2 * 24px)) / 3);
+    border-radius: 12px;
+    border: 1px solid var(--elevation-border-color-3, #EDEDED);
+    background: var(--elevation-color-3, #FFF);
+}
+
+
+#storybook-docs section.cardGroup h2{margin: 36px 0 24px;display: inline-block;}
+#storybook-docs section.cardGroup .row.cards>.col{padding: 24px;display: inline-flex; flex-direction: column; align-items: center;gap: 8px;}
+#storybook-docs section.cardGroup .row.cards>.col>*{margin: 0;}
+#storybook-docs .white .container .row {margin: 55px 0;display: inline-flex;}
+
+#storybook-docs .container .row .badgeGroup{ display: flex; margin-top: 32px; gap: 24px; }
+
+#storybook-docs .sbdocs-content a.iconLink {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Primary-50, #FF6000);
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+#storybook-docs .sbdocs-content a.iconLink>span {
+    color: inherit;
+    text-decoration: underline;
+}
+
+
+
+
+/*Team*/
+#storybook-docs section.team{padding-top: 32px;margin-bottom: 0;}
+#storybook-docs section.team .teamBody {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    background: var(--elevation-color--2, #E5E5E5);
+    --teamCardWidth: calc(100% / 12);
+}        
+#storybook-docs section.team  .teamContent{
+    --pageWidth:calc((var(--teamCardWidth) * 12) + (var(--teamCardWidth) * 2));
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin: -50px calc(var(--teamCardWidth) * -1 * 3) -15px
+    /* margin: 0 calc(var(--teamCardWidth) * -1); */
+}
+#storybook-docs section.team .teamContent .card{
+    width: calc(var(--teamCardWidth)*2);
+    padding: 12px;
+}
+
+#storybook-docs section.team .teamContent>.card:nth-child(11n+1){margin-left: var(--teamCardWidth);}
+#storybook-docs section.team .teamContent>.card:nth-child(11n+5){margin-right: var(--teamCardWidth);}
+
+#storybook-docs section.team .teamContent .card>.inbox{
+    border-radius: var(--border-radius-16, 16px);
+    border: 1px solid var(--elevation-border-color-3, #EDEDED);
+    background: var(--elevation-color-3, #FFF);
+    display: flex;
+    padding: 16px;
+    gap: 15px;    
+    overflow: hidden;
+}
+#storybook-docs section.team .teamContent .card:not(.linkedin)>.inbox{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+#storybook-docs section.team .teamContent .card .inbox>img:nth-child(1){width: max-content; max-width: 96px;}
+#storybook-docs section.team .teamContent .card .inbox>img:nth-child(2){width: max-content;max-width: 158px;}
+
+#storybook-docs .teamContent .card .inbox .details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#storybook-docs section.team .teamContent .card .inbox .details .info>h4{margin-bottom: 4px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#storybook-docs section.team .teamContent .card .inbox .details .info>.title{color: var(--text-color-headline, #1E1E1E);white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+
+#storybook-docs .teamContent .card .inbox .details .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#storybook-docs .teamContent .card .inbox .details .contact .badge{
+    font-size: 14px; line-height: 16px;border-radius: 8px;
+}
+
+#storybook-docs section.team .teamBody>.wave{
+    position: relative;
+    text-align: center;
+}
+#storybook-docs section.team .teamBody>.wave>h3{
+    position: relative;
+    z-index: 2;
+}
+#storybook-docs section.team .teamBody>.wave>img{
+    position: absolute; top: 0px; left: 0; z-index: 1; width: 100%;  
+}
+
+#storybook-docs section.team .teamBody>.wave.bottom>img{
+    top: inherit;
+    bottom: 0;
+}
+/*Team*/
+
+#storybook-docs section.footer{
+    margin: 0;display: inline-block; width: 100%;
+}
+#storybook-docs section.footer .row{
+    margin-top: 8px; margin-bottom: 120px;
+}
+#storybook-docs section.footer .row .col p{
+    margin-bottom: 16px;padding-right: 48px;
+}
+
+#storybook-docs .Content{
+    display: block;
+    padding: 24px 24px 80px 24px;
+    margin: 16px 0 120px;
+    border-radius: 12px;
+    max-width: 1000px;
+}
+
 
 
 /* 
@@ -997,7 +1164,7 @@ color: var(--text-color-headline, #1E1E1E);
 
 @media (min-width: 1200px) { 
     
- }
+}
 
 @media (min-width: 1400px) { 
     

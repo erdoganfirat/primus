@@ -20,7 +20,7 @@
     --error-fg-default: #FF0000;
     --error-bg-hover: #FFF5F5;
 
-    background: var(--error-bg-default, #FFE6E6);
+    //background: var(--error-bg-default, #FFE6E6);
 
     --text-color-body: #333;
     --text-color-inverse: #FFF;
@@ -34,6 +34,10 @@
     --elevation-2: #FFF;
     --elevation-1: #FAFAFA;
     --elevation-0-background: #F5F5F5;
+
+    --elevation-color-3: #FFF;
+
+    --elevation-color-3: #FFF;
 
 
     --button-bg-color-secondary: #FFEDE0;

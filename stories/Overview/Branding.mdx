@@ -1,0 +1,297 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Branding.mdx */}
+
+<Meta title="Overview/Branding" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Branding</h1>
+            <span className="badge success"><i className="pi-success"></i> Live</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/components-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/components-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-chat-live"></i> Communication guideline</Tab>
+                <Tab className="TabItem"><i className="pi-design"></i> Style guideline</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+            
+                <section>
+                    <p>Since the year 2000, we have been presenting ourselves as Hepsiburada, Turkey's own, with a sincere, informative approach, emphasizing campaigns and deals, and addressing the consumer with a tone suitable for insight. Focusing on the customer experience, we are stepping in front of the consumers with a world where millions of products can be accessed with a single click in the journey of Hepsiburada, and we define each stage openly.</p>
+
+                    ## Overview
+                    <p>We prefer using a more personal tone with end consumers in all marketing and advertising communication texts, incorporating the use of 'you' to create a more intimate atmosphere.<br/><br/>You can find information about interface messages <a href="#">here</a>.</p>
+
+                    ## Communication platforms
+                    <p>Making sure that the design communicates its purpose and function clearly, so that users can understand what they need to do and how to do it.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Premium
+                            <p>We separate suffix coming to Premium with an apostrophe ('), and when referring to Premium's, we again make a distinction using the apostrophe ('), using generic texts in line with the slogan <strong className="semibold">“Premium's are very advantageous“</strong>.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/premium.png" srcSet="branding/premium.png 1x, branding/premium@2x.png 2x" alt='Hepsiburada Premium'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Link gelir
+                            <p>The logo is formed in typography as <strong className="semibold">"linkgelir"</strong> but in texts, we separate it as "Link Gelir." For our platform, in mailing and in-app buttons, we use the texts <strong className="semibold">"Prepare Your Lists"</strong> and <strong className="semibold">"Create Your Lists."</strong></p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/linkgelir.png" srcSet="branding/linkgelir.png 1x, branding/linkgelir@2x.png 2x" alt='Link gelir'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Sanat burada
+                            <p>We do not use expressions like <strong className="semibold">"Sanatburada, SanatBurada"</strong> within sentences. Instead, we use the format <strong className="semibold">"Sanat Burada"</strong> where two separate words are written with initial capitals.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/sanatburada.png" srcSet="branding/sanatburada.png 1x, branding/sanatburada@2x.png 2x" alt='Sanat burada'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hepsiyürekten
+                            <p>We use the hashtag <strong className="semibold">"#hepsiyürekten"</strong> written in lowercase letters with combined words and initial letters.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsiyurekten.png" srcSet="branding/hepsiyurekten.png 1x, branding/hepsiyurekten@2x.png 2x" alt='Hepsiyürekten'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### HepsiTürkiye’den
+                            <p>We observe that the section "Türkiye’den" is separated with an apostrophe (‘) in the logo. In the text, we also use it as <strong className="semibold">"HepsiTürkiye’den"</strong> maintaining the same style.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsiturkiyeden.png" srcSet="branding/hepsiturkiyeden.png 1x, branding/hepsiturkiyeden@2x.png 2x" alt='HepsiTürkiye’den'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Girişimci kadınlara teknoloji gücü
+                            <p><strong className="semibold">"Girişimci Kadınlar"</strong> is written in uppercase letters within Hepsiburada as it is a platform. When writing <strong className="semibold">"Girişimci Kadınlara Teknoloji Gücü"</strong> the entire phrase is in uppercase, while added words like "programı" start with lowercase letters.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/girisimcikadinlar.png" srcSet="branding/girisimcikadinlar.png 1x, branding/girisimcikadinlar@2x.png 2x" alt='Girişimci kadınlara teknoloji gücü'/>
+                        </div>
+                    </div>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Business collaborations
+                            <p>We bring the language of Hepsiburada and brands closer, converging at a common point. Our texts and visual content go through an approval process with brands. As a standard, we link our own TVC introduction with the brand. Following that, we showcase the visuals used in the brand's advertising films and conclude with our own packshot.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/bussiness.png" srcSet="branding/bussiness.png 1x, branding/bussiness@2x.png 2x" alt='Business collaborations'/>
+                        </div>
+                    </div>                    
+
+                    ## User segments
+                    <p>Within our segment platforms at Hepsiburada, our language is generally warm, informative, and straightforward in conveying campaigns. However, it differs for our youth and gamer target audience.</p>
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Youth
+                            <p>We communicate through our youth platform under the umbrella of 'Efsane Gençlik ' Creating content in line with the youth's jargon, we produce texts that are young, dynamic, sincere, and fun with the slogan 'Come try, live it up.'"</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/efsanegenclik.png" srcSet="branding/efsanegenclik.png 1x, branding/efsanegenclik@2x.png 2x" alt='Efsane Gençlik'/>
+                        </div>
+                    </div>   
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Digital families
+                            <p>While leveraging a new generation language, we establish a balance that is suitable for the Turkish family structure. We emphasize technology, entertainment, family life, and the kitchen.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/dijitalaileler.png" srcSet="branding/dijitalaileler.png 1x, branding/dijitalaileler@2x.png 2x" alt='Digital families'/>
+                        </div>
+                    </div>   
+
+                    ## Platforms
+
+                    ### TVC
+                    <p>We prefer an engaging language where we try to convey the brand and the deal within the first 5 seconds. We use an opening sentence starting with Hepsiburada and a packshot sentence ending with Hepsiburada.</p>
+
+                    ### Radio
+                    <p>We are progressing with radio spots parallel to the TVC. In the openings, we include texts with references to moments like heavy traffic when radio is widely listened to. In our DJ talks communications, we proceed with texts reminiscent of the DJ and radio listener's intimate conversation</p>
+
+                    ### For CRM text (mailing - SMS - in-app)
+                    <p>we aim to prompt user action using clickbait, energetic, and dynamic young texts. Incorporating widely used and beloved emojis, our goal is to engage users.</p>
+
+                    ### Banner
+                    <p>Kısa, net, anlaşılır mesajlarla ilk bakışta mesajımızı ve varsa indirimlerimizi vermeyi hedefliyoruz. Görsel dünyada metin kullanıldıysa banner metniyle tekrar etmemesine dikkat ediyoruz.</p>
+
+                    ### CTA
+                    <p>We aim to deliver our message and any discounts, if available, at a glance with short, clear, and understandable messages. In the visual aspect, we pay attention to not repeat the banner text if text is used.</p>
+
+                    ### Social media
+                    <p>In our content, instead of long videos, we provide concise information. On our Social Media platforms, we create more entertaining content tailored to the spirit of each platform. In our YouTube, Instagram, and TikTok content, we produce fun materials linked to our products using real-time trends and popular trends on Instagram at the moment</p>
+
+                    ### Advertorial
+                    <p>60 and 45-second models are available. It is crucial to align with the linguistic consistency of the campaign for whichever campaign is in question. For example, if we are organizing an advertorial specifically for 'Efsane Gençlik' we prepare our texts using keywords used by young people, creating a text that is young, dynamic, intimate, and feels like a mutual conversation with the youth</p>
+
+                    ### Lower third
+                    <p>We create lower third parallel to our TVC scripts. These texts will last for a maximum of 8 seconds and consist of 3 or 4 frames, with each frame containing a meaningful message on its own.</p>
+
+                    
+                    
+                    ## Subbrand
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hepsipay
+                            <p>In our Hepsipay platform, we refer to the earned vouchers as 'Hepsipay Papel.' When using it in plural form, we write it as 'Hepsipay Papels' without separating the plural suffix.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsipay.png" srcSet="branding/hepsipay.png 1x, branding/hepsipay@2x.png 2x" alt='Hepsipay'/>
+                        </div>
+                    </div>   
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### HepsiburadaGlobal
+                            <p>On dates such as 11.11 and 12.12, every month, we conduct our International Shopping Festival campaign. In our texts, we try to incorporate the phrase <strong className="semibold">'Products without borders'</strong> and <strong className="semibold">'Products loved by the world.'</strong> We write it as HepsiburadaGlobal without spaces</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsiburadaglobal.png" srcSet="branding/hepsiburadaglobal.png 1x, branding/hepsiburadaglobal@2x.png 2x" alt='HepsiburadaGlobal'/>
+                        </div>
+                    </div>   
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hepsiburada Seyahat 
+                            <p>We create texts using keywords such as easy, secure, profitable, comfortable. When collaborating with platforms like Premium, Efsane Gençlik, we also leverage the messaging of these platforms in our communications.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsiburadaseyahat.png" srcSet="branding/hepsiburadaseyahat.png 1x, branding/hepsiburadaseyahat@2x.png 2x" alt='Hepsiburada Seyahat'/>
+                        </div>
+                    </div>   
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### HepsiJET
+                            <p>It has its own unique logo. In sentences, we write it as HepsiJET. We continue to use the 'you' language. We include key phrases such as fast, reliable delivery, let it come to your door so you don't tire.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsijet.png" srcSet="branding/hepsijet.png 1x, branding/hepsijet@2x.png 2x" alt='HepsiJET'/>
+                        </div>
+                    </div>   
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hepsiburada Market
+                            <p>We use the 'you' language. We communicate with the theme: 'You can get fresh fruits and vegetables, cleaning products, and all your grocery needs quickly and easily from where you sit, with super discounts.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsiburadamarket.png" srcSet="branding/hepsiburadamarket.png 1x, branding/hepsiburadamarket@2x.png 2x" alt='Hepsiburada Market'/>
+                        </div>
+                    </div>   
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hepsilojistik
+                            <p>We emphasize key words that highlight managing storage, order processing, and shipping processes. We stress that we are secure, budget-friendly, and ready to grow your business together. Since it is used in our partners' orders, we use the 'you' language. We write it as Hepsilojistik without spaces.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsilojistik.png" srcSet="branding/hepsilojistik.png 1x, branding/hepsilojistik@2x.png 2x" alt='Hepsilojistik'/>
+                        </div>
+                    </div>   
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Hepsiburada İş Ortağım
+                            <p>A platform specifically created for shops selling on Hepsiburada. It provides information on how those on the platform can improve their sales. We offer support such as technology and advertising. We use the 'you' language in our conversations with business partners.</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/hepsiburadaisortagim.png" srcSet="branding/hepsiburadaisortagim.png 1x, branding/hepsiburadaisortagim@2x.png 2x" alt='Hepsiburada İş Ortağım'/>
+                        </div>
+                    </div>   
+
+
+
+                    ## Campaigns
+
+                    <div className="row row-cols-2">
+                        <div className="col">
+                            ### Efsane Kasım
+                            <p>Efsane Kasım is the period with the highest revenue expectations in the e-commerce era. During this one-month period, we address our users with big messages such as <strong className="semibold">'Turkey'</strong> ,<strong className="semibold">'What Turkey is waiting for'</strong>, <strong className="semibold">'The most epic opportunities of the year.'</strong> We strive to convey our messages in the most significant way possible, using large statements."</p>
+                        </div>
+                        <div className="col">
+                            <img src="branding/efsanekasim.png" srcSet="branding/efsanekasim.png 1x, branding/efsanekasim@2x.png 2x" alt='Efsane Kasım'/>
+                        </div>
+                    </div>   
+
+
+
+
+
+
+                </section>
+
+
+
+
+            </TabPanel>
+            <TabPanel className="TabContent">
+                <section>
+                    ## Colors
+                    <p>We are known for our orange color, we give confidence to everyone we touch and appear with our orange color. We believe that colors are impressive and meaningful messages. We give our sub-brands a brand identity that tells the essence of the business with the orange color, first with Hepsiburada assurance, and then with our side colors. We represent all the needs of people from end to end with colors and reveal our diversity.</p>
+                    <img className="mb32" src='branding/colors.png' srcSet={'branding/colors.png 1x, branding/colors@2x.png 2x'} alt="Colors"/>
+
+                    ## Logos
+                    <p>The safe area of the logo should be at least X/2. Logos to be used in brand collaborations should be minimum X, maximum 3X size.</p>
+                    <img className="mb32" src='branding/logos-usage.png' srcSet={'branding/logos-usage.png 1x, branding/logos-usage@2x.png 2x'} alt="Logos usage"/>
+                    <img className="mb32" src='branding/logos.png' srcSet={'branding/logos.png 1x, branding/logos@2x.png 2x'} alt="Logos"/>
+
+                </section>
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -28,7 +28,7 @@ const preview = {
     options: {
       storySort: {
         includeNames: true,
-        order: ['Overview','Design System', ['*', 'Components']],
+        order: ['Overview',['Introduction', '*'],'Design System', ['*', 'Components']],
       },
     },
     actions: { argTypesRegex: "^on[A-Z].*" },

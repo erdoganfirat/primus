@@ -1,0 +1,87 @@
+import { Meta } from "@storybook/blocks";
+
+{/* Introduction.mdx */}
+
+<Meta title="Overview/Introduction" />
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
+<div className="headBox">
+    <div className="headContent">
+        <div className="title">
+            <h1>Introduction</h1>
+            <span className="badge information"><i className="pi-info"></i> Beta</span>
+        </div>
+        <div className="badges">
+            <span className="version">v 0.1.0</span>
+            <a href="/?path=/docs/components-typography--docs" className="badge secondary"><i className="pi-bug"></i> Report a bug</a>
+            <a href="/?path=/docs/components-typography--docs" className="badge figma"><i className="pi-custom-figma"></i> Figma File</a>
+        </div>
+
+    </div>
+</div>
+<div className="docsContent">
+    <div className="docsBody">
+        <Tabs onSelect={() => {
+            setTimeout(() => {
+                tocbot.init({ 
+                    tocSelector: '.js-toc-content', 
+                    contentSelector: '.react-tabs__tab-panel--selected', 
+                    headingSelector: 'h1, h2, h3', 
+                    scrollSmoothOffset: -10,
+                    onClick: function (e) {
+                        e.preventDefault();
+                    }
+                });                
+            }, 10);            
+        }}
+        >
+            <TabList className="TabsNav">
+                <Tab className="TabItem"><i className="pi-design"></i> Introduction</Tab>
+            </TabList>
+
+            <TabPanel className="TabContent">
+            
+                <section>
+                    ## Design, develop and deliver
+                    <p>Primus Design System is Hepsiburada’s design system for digital experiences. This website is your pathway to accessing components, patterns, functions, templates, and other assets across Hepsiburada and its verticals.</p>
+                    <p>Primus Design System’s end-to-end design language to create simple, intuitive, and beautiful experiences.</p>
+
+                    ## Why do we need a Design System?
+                    <p>The primary benefit of design systems is their ability to replicate designs quickly by utilizing premade UI components and elements. Teams can continue to use the same elements over and over, reducing the need to reinvent the wheel and thus risking unintended inconsistency. So we can build consistent product experience; fast and iteratively.</p>
+
+                    ## What is Primus Design System provides?
+
+                    ### Foundations
+                    <p>Fundamental design guidance for creating quality experiences</p>
+
+                    ### Components
+                    <p>Reusable elements and styles, packaged through code, for building interfaces</p>
+
+                    ### Tokens
+                    <p>Coded names that represent design decisions for color, spacing, typography, and more</p>
+
+                    ### Assets
+                    <p>Over 400 carefully designed assets focused on commerce and new businesses</p>
+
+                    ## The DesignOps team built Primus DS for you!
+                    <p>Developers; learn about components and access everything you need to get up and running with your preferred framework</p>
+                    <p>Designers; learn how design kits are used to build consistent, scalable user interfaces</p>
+                </section>
+
+
+
+
+            </TabPanel>
+        </Tabs>
+    </div>
+    <div className="tocNav">
+        <div className="container">
+            <div className="toc">
+                <h3>On this page</h3>
+                <div className="js-toc-content">asdg</div>
+            </div>
+        </div>
+    </div>
+</div>
+
